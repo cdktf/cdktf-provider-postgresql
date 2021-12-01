@@ -179,11 +179,11 @@ export class Role extends cdktf.TerraformResource {
   // ==========
 
   // bypass_row_level_security - computed: false, optional: true, required: false
-  private _bypassRowLevelSecurity?: boolean | cdktf.IResolvable | undefined; 
+  private _bypassRowLevelSecurity?: boolean | cdktf.IResolvable; 
   public get bypassRowLevelSecurity() {
     return this.getBooleanAttribute('bypass_row_level_security') as any;
   }
-  public set bypassRowLevelSecurity(value: boolean | cdktf.IResolvable | undefined) {
+  public set bypassRowLevelSecurity(value: boolean | cdktf.IResolvable) {
     this._bypassRowLevelSecurity = value;
   }
   public resetBypassRowLevelSecurity() {
@@ -191,15 +191,15 @@ export class Role extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get bypassRowLevelSecurityInput() {
-    return this._bypassRowLevelSecurity
+    return this._bypassRowLevelSecurity;
   }
 
   // connection_limit - computed: false, optional: true, required: false
-  private _connectionLimit?: number | undefined; 
+  private _connectionLimit?: number; 
   public get connectionLimit() {
     return this.getNumberAttribute('connection_limit');
   }
-  public set connectionLimit(value: number | undefined) {
+  public set connectionLimit(value: number) {
     this._connectionLimit = value;
   }
   public resetConnectionLimit() {
@@ -207,15 +207,15 @@ export class Role extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get connectionLimitInput() {
-    return this._connectionLimit
+    return this._connectionLimit;
   }
 
   // create_database - computed: false, optional: true, required: false
-  private _createDatabase?: boolean | cdktf.IResolvable | undefined; 
+  private _createDatabase?: boolean | cdktf.IResolvable; 
   public get createDatabase() {
     return this.getBooleanAttribute('create_database') as any;
   }
-  public set createDatabase(value: boolean | cdktf.IResolvable | undefined) {
+  public set createDatabase(value: boolean | cdktf.IResolvable) {
     this._createDatabase = value;
   }
   public resetCreateDatabase() {
@@ -223,15 +223,15 @@ export class Role extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get createDatabaseInput() {
-    return this._createDatabase
+    return this._createDatabase;
   }
 
   // create_role - computed: false, optional: true, required: false
-  private _createRole?: boolean | cdktf.IResolvable | undefined; 
+  private _createRole?: boolean | cdktf.IResolvable; 
   public get createRole() {
     return this.getBooleanAttribute('create_role') as any;
   }
-  public set createRole(value: boolean | cdktf.IResolvable | undefined) {
+  public set createRole(value: boolean | cdktf.IResolvable) {
     this._createRole = value;
   }
   public resetCreateRole() {
@@ -239,15 +239,15 @@ export class Role extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get createRoleInput() {
-    return this._createRole
+    return this._createRole;
   }
 
   // encrypted - computed: false, optional: true, required: false
-  private _encrypted?: string | undefined; 
+  private _encrypted?: string; 
   public get encrypted() {
     return this.getStringAttribute('encrypted');
   }
-  public set encrypted(value: string | undefined) {
+  public set encrypted(value: string) {
     this._encrypted = value;
   }
   public resetEncrypted() {
@@ -255,15 +255,15 @@ export class Role extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get encryptedInput() {
-    return this._encrypted
+    return this._encrypted;
   }
 
   // encrypted_password - computed: false, optional: true, required: false
-  private _encryptedPassword?: boolean | cdktf.IResolvable | undefined; 
+  private _encryptedPassword?: boolean | cdktf.IResolvable; 
   public get encryptedPassword() {
     return this.getBooleanAttribute('encrypted_password') as any;
   }
-  public set encryptedPassword(value: boolean | cdktf.IResolvable | undefined) {
+  public set encryptedPassword(value: boolean | cdktf.IResolvable) {
     this._encryptedPassword = value;
   }
   public resetEncryptedPassword() {
@@ -271,7 +271,7 @@ export class Role extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get encryptedPasswordInput() {
-    return this._encryptedPassword
+    return this._encryptedPassword;
   }
 
   // id - computed: true, optional: true, required: false
@@ -280,11 +280,11 @@ export class Role extends cdktf.TerraformResource {
   }
 
   // idle_in_transaction_session_timeout - computed: false, optional: true, required: false
-  private _idleInTransactionSessionTimeout?: number | undefined; 
+  private _idleInTransactionSessionTimeout?: number; 
   public get idleInTransactionSessionTimeout() {
     return this.getNumberAttribute('idle_in_transaction_session_timeout');
   }
-  public set idleInTransactionSessionTimeout(value: number | undefined) {
+  public set idleInTransactionSessionTimeout(value: number) {
     this._idleInTransactionSessionTimeout = value;
   }
   public resetIdleInTransactionSessionTimeout() {
@@ -292,15 +292,15 @@ export class Role extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get idleInTransactionSessionTimeoutInput() {
-    return this._idleInTransactionSessionTimeout
+    return this._idleInTransactionSessionTimeout;
   }
 
   // inherit - computed: false, optional: true, required: false
-  private _inherit?: boolean | cdktf.IResolvable | undefined; 
+  private _inherit?: boolean | cdktf.IResolvable; 
   public get inherit() {
     return this.getBooleanAttribute('inherit') as any;
   }
-  public set inherit(value: boolean | cdktf.IResolvable | undefined) {
+  public set inherit(value: boolean | cdktf.IResolvable) {
     this._inherit = value;
   }
   public resetInherit() {
@@ -308,15 +308,15 @@ export class Role extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get inheritInput() {
-    return this._inherit
+    return this._inherit;
   }
 
   // login - computed: false, optional: true, required: false
-  private _login?: boolean | cdktf.IResolvable | undefined; 
+  private _login?: boolean | cdktf.IResolvable; 
   public get login() {
     return this.getBooleanAttribute('login') as any;
   }
-  public set login(value: boolean | cdktf.IResolvable | undefined) {
+  public set login(value: boolean | cdktf.IResolvable) {
     this._login = value;
   }
   public resetLogin() {
@@ -324,7 +324,7 @@ export class Role extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get loginInput() {
-    return this._login
+    return this._login;
   }
 
   // name - computed: false, optional: false, required: true
@@ -337,15 +337,15 @@ export class Role extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // password - computed: false, optional: true, required: false
-  private _password?: string | undefined; 
+  private _password?: string; 
   public get password() {
     return this.getStringAttribute('password');
   }
-  public set password(value: string | undefined) {
+  public set password(value: string) {
     this._password = value;
   }
   public resetPassword() {
@@ -353,15 +353,15 @@ export class Role extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get passwordInput() {
-    return this._password
+    return this._password;
   }
 
   // replication - computed: false, optional: true, required: false
-  private _replication?: boolean | cdktf.IResolvable | undefined; 
+  private _replication?: boolean | cdktf.IResolvable; 
   public get replication() {
     return this.getBooleanAttribute('replication') as any;
   }
-  public set replication(value: boolean | cdktf.IResolvable | undefined) {
+  public set replication(value: boolean | cdktf.IResolvable) {
     this._replication = value;
   }
   public resetReplication() {
@@ -369,15 +369,15 @@ export class Role extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get replicationInput() {
-    return this._replication
+    return this._replication;
   }
 
   // roles - computed: false, optional: true, required: false
-  private _roles?: string[] | undefined; 
+  private _roles?: string[]; 
   public get roles() {
     return this.getListAttribute('roles');
   }
-  public set roles(value: string[] | undefined) {
+  public set roles(value: string[]) {
     this._roles = value;
   }
   public resetRoles() {
@@ -385,15 +385,15 @@ export class Role extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get rolesInput() {
-    return this._roles
+    return this._roles;
   }
 
   // search_path - computed: false, optional: true, required: false
-  private _searchPath?: string[] | undefined; 
+  private _searchPath?: string[]; 
   public get searchPath() {
     return this.getListAttribute('search_path');
   }
-  public set searchPath(value: string[] | undefined) {
+  public set searchPath(value: string[]) {
     this._searchPath = value;
   }
   public resetSearchPath() {
@@ -401,15 +401,15 @@ export class Role extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get searchPathInput() {
-    return this._searchPath
+    return this._searchPath;
   }
 
   // skip_drop_role - computed: false, optional: true, required: false
-  private _skipDropRole?: boolean | cdktf.IResolvable | undefined; 
+  private _skipDropRole?: boolean | cdktf.IResolvable; 
   public get skipDropRole() {
     return this.getBooleanAttribute('skip_drop_role') as any;
   }
-  public set skipDropRole(value: boolean | cdktf.IResolvable | undefined) {
+  public set skipDropRole(value: boolean | cdktf.IResolvable) {
     this._skipDropRole = value;
   }
   public resetSkipDropRole() {
@@ -417,15 +417,15 @@ export class Role extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get skipDropRoleInput() {
-    return this._skipDropRole
+    return this._skipDropRole;
   }
 
   // skip_reassign_owned - computed: false, optional: true, required: false
-  private _skipReassignOwned?: boolean | cdktf.IResolvable | undefined; 
+  private _skipReassignOwned?: boolean | cdktf.IResolvable; 
   public get skipReassignOwned() {
     return this.getBooleanAttribute('skip_reassign_owned') as any;
   }
-  public set skipReassignOwned(value: boolean | cdktf.IResolvable | undefined) {
+  public set skipReassignOwned(value: boolean | cdktf.IResolvable) {
     this._skipReassignOwned = value;
   }
   public resetSkipReassignOwned() {
@@ -433,15 +433,15 @@ export class Role extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get skipReassignOwnedInput() {
-    return this._skipReassignOwned
+    return this._skipReassignOwned;
   }
 
   // statement_timeout - computed: false, optional: true, required: false
-  private _statementTimeout?: number | undefined; 
+  private _statementTimeout?: number; 
   public get statementTimeout() {
     return this.getNumberAttribute('statement_timeout');
   }
-  public set statementTimeout(value: number | undefined) {
+  public set statementTimeout(value: number) {
     this._statementTimeout = value;
   }
   public resetStatementTimeout() {
@@ -449,15 +449,15 @@ export class Role extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get statementTimeoutInput() {
-    return this._statementTimeout
+    return this._statementTimeout;
   }
 
   // superuser - computed: false, optional: true, required: false
-  private _superuser?: boolean | cdktf.IResolvable | undefined; 
+  private _superuser?: boolean | cdktf.IResolvable; 
   public get superuser() {
     return this.getBooleanAttribute('superuser') as any;
   }
-  public set superuser(value: boolean | cdktf.IResolvable | undefined) {
+  public set superuser(value: boolean | cdktf.IResolvable) {
     this._superuser = value;
   }
   public resetSuperuser() {
@@ -465,15 +465,15 @@ export class Role extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get superuserInput() {
-    return this._superuser
+    return this._superuser;
   }
 
   // valid_until - computed: false, optional: true, required: false
-  private _validUntil?: string | undefined; 
+  private _validUntil?: string; 
   public get validUntil() {
     return this.getStringAttribute('valid_until');
   }
-  public set validUntil(value: string | undefined) {
+  public set validUntil(value: string) {
     this._validUntil = value;
   }
   public resetValidUntil() {
@@ -481,7 +481,7 @@ export class Role extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get validUntilInput() {
-    return this._validUntil
+    return this._validUntil;
   }
 
   // =========

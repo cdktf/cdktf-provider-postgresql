@@ -115,7 +115,7 @@ export interface PostgresqlProviderClientcert {
   readonly key: string;
 }
 
-function postgresqlProviderClientcertToTerraform(struct?: PostgresqlProviderClientcertOutputReference | PostgresqlProviderClientcert): any {
+export function postgresqlProviderClientcertToTerraform(struct?: PostgresqlProviderClientcert): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -126,42 +126,6 @@ function postgresqlProviderClientcertToTerraform(struct?: PostgresqlProviderClie
   }
 }
 
-export class PostgresqlProviderClientcertOutputReference extends cdktf.ComplexObject {
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
-  */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
-  }
-
-  // cert - computed: false, optional: false, required: true
-  private _cert?: string; 
-  public get cert() {
-    return this._cert;
-  }
-  public set cert(value: string| undefined) {
-    this._cert = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get certInput() {
-    return this._cert
-  }
-
-  // key - computed: false, optional: false, required: true
-  private _key?: string; 
-  public get key() {
-    return this._key;
-  }
-  public set key(value: string| undefined) {
-    this._key = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get keyInput() {
-    return this._key
-  }
-}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/postgresql postgresql}
@@ -216,11 +180,11 @@ export class PostgresqlProvider extends cdktf.TerraformProvider {
   // ==========
 
   // connect_timeout - computed: false, optional: true, required: false
-  private _connectTimeout?: number | undefined; 
+  private _connectTimeout?: number; 
   public get connectTimeout() {
     return this._connectTimeout;
   }
-  public set connectTimeout(value: number | undefined| undefined) {
+  public set connectTimeout(value: number | undefined) {
     this._connectTimeout = value;
   }
   public resetConnectTimeout() {
@@ -228,15 +192,15 @@ export class PostgresqlProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get connectTimeoutInput() {
-    return this._connectTimeout
+    return this._connectTimeout;
   }
 
   // database - computed: false, optional: true, required: false
-  private _database?: string | undefined; 
+  private _database?: string; 
   public get database() {
     return this._database;
   }
-  public set database(value: string | undefined| undefined) {
+  public set database(value: string | undefined) {
     this._database = value;
   }
   public resetDatabase() {
@@ -244,15 +208,15 @@ export class PostgresqlProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get databaseInput() {
-    return this._database
+    return this._database;
   }
 
   // database_username - computed: false, optional: true, required: false
-  private _databaseUsername?: string | undefined; 
+  private _databaseUsername?: string; 
   public get databaseUsername() {
     return this._databaseUsername;
   }
-  public set databaseUsername(value: string | undefined| undefined) {
+  public set databaseUsername(value: string | undefined) {
     this._databaseUsername = value;
   }
   public resetDatabaseUsername() {
@@ -260,15 +224,15 @@ export class PostgresqlProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get databaseUsernameInput() {
-    return this._databaseUsername
+    return this._databaseUsername;
   }
 
   // expected_version - computed: false, optional: true, required: false
-  private _expectedVersion?: string | undefined; 
+  private _expectedVersion?: string; 
   public get expectedVersion() {
     return this._expectedVersion;
   }
-  public set expectedVersion(value: string | undefined| undefined) {
+  public set expectedVersion(value: string | undefined) {
     this._expectedVersion = value;
   }
   public resetExpectedVersion() {
@@ -276,15 +240,15 @@ export class PostgresqlProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get expectedVersionInput() {
-    return this._expectedVersion
+    return this._expectedVersion;
   }
 
   // host - computed: false, optional: true, required: false
-  private _host?: string | undefined; 
+  private _host?: string; 
   public get host() {
     return this._host;
   }
-  public set host(value: string | undefined| undefined) {
+  public set host(value: string | undefined) {
     this._host = value;
   }
   public resetHost() {
@@ -292,15 +256,15 @@ export class PostgresqlProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get hostInput() {
-    return this._host
+    return this._host;
   }
 
   // max_connections - computed: false, optional: true, required: false
-  private _maxConnections?: number | undefined; 
+  private _maxConnections?: number; 
   public get maxConnections() {
     return this._maxConnections;
   }
-  public set maxConnections(value: number | undefined| undefined) {
+  public set maxConnections(value: number | undefined) {
     this._maxConnections = value;
   }
   public resetMaxConnections() {
@@ -308,15 +272,15 @@ export class PostgresqlProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get maxConnectionsInput() {
-    return this._maxConnections
+    return this._maxConnections;
   }
 
   // password - computed: false, optional: true, required: false
-  private _password?: string | undefined; 
+  private _password?: string; 
   public get password() {
     return this._password;
   }
-  public set password(value: string | undefined| undefined) {
+  public set password(value: string | undefined) {
     this._password = value;
   }
   public resetPassword() {
@@ -324,15 +288,15 @@ export class PostgresqlProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get passwordInput() {
-    return this._password
+    return this._password;
   }
 
   // port - computed: false, optional: true, required: false
-  private _port?: number | undefined; 
+  private _port?: number; 
   public get port() {
     return this._port;
   }
-  public set port(value: number | undefined| undefined) {
+  public set port(value: number | undefined) {
     this._port = value;
   }
   public resetPort() {
@@ -340,15 +304,15 @@ export class PostgresqlProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get portInput() {
-    return this._port
+    return this._port;
   }
 
   // scheme - computed: false, optional: true, required: false
-  private _scheme?: string | undefined; 
+  private _scheme?: string; 
   public get scheme() {
     return this._scheme;
   }
-  public set scheme(value: string | undefined| undefined) {
+  public set scheme(value: string | undefined) {
     this._scheme = value;
   }
   public resetScheme() {
@@ -356,15 +320,15 @@ export class PostgresqlProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get schemeInput() {
-    return this._scheme
+    return this._scheme;
   }
 
   // ssl_mode - computed: false, optional: true, required: false
-  private _sslMode?: string | undefined; 
+  private _sslMode?: string; 
   public get sslMode() {
     return this._sslMode;
   }
-  public set sslMode(value: string | undefined| undefined) {
+  public set sslMode(value: string | undefined) {
     this._sslMode = value;
   }
   public resetSslMode() {
@@ -372,15 +336,15 @@ export class PostgresqlProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get sslModeInput() {
-    return this._sslMode
+    return this._sslMode;
   }
 
   // sslmode - computed: false, optional: true, required: false
-  private _sslmode?: string | undefined; 
+  private _sslmode?: string; 
   public get sslmode() {
     return this._sslmode;
   }
-  public set sslmode(value: string | undefined| undefined) {
+  public set sslmode(value: string | undefined) {
     this._sslmode = value;
   }
   public resetSslmode() {
@@ -388,15 +352,15 @@ export class PostgresqlProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get sslmodeInput() {
-    return this._sslmode
+    return this._sslmode;
   }
 
   // sslrootcert - computed: false, optional: true, required: false
-  private _sslrootcert?: string | undefined; 
+  private _sslrootcert?: string; 
   public get sslrootcert() {
     return this._sslrootcert;
   }
-  public set sslrootcert(value: string | undefined| undefined) {
+  public set sslrootcert(value: string | undefined) {
     this._sslrootcert = value;
   }
   public resetSslrootcert() {
@@ -404,15 +368,15 @@ export class PostgresqlProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get sslrootcertInput() {
-    return this._sslrootcert
+    return this._sslrootcert;
   }
 
   // superuser - computed: false, optional: true, required: false
-  private _superuser?: boolean | cdktf.IResolvable | undefined; 
+  private _superuser?: boolean | cdktf.IResolvable; 
   public get superuser() {
     return this._superuser;
   }
-  public set superuser(value: boolean | cdktf.IResolvable | undefined| undefined) {
+  public set superuser(value: boolean | cdktf.IResolvable | undefined) {
     this._superuser = value;
   }
   public resetSuperuser() {
@@ -420,15 +384,15 @@ export class PostgresqlProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get superuserInput() {
-    return this._superuser
+    return this._superuser;
   }
 
   // username - computed: false, optional: true, required: false
-  private _username?: string | undefined; 
+  private _username?: string; 
   public get username() {
     return this._username;
   }
-  public set username(value: string | undefined| undefined) {
+  public set username(value: string | undefined) {
     this._username = value;
   }
   public resetUsername() {
@@ -436,15 +400,15 @@ export class PostgresqlProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get usernameInput() {
-    return this._username
+    return this._username;
   }
 
   // alias - computed: false, optional: true, required: false
-  private _alias?: string | undefined; 
+  private _alias?: string; 
   public get alias() {
     return this._alias;
   }
-  public set alias(value: string | undefined| undefined) {
+  public set alias(value: string | undefined) {
     this._alias = value;
   }
   public resetAlias() {
@@ -452,15 +416,15 @@ export class PostgresqlProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get aliasInput() {
-    return this._alias
+    return this._alias;
   }
 
   // clientcert - computed: false, optional: true, required: false
-  private _clientcert?: PostgresqlProviderClientcert | undefined; 
+  private _clientcert?: PostgresqlProviderClientcert; 
   public get clientcert() {
     return this._clientcert;
   }
-  public set clientcert(value: PostgresqlProviderClientcert | undefined| undefined) {
+  public set clientcert(value: PostgresqlProviderClientcert | undefined) {
     this._clientcert = value;
   }
   public resetClientcert() {
@@ -468,7 +432,7 @@ export class PostgresqlProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get clientcertInput() {
-    return this._clientcert
+    return this._clientcert;
   }
 
   // =========

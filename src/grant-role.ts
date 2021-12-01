@@ -78,7 +78,7 @@ export class GrantRole extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get grantRoleInput() {
-    return this._grantRole
+    return this._grantRole;
   }
 
   // id - computed: true, optional: true, required: false
@@ -96,15 +96,15 @@ export class GrantRole extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get roleInput() {
-    return this._role
+    return this._role;
   }
 
   // with_admin_option - computed: false, optional: true, required: false
-  private _withAdminOption?: boolean | cdktf.IResolvable | undefined; 
+  private _withAdminOption?: boolean | cdktf.IResolvable; 
   public get withAdminOption() {
     return this.getBooleanAttribute('with_admin_option') as any;
   }
-  public set withAdminOption(value: boolean | cdktf.IResolvable | undefined) {
+  public set withAdminOption(value: boolean | cdktf.IResolvable) {
     this._withAdminOption = value;
   }
   public resetWithAdminOption() {
@@ -112,7 +112,7 @@ export class GrantRole extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get withAdminOptionInput() {
-    return this._withAdminOption
+    return this._withAdminOption;
   }
 
   // =========

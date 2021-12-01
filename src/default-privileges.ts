@@ -106,7 +106,7 @@ export class DefaultPrivileges extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get databaseInput() {
-    return this._database
+    return this._database;
   }
 
   // id - computed: true, optional: true, required: false
@@ -124,7 +124,7 @@ export class DefaultPrivileges extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get objectTypeInput() {
-    return this._objectType
+    return this._objectType;
   }
 
   // owner - computed: false, optional: false, required: true
@@ -137,7 +137,7 @@ export class DefaultPrivileges extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get ownerInput() {
-    return this._owner
+    return this._owner;
   }
 
   // privileges - computed: false, optional: false, required: true
@@ -150,7 +150,7 @@ export class DefaultPrivileges extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get privilegesInput() {
-    return this._privileges
+    return this._privileges;
   }
 
   // role - computed: false, optional: false, required: true
@@ -163,15 +163,15 @@ export class DefaultPrivileges extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get roleInput() {
-    return this._role
+    return this._role;
   }
 
   // schema - computed: false, optional: true, required: false
-  private _schema?: string | undefined; 
+  private _schema?: string; 
   public get schema() {
     return this.getStringAttribute('schema');
   }
-  public set schema(value: string | undefined) {
+  public set schema(value: string) {
     this._schema = value;
   }
   public resetSchema() {
@@ -179,15 +179,15 @@ export class DefaultPrivileges extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get schemaInput() {
-    return this._schema
+    return this._schema;
   }
 
   // with_grant_option - computed: false, optional: true, required: false
-  private _withGrantOption?: boolean | cdktf.IResolvable | undefined; 
+  private _withGrantOption?: boolean | cdktf.IResolvable; 
   public get withGrantOption() {
     return this.getBooleanAttribute('with_grant_option') as any;
   }
-  public set withGrantOption(value: boolean | cdktf.IResolvable | undefined) {
+  public set withGrantOption(value: boolean | cdktf.IResolvable) {
     this._withGrantOption = value;
   }
   public resetWithGrantOption() {
@@ -195,7 +195,7 @@ export class DefaultPrivileges extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get withGrantOptionInput() {
-    return this._withGrantOption
+    return this._withGrantOption;
   }
 
   // =========

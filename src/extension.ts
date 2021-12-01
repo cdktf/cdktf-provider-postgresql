@@ -88,11 +88,11 @@ export class Extension extends cdktf.TerraformResource {
   // ==========
 
   // create_cascade - computed: false, optional: true, required: false
-  private _createCascade?: boolean | cdktf.IResolvable | undefined; 
+  private _createCascade?: boolean | cdktf.IResolvable; 
   public get createCascade() {
     return this.getBooleanAttribute('create_cascade') as any;
   }
-  public set createCascade(value: boolean | cdktf.IResolvable | undefined) {
+  public set createCascade(value: boolean | cdktf.IResolvable) {
     this._createCascade = value;
   }
   public resetCreateCascade() {
@@ -100,15 +100,15 @@ export class Extension extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get createCascadeInput() {
-    return this._createCascade
+    return this._createCascade;
   }
 
   // database - computed: true, optional: true, required: false
-  private _database?: string | undefined; 
+  private _database?: string; 
   public get database() {
     return this.getStringAttribute('database');
   }
-  public set database(value: string | undefined) {
+  public set database(value: string) {
     this._database = value;
   }
   public resetDatabase() {
@@ -116,15 +116,15 @@ export class Extension extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get databaseInput() {
-    return this._database
+    return this._database;
   }
 
   // drop_cascade - computed: false, optional: true, required: false
-  private _dropCascade?: boolean | cdktf.IResolvable | undefined; 
+  private _dropCascade?: boolean | cdktf.IResolvable; 
   public get dropCascade() {
     return this.getBooleanAttribute('drop_cascade') as any;
   }
-  public set dropCascade(value: boolean | cdktf.IResolvable | undefined) {
+  public set dropCascade(value: boolean | cdktf.IResolvable) {
     this._dropCascade = value;
   }
   public resetDropCascade() {
@@ -132,7 +132,7 @@ export class Extension extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get dropCascadeInput() {
-    return this._dropCascade
+    return this._dropCascade;
   }
 
   // id - computed: true, optional: true, required: false
@@ -150,15 +150,15 @@ export class Extension extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // schema - computed: true, optional: true, required: false
-  private _schema?: string | undefined; 
+  private _schema?: string; 
   public get schema() {
     return this.getStringAttribute('schema');
   }
-  public set schema(value: string | undefined) {
+  public set schema(value: string) {
     this._schema = value;
   }
   public resetSchema() {
@@ -166,15 +166,15 @@ export class Extension extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get schemaInput() {
-    return this._schema
+    return this._schema;
   }
 
   // version - computed: true, optional: true, required: false
-  private _version?: string | undefined; 
+  private _version?: string; 
   public get version() {
     return this.getStringAttribute('version');
   }
-  public set version(value: string | undefined) {
+  public set version(value: string) {
     this._version = value;
   }
   public resetVersion() {
@@ -182,7 +182,7 @@ export class Extension extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get versionInput() {
-    return this._version
+    return this._version;
   }
 
   // =========

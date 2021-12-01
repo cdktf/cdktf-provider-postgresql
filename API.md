@@ -207,6 +207,66 @@ public readonly templateInput: string;
 
 ---
 
+##### `allowConnections`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Database.property.allowConnections"></a>
+
+```typescript
+public readonly allowConnections: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `connectionLimit`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Database.property.connectionLimit"></a>
+
+```typescript
+public readonly connectionLimit: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `encoding`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Database.property.encoding"></a>
+
+```typescript
+public readonly encoding: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `isTemplate`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Database.property.isTemplate"></a>
+
+```typescript
+public readonly isTemplate: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `lcCollate`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Database.property.lcCollate"></a>
+
+```typescript
+public readonly lcCollate: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `lcCtype`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Database.property.lcCtype"></a>
+
+```typescript
+public readonly lcCtype: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Database.property.name"></a>
 
 ```typescript
@@ -217,67 +277,7 @@ public readonly name: string;
 
 ---
 
-##### `allowConnections`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Database.property.allowConnections"></a>
-
-```typescript
-public readonly allowConnections: boolean | IResolvable;
-```
-
-- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
-
----
-
-##### `connectionLimit`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Database.property.connectionLimit"></a>
-
-```typescript
-public readonly connectionLimit: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `encoding`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Database.property.encoding"></a>
-
-```typescript
-public readonly encoding: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `isTemplate`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Database.property.isTemplate"></a>
-
-```typescript
-public readonly isTemplate: boolean | IResolvable;
-```
-
-- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
-
----
-
-##### `lcCollate`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Database.property.lcCollate"></a>
-
-```typescript
-public readonly lcCollate: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `lcCtype`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Database.property.lcCtype"></a>
-
-```typescript
-public readonly lcCtype: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `owner`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Database.property.owner"></a>
+##### `owner`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Database.property.owner"></a>
 
 ```typescript
 public readonly owner: string;
@@ -287,7 +287,7 @@ public readonly owner: string;
 
 ---
 
-##### `tablespaceName`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Database.property.tablespaceName"></a>
+##### `tablespaceName`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Database.property.tablespaceName"></a>
 
 ```typescript
 public readonly tablespaceName: string;
@@ -297,7 +297,7 @@ public readonly tablespaceName: string;
 
 ---
 
-##### `template`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Database.property.template"></a>
+##### `template`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Database.property.template"></a>
 
 ```typescript
 public readonly template: string;
@@ -498,7 +498,7 @@ public readonly role: string;
 
 ---
 
-##### `schema`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.DefaultPrivileges.property.schema"></a>
+##### `schema`<sup>Required</sup> <a name="@cdktf/provider-postgresql.DefaultPrivileges.property.schema"></a>
 
 ```typescript
 public readonly schema: string;
@@ -508,7 +508,7 @@ public readonly schema: string;
 
 ---
 
-##### `withGrantOption`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.DefaultPrivileges.property.withGrantOption"></a>
+##### `withGrantOption`<sup>Required</sup> <a name="@cdktf/provider-postgresql.DefaultPrivileges.property.withGrantOption"></a>
 
 ```typescript
 public readonly withGrantOption: boolean | IResolvable;
@@ -667,6 +667,36 @@ public readonly versionInput: string;
 
 ---
 
+##### `createCascade`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Extension.property.createCascade"></a>
+
+```typescript
+public readonly createCascade: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `database`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Extension.property.database"></a>
+
+```typescript
+public readonly database: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `dropCascade`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Extension.property.dropCascade"></a>
+
+```typescript
+public readonly dropCascade: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Extension.property.name"></a>
 
 ```typescript
@@ -677,37 +707,7 @@ public readonly name: string;
 
 ---
 
-##### `createCascade`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Extension.property.createCascade"></a>
-
-```typescript
-public readonly createCascade: boolean | IResolvable;
-```
-
-- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
-
----
-
-##### `database`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Extension.property.database"></a>
-
-```typescript
-public readonly database: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `dropCascade`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Extension.property.dropCascade"></a>
-
-```typescript
-public readonly dropCascade: boolean | IResolvable;
-```
-
-- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
-
----
-
-##### `schema`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Extension.property.schema"></a>
+##### `schema`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Extension.property.schema"></a>
 
 ```typescript
 public readonly schema: string;
@@ -717,7 +717,7 @@ public readonly schema: string;
 
 ---
 
-##### `version`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Extension.property.version"></a>
+##### `version`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Extension.property.version"></a>
 
 ```typescript
 public readonly version: string;
@@ -884,6 +884,16 @@ public readonly database: string;
 
 ---
 
+##### `objects`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Grant.property.objects"></a>
+
+```typescript
+public readonly objects: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
 ##### `objectType`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Grant.property.objectType"></a>
 
 ```typescript
@@ -914,17 +924,7 @@ public readonly role: string;
 
 ---
 
-##### `objects`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Grant.property.objects"></a>
-
-```typescript
-public readonly objects: string[];
-```
-
-- *Type:* `string`[]
-
----
-
-##### `schema`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Grant.property.schema"></a>
+##### `schema`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Grant.property.schema"></a>
 
 ```typescript
 public readonly schema: string;
@@ -934,7 +934,7 @@ public readonly schema: string;
 
 ---
 
-##### `withGrantOption`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Grant.property.withGrantOption"></a>
+##### `withGrantOption`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Grant.property.withGrantOption"></a>
 
 ```typescript
 public readonly withGrantOption: boolean | IResolvable;
@@ -1059,7 +1059,7 @@ public readonly role: string;
 
 ---
 
-##### `withAdminOption`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.GrantRole.property.withAdminOption"></a>
+##### `withAdminOption`<sup>Required</sup> <a name="@cdktf/provider-postgresql.GrantRole.property.withAdminOption"></a>
 
 ```typescript
 public readonly withAdminOption: boolean | IResolvable;
@@ -1707,6 +1707,16 @@ public readonly pluginInput: string;
 
 ---
 
+##### `database`<sup>Required</sup> <a name="@cdktf/provider-postgresql.ReplicationSlot.property.database"></a>
+
+```typescript
+public readonly database: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-postgresql.ReplicationSlot.property.name"></a>
 
 ```typescript
@@ -1721,16 +1731,6 @@ public readonly name: string;
 
 ```typescript
 public readonly plugin: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `database`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.ReplicationSlot.property.database"></a>
-
-```typescript
-public readonly database: string;
 ```
 
 - *Type:* `string`
@@ -2094,6 +2094,96 @@ public readonly validUntilInput: string;
 
 ---
 
+##### `bypassRowLevelSecurity`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Role.property.bypassRowLevelSecurity"></a>
+
+```typescript
+public readonly bypassRowLevelSecurity: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `connectionLimit`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Role.property.connectionLimit"></a>
+
+```typescript
+public readonly connectionLimit: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `createDatabase`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Role.property.createDatabase"></a>
+
+```typescript
+public readonly createDatabase: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `createRole`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Role.property.createRole"></a>
+
+```typescript
+public readonly createRole: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `encrypted`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Role.property.encrypted"></a>
+
+```typescript
+public readonly encrypted: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `encryptedPassword`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Role.property.encryptedPassword"></a>
+
+```typescript
+public readonly encryptedPassword: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `idleInTransactionSessionTimeout`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Role.property.idleInTransactionSessionTimeout"></a>
+
+```typescript
+public readonly idleInTransactionSessionTimeout: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `inherit`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Role.property.inherit"></a>
+
+```typescript
+public readonly inherit: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `login`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Role.property.login"></a>
+
+```typescript
+public readonly login: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Role.property.name"></a>
 
 ```typescript
@@ -2104,97 +2194,7 @@ public readonly name: string;
 
 ---
 
-##### `bypassRowLevelSecurity`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Role.property.bypassRowLevelSecurity"></a>
-
-```typescript
-public readonly bypassRowLevelSecurity: boolean | IResolvable;
-```
-
-- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
-
----
-
-##### `connectionLimit`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Role.property.connectionLimit"></a>
-
-```typescript
-public readonly connectionLimit: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `createDatabase`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Role.property.createDatabase"></a>
-
-```typescript
-public readonly createDatabase: boolean | IResolvable;
-```
-
-- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
-
----
-
-##### `createRole`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Role.property.createRole"></a>
-
-```typescript
-public readonly createRole: boolean | IResolvable;
-```
-
-- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
-
----
-
-##### `encrypted`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Role.property.encrypted"></a>
-
-```typescript
-public readonly encrypted: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `encryptedPassword`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Role.property.encryptedPassword"></a>
-
-```typescript
-public readonly encryptedPassword: boolean | IResolvable;
-```
-
-- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
-
----
-
-##### `idleInTransactionSessionTimeout`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Role.property.idleInTransactionSessionTimeout"></a>
-
-```typescript
-public readonly idleInTransactionSessionTimeout: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `inherit`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Role.property.inherit"></a>
-
-```typescript
-public readonly inherit: boolean | IResolvable;
-```
-
-- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
-
----
-
-##### `login`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Role.property.login"></a>
-
-```typescript
-public readonly login: boolean | IResolvable;
-```
-
-- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
-
----
-
-##### `password`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Role.property.password"></a>
+##### `password`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Role.property.password"></a>
 
 ```typescript
 public readonly password: string;
@@ -2204,7 +2204,7 @@ public readonly password: string;
 
 ---
 
-##### `replication`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Role.property.replication"></a>
+##### `replication`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Role.property.replication"></a>
 
 ```typescript
 public readonly replication: boolean | IResolvable;
@@ -2214,7 +2214,7 @@ public readonly replication: boolean | IResolvable;
 
 ---
 
-##### `roles`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Role.property.roles"></a>
+##### `roles`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Role.property.roles"></a>
 
 ```typescript
 public readonly roles: string[];
@@ -2224,7 +2224,7 @@ public readonly roles: string[];
 
 ---
 
-##### `searchPath`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Role.property.searchPath"></a>
+##### `searchPath`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Role.property.searchPath"></a>
 
 ```typescript
 public readonly searchPath: string[];
@@ -2234,7 +2234,7 @@ public readonly searchPath: string[];
 
 ---
 
-##### `skipDropRole`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Role.property.skipDropRole"></a>
+##### `skipDropRole`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Role.property.skipDropRole"></a>
 
 ```typescript
 public readonly skipDropRole: boolean | IResolvable;
@@ -2244,7 +2244,7 @@ public readonly skipDropRole: boolean | IResolvable;
 
 ---
 
-##### `skipReassignOwned`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Role.property.skipReassignOwned"></a>
+##### `skipReassignOwned`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Role.property.skipReassignOwned"></a>
 
 ```typescript
 public readonly skipReassignOwned: boolean | IResolvable;
@@ -2254,7 +2254,7 @@ public readonly skipReassignOwned: boolean | IResolvable;
 
 ---
 
-##### `statementTimeout`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Role.property.statementTimeout"></a>
+##### `statementTimeout`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Role.property.statementTimeout"></a>
 
 ```typescript
 public readonly statementTimeout: number;
@@ -2264,7 +2264,7 @@ public readonly statementTimeout: number;
 
 ---
 
-##### `superuser`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Role.property.superuser"></a>
+##### `superuser`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Role.property.superuser"></a>
 
 ```typescript
 public readonly superuser: boolean | IResolvable;
@@ -2274,7 +2274,7 @@ public readonly superuser: boolean | IResolvable;
 
 ---
 
-##### `validUntil`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Role.property.validUntil"></a>
+##### `validUntil`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Role.property.validUntil"></a>
 
 ```typescript
 public readonly validUntil: string;
@@ -2433,6 +2433,36 @@ public readonly policyInput: SchemaPolicy[];
 
 ---
 
+##### `database`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Schema.property.database"></a>
+
+```typescript
+public readonly database: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `dropCascade`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Schema.property.dropCascade"></a>
+
+```typescript
+public readonly dropCascade: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `ifNotExists`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Schema.property.ifNotExists"></a>
+
+```typescript
+public readonly ifNotExists: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Schema.property.name"></a>
 
 ```typescript
@@ -2443,37 +2473,7 @@ public readonly name: string;
 
 ---
 
-##### `database`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Schema.property.database"></a>
-
-```typescript
-public readonly database: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `dropCascade`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Schema.property.dropCascade"></a>
-
-```typescript
-public readonly dropCascade: boolean | IResolvable;
-```
-
-- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
-
----
-
-##### `ifNotExists`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Schema.property.ifNotExists"></a>
-
-```typescript
-public readonly ifNotExists: boolean | IResolvable;
-```
-
-- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
-
----
-
-##### `owner`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Schema.property.owner"></a>
+##### `owner`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Schema.property.owner"></a>
 
 ```typescript
 public readonly owner: string;
@@ -2483,7 +2483,7 @@ public readonly owner: string;
 
 ---
 
-##### `policy`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Schema.property.policy"></a>
+##### `policy`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Schema.property.policy"></a>
 
 ```typescript
 public readonly policy: SchemaPolicy[];
@@ -4158,86 +4158,6 @@ public readonly usageWithGrant: boolean | IResolvable;
 If true, allow the specified ROLEs to use objects within the schema(s) and GRANT the same USAGE privilege to different ROLEs.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema.html#usage_with_grant Schema#usage_with_grant}
-
----
-
-## Classes <a name="Classes"></a>
-
-### PostgresqlProviderClientcertOutputReference <a name="@cdktf/provider-postgresql.PostgresqlProviderClientcertOutputReference"></a>
-
-#### Initializers <a name="@cdktf/provider-postgresql.PostgresqlProviderClientcertOutputReference.Initializer"></a>
-
-```typescript
-import { PostgresqlProviderClientcertOutputReference } from '@cdktf/provider-postgresql'
-
-new PostgresqlProviderClientcertOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
-```
-
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-postgresql.PostgresqlProviderClientcertOutputReference.parameter.terraformResource"></a>
-
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-postgresql.PostgresqlProviderClientcertOutputReference.parameter.terraformAttribute"></a>
-
-- *Type:* `string`
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-postgresql.PostgresqlProviderClientcertOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
-
----
-
-
-
-#### Properties <a name="Properties"></a>
-
-##### `certInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.PostgresqlProviderClientcertOutputReference.property.certInput"></a>
-
-```typescript
-public readonly certInput: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `keyInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.PostgresqlProviderClientcertOutputReference.property.keyInput"></a>
-
-```typescript
-public readonly keyInput: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `cert`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.PostgresqlProviderClientcertOutputReference.property.cert"></a>
-
-```typescript
-public readonly cert: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `key`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.PostgresqlProviderClientcertOutputReference.property.key"></a>
-
-```typescript
-public readonly key: string;
-```
-
-- *Type:* `string`
 
 ---
 
