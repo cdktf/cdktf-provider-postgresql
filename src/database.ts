@@ -118,11 +118,11 @@ export class Database extends cdktf.TerraformResource {
   // ==========
 
   // allow_connections - computed: false, optional: true, required: false
-  private _allowConnections?: boolean | cdktf.IResolvable | undefined; 
+  private _allowConnections?: boolean | cdktf.IResolvable; 
   public get allowConnections() {
     return this.getBooleanAttribute('allow_connections') as any;
   }
-  public set allowConnections(value: boolean | cdktf.IResolvable | undefined) {
+  public set allowConnections(value: boolean | cdktf.IResolvable) {
     this._allowConnections = value;
   }
   public resetAllowConnections() {
@@ -130,15 +130,15 @@ export class Database extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get allowConnectionsInput() {
-    return this._allowConnections
+    return this._allowConnections;
   }
 
   // connection_limit - computed: false, optional: true, required: false
-  private _connectionLimit?: number | undefined; 
+  private _connectionLimit?: number; 
   public get connectionLimit() {
     return this.getNumberAttribute('connection_limit');
   }
-  public set connectionLimit(value: number | undefined) {
+  public set connectionLimit(value: number) {
     this._connectionLimit = value;
   }
   public resetConnectionLimit() {
@@ -146,15 +146,15 @@ export class Database extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get connectionLimitInput() {
-    return this._connectionLimit
+    return this._connectionLimit;
   }
 
   // encoding - computed: true, optional: true, required: false
-  private _encoding?: string | undefined; 
+  private _encoding?: string; 
   public get encoding() {
     return this.getStringAttribute('encoding');
   }
-  public set encoding(value: string | undefined) {
+  public set encoding(value: string) {
     this._encoding = value;
   }
   public resetEncoding() {
@@ -162,7 +162,7 @@ export class Database extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get encodingInput() {
-    return this._encoding
+    return this._encoding;
   }
 
   // id - computed: true, optional: true, required: false
@@ -171,11 +171,11 @@ export class Database extends cdktf.TerraformResource {
   }
 
   // is_template - computed: true, optional: true, required: false
-  private _isTemplate?: boolean | cdktf.IResolvable | undefined; 
+  private _isTemplate?: boolean | cdktf.IResolvable; 
   public get isTemplate() {
     return this.getBooleanAttribute('is_template') as any;
   }
-  public set isTemplate(value: boolean | cdktf.IResolvable | undefined) {
+  public set isTemplate(value: boolean | cdktf.IResolvable) {
     this._isTemplate = value;
   }
   public resetIsTemplate() {
@@ -183,15 +183,15 @@ export class Database extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get isTemplateInput() {
-    return this._isTemplate
+    return this._isTemplate;
   }
 
   // lc_collate - computed: true, optional: true, required: false
-  private _lcCollate?: string | undefined; 
+  private _lcCollate?: string; 
   public get lcCollate() {
     return this.getStringAttribute('lc_collate');
   }
-  public set lcCollate(value: string | undefined) {
+  public set lcCollate(value: string) {
     this._lcCollate = value;
   }
   public resetLcCollate() {
@@ -199,15 +199,15 @@ export class Database extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get lcCollateInput() {
-    return this._lcCollate
+    return this._lcCollate;
   }
 
   // lc_ctype - computed: true, optional: true, required: false
-  private _lcCtype?: string | undefined; 
+  private _lcCtype?: string; 
   public get lcCtype() {
     return this.getStringAttribute('lc_ctype');
   }
-  public set lcCtype(value: string | undefined) {
+  public set lcCtype(value: string) {
     this._lcCtype = value;
   }
   public resetLcCtype() {
@@ -215,7 +215,7 @@ export class Database extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get lcCtypeInput() {
-    return this._lcCtype
+    return this._lcCtype;
   }
 
   // name - computed: false, optional: false, required: true
@@ -228,15 +228,15 @@ export class Database extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // owner - computed: true, optional: true, required: false
-  private _owner?: string | undefined; 
+  private _owner?: string; 
   public get owner() {
     return this.getStringAttribute('owner');
   }
-  public set owner(value: string | undefined) {
+  public set owner(value: string) {
     this._owner = value;
   }
   public resetOwner() {
@@ -244,15 +244,15 @@ export class Database extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get ownerInput() {
-    return this._owner
+    return this._owner;
   }
 
   // tablespace_name - computed: true, optional: true, required: false
-  private _tablespaceName?: string | undefined; 
+  private _tablespaceName?: string; 
   public get tablespaceName() {
     return this.getStringAttribute('tablespace_name');
   }
-  public set tablespaceName(value: string | undefined) {
+  public set tablespaceName(value: string) {
     this._tablespaceName = value;
   }
   public resetTablespaceName() {
@@ -260,15 +260,15 @@ export class Database extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get tablespaceNameInput() {
-    return this._tablespaceName
+    return this._tablespaceName;
   }
 
   // template - computed: true, optional: true, required: false
-  private _template?: string | undefined; 
+  private _template?: string; 
   public get template() {
     return this.getStringAttribute('template');
   }
-  public set template(value: string | undefined) {
+  public set template(value: string) {
     this._template = value;
   }
   public resetTemplate() {
@@ -276,7 +276,7 @@ export class Database extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get templateInput() {
-    return this._template
+    return this._template;
   }
 
   // =========

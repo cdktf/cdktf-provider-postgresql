@@ -77,7 +77,7 @@ export interface SchemaPolicy {
   readonly usageWithGrant?: boolean | cdktf.IResolvable;
 }
 
-function schemaPolicyToTerraform(struct?: SchemaPolicy): any {
+export function schemaPolicyToTerraform(struct?: SchemaPolicy): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -137,11 +137,11 @@ export class Schema extends cdktf.TerraformResource {
   // ==========
 
   // database - computed: true, optional: true, required: false
-  private _database?: string | undefined; 
+  private _database?: string; 
   public get database() {
     return this.getStringAttribute('database');
   }
-  public set database(value: string | undefined) {
+  public set database(value: string) {
     this._database = value;
   }
   public resetDatabase() {
@@ -149,15 +149,15 @@ export class Schema extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get databaseInput() {
-    return this._database
+    return this._database;
   }
 
   // drop_cascade - computed: false, optional: true, required: false
-  private _dropCascade?: boolean | cdktf.IResolvable | undefined; 
+  private _dropCascade?: boolean | cdktf.IResolvable; 
   public get dropCascade() {
     return this.getBooleanAttribute('drop_cascade') as any;
   }
-  public set dropCascade(value: boolean | cdktf.IResolvable | undefined) {
+  public set dropCascade(value: boolean | cdktf.IResolvable) {
     this._dropCascade = value;
   }
   public resetDropCascade() {
@@ -165,7 +165,7 @@ export class Schema extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get dropCascadeInput() {
-    return this._dropCascade
+    return this._dropCascade;
   }
 
   // id - computed: true, optional: true, required: false
@@ -174,11 +174,11 @@ export class Schema extends cdktf.TerraformResource {
   }
 
   // if_not_exists - computed: false, optional: true, required: false
-  private _ifNotExists?: boolean | cdktf.IResolvable | undefined; 
+  private _ifNotExists?: boolean | cdktf.IResolvable; 
   public get ifNotExists() {
     return this.getBooleanAttribute('if_not_exists') as any;
   }
-  public set ifNotExists(value: boolean | cdktf.IResolvable | undefined) {
+  public set ifNotExists(value: boolean | cdktf.IResolvable) {
     this._ifNotExists = value;
   }
   public resetIfNotExists() {
@@ -186,7 +186,7 @@ export class Schema extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get ifNotExistsInput() {
-    return this._ifNotExists
+    return this._ifNotExists;
   }
 
   // name - computed: false, optional: false, required: true
@@ -199,15 +199,15 @@ export class Schema extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // owner - computed: true, optional: true, required: false
-  private _owner?: string | undefined; 
+  private _owner?: string; 
   public get owner() {
     return this.getStringAttribute('owner');
   }
-  public set owner(value: string | undefined) {
+  public set owner(value: string) {
     this._owner = value;
   }
   public resetOwner() {
@@ -215,16 +215,16 @@ export class Schema extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get ownerInput() {
-    return this._owner
+    return this._owner;
   }
 
   // policy - computed: false, optional: true, required: false
-  private _policy?: SchemaPolicy[] | undefined; 
+  private _policy?: SchemaPolicy[]; 
   public get policy() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('policy') as any;
   }
-  public set policy(value: SchemaPolicy[] | undefined) {
+  public set policy(value: SchemaPolicy[]) {
     this._policy = value;
   }
   public resetPolicy() {
@@ -232,7 +232,7 @@ export class Schema extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get policyInput() {
-    return this._policy
+    return this._policy;
   }
 
   // =========

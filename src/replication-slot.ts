@@ -67,11 +67,11 @@ export class ReplicationSlot extends cdktf.TerraformResource {
   // ==========
 
   // database - computed: true, optional: true, required: false
-  private _database?: string | undefined; 
+  private _database?: string; 
   public get database() {
     return this.getStringAttribute('database');
   }
-  public set database(value: string | undefined) {
+  public set database(value: string) {
     this._database = value;
   }
   public resetDatabase() {
@@ -79,7 +79,7 @@ export class ReplicationSlot extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get databaseInput() {
-    return this._database
+    return this._database;
   }
 
   // id - computed: true, optional: true, required: false
@@ -97,7 +97,7 @@ export class ReplicationSlot extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // plugin - computed: false, optional: false, required: true
@@ -110,7 +110,7 @@ export class ReplicationSlot extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get pluginInput() {
-    return this._plugin
+    return this._plugin;
   }
 
   // =========
