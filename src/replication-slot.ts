@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/postgresql/r/replication_slot.html
+// https://www.terraform.io/docs/providers/postgresql/r/replication_slot
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,23 +10,23 @@ export interface ReplicationSlotConfig extends cdktf.TerraformMetaArguments {
   /**
   * Sets the database to add the replication slot to
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/replication_slot.html#database ReplicationSlot#database}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/replication_slot#database ReplicationSlot#database}
   */
   readonly database?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/replication_slot.html#name ReplicationSlot#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/replication_slot#name ReplicationSlot#name}
   */
   readonly name: string;
   /**
   * Sets the output plugin to use
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/replication_slot.html#plugin ReplicationSlot#plugin}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/replication_slot#plugin ReplicationSlot#plugin}
   */
   readonly plugin: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/replication_slot.html postgresql_replication_slot}
+* Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/replication_slot postgresql_replication_slot}
 */
 export class ReplicationSlot extends cdktf.TerraformResource {
 
@@ -40,7 +40,7 @@ export class ReplicationSlot extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/postgresql/r/replication_slot.html postgresql_replication_slot} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/postgresql/r/replication_slot postgresql_replication_slot} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/postgresql/r/grant.html
+// https://www.terraform.io/docs/providers/postgresql/r/grant
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,49 +10,49 @@ export interface GrantConfig extends cdktf.TerraformMetaArguments {
   /**
   * The database to grant privileges on for this role
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant.html#database Grant#database}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#database Grant#database}
   */
   readonly database: string;
   /**
   * The PostgreSQL object type to grant the privileges on (one of: database, function, schema, sequence, table, foreign_data_wrapper, foreign_server)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant.html#object_type Grant#object_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#object_type Grant#object_type}
   */
   readonly objectType: string;
   /**
   * The specific objects to grant privileges on for this role (empty means all objects of the requested type)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant.html#objects Grant#objects}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#objects Grant#objects}
   */
   readonly objects?: string[];
   /**
   * The list of privileges to grant
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant.html#privileges Grant#privileges}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#privileges Grant#privileges}
   */
   readonly privileges: string[];
   /**
   * The name of the role to grant privileges on
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant.html#role Grant#role}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#role Grant#role}
   */
   readonly role: string;
   /**
   * The database schema to grant privileges on for this role
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant.html#schema Grant#schema}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#schema Grant#schema}
   */
   readonly schema?: string;
   /**
   * Permit the grant recipient to grant it to others
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant.html#with_grant_option Grant#with_grant_option}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#with_grant_option Grant#with_grant_option}
   */
   readonly withGrantOption?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/grant.html postgresql_grant}
+* Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/grant postgresql_grant}
 */
 export class Grant extends cdktf.TerraformResource {
 
@@ -66,7 +66,7 @@ export class Grant extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/postgresql/r/grant.html postgresql_grant} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/postgresql/r/grant postgresql_grant} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

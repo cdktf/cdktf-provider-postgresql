@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/postgresql/r/extension.html
+// https://www.terraform.io/docs/providers/postgresql/r/extension
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,41 +10,41 @@ export interface ExtensionConfig extends cdktf.TerraformMetaArguments {
   /**
   * When true, will also create any extensions that this extension depends on that are not already installed
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/extension.html#create_cascade Extension#create_cascade}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/extension#create_cascade Extension#create_cascade}
   */
   readonly createCascade?: boolean | cdktf.IResolvable;
   /**
   * Sets the database to add the extension to
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/extension.html#database Extension#database}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/extension#database Extension#database}
   */
   readonly database?: string;
   /**
   * When true, will also drop all the objects that depend on the extension, and in turn all objects that depend on those objects
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/extension.html#drop_cascade Extension#drop_cascade}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/extension#drop_cascade Extension#drop_cascade}
   */
   readonly dropCascade?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/extension.html#name Extension#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/extension#name Extension#name}
   */
   readonly name: string;
   /**
   * Sets the schema of an extension
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/extension.html#schema Extension#schema}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/extension#schema Extension#schema}
   */
   readonly schema?: string;
   /**
   * Sets the version number of the extension
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/extension.html#version Extension#version}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/extension#version Extension#version}
   */
   readonly version?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/extension.html postgresql_extension}
+* Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/extension postgresql_extension}
 */
 export class Extension extends cdktf.TerraformResource {
 
@@ -58,7 +58,7 @@ export class Extension extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/postgresql/r/extension.html postgresql_extension} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/postgresql/r/extension postgresql_extension} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

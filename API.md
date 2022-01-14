@@ -4,7 +4,7 @@
 
 ### Database <a name="@cdktf/provider-postgresql.Database"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/database.html postgresql_database}.
+Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/database postgresql_database}.
 
 #### Initializers <a name="@cdktf/provider-postgresql.Database.Initializer"></a>
 
@@ -317,7 +317,7 @@ public readonly template: string;
 
 ### DefaultPrivileges <a name="@cdktf/provider-postgresql.DefaultPrivileges"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/default_privileges.html postgresql_default_privileges}.
+Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/default_privileges postgresql_default_privileges}.
 
 #### Initializers <a name="@cdktf/provider-postgresql.DefaultPrivileges.Initializer"></a>
 
@@ -528,7 +528,7 @@ public readonly withGrantOption: boolean | IResolvable;
 
 ### Extension <a name="@cdktf/provider-postgresql.Extension"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/extension.html postgresql_extension}.
+Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/extension postgresql_extension}.
 
 #### Initializers <a name="@cdktf/provider-postgresql.Extension.Initializer"></a>
 
@@ -737,7 +737,7 @@ public readonly version: string;
 
 ### Grant <a name="@cdktf/provider-postgresql.Grant"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/grant.html postgresql_grant}.
+Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/grant postgresql_grant}.
 
 #### Initializers <a name="@cdktf/provider-postgresql.Grant.Initializer"></a>
 
@@ -954,7 +954,7 @@ public readonly withGrantOption: boolean | IResolvable;
 
 ### GrantRole <a name="@cdktf/provider-postgresql.GrantRole"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/grant_role.html postgresql_grant_role}.
+Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/grant_role postgresql_grant_role}.
 
 #### Initializers <a name="@cdktf/provider-postgresql.GrantRole.Initializer"></a>
 
@@ -1079,7 +1079,7 @@ public readonly withAdminOption: boolean | IResolvable;
 
 ### PhysicalReplicationSlot <a name="@cdktf/provider-postgresql.PhysicalReplicationSlot"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/physical_replication_slot.html postgresql_physical_replication_slot}.
+Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/physical_replication_slot postgresql_physical_replication_slot}.
 
 #### Initializers <a name="@cdktf/provider-postgresql.PhysicalReplicationSlot.Initializer"></a>
 
@@ -1622,7 +1622,7 @@ public readonly username: string;
 
 ### ReplicationSlot <a name="@cdktf/provider-postgresql.ReplicationSlot"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/replication_slot.html postgresql_replication_slot}.
+Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/replication_slot postgresql_replication_slot}.
 
 #### Initializers <a name="@cdktf/provider-postgresql.ReplicationSlot.Initializer"></a>
 
@@ -1747,7 +1747,7 @@ public readonly plugin: string;
 
 ### Role <a name="@cdktf/provider-postgresql.Role"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/role.html postgresql_role}.
+Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/role postgresql_role}.
 
 #### Initializers <a name="@cdktf/provider-postgresql.Role.Initializer"></a>
 
@@ -2294,7 +2294,7 @@ public readonly validUntil: string;
 
 ### Schema <a name="@cdktf/provider-postgresql.Schema"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/schema.html postgresql_schema}.
+Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/schema postgresql_schema}.
 
 #### Initializers <a name="@cdktf/provider-postgresql.Schema.Initializer"></a>
 
@@ -2563,7 +2563,7 @@ public readonly name: string;
 
 The PostgreSQL database name to connect to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database.html#name Database#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#name Database#name}
 
 ---
 
@@ -2577,7 +2577,7 @@ public readonly allowConnections: boolean | IResolvable;
 
 If false then no one can connect to this database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database.html#allow_connections Database#allow_connections}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#allow_connections Database#allow_connections}
 
 ---
 
@@ -2591,7 +2591,7 @@ public readonly connectionLimit: number;
 
 How many concurrent connections can be made to this database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database.html#connection_limit Database#connection_limit}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#connection_limit Database#connection_limit}
 
 ---
 
@@ -2605,7 +2605,7 @@ public readonly encoding: string;
 
 Character set encoding to use in the new database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database.html#encoding Database#encoding}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#encoding Database#encoding}
 
 ---
 
@@ -2619,7 +2619,7 @@ public readonly isTemplate: boolean | IResolvable;
 
 If true, then this database can be cloned by any user with CREATEDB privileges.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database.html#is_template Database#is_template}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#is_template Database#is_template}
 
 ---
 
@@ -2633,7 +2633,7 @@ public readonly lcCollate: string;
 
 Collation order (LC_COLLATE) to use in the new database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database.html#lc_collate Database#lc_collate}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#lc_collate Database#lc_collate}
 
 ---
 
@@ -2647,7 +2647,7 @@ public readonly lcCtype: string;
 
 Character classification (LC_CTYPE) to use in the new database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database.html#lc_ctype Database#lc_ctype}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#lc_ctype Database#lc_ctype}
 
 ---
 
@@ -2661,7 +2661,7 @@ public readonly owner: string;
 
 The ROLE which owns the database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database.html#owner Database#owner}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#owner Database#owner}
 
 ---
 
@@ -2675,7 +2675,7 @@ public readonly tablespaceName: string;
 
 The name of the tablespace that will be associated with the new database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database.html#tablespace_name Database#tablespace_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#tablespace_name Database#tablespace_name}
 
 ---
 
@@ -2689,7 +2689,7 @@ public readonly template: string;
 
 The name of the template from which to create the new database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database.html#template Database#template}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#template Database#template}
 
 ---
 
@@ -2753,7 +2753,7 @@ public readonly database: string;
 
 The database to grant default privileges for this role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/default_privileges.html#database DefaultPrivileges#database}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/default_privileges#database DefaultPrivileges#database}
 
 ---
 
@@ -2767,7 +2767,7 @@ public readonly objectType: string;
 
 The PostgreSQL object type to set the default privileges on (one of: table, sequence, function, type).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/default_privileges.html#object_type DefaultPrivileges#object_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/default_privileges#object_type DefaultPrivileges#object_type}
 
 ---
 
@@ -2781,7 +2781,7 @@ public readonly owner: string;
 
 Target role for which to alter default privileges.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/default_privileges.html#owner DefaultPrivileges#owner}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/default_privileges#owner DefaultPrivileges#owner}
 
 ---
 
@@ -2795,7 +2795,7 @@ public readonly privileges: string[];
 
 The list of privileges to apply as default privileges.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/default_privileges.html#privileges DefaultPrivileges#privileges}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/default_privileges#privileges DefaultPrivileges#privileges}
 
 ---
 
@@ -2809,7 +2809,7 @@ public readonly role: string;
 
 The name of the role to which grant default privileges on.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/default_privileges.html#role DefaultPrivileges#role}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/default_privileges#role DefaultPrivileges#role}
 
 ---
 
@@ -2823,7 +2823,7 @@ public readonly schema: string;
 
 The database schema to set default privileges for this role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/default_privileges.html#schema DefaultPrivileges#schema}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/default_privileges#schema DefaultPrivileges#schema}
 
 ---
 
@@ -2837,7 +2837,7 @@ public readonly withGrantOption: boolean | IResolvable;
 
 Permit the grant recipient to grant it to others.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/default_privileges.html#with_grant_option DefaultPrivileges#with_grant_option}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/default_privileges#with_grant_option DefaultPrivileges#with_grant_option}
 
 ---
 
@@ -2899,7 +2899,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/extension.html#name Extension#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/extension#name Extension#name}.
 
 ---
 
@@ -2913,7 +2913,7 @@ public readonly createCascade: boolean | IResolvable;
 
 When true, will also create any extensions that this extension depends on that are not already installed.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/extension.html#create_cascade Extension#create_cascade}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/extension#create_cascade Extension#create_cascade}
 
 ---
 
@@ -2927,7 +2927,7 @@ public readonly database: string;
 
 Sets the database to add the extension to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/extension.html#database Extension#database}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/extension#database Extension#database}
 
 ---
 
@@ -2941,7 +2941,7 @@ public readonly dropCascade: boolean | IResolvable;
 
 When true, will also drop all the objects that depend on the extension, and in turn all objects that depend on those objects.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/extension.html#drop_cascade Extension#drop_cascade}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/extension#drop_cascade Extension#drop_cascade}
 
 ---
 
@@ -2955,7 +2955,7 @@ public readonly schema: string;
 
 Sets the schema of an extension.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/extension.html#schema Extension#schema}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/extension#schema Extension#schema}
 
 ---
 
@@ -2969,7 +2969,7 @@ public readonly version: string;
 
 Sets the version number of the extension.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/extension.html#version Extension#version}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/extension#version Extension#version}
 
 ---
 
@@ -3033,7 +3033,7 @@ public readonly database: string;
 
 The database to grant privileges on for this role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant.html#database Grant#database}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#database Grant#database}
 
 ---
 
@@ -3047,7 +3047,7 @@ public readonly objectType: string;
 
 The PostgreSQL object type to grant the privileges on (one of: database, function, schema, sequence, table, foreign_data_wrapper, foreign_server).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant.html#object_type Grant#object_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#object_type Grant#object_type}
 
 ---
 
@@ -3061,7 +3061,7 @@ public readonly privileges: string[];
 
 The list of privileges to grant.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant.html#privileges Grant#privileges}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#privileges Grant#privileges}
 
 ---
 
@@ -3075,7 +3075,7 @@ public readonly role: string;
 
 The name of the role to grant privileges on.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant.html#role Grant#role}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#role Grant#role}
 
 ---
 
@@ -3089,7 +3089,7 @@ public readonly objects: string[];
 
 The specific objects to grant privileges on for this role (empty means all objects of the requested type).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant.html#objects Grant#objects}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#objects Grant#objects}
 
 ---
 
@@ -3103,7 +3103,7 @@ public readonly schema: string;
 
 The database schema to grant privileges on for this role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant.html#schema Grant#schema}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#schema Grant#schema}
 
 ---
 
@@ -3117,7 +3117,7 @@ public readonly withGrantOption: boolean | IResolvable;
 
 Permit the grant recipient to grant it to others.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant.html#with_grant_option Grant#with_grant_option}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#with_grant_option Grant#with_grant_option}
 
 ---
 
@@ -3181,7 +3181,7 @@ public readonly grantRole: string;
 
 The name of the role that is granted to role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant_role.html#grant_role GrantRole#grant_role}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant_role#grant_role GrantRole#grant_role}
 
 ---
 
@@ -3195,7 +3195,7 @@ public readonly role: string;
 
 The name of the role to grant grant_role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant_role.html#role GrantRole#role}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant_role#role GrantRole#role}
 
 ---
 
@@ -3209,7 +3209,7 @@ public readonly withAdminOption: boolean | IResolvable;
 
 Permit the grant recipient to grant it to others.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant_role.html#with_admin_option GrantRole#with_admin_option}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant_role#with_admin_option GrantRole#with_admin_option}
 
 ---
 
@@ -3271,7 +3271,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/physical_replication_slot.html#name PhysicalReplicationSlot#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/physical_replication_slot#name PhysicalReplicationSlot#name}.
 
 ---
 
@@ -3601,7 +3601,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/replication_slot.html#name ReplicationSlot#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/replication_slot#name ReplicationSlot#name}.
 
 ---
 
@@ -3615,7 +3615,7 @@ public readonly plugin: string;
 
 Sets the output plugin to use.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/replication_slot.html#plugin ReplicationSlot#plugin}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/replication_slot#plugin ReplicationSlot#plugin}
 
 ---
 
@@ -3629,7 +3629,7 @@ public readonly database: string;
 
 Sets the database to add the replication slot to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/replication_slot.html#database ReplicationSlot#database}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/replication_slot#database ReplicationSlot#database}
 
 ---
 
@@ -3693,7 +3693,7 @@ public readonly name: string;
 
 The name of the role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role.html#name Role#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role#name Role#name}
 
 ---
 
@@ -3707,7 +3707,7 @@ public readonly bypassRowLevelSecurity: boolean | IResolvable;
 
 Determine whether a role bypasses every row-level security (RLS) policy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role.html#bypass_row_level_security Role#bypass_row_level_security}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role#bypass_row_level_security Role#bypass_row_level_security}
 
 ---
 
@@ -3721,7 +3721,7 @@ public readonly connectionLimit: number;
 
 How many concurrent connections can be made with this role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role.html#connection_limit Role#connection_limit}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role#connection_limit Role#connection_limit}
 
 ---
 
@@ -3735,7 +3735,7 @@ public readonly createDatabase: boolean | IResolvable;
 
 Define a role's ability to create databases.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role.html#create_database Role#create_database}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role#create_database Role#create_database}
 
 ---
 
@@ -3749,7 +3749,7 @@ public readonly createRole: boolean | IResolvable;
 
 Determine whether this role will be permitted to create new roles.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role.html#create_role Role#create_role}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role#create_role Role#create_role}
 
 ---
 
@@ -3761,7 +3761,7 @@ public readonly encrypted: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role.html#encrypted Role#encrypted}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role#encrypted Role#encrypted}.
 
 ---
 
@@ -3775,7 +3775,7 @@ public readonly encryptedPassword: boolean | IResolvable;
 
 Control whether the password is stored encrypted in the system catalogs.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role.html#encrypted_password Role#encrypted_password}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role#encrypted_password Role#encrypted_password}
 
 ---
 
@@ -3789,7 +3789,7 @@ public readonly idleInTransactionSessionTimeout: number;
 
 Terminate any session with an open transaction that has been idle for longer than the specified duration in milliseconds.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role.html#idle_in_transaction_session_timeout Role#idle_in_transaction_session_timeout}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role#idle_in_transaction_session_timeout Role#idle_in_transaction_session_timeout}
 
 ---
 
@@ -3803,7 +3803,7 @@ public readonly inherit: boolean | IResolvable;
 
 Determine whether a role "inherits" the privileges of roles it is a member of.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role.html#inherit Role#inherit}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role#inherit Role#inherit}
 
 ---
 
@@ -3817,7 +3817,7 @@ public readonly login: boolean | IResolvable;
 
 Determine whether a role is allowed to log in.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role.html#login Role#login}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role#login Role#login}
 
 ---
 
@@ -3831,7 +3831,7 @@ public readonly password: string;
 
 Sets the role's password.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role.html#password Role#password}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role#password Role#password}
 
 ---
 
@@ -3845,7 +3845,7 @@ public readonly replication: boolean | IResolvable;
 
 Determine whether a role is allowed to initiate streaming replication or put the system in and out of backup mode.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role.html#replication Role#replication}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role#replication Role#replication}
 
 ---
 
@@ -3859,7 +3859,7 @@ public readonly roles: string[];
 
 Role(s) to grant to this new role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role.html#roles Role#roles}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role#roles Role#roles}
 
 ---
 
@@ -3873,7 +3873,7 @@ public readonly searchPath: string[];
 
 Sets the role's search path.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role.html#search_path Role#search_path}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role#search_path Role#search_path}
 
 ---
 
@@ -3887,7 +3887,7 @@ public readonly skipDropRole: boolean | IResolvable;
 
 Skip actually running the DROP ROLE command when removing a ROLE from PostgreSQL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role.html#skip_drop_role Role#skip_drop_role}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role#skip_drop_role Role#skip_drop_role}
 
 ---
 
@@ -3901,7 +3901,7 @@ public readonly skipReassignOwned: boolean | IResolvable;
 
 Skip actually running the REASSIGN OWNED command when removing a role from PostgreSQL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role.html#skip_reassign_owned Role#skip_reassign_owned}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role#skip_reassign_owned Role#skip_reassign_owned}
 
 ---
 
@@ -3915,7 +3915,7 @@ public readonly statementTimeout: number;
 
 Abort any statement that takes more than the specified number of milliseconds.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role.html#statement_timeout Role#statement_timeout}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role#statement_timeout Role#statement_timeout}
 
 ---
 
@@ -3929,7 +3929,7 @@ public readonly superuser: boolean | IResolvable;
 
 Determine whether the new role is a "superuser".
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role.html#superuser Role#superuser}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role#superuser Role#superuser}
 
 ---
 
@@ -3943,7 +3943,7 @@ public readonly validUntil: string;
 
 Sets a date and time after which the role's password is no longer valid.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role.html#valid_until Role#valid_until}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role#valid_until Role#valid_until}
 
 ---
 
@@ -4007,7 +4007,7 @@ public readonly name: string;
 
 The name of the schema.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema.html#name Schema#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema#name Schema#name}
 
 ---
 
@@ -4021,7 +4021,7 @@ public readonly database: string;
 
 The database name to alter schema.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema.html#database Schema#database}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema#database Schema#database}
 
 ---
 
@@ -4035,7 +4035,7 @@ public readonly dropCascade: boolean | IResolvable;
 
 When true, will also drop all the objects that are contained in the schema.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema.html#drop_cascade Schema#drop_cascade}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema#drop_cascade Schema#drop_cascade}
 
 ---
 
@@ -4049,7 +4049,7 @@ public readonly ifNotExists: boolean | IResolvable;
 
 When true, use the existing schema if it exists.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema.html#if_not_exists Schema#if_not_exists}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema#if_not_exists Schema#if_not_exists}
 
 ---
 
@@ -4063,7 +4063,7 @@ public readonly owner: string;
 
 The ROLE name who owns the schema.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema.html#owner Schema#owner}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema#owner Schema#owner}
 
 ---
 
@@ -4077,7 +4077,7 @@ public readonly policy: SchemaPolicy[];
 
 policy block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema.html#policy Schema#policy}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema#policy Schema#policy}
 
 ---
 
@@ -4101,7 +4101,7 @@ public readonly create: boolean | IResolvable;
 
 If true, allow the specified ROLEs to CREATE new objects within the schema(s).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema.html#create Schema#create}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema#create Schema#create}
 
 ---
 
@@ -4115,7 +4115,7 @@ public readonly createWithGrant: boolean | IResolvable;
 
 If true, allow the specified ROLEs to CREATE new objects within the schema(s) and GRANT the same CREATE privilege to different ROLEs.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema.html#create_with_grant Schema#create_with_grant}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema#create_with_grant Schema#create_with_grant}
 
 ---
 
@@ -4129,7 +4129,7 @@ public readonly role: string;
 
 ROLE who will receive this policy (default: PUBLIC).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema.html#role Schema#role}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema#role Schema#role}
 
 ---
 
@@ -4143,7 +4143,7 @@ public readonly usage: boolean | IResolvable;
 
 If true, allow the specified ROLEs to use objects within the schema(s).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema.html#usage Schema#usage}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema#usage Schema#usage}
 
 ---
 
@@ -4157,7 +4157,7 @@ public readonly usageWithGrant: boolean | IResolvable;
 
 If true, allow the specified ROLEs to use objects within the schema(s) and GRANT the same USAGE privilege to different ROLEs.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema.html#usage_with_grant Schema#usage_with_grant}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema#usage_with_grant Schema#usage_with_grant}
 
 ---
 

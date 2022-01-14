@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/postgresql/r/grant_role.html
+// https://www.terraform.io/docs/providers/postgresql/r/grant_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,25 +10,25 @@ export interface GrantRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the role that is granted to role
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant_role.html#grant_role GrantRole#grant_role}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant_role#grant_role GrantRole#grant_role}
   */
   readonly grantRole: string;
   /**
   * The name of the role to grant grant_role
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant_role.html#role GrantRole#role}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant_role#role GrantRole#role}
   */
   readonly role: string;
   /**
   * Permit the grant recipient to grant it to others
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant_role.html#with_admin_option GrantRole#with_admin_option}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant_role#with_admin_option GrantRole#with_admin_option}
   */
   readonly withAdminOption?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/grant_role.html postgresql_grant_role}
+* Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/grant_role postgresql_grant_role}
 */
 export class GrantRole extends cdktf.TerraformResource {
 
@@ -42,7 +42,7 @@ export class GrantRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/postgresql/r/grant_role.html postgresql_grant_role} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/postgresql/r/grant_role postgresql_grant_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
