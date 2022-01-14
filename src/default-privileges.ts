@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/postgresql/r/default_privileges.html
+// https://www.terraform.io/docs/providers/postgresql/r/default_privileges
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,49 +10,49 @@ export interface DefaultPrivilegesConfig extends cdktf.TerraformMetaArguments {
   /**
   * The database to grant default privileges for this role
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/default_privileges.html#database DefaultPrivileges#database}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/default_privileges#database DefaultPrivileges#database}
   */
   readonly database: string;
   /**
   * The PostgreSQL object type to set the default privileges on (one of: table, sequence, function, type)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/default_privileges.html#object_type DefaultPrivileges#object_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/default_privileges#object_type DefaultPrivileges#object_type}
   */
   readonly objectType: string;
   /**
   * Target role for which to alter default privileges.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/default_privileges.html#owner DefaultPrivileges#owner}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/default_privileges#owner DefaultPrivileges#owner}
   */
   readonly owner: string;
   /**
   * The list of privileges to apply as default privileges
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/default_privileges.html#privileges DefaultPrivileges#privileges}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/default_privileges#privileges DefaultPrivileges#privileges}
   */
   readonly privileges: string[];
   /**
   * The name of the role to which grant default privileges on
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/default_privileges.html#role DefaultPrivileges#role}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/default_privileges#role DefaultPrivileges#role}
   */
   readonly role: string;
   /**
   * The database schema to set default privileges for this role
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/default_privileges.html#schema DefaultPrivileges#schema}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/default_privileges#schema DefaultPrivileges#schema}
   */
   readonly schema?: string;
   /**
   * Permit the grant recipient to grant it to others
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/default_privileges.html#with_grant_option DefaultPrivileges#with_grant_option}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/default_privileges#with_grant_option DefaultPrivileges#with_grant_option}
   */
   readonly withGrantOption?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/default_privileges.html postgresql_default_privileges}
+* Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/default_privileges postgresql_default_privileges}
 */
 export class DefaultPrivileges extends cdktf.TerraformResource {
 
@@ -66,7 +66,7 @@ export class DefaultPrivileges extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/postgresql/r/default_privileges.html postgresql_default_privileges} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/postgresql/r/default_privileges postgresql_default_privileges} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

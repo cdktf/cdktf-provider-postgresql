@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/postgresql/r/schema.html
+// https://www.terraform.io/docs/providers/postgresql/r/schema
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,37 +10,37 @@ export interface SchemaConfig extends cdktf.TerraformMetaArguments {
   /**
   * The database name to alter schema
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema.html#database Schema#database}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema#database Schema#database}
   */
   readonly database?: string;
   /**
   * When true, will also drop all the objects that are contained in the schema
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema.html#drop_cascade Schema#drop_cascade}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema#drop_cascade Schema#drop_cascade}
   */
   readonly dropCascade?: boolean | cdktf.IResolvable;
   /**
   * When true, use the existing schema if it exists
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema.html#if_not_exists Schema#if_not_exists}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema#if_not_exists Schema#if_not_exists}
   */
   readonly ifNotExists?: boolean | cdktf.IResolvable;
   /**
   * The name of the schema
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema.html#name Schema#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema#name Schema#name}
   */
   readonly name: string;
   /**
   * The ROLE name who owns the schema
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema.html#owner Schema#owner}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema#owner Schema#owner}
   */
   readonly owner?: string;
   /**
   * policy block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema.html#policy Schema#policy}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema#policy Schema#policy}
   */
   readonly policy?: SchemaPolicy[];
 }
@@ -48,31 +48,31 @@ export interface SchemaPolicy {
   /**
   * If true, allow the specified ROLEs to CREATE new objects within the schema(s)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema.html#create Schema#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema#create Schema#create}
   */
   readonly create?: boolean | cdktf.IResolvable;
   /**
   * If true, allow the specified ROLEs to CREATE new objects within the schema(s) and GRANT the same CREATE privilege to different ROLEs
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema.html#create_with_grant Schema#create_with_grant}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema#create_with_grant Schema#create_with_grant}
   */
   readonly createWithGrant?: boolean | cdktf.IResolvable;
   /**
   * ROLE who will receive this policy (default: PUBLIC)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema.html#role Schema#role}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema#role Schema#role}
   */
   readonly role?: string;
   /**
   * If true, allow the specified ROLEs to use objects within the schema(s)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema.html#usage Schema#usage}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema#usage Schema#usage}
   */
   readonly usage?: boolean | cdktf.IResolvable;
   /**
   * If true, allow the specified ROLEs to use objects within the schema(s) and GRANT the same USAGE privilege to different ROLEs
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema.html#usage_with_grant Schema#usage_with_grant}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema#usage_with_grant Schema#usage_with_grant}
   */
   readonly usageWithGrant?: boolean | cdktf.IResolvable;
 }
@@ -93,7 +93,7 @@ export function schemaPolicyToTerraform(struct?: SchemaPolicy): any {
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/schema.html postgresql_schema}
+* Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/schema postgresql_schema}
 */
 export class Schema extends cdktf.TerraformResource {
 
@@ -107,7 +107,7 @@ export class Schema extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/postgresql/r/schema.html postgresql_schema} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/postgresql/r/schema postgresql_schema} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

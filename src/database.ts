@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/postgresql/r/database.html
+// https://www.terraform.io/docs/providers/postgresql/r/database
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,67 +10,67 @@ export interface DatabaseConfig extends cdktf.TerraformMetaArguments {
   /**
   * If false then no one can connect to this database
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database.html#allow_connections Database#allow_connections}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#allow_connections Database#allow_connections}
   */
   readonly allowConnections?: boolean | cdktf.IResolvable;
   /**
   * How many concurrent connections can be made to this database
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database.html#connection_limit Database#connection_limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#connection_limit Database#connection_limit}
   */
   readonly connectionLimit?: number;
   /**
   * Character set encoding to use in the new database
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database.html#encoding Database#encoding}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#encoding Database#encoding}
   */
   readonly encoding?: string;
   /**
   * If true, then this database can be cloned by any user with CREATEDB privileges
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database.html#is_template Database#is_template}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#is_template Database#is_template}
   */
   readonly isTemplate?: boolean | cdktf.IResolvable;
   /**
   * Collation order (LC_COLLATE) to use in the new database
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database.html#lc_collate Database#lc_collate}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#lc_collate Database#lc_collate}
   */
   readonly lcCollate?: string;
   /**
   * Character classification (LC_CTYPE) to use in the new database
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database.html#lc_ctype Database#lc_ctype}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#lc_ctype Database#lc_ctype}
   */
   readonly lcCtype?: string;
   /**
   * The PostgreSQL database name to connect to
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database.html#name Database#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#name Database#name}
   */
   readonly name: string;
   /**
   * The ROLE which owns the database
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database.html#owner Database#owner}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#owner Database#owner}
   */
   readonly owner?: string;
   /**
   * The name of the tablespace that will be associated with the new database
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database.html#tablespace_name Database#tablespace_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#tablespace_name Database#tablespace_name}
   */
   readonly tablespaceName?: string;
   /**
   * The name of the template from which to create the new database
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database.html#template Database#template}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#template Database#template}
   */
   readonly template?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/database.html postgresql_database}
+* Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/database postgresql_database}
 */
 export class Database extends cdktf.TerraformResource {
 
@@ -84,7 +84,7 @@ export class Database extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/postgresql/r/database.html postgresql_database} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/postgresql/r/database postgresql_database} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

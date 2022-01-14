@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/postgresql/r/physical_replication_slot.html
+// https://www.terraform.io/docs/providers/postgresql/r/physical_replication_slot
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface PhysicalReplicationSlotConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/physical_replication_slot.html#name PhysicalReplicationSlot#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/physical_replication_slot#name PhysicalReplicationSlot#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/physical_replication_slot.html postgresql_physical_replication_slot}
+* Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/physical_replication_slot postgresql_physical_replication_slot}
 */
 export class PhysicalReplicationSlot extends cdktf.TerraformResource {
 
@@ -28,7 +28,7 @@ export class PhysicalReplicationSlot extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/postgresql/r/physical_replication_slot.html postgresql_physical_replication_slot} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/postgresql/r/physical_replication_slot postgresql_physical_replication_slot} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
