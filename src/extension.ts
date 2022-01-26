@@ -90,7 +90,7 @@ export class Extension extends cdktf.TerraformResource {
   // create_cascade - computed: false, optional: true, required: false
   private _createCascade?: boolean | cdktf.IResolvable; 
   public get createCascade() {
-    return this.getBooleanAttribute('create_cascade') as any;
+    return this.getBooleanAttribute('create_cascade');
   }
   public set createCascade(value: boolean | cdktf.IResolvable) {
     this._createCascade = value;
@@ -122,7 +122,7 @@ export class Extension extends cdktf.TerraformResource {
   // drop_cascade - computed: false, optional: true, required: false
   private _dropCascade?: boolean | cdktf.IResolvable; 
   public get dropCascade() {
-    return this.getBooleanAttribute('drop_cascade') as any;
+    return this.getBooleanAttribute('drop_cascade');
   }
   public set dropCascade(value: boolean | cdktf.IResolvable) {
     this._dropCascade = value;

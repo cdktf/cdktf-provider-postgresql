@@ -42,7 +42,7 @@ export interface SchemaConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema#policy Schema#policy}
   */
-  readonly policy?: SchemaPolicy[];
+  readonly policy?: SchemaPolicy[] | cdktf.IResolvable;
 }
 export interface SchemaPolicy {
   /**
@@ -77,8 +77,8 @@ export interface SchemaPolicy {
   readonly usageWithGrant?: boolean | cdktf.IResolvable;
 }
 
-export function schemaPolicyToTerraform(struct?: SchemaPolicy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function schemaPolicyToTerraform(struct?: SchemaPolicy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -155,7 +155,7 @@ export class Schema extends cdktf.TerraformResource {
   // drop_cascade - computed: false, optional: true, required: false
   private _dropCascade?: boolean | cdktf.IResolvable; 
   public get dropCascade() {
-    return this.getBooleanAttribute('drop_cascade') as any;
+    return this.getBooleanAttribute('drop_cascade');
   }
   public set dropCascade(value: boolean | cdktf.IResolvable) {
     this._dropCascade = value;
@@ -176,7 +176,7 @@ export class Schema extends cdktf.TerraformResource {
   // if_not_exists - computed: false, optional: true, required: false
   private _ifNotExists?: boolean | cdktf.IResolvable; 
   public get ifNotExists() {
-    return this.getBooleanAttribute('if_not_exists') as any;
+    return this.getBooleanAttribute('if_not_exists');
   }
   public set ifNotExists(value: boolean | cdktf.IResolvable) {
     this._ifNotExists = value;
@@ -219,12 +219,12 @@ export class Schema extends cdktf.TerraformResource {
   }
 
   // policy - computed: false, optional: true, required: false
-  private _policy?: SchemaPolicy[]; 
+  private _policy?: SchemaPolicy[] | cdktf.IResolvable; 
   public get policy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('policy') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('policy')));
   }
-  public set policy(value: SchemaPolicy[]) {
+  public set policy(value: SchemaPolicy[] | cdktf.IResolvable) {
     this._policy = value;
   }
   public resetPolicy() {

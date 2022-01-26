@@ -143,7 +143,7 @@ export class DefaultPrivileges extends cdktf.TerraformResource {
   // privileges - computed: false, optional: false, required: true
   private _privileges?: string[]; 
   public get privileges() {
-    return this.getListAttribute('privileges');
+    return cdktf.Fn.tolist(this.getListAttribute('privileges'));
   }
   public set privileges(value: string[]) {
     this._privileges = value;
@@ -185,7 +185,7 @@ export class DefaultPrivileges extends cdktf.TerraformResource {
   // with_grant_option - computed: false, optional: true, required: false
   private _withGrantOption?: boolean | cdktf.IResolvable; 
   public get withGrantOption() {
-    return this.getBooleanAttribute('with_grant_option') as any;
+    return this.getBooleanAttribute('with_grant_option');
   }
   public set withGrantOption(value: boolean | cdktf.IResolvable) {
     this._withGrantOption = value;

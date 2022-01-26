@@ -2426,10 +2426,10 @@ public readonly ownerInput: string;
 ##### `policyInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Schema.property.policyInput"></a>
 
 ```typescript
-public readonly policyInput: SchemaPolicy[];
+public readonly policyInput: IResolvable | SchemaPolicy[];
 ```
 
-- *Type:* [`@cdktf/provider-postgresql.SchemaPolicy`](#@cdktf/provider-postgresql.SchemaPolicy)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-postgresql.SchemaPolicy`](#@cdktf/provider-postgresql.SchemaPolicy)[]
 
 ---
 
@@ -2486,10 +2486,10 @@ public readonly owner: string;
 ##### `policy`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Schema.property.policy"></a>
 
 ```typescript
-public readonly policy: SchemaPolicy[];
+public readonly policy: IResolvable | SchemaPolicy[];
 ```
 
-- *Type:* [`@cdktf/provider-postgresql.SchemaPolicy`](#@cdktf/provider-postgresql.SchemaPolicy)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-postgresql.SchemaPolicy`](#@cdktf/provider-postgresql.SchemaPolicy)[]
 
 ---
 
@@ -2516,10 +2516,10 @@ const databaseConfig: DatabaseConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.DatabaseConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -2706,10 +2706,10 @@ const defaultPrivilegesConfig: DefaultPrivilegesConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.DefaultPrivilegesConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -2854,10 +2854,10 @@ const extensionConfig: ExtensionConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.ExtensionConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -2986,10 +2986,10 @@ const grantConfig: GrantConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.GrantConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -3134,10 +3134,10 @@ const grantRoleConfig: GrantRoleConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.GrantRoleConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -3226,10 +3226,10 @@ const physicalReplicationSlotConfig: PhysicalReplicationSlotConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.PhysicalReplicationSlotConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -3556,10 +3556,10 @@ const replicationSlotConfig: ReplicationSlotConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.ReplicationSlotConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -3646,10 +3646,10 @@ const roleConfig: RoleConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.RoleConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -3960,10 +3960,10 @@ const schemaConfig: SchemaConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.SchemaConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -4070,10 +4070,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postg
 ##### `policy`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.SchemaConfig.property.policy"></a>
 
 ```typescript
-public readonly policy: SchemaPolicy[];
+public readonly policy: IResolvable | SchemaPolicy[];
 ```
 
-- *Type:* [`@cdktf/provider-postgresql.SchemaPolicy`](#@cdktf/provider-postgresql.SchemaPolicy)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-postgresql.SchemaPolicy`](#@cdktf/provider-postgresql.SchemaPolicy)[]
 
 policy block.
 
