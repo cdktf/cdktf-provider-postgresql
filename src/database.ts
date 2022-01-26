@@ -120,7 +120,7 @@ export class Database extends cdktf.TerraformResource {
   // allow_connections - computed: false, optional: true, required: false
   private _allowConnections?: boolean | cdktf.IResolvable; 
   public get allowConnections() {
-    return this.getBooleanAttribute('allow_connections') as any;
+    return this.getBooleanAttribute('allow_connections');
   }
   public set allowConnections(value: boolean | cdktf.IResolvable) {
     this._allowConnections = value;
@@ -173,7 +173,7 @@ export class Database extends cdktf.TerraformResource {
   // is_template - computed: true, optional: true, required: false
   private _isTemplate?: boolean | cdktf.IResolvable; 
   public get isTemplate() {
-    return this.getBooleanAttribute('is_template') as any;
+    return this.getBooleanAttribute('is_template');
   }
   public set isTemplate(value: boolean | cdktf.IResolvable) {
     this._isTemplate = value;

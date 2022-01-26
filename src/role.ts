@@ -181,7 +181,7 @@ export class Role extends cdktf.TerraformResource {
   // bypass_row_level_security - computed: false, optional: true, required: false
   private _bypassRowLevelSecurity?: boolean | cdktf.IResolvable; 
   public get bypassRowLevelSecurity() {
-    return this.getBooleanAttribute('bypass_row_level_security') as any;
+    return this.getBooleanAttribute('bypass_row_level_security');
   }
   public set bypassRowLevelSecurity(value: boolean | cdktf.IResolvable) {
     this._bypassRowLevelSecurity = value;
@@ -213,7 +213,7 @@ export class Role extends cdktf.TerraformResource {
   // create_database - computed: false, optional: true, required: false
   private _createDatabase?: boolean | cdktf.IResolvable; 
   public get createDatabase() {
-    return this.getBooleanAttribute('create_database') as any;
+    return this.getBooleanAttribute('create_database');
   }
   public set createDatabase(value: boolean | cdktf.IResolvable) {
     this._createDatabase = value;
@@ -229,7 +229,7 @@ export class Role extends cdktf.TerraformResource {
   // create_role - computed: false, optional: true, required: false
   private _createRole?: boolean | cdktf.IResolvable; 
   public get createRole() {
-    return this.getBooleanAttribute('create_role') as any;
+    return this.getBooleanAttribute('create_role');
   }
   public set createRole(value: boolean | cdktf.IResolvable) {
     this._createRole = value;
@@ -261,7 +261,7 @@ export class Role extends cdktf.TerraformResource {
   // encrypted_password - computed: false, optional: true, required: false
   private _encryptedPassword?: boolean | cdktf.IResolvable; 
   public get encryptedPassword() {
-    return this.getBooleanAttribute('encrypted_password') as any;
+    return this.getBooleanAttribute('encrypted_password');
   }
   public set encryptedPassword(value: boolean | cdktf.IResolvable) {
     this._encryptedPassword = value;
@@ -298,7 +298,7 @@ export class Role extends cdktf.TerraformResource {
   // inherit - computed: false, optional: true, required: false
   private _inherit?: boolean | cdktf.IResolvable; 
   public get inherit() {
-    return this.getBooleanAttribute('inherit') as any;
+    return this.getBooleanAttribute('inherit');
   }
   public set inherit(value: boolean | cdktf.IResolvable) {
     this._inherit = value;
@@ -314,7 +314,7 @@ export class Role extends cdktf.TerraformResource {
   // login - computed: false, optional: true, required: false
   private _login?: boolean | cdktf.IResolvable; 
   public get login() {
-    return this.getBooleanAttribute('login') as any;
+    return this.getBooleanAttribute('login');
   }
   public set login(value: boolean | cdktf.IResolvable) {
     this._login = value;
@@ -359,7 +359,7 @@ export class Role extends cdktf.TerraformResource {
   // replication - computed: false, optional: true, required: false
   private _replication?: boolean | cdktf.IResolvable; 
   public get replication() {
-    return this.getBooleanAttribute('replication') as any;
+    return this.getBooleanAttribute('replication');
   }
   public set replication(value: boolean | cdktf.IResolvable) {
     this._replication = value;
@@ -375,7 +375,7 @@ export class Role extends cdktf.TerraformResource {
   // roles - computed: false, optional: true, required: false
   private _roles?: string[]; 
   public get roles() {
-    return this.getListAttribute('roles');
+    return cdktf.Fn.tolist(this.getListAttribute('roles'));
   }
   public set roles(value: string[]) {
     this._roles = value;
@@ -407,7 +407,7 @@ export class Role extends cdktf.TerraformResource {
   // skip_drop_role - computed: false, optional: true, required: false
   private _skipDropRole?: boolean | cdktf.IResolvable; 
   public get skipDropRole() {
-    return this.getBooleanAttribute('skip_drop_role') as any;
+    return this.getBooleanAttribute('skip_drop_role');
   }
   public set skipDropRole(value: boolean | cdktf.IResolvable) {
     this._skipDropRole = value;
@@ -423,7 +423,7 @@ export class Role extends cdktf.TerraformResource {
   // skip_reassign_owned - computed: false, optional: true, required: false
   private _skipReassignOwned?: boolean | cdktf.IResolvable; 
   public get skipReassignOwned() {
-    return this.getBooleanAttribute('skip_reassign_owned') as any;
+    return this.getBooleanAttribute('skip_reassign_owned');
   }
   public set skipReassignOwned(value: boolean | cdktf.IResolvable) {
     this._skipReassignOwned = value;
@@ -455,7 +455,7 @@ export class Role extends cdktf.TerraformResource {
   // superuser - computed: false, optional: true, required: false
   private _superuser?: boolean | cdktf.IResolvable; 
   public get superuser() {
-    return this.getBooleanAttribute('superuser') as any;
+    return this.getBooleanAttribute('superuser');
   }
   public set superuser(value: boolean | cdktf.IResolvable) {
     this._superuser = value;

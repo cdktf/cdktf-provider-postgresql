@@ -102,7 +102,7 @@ export class GrantRole extends cdktf.TerraformResource {
   // with_admin_option - computed: false, optional: true, required: false
   private _withAdminOption?: boolean | cdktf.IResolvable; 
   public get withAdminOption() {
-    return this.getBooleanAttribute('with_admin_option') as any;
+    return this.getBooleanAttribute('with_admin_option');
   }
   public set withAdminOption(value: boolean | cdktf.IResolvable) {
     this._withAdminOption = value;
