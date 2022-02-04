@@ -1199,6 +1199,18 @@ Must be unique amongst siblings in the same scope
 public resetAlias()
 ```
 
+##### `resetAwsRdsIamAuth` <a name="@cdktf/provider-postgresql.PostgresqlProvider.resetAwsRdsIamAuth"></a>
+
+```typescript
+public resetAwsRdsIamAuth()
+```
+
+##### `resetAwsRdsIamProfile` <a name="@cdktf/provider-postgresql.PostgresqlProvider.resetAwsRdsIamProfile"></a>
+
+```typescript
+public resetAwsRdsIamProfile()
+```
+
 ##### `resetClientcert` <a name="@cdktf/provider-postgresql.PostgresqlProvider.resetClientcert"></a>
 
 ```typescript
@@ -1296,6 +1308,26 @@ public resetUsername()
 
 ```typescript
 public readonly aliasInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `awsRdsIamAuthInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.PostgresqlProvider.property.awsRdsIamAuthInput"></a>
+
+```typescript
+public readonly awsRdsIamAuthInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `awsRdsIamProfileInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.PostgresqlProvider.property.awsRdsIamProfileInput"></a>
+
+```typescript
+public readonly awsRdsIamProfileInput: string;
 ```
 
 - *Type:* `string`
@@ -1456,6 +1488,26 @@ public readonly usernameInput: string;
 
 ```typescript
 public readonly alias: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `awsRdsIamAuth`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.PostgresqlProvider.property.awsRdsIamAuth"></a>
+
+```typescript
+public readonly awsRdsIamAuth: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `awsRdsIamProfile`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.PostgresqlProvider.property.awsRdsIamProfile"></a>
+
+```typescript
+public readonly awsRdsIamProfile: string;
 ```
 
 - *Type:* `string`
@@ -3045,7 +3097,7 @@ public readonly objectType: string;
 
 - *Type:* `string`
 
-The PostgreSQL object type to grant the privileges on (one of: database, function, schema, sequence, table, foreign_data_wrapper, foreign_server).
+The PostgreSQL object type to grant the privileges on (one of: database, function, procedure, routine, schema, sequence, table, foreign_data_wrapper, foreign_server).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#object_type Grant#object_type}
 
@@ -3334,6 +3386,34 @@ public readonly alias: string;
 Alias name.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql#alias PostgresqlProvider#alias}
+
+---
+
+##### `awsRdsIamAuth`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.PostgresqlProviderConfig.property.awsRdsIamAuth"></a>
+
+```typescript
+public readonly awsRdsIamAuth: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Use rds_iam instead of password authentication (see: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.html).
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql#aws_rds_iam_auth PostgresqlProvider#aws_rds_iam_auth}
+
+---
+
+##### `awsRdsIamProfile`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.PostgresqlProviderConfig.property.awsRdsIamProfile"></a>
+
+```typescript
+public readonly awsRdsIamProfile: string;
+```
+
+- *Type:* `string`
+
+AWS profile to use for IAM auth.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql#aws_rds_iam_profile PostgresqlProvider#aws_rds_iam_profile}
 
 ---
 
