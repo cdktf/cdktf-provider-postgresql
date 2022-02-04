@@ -8,6 +8,18 @@ import * as cdktf from 'cdktf';
 
 export interface PostgresqlProviderConfig {
   /**
+  * Use rds_iam instead of password authentication (see: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.html)
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql#aws_rds_iam_auth PostgresqlProvider#aws_rds_iam_auth}
+  */
+  readonly awsRdsIamAuth?: boolean | cdktf.IResolvable;
+  /**
+  * AWS profile to use for IAM auth
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql#aws_rds_iam_profile PostgresqlProvider#aws_rds_iam_profile}
+  */
+  readonly awsRdsIamProfile?: string;
+  /**
   * Maximum wait for connection, in seconds. Zero or not specified means wait indefinitely.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql#connect_timeout PostgresqlProvider#connect_timeout}
@@ -157,6 +169,8 @@ export class PostgresqlProvider extends cdktf.TerraformProvider {
       },
       terraformProviderSource: 'cyrilgdn/postgresql'
     });
+    this._awsRdsIamAuth = config.awsRdsIamAuth;
+    this._awsRdsIamProfile = config.awsRdsIamProfile;
     this._connectTimeout = config.connectTimeout;
     this._database = config.database;
     this._databaseUsername = config.databaseUsername;
@@ -178,6 +192,38 @@ export class PostgresqlProvider extends cdktf.TerraformProvider {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // aws_rds_iam_auth - computed: false, optional: true, required: false
+  private _awsRdsIamAuth?: boolean | cdktf.IResolvable; 
+  public get awsRdsIamAuth() {
+    return this._awsRdsIamAuth;
+  }
+  public set awsRdsIamAuth(value: boolean | cdktf.IResolvable | undefined) {
+    this._awsRdsIamAuth = value;
+  }
+  public resetAwsRdsIamAuth() {
+    this._awsRdsIamAuth = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get awsRdsIamAuthInput() {
+    return this._awsRdsIamAuth;
+  }
+
+  // aws_rds_iam_profile - computed: false, optional: true, required: false
+  private _awsRdsIamProfile?: string; 
+  public get awsRdsIamProfile() {
+    return this._awsRdsIamProfile;
+  }
+  public set awsRdsIamProfile(value: string | undefined) {
+    this._awsRdsIamProfile = value;
+  }
+  public resetAwsRdsIamProfile() {
+    this._awsRdsIamProfile = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get awsRdsIamProfileInput() {
+    return this._awsRdsIamProfile;
+  }
 
   // connect_timeout - computed: false, optional: true, required: false
   private _connectTimeout?: number; 
@@ -441,6 +487,8 @@ export class PostgresqlProvider extends cdktf.TerraformProvider {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      aws_rds_iam_auth: cdktf.booleanToTerraform(this._awsRdsIamAuth),
+      aws_rds_iam_profile: cdktf.stringToTerraform(this._awsRdsIamProfile),
       connect_timeout: cdktf.numberToTerraform(this._connectTimeout),
       database: cdktf.stringToTerraform(this._database),
       database_username: cdktf.stringToTerraform(this._databaseUsername),

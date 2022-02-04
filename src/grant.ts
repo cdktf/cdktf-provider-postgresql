@@ -14,7 +14,7 @@ export interface GrantConfig extends cdktf.TerraformMetaArguments {
   */
   readonly database: string;
   /**
-  * The PostgreSQL object type to grant the privileges on (one of: database, function, schema, sequence, table, foreign_data_wrapper, foreign_server)
+  * The PostgreSQL object type to grant the privileges on (one of: database, function, procedure, routine, schema, sequence, table, foreign_data_wrapper, foreign_server)
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#object_type Grant#object_type}
   */
