@@ -33,7 +33,7 @@ export class ReplicationSlot extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "postgresql_replication_slot";
+  public static readonly tfResourceType = "postgresql_replication_slot";
 
   // ===========
   // INITIALIZER
@@ -50,7 +50,9 @@ export class ReplicationSlot extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'postgresql_replication_slot',
       terraformGeneratorMetadata: {
-        providerName: 'postgresql'
+        providerName: 'postgresql',
+        providerVersion: '1.15.0',
+        providerVersionConstraint: '~> 1.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

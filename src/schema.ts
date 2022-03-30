@@ -100,7 +100,7 @@ export class Schema extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "postgresql_schema";
+  public static readonly tfResourceType = "postgresql_schema";
 
   // ===========
   // INITIALIZER
@@ -117,7 +117,9 @@ export class Schema extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'postgresql_schema',
       terraformGeneratorMetadata: {
-        providerName: 'postgresql'
+        providerName: 'postgresql',
+        providerVersion: '1.15.0',
+        providerVersionConstraint: '~> 1.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

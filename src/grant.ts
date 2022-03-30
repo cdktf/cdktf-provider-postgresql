@@ -59,7 +59,7 @@ export class Grant extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "postgresql_grant";
+  public static readonly tfResourceType = "postgresql_grant";
 
   // ===========
   // INITIALIZER
@@ -76,7 +76,9 @@ export class Grant extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'postgresql_grant',
       terraformGeneratorMetadata: {
-        providerName: 'postgresql'
+        providerName: 'postgresql',
+        providerVersion: '1.15.0',
+        providerVersionConstraint: '~> 1.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
