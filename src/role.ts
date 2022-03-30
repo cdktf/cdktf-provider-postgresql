@@ -129,7 +129,7 @@ export class Role extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "postgresql_role";
+  public static readonly tfResourceType = "postgresql_role";
 
   // ===========
   // INITIALIZER
@@ -146,7 +146,9 @@ export class Role extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'postgresql_role',
       terraformGeneratorMetadata: {
-        providerName: 'postgresql'
+        providerName: 'postgresql',
+        providerVersion: '1.15.0',
+        providerVersionConstraint: '~> 1.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -59,7 +59,7 @@ export class DefaultPrivileges extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "postgresql_default_privileges";
+  public static readonly tfResourceType = "postgresql_default_privileges";
 
   // ===========
   // INITIALIZER
@@ -76,7 +76,9 @@ export class DefaultPrivileges extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'postgresql_default_privileges',
       terraformGeneratorMetadata: {
-        providerName: 'postgresql'
+        providerName: 'postgresql',
+        providerVersion: '1.15.0',
+        providerVersionConstraint: '~> 1.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

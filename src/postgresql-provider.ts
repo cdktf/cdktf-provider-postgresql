@@ -147,7 +147,7 @@ export class PostgresqlProvider extends cdktf.TerraformProvider {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "postgresql";
+  public static readonly tfResourceType = "postgresql";
 
   // ===========
   // INITIALIZER
@@ -165,6 +165,7 @@ export class PostgresqlProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'postgresql',
       terraformGeneratorMetadata: {
         providerName: 'postgresql',
+        providerVersion: '1.15.0',
         providerVersionConstraint: '~> 1.14'
       },
       terraformProviderSource: 'cyrilgdn/postgresql'
