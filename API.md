@@ -735,6 +735,209 @@ public readonly version: string;
 
 ---
 
+### Function <a name="@cdktf/provider-postgresql.Function"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/function postgresql_function}.
+
+#### Initializers <a name="@cdktf/provider-postgresql.Function.Initializer"></a>
+
+```typescript
+import { Function } from '@cdktf/provider-postgresql'
+
+new Function(scope: Construct, id: string, config: FunctionConfig)
+```
+
+##### `scope`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Function.parameter.scope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Function.parameter.id"></a>
+
+- *Type:* `string`
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Function.parameter.config"></a>
+
+- *Type:* [`@cdktf/provider-postgresql.FunctionConfig`](#@cdktf/provider-postgresql.FunctionConfig)
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `resetArg` <a name="@cdktf/provider-postgresql.Function.resetArg"></a>
+
+```typescript
+public resetArg()
+```
+
+##### `resetDropCascade` <a name="@cdktf/provider-postgresql.Function.resetDropCascade"></a>
+
+```typescript
+public resetDropCascade()
+```
+
+##### `resetReturns` <a name="@cdktf/provider-postgresql.Function.resetReturns"></a>
+
+```typescript
+public resetReturns()
+```
+
+##### `resetSchema` <a name="@cdktf/provider-postgresql.Function.resetSchema"></a>
+
+```typescript
+public resetSchema()
+```
+
+
+#### Properties <a name="Properties"></a>
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Function.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `argInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Function.property.argInput"></a>
+
+```typescript
+public readonly argInput: IResolvable | FunctionArg[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-postgresql.FunctionArg`](#@cdktf/provider-postgresql.FunctionArg)[]
+
+---
+
+##### `bodyInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Function.property.bodyInput"></a>
+
+```typescript
+public readonly bodyInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `dropCascadeInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Function.property.dropCascadeInput"></a>
+
+```typescript
+public readonly dropCascadeInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Function.property.nameInput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `returnsInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Function.property.returnsInput"></a>
+
+```typescript
+public readonly returnsInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `schemaInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Function.property.schemaInput"></a>
+
+```typescript
+public readonly schemaInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `arg`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Function.property.arg"></a>
+
+```typescript
+public readonly arg: IResolvable | FunctionArg[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-postgresql.FunctionArg`](#@cdktf/provider-postgresql.FunctionArg)[]
+
+---
+
+##### `body`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Function.property.body"></a>
+
+```typescript
+public readonly body: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `dropCascade`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Function.property.dropCascade"></a>
+
+```typescript
+public readonly dropCascade: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Function.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `returns`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Function.property.returns"></a>
+
+```typescript
+public readonly returns: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `schema`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Function.property.schema"></a>
+
+```typescript
+public readonly schema: string;
+```
+
+- *Type:* `string`
+
+---
+
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-postgresql.Function.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
+
 ### Grant <a name="@cdktf/provider-postgresql.Grant"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/grant postgresql_grant}.
@@ -1667,6 +1870,267 @@ public readonly username: string;
 #### Constants <a name="Constants"></a>
 
 ##### `tfResourceType` <a name="@cdktf/provider-postgresql.PostgresqlProvider.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
+
+### Publication <a name="@cdktf/provider-postgresql.Publication"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/publication postgresql_publication}.
+
+#### Initializers <a name="@cdktf/provider-postgresql.Publication.Initializer"></a>
+
+```typescript
+import { Publication } from '@cdktf/provider-postgresql'
+
+new Publication(scope: Construct, id: string, config: PublicationConfig)
+```
+
+##### `scope`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Publication.parameter.scope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Publication.parameter.id"></a>
+
+- *Type:* `string`
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Publication.parameter.config"></a>
+
+- *Type:* [`@cdktf/provider-postgresql.PublicationConfig`](#@cdktf/provider-postgresql.PublicationConfig)
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `resetAllTables` <a name="@cdktf/provider-postgresql.Publication.resetAllTables"></a>
+
+```typescript
+public resetAllTables()
+```
+
+##### `resetDatabase` <a name="@cdktf/provider-postgresql.Publication.resetDatabase"></a>
+
+```typescript
+public resetDatabase()
+```
+
+##### `resetDropCascade` <a name="@cdktf/provider-postgresql.Publication.resetDropCascade"></a>
+
+```typescript
+public resetDropCascade()
+```
+
+##### `resetOwner` <a name="@cdktf/provider-postgresql.Publication.resetOwner"></a>
+
+```typescript
+public resetOwner()
+```
+
+##### `resetPublishParam` <a name="@cdktf/provider-postgresql.Publication.resetPublishParam"></a>
+
+```typescript
+public resetPublishParam()
+```
+
+##### `resetPublishViaPartitionRootParam` <a name="@cdktf/provider-postgresql.Publication.resetPublishViaPartitionRootParam"></a>
+
+```typescript
+public resetPublishViaPartitionRootParam()
+```
+
+##### `resetTables` <a name="@cdktf/provider-postgresql.Publication.resetTables"></a>
+
+```typescript
+public resetTables()
+```
+
+
+#### Properties <a name="Properties"></a>
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Publication.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `allTablesInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Publication.property.allTablesInput"></a>
+
+```typescript
+public readonly allTablesInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `databaseInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Publication.property.databaseInput"></a>
+
+```typescript
+public readonly databaseInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `dropCascadeInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Publication.property.dropCascadeInput"></a>
+
+```typescript
+public readonly dropCascadeInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Publication.property.nameInput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `ownerInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Publication.property.ownerInput"></a>
+
+```typescript
+public readonly ownerInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `publishParamInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Publication.property.publishParamInput"></a>
+
+```typescript
+public readonly publishParamInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `publishViaPartitionRootParamInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Publication.property.publishViaPartitionRootParamInput"></a>
+
+```typescript
+public readonly publishViaPartitionRootParamInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `tablesInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Publication.property.tablesInput"></a>
+
+```typescript
+public readonly tablesInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `allTables`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Publication.property.allTables"></a>
+
+```typescript
+public readonly allTables: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `database`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Publication.property.database"></a>
+
+```typescript
+public readonly database: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `dropCascade`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Publication.property.dropCascade"></a>
+
+```typescript
+public readonly dropCascade: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Publication.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `owner`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Publication.property.owner"></a>
+
+```typescript
+public readonly owner: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `publishParam`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Publication.property.publishParam"></a>
+
+```typescript
+public readonly publishParam: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `publishViaPartitionRootParam`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Publication.property.publishViaPartitionRootParam"></a>
+
+```typescript
+public readonly publishViaPartitionRootParam: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `tables`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Publication.property.tables"></a>
+
+```typescript
+public readonly tables: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-postgresql.Publication.property.tfResourceType"></a>
 
 - *Type:* `string`
 
@@ -3025,6 +3489,206 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postg
 
 ---
 
+### FunctionArg <a name="@cdktf/provider-postgresql.FunctionArg"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { FunctionArg } from '@cdktf/provider-postgresql'
+
+const functionArg: FunctionArg = { ... }
+```
+
+##### `type`<sup>Required</sup> <a name="@cdktf/provider-postgresql.FunctionArg.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* `string`
+
+The argument type.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#type Function#type}
+
+---
+
+##### `default`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.FunctionArg.property.default"></a>
+
+```typescript
+public readonly default: string;
+```
+
+- *Type:* `string`
+
+An expression to be used as default value if the parameter is not specified.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#default Function#default}
+
+---
+
+##### `mode`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.FunctionArg.property.mode"></a>
+
+```typescript
+public readonly mode: string;
+```
+
+- *Type:* `string`
+
+The argument mode. One of: IN, OUT, INOUT, or VARIADIC.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#mode Function#mode}
+
+---
+
+##### `name`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.FunctionArg.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+The argument name. The name may be required for some languages or depending on the argument mode.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#name Function#name}
+
+---
+
+### FunctionConfig <a name="@cdktf/provider-postgresql.FunctionConfig"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { FunctionConfig } from '@cdktf/provider-postgresql'
+
+const functionConfig: FunctionConfig = { ... }
+```
+
+##### `count`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.FunctionConfig.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.FunctionConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.FunctionConfig.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.FunctionConfig.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `body`<sup>Required</sup> <a name="@cdktf/provider-postgresql.FunctionConfig.property.body"></a>
+
+```typescript
+public readonly body: string;
+```
+
+- *Type:* `string`
+
+Body of the function.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#body Function#body}
+
+---
+
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-postgresql.FunctionConfig.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+Name of the function.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#name Function#name}
+
+---
+
+##### `arg`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.FunctionConfig.property.arg"></a>
+
+```typescript
+public readonly arg: IResolvable | FunctionArg[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-postgresql.FunctionArg`](#@cdktf/provider-postgresql.FunctionArg)[]
+
+arg block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#arg Function#arg}
+
+---
+
+##### `dropCascade`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.FunctionConfig.property.dropCascade"></a>
+
+```typescript
+public readonly dropCascade: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Automatically drop objects that depend on the function (such as operators or triggers), and in turn all objects that depend on those objects.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#drop_cascade Function#drop_cascade}
+
+---
+
+##### `returns`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.FunctionConfig.property.returns"></a>
+
+```typescript
+public readonly returns: string;
+```
+
+- *Type:* `string`
+
+Function return type.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#returns Function#returns}
+
+---
+
+##### `schema`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.FunctionConfig.property.schema"></a>
+
+```typescript
+public readonly schema: string;
+```
+
+- *Type:* `string`
+
+Schema where the function is located. If not specified, the provider default schema is used.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#schema Function#schema}
+
+---
+
 ### GrantConfig <a name="@cdktf/provider-postgresql.GrantConfig"></a>
 
 #### Initializer <a name="[object Object].Initializer"></a>
@@ -3620,6 +4284,166 @@ public readonly username: string;
 PostgreSQL user name to connect as.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql#username PostgresqlProvider#username}
+
+---
+
+### PublicationConfig <a name="@cdktf/provider-postgresql.PublicationConfig"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { PublicationConfig } from '@cdktf/provider-postgresql'
+
+const publicationConfig: PublicationConfig = { ... }
+```
+
+##### `count`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.PublicationConfig.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.PublicationConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.PublicationConfig.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.PublicationConfig.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-postgresql.PublicationConfig.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/publication#name Publication#name}.
+
+---
+
+##### `allTables`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.PublicationConfig.property.allTables"></a>
+
+```typescript
+public readonly allTables: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Sets the tables list to publish to ALL tables.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/publication#all_tables Publication#all_tables}
+
+---
+
+##### `database`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.PublicationConfig.property.database"></a>
+
+```typescript
+public readonly database: string;
+```
+
+- *Type:* `string`
+
+Sets the database to add the publication for.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/publication#database Publication#database}
+
+---
+
+##### `dropCascade`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.PublicationConfig.property.dropCascade"></a>
+
+```typescript
+public readonly dropCascade: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+When true, will also drop all the objects that depend on the publication, and in turn all objects that depend on those objects.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/publication#drop_cascade Publication#drop_cascade}
+
+---
+
+##### `owner`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.PublicationConfig.property.owner"></a>
+
+```typescript
+public readonly owner: string;
+```
+
+- *Type:* `string`
+
+Sets the owner of the publication.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/publication#owner Publication#owner}
+
+---
+
+##### `publishParam`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.PublicationConfig.property.publishParam"></a>
+
+```typescript
+public readonly publishParam: string[];
+```
+
+- *Type:* `string`[]
+
+Sets which DML operations will be published.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/publication#publish_param Publication#publish_param}
+
+---
+
+##### `publishViaPartitionRootParam`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.PublicationConfig.property.publishViaPartitionRootParam"></a>
+
+```typescript
+public readonly publishViaPartitionRootParam: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Sets whether changes in a partitioned table using the identity and schema of the partitioned table.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/publication#publish_via_partition_root_param Publication#publish_via_partition_root_param}
+
+---
+
+##### `tables`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.PublicationConfig.property.tables"></a>
+
+```typescript
+public readonly tables: string[];
+```
+
+- *Type:* `string`[]
+
+Sets the tables list to publish.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/publication#tables Publication#tables}
 
 ---
 
