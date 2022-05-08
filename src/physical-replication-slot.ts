@@ -39,7 +39,7 @@ export class PhysicalReplicationSlot extends cdktf.TerraformResource {
       terraformResourceType: 'postgresql_physical_replication_slot',
       terraformGeneratorMetadata: {
         providerName: 'postgresql',
-        providerVersion: '1.15.0',
+        providerVersion: '1.16.0',
         providerVersionConstraint: '~> 1.14'
       },
       provider: config.provider,
