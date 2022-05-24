@@ -20,6 +20,13 @@ export interface FunctionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly dropCascade?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#id Function#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Name of the function.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#name Function#name}
@@ -84,6 +91,149 @@ export function functionArgToTerraform(struct?: FunctionArg | cdktf.IResolvable)
   }
 }
 
+export class FunctionArgOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): FunctionArg | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._default !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.default = this._default;
+    }
+    if (this._mode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.mode = this._mode;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: FunctionArg | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._default = undefined;
+      this._mode = undefined;
+      this._name = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._default = value.default;
+      this._mode = value.mode;
+      this._name = value.name;
+      this._type = value.type;
+    }
+  }
+
+  // default - computed: false, optional: true, required: false
+  private _default?: string; 
+  public get default() {
+    return this.getStringAttribute('default');
+  }
+  public set default(value: string) {
+    this._default = value;
+  }
+  public resetDefault() {
+    this._default = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultInput() {
+    return this._default;
+  }
+
+  // mode - computed: false, optional: true, required: false
+  private _mode?: string; 
+  public get mode() {
+    return this.getStringAttribute('mode');
+  }
+  public set mode(value: string) {
+    this._mode = value;
+  }
+  public resetMode() {
+    this._mode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modeInput() {
+    return this._mode;
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class FunctionArgList extends cdktf.ComplexList {
+  public internalValue? : FunctionArg[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): FunctionArgOutputReference {
+    return new FunctionArgOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/function postgresql_function}
@@ -121,10 +271,11 @@ export class Function extends cdktf.TerraformResource {
     });
     this._body = config.body;
     this._dropCascade = config.dropCascade;
+    this._id = config.id;
     this._name = config.name;
     this._returns = config.returns;
     this._schema = config.schema;
-    this._arg = config.arg;
+    this._arg.internalValue = config.arg;
   }
 
   // ==========
@@ -161,8 +312,19 @@ export class Function extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -211,20 +373,19 @@ export class Function extends cdktf.TerraformResource {
   }
 
   // arg - computed: false, optional: true, required: false
-  private _arg?: FunctionArg[] | cdktf.IResolvable; 
+  private _arg = new FunctionArgList(this, "arg", false);
   public get arg() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('arg');
+    return this._arg;
   }
-  public set arg(value: FunctionArg[] | cdktf.IResolvable) {
-    this._arg = value;
+  public putArg(value: FunctionArg[] | cdktf.IResolvable) {
+    this._arg.internalValue = value;
   }
   public resetArg() {
-    this._arg = undefined;
+    this._arg.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get argInput() {
-    return this._arg;
+    return this._arg.internalValue;
   }
 
   // =========
@@ -235,10 +396,11 @@ export class Function extends cdktf.TerraformResource {
     return {
       body: cdktf.stringToTerraform(this._body),
       drop_cascade: cdktf.booleanToTerraform(this._dropCascade),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       returns: cdktf.stringToTerraform(this._returns),
       schema: cdktf.stringToTerraform(this._schema),
-      arg: cdktf.listMapper(functionArgToTerraform)(this._arg),
+      arg: cdktf.listMapper(functionArgToTerraform)(this._arg.internalValue),
     };
   }
 }

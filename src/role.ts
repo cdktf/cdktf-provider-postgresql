@@ -42,6 +42,13 @@ export interface RoleConfig extends cdktf.TerraformMetaArguments {
   */
   readonly encryptedPassword?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role#id Role#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Terminate any session with an open transaction that has been idle for longer than the specified duration in milliseconds
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role#idle_in_transaction_session_timeout Role#idle_in_transaction_session_timeout}
@@ -161,6 +168,7 @@ export class Role extends cdktf.TerraformResource {
     this._createRole = config.createRole;
     this._encrypted = config.encrypted;
     this._encryptedPassword = config.encryptedPassword;
+    this._id = config.id;
     this._idleInTransactionSessionTimeout = config.idleInTransactionSessionTimeout;
     this._inherit = config.inherit;
     this._login = config.login;
@@ -277,8 +285,19 @@ export class Role extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // idle_in_transaction_session_timeout - computed: false, optional: true, required: false
@@ -498,6 +517,7 @@ export class Role extends cdktf.TerraformResource {
       create_role: cdktf.booleanToTerraform(this._createRole),
       encrypted: cdktf.stringToTerraform(this._encrypted),
       encrypted_password: cdktf.booleanToTerraform(this._encryptedPassword),
+      id: cdktf.stringToTerraform(this._id),
       idle_in_transaction_session_timeout: cdktf.numberToTerraform(this._idleInTransactionSessionTimeout),
       inherit: cdktf.booleanToTerraform(this._inherit),
       login: cdktf.booleanToTerraform(this._login),
