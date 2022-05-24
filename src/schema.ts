@@ -20,6 +20,13 @@ export interface SchemaConfig extends cdktf.TerraformMetaArguments {
   */
   readonly dropCascade?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema#id Schema#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * When true, use the existing schema if it exists
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema#if_not_exists Schema#if_not_exists}
@@ -91,6 +98,174 @@ export function schemaPolicyToTerraform(struct?: SchemaPolicy | cdktf.IResolvabl
   }
 }
 
+export class SchemaPolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SchemaPolicy | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._create !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._createWithGrant !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.createWithGrant = this._createWithGrant;
+    }
+    if (this._role !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.role = this._role;
+    }
+    if (this._usage !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.usage = this._usage;
+    }
+    if (this._usageWithGrant !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.usageWithGrant = this._usageWithGrant;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SchemaPolicy | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._create = undefined;
+      this._createWithGrant = undefined;
+      this._role = undefined;
+      this._usage = undefined;
+      this._usageWithGrant = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._create = value.create;
+      this._createWithGrant = value.createWithGrant;
+      this._role = value.role;
+      this._usage = value.usage;
+      this._usageWithGrant = value.usageWithGrant;
+    }
+  }
+
+  // create - computed: false, optional: true, required: false
+  private _create?: boolean | cdktf.IResolvable; 
+  public get create() {
+    return this.getBooleanAttribute('create');
+  }
+  public set create(value: boolean | cdktf.IResolvable) {
+    this._create = value;
+  }
+  public resetCreate() {
+    this._create = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createInput() {
+    return this._create;
+  }
+
+  // create_with_grant - computed: false, optional: true, required: false
+  private _createWithGrant?: boolean | cdktf.IResolvable; 
+  public get createWithGrant() {
+    return this.getBooleanAttribute('create_with_grant');
+  }
+  public set createWithGrant(value: boolean | cdktf.IResolvable) {
+    this._createWithGrant = value;
+  }
+  public resetCreateWithGrant() {
+    this._createWithGrant = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createWithGrantInput() {
+    return this._createWithGrant;
+  }
+
+  // role - computed: false, optional: true, required: false
+  private _role?: string; 
+  public get role() {
+    return this.getStringAttribute('role');
+  }
+  public set role(value: string) {
+    this._role = value;
+  }
+  public resetRole() {
+    this._role = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleInput() {
+    return this._role;
+  }
+
+  // usage - computed: false, optional: true, required: false
+  private _usage?: boolean | cdktf.IResolvable; 
+  public get usage() {
+    return this.getBooleanAttribute('usage');
+  }
+  public set usage(value: boolean | cdktf.IResolvable) {
+    this._usage = value;
+  }
+  public resetUsage() {
+    this._usage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usageInput() {
+    return this._usage;
+  }
+
+  // usage_with_grant - computed: false, optional: true, required: false
+  private _usageWithGrant?: boolean | cdktf.IResolvable; 
+  public get usageWithGrant() {
+    return this.getBooleanAttribute('usage_with_grant');
+  }
+  public set usageWithGrant(value: boolean | cdktf.IResolvable) {
+    this._usageWithGrant = value;
+  }
+  public resetUsageWithGrant() {
+    this._usageWithGrant = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usageWithGrantInput() {
+    return this._usageWithGrant;
+  }
+}
+
+export class SchemaPolicyList extends cdktf.ComplexList {
+  public internalValue? : SchemaPolicy[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SchemaPolicyOutputReference {
+    return new SchemaPolicyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/schema postgresql_schema}
@@ -128,10 +303,11 @@ export class Schema extends cdktf.TerraformResource {
     });
     this._database = config.database;
     this._dropCascade = config.dropCascade;
+    this._id = config.id;
     this._ifNotExists = config.ifNotExists;
     this._name = config.name;
     this._owner = config.owner;
-    this._policy = config.policy;
+    this._policy.internalValue = config.policy;
   }
 
   // ==========
@@ -171,8 +347,19 @@ export class Schema extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // if_not_exists - computed: false, optional: true, required: false
@@ -221,20 +408,19 @@ export class Schema extends cdktf.TerraformResource {
   }
 
   // policy - computed: false, optional: true, required: false
-  private _policy?: SchemaPolicy[] | cdktf.IResolvable; 
+  private _policy = new SchemaPolicyList(this, "policy", true);
   public get policy() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('policy')));
+    return this._policy;
   }
-  public set policy(value: SchemaPolicy[] | cdktf.IResolvable) {
-    this._policy = value;
+  public putPolicy(value: SchemaPolicy[] | cdktf.IResolvable) {
+    this._policy.internalValue = value;
   }
   public resetPolicy() {
-    this._policy = undefined;
+    this._policy.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get policyInput() {
-    return this._policy;
+    return this._policy.internalValue;
   }
 
   // =========
@@ -245,10 +431,11 @@ export class Schema extends cdktf.TerraformResource {
     return {
       database: cdktf.stringToTerraform(this._database),
       drop_cascade: cdktf.booleanToTerraform(this._dropCascade),
+      id: cdktf.stringToTerraform(this._id),
       if_not_exists: cdktf.booleanToTerraform(this._ifNotExists),
       name: cdktf.stringToTerraform(this._name),
       owner: cdktf.stringToTerraform(this._owner),
-      policy: cdktf.listMapper(schemaPolicyToTerraform)(this._policy),
+      policy: cdktf.listMapper(schemaPolicyToTerraform)(this._policy.internalValue),
     };
   }
 }

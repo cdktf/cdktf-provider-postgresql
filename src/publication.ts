@@ -26,6 +26,13 @@ export interface PublicationConfig extends cdktf.TerraformMetaArguments {
   */
   readonly dropCascade?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/publication#id Publication#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/publication#name Publication#name}
   */
   readonly name: string;
@@ -92,6 +99,7 @@ export class Publication extends cdktf.TerraformResource {
     this._allTables = config.allTables;
     this._database = config.database;
     this._dropCascade = config.dropCascade;
+    this._id = config.id;
     this._name = config.name;
     this._owner = config.owner;
     this._publishParam = config.publishParam;
@@ -152,8 +160,19 @@ export class Publication extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -242,6 +261,7 @@ export class Publication extends cdktf.TerraformResource {
       all_tables: cdktf.booleanToTerraform(this._allTables),
       database: cdktf.stringToTerraform(this._database),
       drop_cascade: cdktf.booleanToTerraform(this._dropCascade),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       owner: cdktf.stringToTerraform(this._owner),
       publish_param: cdktf.listMapper(cdktf.stringToTerraform)(this._publishParam),

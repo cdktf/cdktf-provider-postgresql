@@ -26,6 +26,13 @@ export interface DatabaseConfig extends cdktf.TerraformMetaArguments {
   */
   readonly encoding?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#id Database#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * If true, then this database can be cloned by any user with CREATEDB privileges
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#is_template Database#is_template}
@@ -106,6 +113,7 @@ export class Database extends cdktf.TerraformResource {
     this._allowConnections = config.allowConnections;
     this._connectionLimit = config.connectionLimit;
     this._encoding = config.encoding;
+    this._id = config.id;
     this._isTemplate = config.isTemplate;
     this._lcCollate = config.lcCollate;
     this._lcCtype = config.lcCtype;
@@ -168,8 +176,19 @@ export class Database extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // is_template - computed: true, optional: true, required: false
@@ -290,6 +309,7 @@ export class Database extends cdktf.TerraformResource {
       allow_connections: cdktf.booleanToTerraform(this._allowConnections),
       connection_limit: cdktf.numberToTerraform(this._connectionLimit),
       encoding: cdktf.stringToTerraform(this._encoding),
+      id: cdktf.stringToTerraform(this._id),
       is_template: cdktf.booleanToTerraform(this._isTemplate),
       lc_collate: cdktf.stringToTerraform(this._lcCollate),
       lc_ctype: cdktf.stringToTerraform(this._lcCtype),

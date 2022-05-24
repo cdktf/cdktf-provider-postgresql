@@ -58,6 +58,12 @@ public resetConnectionLimit()
 public resetEncoding()
 ```
 
+##### `resetId` <a name="@cdktf/provider-postgresql.Database.resetId"></a>
+
+```typescript
+public resetId()
+```
+
 ##### `resetIsTemplate` <a name="@cdktf/provider-postgresql.Database.resetIsTemplate"></a>
 
 ```typescript
@@ -97,16 +103,6 @@ public resetTemplate()
 
 #### Properties <a name="Properties"></a>
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Database.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* `string`
-
----
-
 ##### `allowConnectionsInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Database.property.allowConnectionsInput"></a>
 
 ```typescript
@@ -131,6 +127,16 @@ public readonly connectionLimitInput: number;
 
 ```typescript
 public readonly encodingInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Database.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
 ```
 
 - *Type:* `string`
@@ -231,6 +237,16 @@ public readonly connectionLimit: number;
 
 ```typescript
 public readonly encoding: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Database.property.id"></a>
+
+```typescript
+public readonly id: string;
 ```
 
 - *Type:* `string`
@@ -353,6 +369,12 @@ Must be unique amongst siblings in the same scope
 
 #### Methods <a name="Methods"></a>
 
+##### `resetId` <a name="@cdktf/provider-postgresql.DefaultPrivileges.resetId"></a>
+
+```typescript
+public resetId()
+```
+
 ##### `resetSchema` <a name="@cdktf/provider-postgresql.DefaultPrivileges.resetSchema"></a>
 
 ```typescript
@@ -368,20 +390,20 @@ public resetWithGrantOption()
 
 #### Properties <a name="Properties"></a>
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-postgresql.DefaultPrivileges.property.id"></a>
+##### `databaseInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.DefaultPrivileges.property.databaseInput"></a>
 
 ```typescript
-public readonly id: string;
+public readonly databaseInput: string;
 ```
 
 - *Type:* `string`
 
 ---
 
-##### `databaseInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.DefaultPrivileges.property.databaseInput"></a>
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.DefaultPrivileges.property.idInput"></a>
 
 ```typescript
-public readonly databaseInput: string;
+public readonly idInput: string;
 ```
 
 - *Type:* `string`
@@ -452,6 +474,16 @@ public readonly withGrantOptionInput: boolean | IResolvable;
 
 ```typescript
 public readonly database: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-postgresql.DefaultPrivileges.property.id"></a>
+
+```typescript
+public readonly id: string;
 ```
 
 - *Type:* `string`
@@ -582,6 +614,12 @@ public resetDatabase()
 public resetDropCascade()
 ```
 
+##### `resetId` <a name="@cdktf/provider-postgresql.Extension.resetId"></a>
+
+```typescript
+public resetId()
+```
+
 ##### `resetSchema` <a name="@cdktf/provider-postgresql.Extension.resetSchema"></a>
 
 ```typescript
@@ -596,16 +634,6 @@ public resetVersion()
 
 
 #### Properties <a name="Properties"></a>
-
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Extension.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* `string`
-
----
 
 ##### `createCascadeInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Extension.property.createCascadeInput"></a>
 
@@ -634,6 +662,16 @@ public readonly dropCascadeInput: boolean | IResolvable;
 ```
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Extension.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
 
 ---
 
@@ -694,6 +732,16 @@ public readonly dropCascade: boolean | IResolvable;
 ```
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Extension.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
 
 ---
 
@@ -773,6 +821,18 @@ Must be unique amongst siblings in the same scope
 
 #### Methods <a name="Methods"></a>
 
+##### `putArg` <a name="@cdktf/provider-postgresql.Function.putArg"></a>
+
+```typescript
+public putArg(value: IResolvable | FunctionArg[])
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Function.parameter.value"></a>
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-postgresql.FunctionArg`](#@cdktf/provider-postgresql.FunctionArg)[]
+
+---
+
 ##### `resetArg` <a name="@cdktf/provider-postgresql.Function.resetArg"></a>
 
 ```typescript
@@ -783,6 +843,12 @@ public resetArg()
 
 ```typescript
 public resetDropCascade()
+```
+
+##### `resetId` <a name="@cdktf/provider-postgresql.Function.resetId"></a>
+
+```typescript
+public resetId()
 ```
 
 ##### `resetReturns` <a name="@cdktf/provider-postgresql.Function.resetReturns"></a>
@@ -800,13 +866,13 @@ public resetSchema()
 
 #### Properties <a name="Properties"></a>
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Function.property.id"></a>
+##### `arg`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Function.property.arg"></a>
 
 ```typescript
-public readonly id: string;
+public readonly arg: FunctionArgList;
 ```
 
-- *Type:* `string`
+- *Type:* [`@cdktf/provider-postgresql.FunctionArgList`](#@cdktf/provider-postgresql.FunctionArgList)
 
 ---
 
@@ -840,6 +906,16 @@ public readonly dropCascadeInput: boolean | IResolvable;
 
 ---
 
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Function.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `nameInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Function.property.nameInput"></a>
 
 ```typescript
@@ -870,16 +946,6 @@ public readonly schemaInput: string;
 
 ---
 
-##### `arg`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Function.property.arg"></a>
-
-```typescript
-public readonly arg: IResolvable | FunctionArg[];
-```
-
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-postgresql.FunctionArg`](#@cdktf/provider-postgresql.FunctionArg)[]
-
----
-
 ##### `body`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Function.property.body"></a>
 
 ```typescript
@@ -897,6 +963,16 @@ public readonly dropCascade: boolean | IResolvable;
 ```
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Function.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
 
 ---
 
@@ -976,6 +1052,12 @@ Must be unique amongst siblings in the same scope
 
 #### Methods <a name="Methods"></a>
 
+##### `resetId` <a name="@cdktf/provider-postgresql.Grant.resetId"></a>
+
+```typescript
+public resetId()
+```
+
 ##### `resetObjects` <a name="@cdktf/provider-postgresql.Grant.resetObjects"></a>
 
 ```typescript
@@ -997,20 +1079,20 @@ public resetWithGrantOption()
 
 #### Properties <a name="Properties"></a>
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Grant.property.id"></a>
+##### `databaseInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Grant.property.databaseInput"></a>
 
 ```typescript
-public readonly id: string;
+public readonly databaseInput: string;
 ```
 
 - *Type:* `string`
 
 ---
 
-##### `databaseInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Grant.property.databaseInput"></a>
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Grant.property.idInput"></a>
 
 ```typescript
-public readonly databaseInput: string;
+public readonly idInput: string;
 ```
 
 - *Type:* `string`
@@ -1081,6 +1163,16 @@ public readonly withGrantOptionInput: boolean | IResolvable;
 
 ```typescript
 public readonly database: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Grant.property.id"></a>
+
+```typescript
+public readonly id: string;
 ```
 
 - *Type:* `string`
@@ -1193,6 +1285,12 @@ Must be unique amongst siblings in the same scope
 
 #### Methods <a name="Methods"></a>
 
+##### `resetId` <a name="@cdktf/provider-postgresql.GrantRole.resetId"></a>
+
+```typescript
+public resetId()
+```
+
 ##### `resetWithAdminOption` <a name="@cdktf/provider-postgresql.GrantRole.resetWithAdminOption"></a>
 
 ```typescript
@@ -1202,20 +1300,20 @@ public resetWithAdminOption()
 
 #### Properties <a name="Properties"></a>
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-postgresql.GrantRole.property.id"></a>
+##### `grantRoleInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.GrantRole.property.grantRoleInput"></a>
 
 ```typescript
-public readonly id: string;
+public readonly grantRoleInput: string;
 ```
 
 - *Type:* `string`
 
 ---
 
-##### `grantRoleInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.GrantRole.property.grantRoleInput"></a>
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.GrantRole.property.idInput"></a>
 
 ```typescript
-public readonly grantRoleInput: string;
+public readonly idInput: string;
 ```
 
 - *Type:* `string`
@@ -1246,6 +1344,16 @@ public readonly withAdminOptionInput: boolean | IResolvable;
 
 ```typescript
 public readonly grantRole: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-postgresql.GrantRole.property.id"></a>
+
+```typescript
+public readonly id: string;
 ```
 
 - *Type:* `string`
@@ -1316,14 +1424,21 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+#### Methods <a name="Methods"></a>
+
+##### `resetId` <a name="@cdktf/provider-postgresql.PhysicalReplicationSlot.resetId"></a>
+
+```typescript
+public resetId()
+```
 
 
 #### Properties <a name="Properties"></a>
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-postgresql.PhysicalReplicationSlot.property.id"></a>
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.PhysicalReplicationSlot.property.idInput"></a>
 
 ```typescript
-public readonly id: string;
+public readonly idInput: string;
 ```
 
 - *Type:* `string`
@@ -1334,6 +1449,16 @@ public readonly id: string;
 
 ```typescript
 public readonly nameInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-postgresql.PhysicalReplicationSlot.property.id"></a>
+
+```typescript
+public readonly id: string;
 ```
 
 - *Type:* `string`
@@ -1931,6 +2056,12 @@ public resetDatabase()
 public resetDropCascade()
 ```
 
+##### `resetId` <a name="@cdktf/provider-postgresql.Publication.resetId"></a>
+
+```typescript
+public resetId()
+```
+
 ##### `resetOwner` <a name="@cdktf/provider-postgresql.Publication.resetOwner"></a>
 
 ```typescript
@@ -1957,16 +2088,6 @@ public resetTables()
 
 
 #### Properties <a name="Properties"></a>
-
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Publication.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* `string`
-
----
 
 ##### `allTablesInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Publication.property.allTablesInput"></a>
 
@@ -1995,6 +2116,16 @@ public readonly dropCascadeInput: boolean | IResolvable;
 ```
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Publication.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
 
 ---
 
@@ -2075,6 +2206,16 @@ public readonly dropCascade: boolean | IResolvable;
 ```
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Publication.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
 
 ---
 
@@ -2180,23 +2321,29 @@ Must be unique amongst siblings in the same scope
 public resetDatabase()
 ```
 
+##### `resetId` <a name="@cdktf/provider-postgresql.ReplicationSlot.resetId"></a>
+
+```typescript
+public resetId()
+```
+
 
 #### Properties <a name="Properties"></a>
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-postgresql.ReplicationSlot.property.id"></a>
+##### `databaseInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.ReplicationSlot.property.databaseInput"></a>
 
 ```typescript
-public readonly id: string;
+public readonly databaseInput: string;
 ```
 
 - *Type:* `string`
 
 ---
 
-##### `databaseInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.ReplicationSlot.property.databaseInput"></a>
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.ReplicationSlot.property.idInput"></a>
 
 ```typescript
-public readonly databaseInput: string;
+public readonly idInput: string;
 ```
 
 - *Type:* `string`
@@ -2227,6 +2374,16 @@ public readonly pluginInput: string;
 
 ```typescript
 public readonly database: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-postgresql.ReplicationSlot.property.id"></a>
+
+```typescript
+public readonly id: string;
 ```
 
 - *Type:* `string`
@@ -2335,6 +2492,12 @@ public resetEncrypted()
 public resetEncryptedPassword()
 ```
 
+##### `resetId` <a name="@cdktf/provider-postgresql.Role.resetId"></a>
+
+```typescript
+public resetId()
+```
+
 ##### `resetIdleInTransactionSessionTimeout` <a name="@cdktf/provider-postgresql.Role.resetIdleInTransactionSessionTimeout"></a>
 
 ```typescript
@@ -2410,16 +2573,6 @@ public resetValidUntil()
 
 #### Properties <a name="Properties"></a>
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Role.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* `string`
-
----
-
 ##### `bypassRowLevelSecurityInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Role.property.bypassRowLevelSecurityInput"></a>
 
 ```typescript
@@ -2477,6 +2630,16 @@ public readonly encryptedPasswordInput: boolean | IResolvable;
 ```
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Role.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
 
 ---
 
@@ -2670,6 +2833,16 @@ public readonly encryptedPassword: boolean | IResolvable;
 
 ---
 
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Role.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `idleInTransactionSessionTimeout`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Role.property.idleInTransactionSessionTimeout"></a>
 
 ```typescript
@@ -2846,6 +3019,18 @@ Must be unique amongst siblings in the same scope
 
 #### Methods <a name="Methods"></a>
 
+##### `putPolicy` <a name="@cdktf/provider-postgresql.Schema.putPolicy"></a>
+
+```typescript
+public putPolicy(value: IResolvable | SchemaPolicy[])
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Schema.parameter.value"></a>
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-postgresql.SchemaPolicy`](#@cdktf/provider-postgresql.SchemaPolicy)[]
+
+---
+
 ##### `resetDatabase` <a name="@cdktf/provider-postgresql.Schema.resetDatabase"></a>
 
 ```typescript
@@ -2856,6 +3041,12 @@ public resetDatabase()
 
 ```typescript
 public resetDropCascade()
+```
+
+##### `resetId` <a name="@cdktf/provider-postgresql.Schema.resetId"></a>
+
+```typescript
+public resetId()
 ```
 
 ##### `resetIfNotExists` <a name="@cdktf/provider-postgresql.Schema.resetIfNotExists"></a>
@@ -2879,13 +3070,13 @@ public resetPolicy()
 
 #### Properties <a name="Properties"></a>
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Schema.property.id"></a>
+##### `policy`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Schema.property.policy"></a>
 
 ```typescript
-public readonly id: string;
+public readonly policy: SchemaPolicyList;
 ```
 
-- *Type:* `string`
+- *Type:* [`@cdktf/provider-postgresql.SchemaPolicyList`](#@cdktf/provider-postgresql.SchemaPolicyList)
 
 ---
 
@@ -2906,6 +3097,16 @@ public readonly dropCascadeInput: boolean | IResolvable;
 ```
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Schema.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
 
 ---
 
@@ -2969,6 +3170,16 @@ public readonly dropCascade: boolean | IResolvable;
 
 ---
 
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Schema.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `ifNotExists`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Schema.property.ifNotExists"></a>
 
 ```typescript
@@ -2996,16 +3207,6 @@ public readonly owner: string;
 ```
 
 - *Type:* `string`
-
----
-
-##### `policy`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Schema.property.policy"></a>
-
-```typescript
-public readonly policy: IResolvable | SchemaPolicy[];
-```
-
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-postgresql.SchemaPolicy`](#@cdktf/provider-postgresql.SchemaPolicy)[]
 
 ---
 
@@ -3122,6 +3323,21 @@ public readonly encoding: string;
 Character set encoding to use in the new database.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#encoding Database#encoding}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.DatabaseConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#id Database#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
@@ -3329,6 +3545,21 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postg
 
 ---
 
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.DefaultPrivilegesConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/default_privileges#id DefaultPrivileges#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
 ##### `schema`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.DefaultPrivilegesConfig.property.schema"></a>
 
 ```typescript
@@ -3458,6 +3689,21 @@ public readonly dropCascade: boolean | IResolvable;
 When true, will also drop all the objects that depend on the extension, and in turn all objects that depend on those objects.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/extension#drop_cascade Extension#drop_cascade}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.ExtensionConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/extension#id Extension#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
@@ -3661,6 +3907,21 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postg
 
 ---
 
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.FunctionConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#id Function#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
 ##### `returns`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.FunctionConfig.property.returns"></a>
 
 ```typescript
@@ -3795,6 +4056,21 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postg
 
 ---
 
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.GrantConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#id Grant#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
 ##### `objects`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.GrantConfig.property.objects"></a>
 
 ```typescript
@@ -3915,6 +4191,21 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postg
 
 ---
 
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.GrantRoleConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant_role#id GrantRole#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
 ##### `withAdminOption`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.GrantRoleConfig.property.withAdminOption"></a>
 
 ```typescript
@@ -3988,6 +4279,21 @@ public readonly name: string;
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/physical_replication_slot#name PhysicalReplicationSlot#name}.
+
+---
+
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.PhysicalReplicationSlotConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/physical_replication_slot#id PhysicalReplicationSlot#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
@@ -4391,6 +4697,21 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postg
 
 ---
 
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.PublicationConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/publication#id Publication#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
 ##### `owner`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.PublicationConfig.property.owner"></a>
 
 ```typescript
@@ -4537,6 +4858,21 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postg
 
 ---
 
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.ReplicationSlotConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/replication_slot#id ReplicationSlot#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
 ### RoleConfig <a name="@cdktf/provider-postgresql.RoleConfig"></a>
 
 #### Initializer <a name="[object Object].Initializer"></a>
@@ -4680,6 +5016,21 @@ public readonly encryptedPassword: boolean | IResolvable;
 Control whether the password is stored encrypted in the system catalogs.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role#encrypted_password Role#encrypted_password}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.RoleConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role#id Role#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
@@ -4943,6 +5294,21 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postg
 
 ---
 
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.SchemaConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema#id Schema#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
 ##### `ifNotExists`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.SchemaConfig.property.ifNotExists"></a>
 
 ```typescript
@@ -5062,6 +5428,479 @@ public readonly usageWithGrant: boolean | IResolvable;
 If true, allow the specified ROLEs to use objects within the schema(s) and GRANT the same USAGE privilege to different ROLEs.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema#usage_with_grant Schema#usage_with_grant}
+
+---
+
+## Classes <a name="Classes"></a>
+
+### FunctionArgList <a name="@cdktf/provider-postgresql.FunctionArgList"></a>
+
+#### Initializers <a name="@cdktf/provider-postgresql.FunctionArgList.Initializer"></a>
+
+```typescript
+import { FunctionArgList } from '@cdktf/provider-postgresql'
+
+new FunctionArgList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-postgresql.FunctionArgList.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-postgresql.FunctionArgList.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-postgresql.FunctionArgList.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-postgresql.FunctionArgList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-postgresql.FunctionArgList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties"></a>
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.FunctionArgList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | FunctionArg[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-postgresql.FunctionArg`](#@cdktf/provider-postgresql.FunctionArg)[]
+
+---
+
+
+### FunctionArgOutputReference <a name="@cdktf/provider-postgresql.FunctionArgOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-postgresql.FunctionArgOutputReference.Initializer"></a>
+
+```typescript
+import { FunctionArgOutputReference } from '@cdktf/provider-postgresql'
+
+new FunctionArgOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-postgresql.FunctionArgOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-postgresql.FunctionArgOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-postgresql.FunctionArgOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-postgresql.FunctionArgOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `resetDefault` <a name="@cdktf/provider-postgresql.FunctionArgOutputReference.resetDefault"></a>
+
+```typescript
+public resetDefault()
+```
+
+##### `resetMode` <a name="@cdktf/provider-postgresql.FunctionArgOutputReference.resetMode"></a>
+
+```typescript
+public resetMode()
+```
+
+##### `resetName` <a name="@cdktf/provider-postgresql.FunctionArgOutputReference.resetName"></a>
+
+```typescript
+public resetName()
+```
+
+
+#### Properties <a name="Properties"></a>
+
+##### `defaultInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.FunctionArgOutputReference.property.defaultInput"></a>
+
+```typescript
+public readonly defaultInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `modeInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.FunctionArgOutputReference.property.modeInput"></a>
+
+```typescript
+public readonly modeInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.FunctionArgOutputReference.property.nameInput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `typeInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.FunctionArgOutputReference.property.typeInput"></a>
+
+```typescript
+public readonly typeInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `default`<sup>Required</sup> <a name="@cdktf/provider-postgresql.FunctionArgOutputReference.property.default"></a>
+
+```typescript
+public readonly default: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `mode`<sup>Required</sup> <a name="@cdktf/provider-postgresql.FunctionArgOutputReference.property.mode"></a>
+
+```typescript
+public readonly mode: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-postgresql.FunctionArgOutputReference.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `type`<sup>Required</sup> <a name="@cdktf/provider-postgresql.FunctionArgOutputReference.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.FunctionArgOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | FunctionArg;
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-postgresql.FunctionArg`](#@cdktf/provider-postgresql.FunctionArg)
+
+---
+
+
+### SchemaPolicyList <a name="@cdktf/provider-postgresql.SchemaPolicyList"></a>
+
+#### Initializers <a name="@cdktf/provider-postgresql.SchemaPolicyList.Initializer"></a>
+
+```typescript
+import { SchemaPolicyList } from '@cdktf/provider-postgresql'
+
+new SchemaPolicyList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-postgresql.SchemaPolicyList.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-postgresql.SchemaPolicyList.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-postgresql.SchemaPolicyList.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-postgresql.SchemaPolicyList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-postgresql.SchemaPolicyList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties"></a>
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.SchemaPolicyList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | SchemaPolicy[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-postgresql.SchemaPolicy`](#@cdktf/provider-postgresql.SchemaPolicy)[]
+
+---
+
+
+### SchemaPolicyOutputReference <a name="@cdktf/provider-postgresql.SchemaPolicyOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-postgresql.SchemaPolicyOutputReference.Initializer"></a>
+
+```typescript
+import { SchemaPolicyOutputReference } from '@cdktf/provider-postgresql'
+
+new SchemaPolicyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-postgresql.SchemaPolicyOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-postgresql.SchemaPolicyOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-postgresql.SchemaPolicyOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-postgresql.SchemaPolicyOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `resetCreate` <a name="@cdktf/provider-postgresql.SchemaPolicyOutputReference.resetCreate"></a>
+
+```typescript
+public resetCreate()
+```
+
+##### `resetCreateWithGrant` <a name="@cdktf/provider-postgresql.SchemaPolicyOutputReference.resetCreateWithGrant"></a>
+
+```typescript
+public resetCreateWithGrant()
+```
+
+##### `resetRole` <a name="@cdktf/provider-postgresql.SchemaPolicyOutputReference.resetRole"></a>
+
+```typescript
+public resetRole()
+```
+
+##### `resetUsage` <a name="@cdktf/provider-postgresql.SchemaPolicyOutputReference.resetUsage"></a>
+
+```typescript
+public resetUsage()
+```
+
+##### `resetUsageWithGrant` <a name="@cdktf/provider-postgresql.SchemaPolicyOutputReference.resetUsageWithGrant"></a>
+
+```typescript
+public resetUsageWithGrant()
+```
+
+
+#### Properties <a name="Properties"></a>
+
+##### `createInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.SchemaPolicyOutputReference.property.createInput"></a>
+
+```typescript
+public readonly createInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `createWithGrantInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.SchemaPolicyOutputReference.property.createWithGrantInput"></a>
+
+```typescript
+public readonly createWithGrantInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `roleInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.SchemaPolicyOutputReference.property.roleInput"></a>
+
+```typescript
+public readonly roleInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `usageInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.SchemaPolicyOutputReference.property.usageInput"></a>
+
+```typescript
+public readonly usageInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `usageWithGrantInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.SchemaPolicyOutputReference.property.usageWithGrantInput"></a>
+
+```typescript
+public readonly usageWithGrantInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `create`<sup>Required</sup> <a name="@cdktf/provider-postgresql.SchemaPolicyOutputReference.property.create"></a>
+
+```typescript
+public readonly create: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `createWithGrant`<sup>Required</sup> <a name="@cdktf/provider-postgresql.SchemaPolicyOutputReference.property.createWithGrant"></a>
+
+```typescript
+public readonly createWithGrant: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `role`<sup>Required</sup> <a name="@cdktf/provider-postgresql.SchemaPolicyOutputReference.property.role"></a>
+
+```typescript
+public readonly role: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `usage`<sup>Required</sup> <a name="@cdktf/provider-postgresql.SchemaPolicyOutputReference.property.usage"></a>
+
+```typescript
+public readonly usage: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `usageWithGrant`<sup>Required</sup> <a name="@cdktf/provider-postgresql.SchemaPolicyOutputReference.property.usageWithGrant"></a>
+
+```typescript
+public readonly usageWithGrant: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.SchemaPolicyOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | SchemaPolicy;
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-postgresql.SchemaPolicy`](#@cdktf/provider-postgresql.SchemaPolicy)
 
 ---
 
