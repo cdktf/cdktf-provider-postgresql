@@ -94,7 +94,10 @@ export class Publication extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._allTables = config.allTables;
     this._database = config.database;
@@ -264,9 +267,9 @@ export class Publication extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       owner: cdktf.stringToTerraform(this._owner),
-      publish_param: cdktf.listMapper(cdktf.stringToTerraform)(this._publishParam),
+      publish_param: cdktf.listMapper(cdktf.stringToTerraform, false)(this._publishParam),
       publish_via_partition_root_param: cdktf.booleanToTerraform(this._publishViaPartitionRootParam),
-      tables: cdktf.listMapper(cdktf.stringToTerraform)(this._tables),
+      tables: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tables),
     };
   }
 }

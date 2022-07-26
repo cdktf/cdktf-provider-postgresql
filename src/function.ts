@@ -267,7 +267,10 @@ export class Function extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._body = config.body;
     this._dropCascade = config.dropCascade;
@@ -400,7 +403,7 @@ export class Function extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       returns: cdktf.stringToTerraform(this._returns),
       schema: cdktf.stringToTerraform(this._schema),
-      arg: cdktf.listMapper(functionArgToTerraform)(this._arg.internalValue),
+      arg: cdktf.listMapper(functionArgToTerraform, true)(this._arg.internalValue),
     };
   }
 }

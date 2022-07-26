@@ -160,7 +160,10 @@ export class Role extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._bypassRowLevelSecurity = config.bypassRowLevelSecurity;
     this._connectionLimit = config.connectionLimit;
@@ -524,8 +527,8 @@ export class Role extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       password: cdktf.stringToTerraform(this._password),
       replication: cdktf.booleanToTerraform(this._replication),
-      roles: cdktf.listMapper(cdktf.stringToTerraform)(this._roles),
-      search_path: cdktf.listMapper(cdktf.stringToTerraform)(this._searchPath),
+      roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._roles),
+      search_path: cdktf.listMapper(cdktf.stringToTerraform, false)(this._searchPath),
       skip_drop_role: cdktf.booleanToTerraform(this._skipDropRole),
       skip_reassign_owned: cdktf.booleanToTerraform(this._skipReassignOwned),
       statement_timeout: cdktf.numberToTerraform(this._statementTimeout),

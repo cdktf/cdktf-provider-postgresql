@@ -3230,6 +3230,16 @@ import { DatabaseConfig } from '@cdktf/provider-postgresql'
 const databaseConfig: DatabaseConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.DatabaseConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.DatabaseConfig.property.count"></a>
 
 ```typescript
@@ -3250,6 +3260,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.DatabaseConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.DatabaseConfig.property.lifecycle"></a>
 
 ```typescript
@@ -3267,6 +3287,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.DatabaseConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -3435,6 +3465,16 @@ import { DefaultPrivilegesConfig } from '@cdktf/provider-postgresql'
 const defaultPrivilegesConfig: DefaultPrivilegesConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.DefaultPrivilegesConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.DefaultPrivilegesConfig.property.count"></a>
 
 ```typescript
@@ -3455,6 +3495,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.DefaultPrivilegesConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.DefaultPrivilegesConfig.property.lifecycle"></a>
 
 ```typescript
@@ -3472,6 +3522,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.DefaultPrivilegesConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -3598,6 +3658,16 @@ import { ExtensionConfig } from '@cdktf/provider-postgresql'
 const extensionConfig: ExtensionConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.ExtensionConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.ExtensionConfig.property.count"></a>
 
 ```typescript
@@ -3618,6 +3688,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.ExtensionConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.ExtensionConfig.property.lifecycle"></a>
 
 ```typescript
@@ -3635,6 +3715,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.ExtensionConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -3811,6 +3901,16 @@ import { FunctionConfig } from '@cdktf/provider-postgresql'
 const functionConfig: FunctionConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.FunctionConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.FunctionConfig.property.count"></a>
 
 ```typescript
@@ -3831,6 +3931,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.FunctionConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.FunctionConfig.property.lifecycle"></a>
 
 ```typescript
@@ -3848,6 +3958,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.FunctionConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -3960,6 +4080,16 @@ import { GrantConfig } from '@cdktf/provider-postgresql'
 const grantConfig: GrantConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.GrantConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.GrantConfig.property.count"></a>
 
 ```typescript
@@ -3980,6 +4110,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.GrantConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.GrantConfig.property.lifecycle"></a>
 
 ```typescript
@@ -3997,6 +4137,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.GrantConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -4123,6 +4273,16 @@ import { GrantRoleConfig } from '@cdktf/provider-postgresql'
 const grantRoleConfig: GrantRoleConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.GrantRoleConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.GrantRoleConfig.property.count"></a>
 
 ```typescript
@@ -4143,6 +4303,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.GrantRoleConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.GrantRoleConfig.property.lifecycle"></a>
 
 ```typescript
@@ -4160,6 +4330,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.GrantRoleConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -4230,6 +4410,16 @@ import { PhysicalReplicationSlotConfig } from '@cdktf/provider-postgresql'
 const physicalReplicationSlotConfig: PhysicalReplicationSlotConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.PhysicalReplicationSlotConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.PhysicalReplicationSlotConfig.property.count"></a>
 
 ```typescript
@@ -4250,6 +4440,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.PhysicalReplicationSlotConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.PhysicalReplicationSlotConfig.property.lifecycle"></a>
 
 ```typescript
@@ -4267,6 +4467,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.PhysicalReplicationSlotConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -4603,6 +4813,16 @@ import { PublicationConfig } from '@cdktf/provider-postgresql'
 const publicationConfig: PublicationConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.PublicationConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.PublicationConfig.property.count"></a>
 
 ```typescript
@@ -4623,6 +4843,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.PublicationConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.PublicationConfig.property.lifecycle"></a>
 
 ```typescript
@@ -4640,6 +4870,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.PublicationConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -4778,6 +5018,16 @@ import { ReplicationSlotConfig } from '@cdktf/provider-postgresql'
 const replicationSlotConfig: ReplicationSlotConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.ReplicationSlotConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.ReplicationSlotConfig.property.count"></a>
 
 ```typescript
@@ -4798,6 +5048,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.ReplicationSlotConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.ReplicationSlotConfig.property.lifecycle"></a>
 
 ```typescript
@@ -4815,6 +5075,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.ReplicationSlotConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -4883,6 +5153,16 @@ import { RoleConfig } from '@cdktf/provider-postgresql'
 const roleConfig: RoleConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.RoleConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.RoleConfig.property.count"></a>
 
 ```typescript
@@ -4903,6 +5183,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.RoleConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.RoleConfig.property.lifecycle"></a>
 
 ```typescript
@@ -4920,6 +5210,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.RoleConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -5212,6 +5512,16 @@ import { SchemaConfig } from '@cdktf/provider-postgresql'
 const schemaConfig: SchemaConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.SchemaConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.SchemaConfig.property.count"></a>
 
 ```typescript
@@ -5232,6 +5542,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.SchemaConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.SchemaConfig.property.lifecycle"></a>
 
 ```typescript
@@ -5249,6 +5569,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.SchemaConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 

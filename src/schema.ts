@@ -299,7 +299,10 @@ export class Schema extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._database = config.database;
     this._dropCascade = config.dropCascade;
@@ -435,7 +438,7 @@ export class Schema extends cdktf.TerraformResource {
       if_not_exists: cdktf.booleanToTerraform(this._ifNotExists),
       name: cdktf.stringToTerraform(this._name),
       owner: cdktf.stringToTerraform(this._owner),
-      policy: cdktf.listMapper(schemaPolicyToTerraform)(this._policy.internalValue),
+      policy: cdktf.listMapper(schemaPolicyToTerraform, true)(this._policy.internalValue),
     };
   }
 }
