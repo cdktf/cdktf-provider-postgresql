@@ -90,7 +90,10 @@ export class Grant extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._database = config.database;
     this._id = config.id;
@@ -231,8 +234,8 @@ export class Grant extends cdktf.TerraformResource {
       database: cdktf.stringToTerraform(this._database),
       id: cdktf.stringToTerraform(this._id),
       object_type: cdktf.stringToTerraform(this._objectType),
-      objects: cdktf.listMapper(cdktf.stringToTerraform)(this._objects),
-      privileges: cdktf.listMapper(cdktf.stringToTerraform)(this._privileges),
+      objects: cdktf.listMapper(cdktf.stringToTerraform, false)(this._objects),
+      privileges: cdktf.listMapper(cdktf.stringToTerraform, false)(this._privileges),
       role: cdktf.stringToTerraform(this._role),
       schema: cdktf.stringToTerraform(this._schema),
       with_grant_option: cdktf.booleanToTerraform(this._withGrantOption),
