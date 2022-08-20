@@ -8,6 +8,12 @@ import * as cdktf from 'cdktf';
 
 export interface RoleConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Role to switch to at login
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role#assume_role Role#assume_role}
+  */
+  readonly assumeRole?: string;
+  /**
   * Determine whether a role bypasses every row-level security (RLS) policy
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role#bypass_row_level_security Role#bypass_row_level_security}
@@ -154,7 +160,7 @@ export class Role extends cdktf.TerraformResource {
       terraformResourceType: 'postgresql_role',
       terraformGeneratorMetadata: {
         providerName: 'postgresql',
-        providerVersion: '1.16.0',
+        providerVersion: '1.17.1',
         providerVersionConstraint: '~> 1.14'
       },
       provider: config.provider,
@@ -165,6 +171,7 @@ export class Role extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._assumeRole = config.assumeRole;
     this._bypassRowLevelSecurity = config.bypassRowLevelSecurity;
     this._connectionLimit = config.connectionLimit;
     this._createDatabase = config.createDatabase;
@@ -190,6 +197,22 @@ export class Role extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // assume_role - computed: false, optional: true, required: false
+  private _assumeRole?: string; 
+  public get assumeRole() {
+    return this.getStringAttribute('assume_role');
+  }
+  public set assumeRole(value: string) {
+    this._assumeRole = value;
+  }
+  public resetAssumeRole() {
+    this._assumeRole = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get assumeRoleInput() {
+    return this._assumeRole;
+  }
 
   // bypass_row_level_security - computed: false, optional: true, required: false
   private _bypassRowLevelSecurity?: boolean | cdktf.IResolvable; 
@@ -514,6 +537,7 @@ export class Role extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      assume_role: cdktf.stringToTerraform(this._assumeRole),
       bypass_row_level_security: cdktf.booleanToTerraform(this._bypassRowLevelSecurity),
       connection_limit: cdktf.numberToTerraform(this._connectionLimit),
       create_database: cdktf.booleanToTerraform(this._createDatabase),

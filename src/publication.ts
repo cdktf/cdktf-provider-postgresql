@@ -88,7 +88,7 @@ export class Publication extends cdktf.TerraformResource {
       terraformResourceType: 'postgresql_publication',
       terraformGeneratorMetadata: {
         providerName: 'postgresql',
-        providerVersion: '1.16.0',
+        providerVersion: '1.17.1',
         providerVersionConstraint: '~> 1.14'
       },
       provider: config.provider,
@@ -242,7 +242,7 @@ export class Publication extends cdktf.TerraformResource {
   // tables - computed: true, optional: true, required: false
   private _tables?: string[]; 
   public get tables() {
-    return this.getListAttribute('tables');
+    return cdktf.Fn.tolist(this.getListAttribute('tables'));
   }
   public set tables(value: string[]) {
     this._tables = value;

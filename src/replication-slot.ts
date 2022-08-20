@@ -58,7 +58,7 @@ export class ReplicationSlot extends cdktf.TerraformResource {
       terraformResourceType: 'postgresql_replication_slot',
       terraformGeneratorMetadata: {
         providerName: 'postgresql',
-        providerVersion: '1.16.0',
+        providerVersion: '1.17.1',
         providerVersionConstraint: '~> 1.14'
       },
       provider: config.provider,

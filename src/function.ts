@@ -14,6 +14,12 @@ export interface FunctionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly body: string;
   /**
+  * The database where the function is located. If not specified, the provider default database is used.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#database Function#database}
+  */
+  readonly database?: string;
+  /**
   * Automatically drop objects that depend on the function (such as operators or triggers), and in turn all objects that depend on those objects.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#drop_cascade Function#drop_cascade}
@@ -261,7 +267,7 @@ export class Function extends cdktf.TerraformResource {
       terraformResourceType: 'postgresql_function',
       terraformGeneratorMetadata: {
         providerName: 'postgresql',
-        providerVersion: '1.16.0',
+        providerVersion: '1.17.1',
         providerVersionConstraint: '~> 1.14'
       },
       provider: config.provider,
@@ -273,6 +279,7 @@ export class Function extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._body = config.body;
+    this._database = config.database;
     this._dropCascade = config.dropCascade;
     this._id = config.id;
     this._name = config.name;
@@ -296,6 +303,22 @@ export class Function extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get bodyInput() {
     return this._body;
+  }
+
+  // database - computed: true, optional: true, required: false
+  private _database?: string; 
+  public get database() {
+    return this.getStringAttribute('database');
+  }
+  public set database(value: string) {
+    this._database = value;
+  }
+  public resetDatabase() {
+    this._database = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get databaseInput() {
+    return this._database;
   }
 
   // drop_cascade - computed: false, optional: true, required: false
@@ -398,6 +421,7 @@ export class Function extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       body: cdktf.stringToTerraform(this._body),
+      database: cdktf.stringToTerraform(this._database),
       drop_cascade: cdktf.booleanToTerraform(this._dropCascade),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),

@@ -839,6 +839,12 @@ public putArg(value: IResolvable | FunctionArg[])
 public resetArg()
 ```
 
+##### `resetDatabase` <a name="@cdktf/provider-postgresql.Function.resetDatabase"></a>
+
+```typescript
+public resetDatabase()
+```
+
 ##### `resetDropCascade` <a name="@cdktf/provider-postgresql.Function.resetDropCascade"></a>
 
 ```typescript
@@ -890,6 +896,16 @@ public readonly argInput: IResolvable | FunctionArg[];
 
 ```typescript
 public readonly bodyInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `databaseInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Function.property.databaseInput"></a>
+
+```typescript
+public readonly databaseInput: string;
 ```
 
 - *Type:* `string`
@@ -950,6 +966,16 @@ public readonly schemaInput: string;
 
 ```typescript
 public readonly body: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `database`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Function.property.database"></a>
+
+```typescript
+public readonly database: string;
 ```
 
 - *Type:* `string`
@@ -2456,6 +2482,12 @@ Must be unique amongst siblings in the same scope
 
 #### Methods <a name="Methods"></a>
 
+##### `resetAssumeRole` <a name="@cdktf/provider-postgresql.Role.resetAssumeRole"></a>
+
+```typescript
+public resetAssumeRole()
+```
+
 ##### `resetBypassRowLevelSecurity` <a name="@cdktf/provider-postgresql.Role.resetBypassRowLevelSecurity"></a>
 
 ```typescript
@@ -2572,6 +2604,16 @@ public resetValidUntil()
 
 
 #### Properties <a name="Properties"></a>
+
+##### `assumeRoleInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Role.property.assumeRoleInput"></a>
+
+```typescript
+public readonly assumeRoleInput: string;
+```
+
+- *Type:* `string`
+
+---
 
 ##### `bypassRowLevelSecurityInput`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.Role.property.bypassRowLevelSecurityInput"></a>
 
@@ -2767,6 +2809,16 @@ public readonly superuserInput: boolean | IResolvable;
 
 ```typescript
 public readonly validUntilInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `assumeRole`<sup>Required</sup> <a name="@cdktf/provider-postgresql.Role.property.assumeRole"></a>
+
+```typescript
+public readonly assumeRole: string;
 ```
 
 - *Type:* `string`
@@ -4013,6 +4065,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postg
 
 ---
 
+##### `database`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.FunctionConfig.property.database"></a>
+
+```typescript
+public readonly database: string;
+```
+
+- *Type:* `string`
+
+The database where the function is located. If not specified, the provider default database is used.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#database Function#database}
+
+---
+
 ##### `dropCascade`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.FunctionConfig.property.dropCascade"></a>
 
 ```typescript
@@ -5234,6 +5300,20 @@ public readonly name: string;
 The name of the role.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role#name Role#name}
+
+---
+
+##### `assumeRole`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.RoleConfig.property.assumeRole"></a>
+
+```typescript
+public readonly assumeRole: string;
+```
+
+- *Type:* `string`
+
+Role to switch to at login.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role#assume_role Role#assume_role}
 
 ---
 
