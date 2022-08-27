@@ -3285,10 +3285,10 @@ const databaseConfig: DatabaseConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.DatabaseConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -3345,10 +3345,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.DatabaseConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -3520,10 +3520,10 @@ const defaultPrivilegesConfig: DefaultPrivilegesConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.DefaultPrivilegesConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -3580,10 +3580,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.DefaultPrivilegesConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -3713,10 +3713,10 @@ const extensionConfig: ExtensionConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.ExtensionConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -3773,10 +3773,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.ExtensionConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -3956,10 +3956,10 @@ const functionConfig: FunctionConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.FunctionConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -4016,10 +4016,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.FunctionConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -4149,10 +4149,10 @@ const grantConfig: GrantConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.GrantConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -4209,10 +4209,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.GrantConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -4342,10 +4342,10 @@ const grantRoleConfig: GrantRoleConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.GrantRoleConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -4402,10 +4402,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.GrantRoleConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -4479,10 +4479,10 @@ const physicalReplicationSlotConfig: PhysicalReplicationSlotConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.PhysicalReplicationSlotConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -4539,10 +4539,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.PhysicalReplicationSlotConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -4882,10 +4882,10 @@ const publicationConfig: PublicationConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.PublicationConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -4942,10 +4942,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.PublicationConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -5087,10 +5087,10 @@ const replicationSlotConfig: ReplicationSlotConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.ReplicationSlotConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -5147,10 +5147,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.ReplicationSlotConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -5222,10 +5222,10 @@ const roleConfig: RoleConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.RoleConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -5282,10 +5282,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.RoleConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -5595,10 +5595,10 @@ const schemaConfig: SchemaConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.SchemaConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -5655,10 +5655,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-postgresql.SchemaConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
