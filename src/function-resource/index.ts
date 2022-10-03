@@ -6,27 +6,27 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface FunctionConfig extends cdktf.TerraformMetaArguments {
+export interface FunctionResourceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Body of the function.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#body Function#body}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#body FunctionResource#body}
   */
   readonly body: string;
   /**
   * The database where the function is located. If not specified, the provider default database is used.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#database Function#database}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#database FunctionResource#database}
   */
   readonly database?: string;
   /**
   * Automatically drop objects that depend on the function (such as operators or triggers), and in turn all objects that depend on those objects.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#drop_cascade Function#drop_cascade}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#drop_cascade FunctionResource#drop_cascade}
   */
   readonly dropCascade?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#id Function#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#id FunctionResource#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -35,56 +35,56 @@ export interface FunctionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name of the function.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#name Function#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#name FunctionResource#name}
   */
   readonly name: string;
   /**
   * Function return type.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#returns Function#returns}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#returns FunctionResource#returns}
   */
   readonly returns?: string;
   /**
   * Schema where the function is located. If not specified, the provider default schema is used.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#schema Function#schema}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#schema FunctionResource#schema}
   */
   readonly schema?: string;
   /**
   * arg block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#arg Function#arg}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#arg FunctionResource#arg}
   */
-  readonly arg?: FunctionArg[] | cdktf.IResolvable;
+  readonly arg?: FunctionResourceArg[] | cdktf.IResolvable;
 }
-export interface FunctionArg {
+export interface FunctionResourceArg {
   /**
   * An expression to be used as default value if the parameter is not specified.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#default Function#default}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#default FunctionResource#default}
   */
   readonly default?: string;
   /**
   * The argument mode. One of: IN, OUT, INOUT, or VARIADIC
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#mode Function#mode}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#mode FunctionResource#mode}
   */
   readonly mode?: string;
   /**
   * The argument name. The name may be required for some languages or depending on the argument mode.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#name Function#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#name FunctionResource#name}
   */
   readonly name?: string;
   /**
   * The argument type.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#type Function#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#type FunctionResource#type}
   */
   readonly type: string;
 }
 
-export function functionArgToTerraform(struct?: FunctionArg | cdktf.IResolvable): any {
+export function functionResourceArgToTerraform(struct?: FunctionResourceArg | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -97,7 +97,7 @@ export function functionArgToTerraform(struct?: FunctionArg | cdktf.IResolvable)
   }
 }
 
-export class FunctionArgOutputReference extends cdktf.ComplexObject {
+export class FunctionResourceArgOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -111,7 +111,7 @@ export class FunctionArgOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): FunctionArg | cdktf.IResolvable | undefined {
+  public get internalValue(): FunctionResourceArg | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -136,7 +136,7 @@ export class FunctionArgOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FunctionArg | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FunctionResourceArg | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -221,8 +221,8 @@ export class FunctionArgOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class FunctionArgList extends cdktf.ComplexList {
-  public internalValue? : FunctionArg[] | cdktf.IResolvable
+export class FunctionResourceArgList extends cdktf.ComplexList {
+  public internalValue? : FunctionResourceArg[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -236,15 +236,15 @@ export class FunctionArgList extends cdktf.ComplexList {
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): FunctionArgOutputReference {
-    return new FunctionArgOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): FunctionResourceArgOutputReference {
+    return new FunctionResourceArgOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/function postgresql_function}
 */
-export class Function extends cdktf.TerraformResource {
+export class FunctionResource extends cdktf.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -260,9 +260,9 @@ export class Function extends cdktf.TerraformResource {
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options FunctionConfig
+  * @param options FunctionResourceConfig
   */
-  public constructor(scope: Construct, id: string, config: FunctionConfig) {
+  public constructor(scope: Construct, id: string, config: FunctionResourceConfig) {
     super(scope, id, {
       terraformResourceType: 'postgresql_function',
       terraformGeneratorMetadata: {
@@ -399,11 +399,11 @@ export class Function extends cdktf.TerraformResource {
   }
 
   // arg - computed: false, optional: true, required: false
-  private _arg = new FunctionArgList(this, "arg", false);
+  private _arg = new FunctionResourceArgList(this, "arg", false);
   public get arg() {
     return this._arg;
   }
-  public putArg(value: FunctionArg[] | cdktf.IResolvable) {
+  public putArg(value: FunctionResourceArg[] | cdktf.IResolvable) {
     this._arg.internalValue = value;
   }
   public resetArg() {
@@ -427,7 +427,7 @@ export class Function extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       returns: cdktf.stringToTerraform(this._returns),
       schema: cdktf.stringToTerraform(this._schema),
-      arg: cdktf.listMapper(functionArgToTerraform, true)(this._arg.internalValue),
+      arg: cdktf.listMapper(functionResourceArgToTerraform, true)(this._arg.internalValue),
     };
   }
 }
