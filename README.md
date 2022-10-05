@@ -38,9 +38,9 @@ The Maven package is available at [https://mvnrepository.com/artifact/com.hashic
 
 ### Go
 
-The go package is generated into the [`github.com/hashicorp/cdktf-provider-postgresql-go`](https://github.com/hashicorp/cdktf-provider-postgresql-go) package.
+The go package is generated into the [`github.com/cdktf/cdktf-provider-postgresql-go`](https://github.com/cdktf/cdktf-provider-postgresql-go) package.
 
-`go get github.com/hashicorp/cdktf-provider-postgresql-go/postgresql`
+`go get github.com/cdktf/cdktf-provider-postgresql-go/postgresql`
 
 ## Docs
 
