@@ -21,7 +21,7 @@ export interface DefaultPrivilegesConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
-  * The PostgreSQL object type to set the default privileges on (one of: table, sequence, function, type)
+  * The PostgreSQL object type to set the default privileges on (one of: table, sequence, function, type, schema)
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/default_privileges#object_type DefaultPrivileges#object_type}
   */
@@ -84,7 +84,7 @@ export class DefaultPrivileges extends cdktf.TerraformResource {
       terraformResourceType: 'postgresql_default_privileges',
       terraformGeneratorMetadata: {
         providerName: 'postgresql',
-        providerVersion: '1.17.1',
+        providerVersion: '1.18.0',
         providerVersionConstraint: '~> 1.14'
       },
       provider: config.provider,
