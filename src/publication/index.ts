@@ -88,7 +88,7 @@ export class Publication extends cdktf.TerraformResource {
       terraformResourceType: 'postgresql_publication',
       terraformGeneratorMetadata: {
         providerName: 'postgresql',
-        providerVersion: '1.17.1',
+        providerVersion: '1.18.0',
         providerVersionConstraint: '~> 1.14'
       },
       provider: config.provider,
