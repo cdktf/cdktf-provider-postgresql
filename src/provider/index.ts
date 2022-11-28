@@ -20,6 +20,12 @@ export interface PostgresqlProviderConfig {
   */
   readonly awsRdsIamProfile?: string;
   /**
+  * AWS region to use for IAM auth
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql#aws_rds_iam_region PostgresqlProvider#aws_rds_iam_region}
+  */
+  readonly awsRdsIamRegion?: string;
+  /**
   * Maximum wait for connection, in seconds. Zero or not specified means wait indefinitely.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql#connect_timeout PostgresqlProvider#connect_timeout}
@@ -165,13 +171,14 @@ export class PostgresqlProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'postgresql',
       terraformGeneratorMetadata: {
         providerName: 'postgresql',
-        providerVersion: '1.17.1',
+        providerVersion: '1.18.0',
         providerVersionConstraint: '~> 1.14'
       },
       terraformProviderSource: 'cyrilgdn/postgresql'
     });
     this._awsRdsIamAuth = config.awsRdsIamAuth;
     this._awsRdsIamProfile = config.awsRdsIamProfile;
+    this._awsRdsIamRegion = config.awsRdsIamRegion;
     this._connectTimeout = config.connectTimeout;
     this._database = config.database;
     this._databaseUsername = config.databaseUsername;
@@ -224,6 +231,22 @@ export class PostgresqlProvider extends cdktf.TerraformProvider {
   // Temporarily expose input value. Use with caution.
   public get awsRdsIamProfileInput() {
     return this._awsRdsIamProfile;
+  }
+
+  // aws_rds_iam_region - computed: false, optional: true, required: false
+  private _awsRdsIamRegion?: string; 
+  public get awsRdsIamRegion() {
+    return this._awsRdsIamRegion;
+  }
+  public set awsRdsIamRegion(value: string | undefined) {
+    this._awsRdsIamRegion = value;
+  }
+  public resetAwsRdsIamRegion() {
+    this._awsRdsIamRegion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get awsRdsIamRegionInput() {
+    return this._awsRdsIamRegion;
   }
 
   // connect_timeout - computed: false, optional: true, required: false
@@ -490,6 +513,7 @@ export class PostgresqlProvider extends cdktf.TerraformProvider {
     return {
       aws_rds_iam_auth: cdktf.booleanToTerraform(this._awsRdsIamAuth),
       aws_rds_iam_profile: cdktf.stringToTerraform(this._awsRdsIamProfile),
+      aws_rds_iam_region: cdktf.stringToTerraform(this._awsRdsIamRegion),
       connect_timeout: cdktf.numberToTerraform(this._connectTimeout),
       database: cdktf.stringToTerraform(this._database),
       database_username: cdktf.stringToTerraform(this._databaseUsername),
