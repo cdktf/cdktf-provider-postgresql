@@ -102,7 +102,7 @@ export class Database extends cdktf.TerraformResource {
       terraformResourceType: 'postgresql_database',
       terraformGeneratorMetadata: {
         providerName: 'postgresql',
-        providerVersion: '1.17.1',
+        providerVersion: '1.18.0',
         providerVersionConstraint: '~> 1.14'
       },
       provider: config.provider,
