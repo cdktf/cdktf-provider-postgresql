@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/functio
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/functionresource"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v5/functionresource"
 
 functionresource.NewFunctionResource(scope Construct, id *string, config FunctionResourceConfig) FunctionResource
 ```
@@ -321,7 +321,7 @@ func ResetSchema()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-postgresql.functionResource.FunctionResource.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/functionresource"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v5/functionresource"
 
 functionresource.FunctionResource_IsConstruct(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-postgresql.functionResource.FunctionResource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/functionresource"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v5/functionresource"
 
 functionresource.FunctionResource_IsTerraformElement(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ functionresource.FunctionResource_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-postgresql.functionResource.FunctionResource.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/functionresource"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v5/functionresource"
 
 functionresource.FunctionResource_IsTerraformResource(x interface{}) *bool
 ```
@@ -742,7 +742,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArg.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/functionresource"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v5/functionresource"
 
 &functionresource.FunctionResourceArg {
 	Type: *string,
@@ -824,7 +824,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postg
 #### Initializer <a name="Initializer" id="@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/functionresource"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v5/functionresource"
 
 &functionresource.FunctionResourceConfig {
 	Connection: interface{},
@@ -1057,7 +1057,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postg
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/functionresource"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v5/functionresource"
 
 functionresource.NewFunctionResourceArgList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FunctionResourceArgList
 ```
@@ -1200,7 +1200,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/functionresource"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v5/functionresource"
 
 functionresource.NewFunctionResourceArgOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FunctionResourceArgOutputReference
 ```
