@@ -1,6 +1,9 @@
 # Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+- [dataPostgresqlSchemas](./dataPostgresqlSchemas.go.md)
+- [dataPostgresqlSequences](./dataPostgresqlSequences.go.md)
+- [dataPostgresqlTables](./dataPostgresqlTables.go.md)
 - [database](./database.go.md)
 - [defaultPrivileges](./defaultPrivileges.go.md)
 - [extension](./extension.go.md)

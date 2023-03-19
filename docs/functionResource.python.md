@@ -27,6 +27,7 @@ functionResource.FunctionResource(
   database: str = None,
   drop_cascade: typing.Union[bool, IResolvable] = None,
   id: str = None,
+  language: str = None,
   returns: str = None,
   schema: str = None
 )
@@ -49,7 +50,8 @@ functionResource.FunctionResource(
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.database">database</a></code> | <code>str</code> | The database where the function is located. If not specified, the provider default database is used. |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.dropCascade">drop_cascade</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Automatically drop objects that depend on the function (such as operators or triggers), and in turn all objects that depend on those objects. |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#id FunctionResource#id}. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.returns">returns</a></code> | <code>str</code> | Function return type. |
+| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.language">language</a></code> | <code>str</code> | Language of theof the function. One of: internal, sql, c, plpgsql. |
+| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.returns">returns</a></code> | <code>str</code> | Function return type. If not specified, it will be calculated based on the output arguments. |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.schema">schema</a></code> | <code>str</code> | Schema where the function is located. If not specified, the provider default schema is used. |
 
 ---
@@ -175,11 +177,21 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
+##### `language`<sup>Optional</sup> <a name="language" id="@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.language"></a>
+
+- *Type:* str
+
+Language of theof the function. One of: internal, sql, c, plpgsql.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#language FunctionResource#language}
+
+---
+
 ##### `returns`<sup>Optional</sup> <a name="returns" id="@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.returns"></a>
 
 - *Type:* str
 
-Function return type.
+Function return type. If not specified, it will be calculated based on the output arguments.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#returns FunctionResource#returns}
 
@@ -220,6 +232,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postg
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.resetDatabase">reset_database</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.resetDropCascade">reset_drop_cascade</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.resetLanguage">reset_language</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.resetReturns">reset_returns</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.resetSchema">reset_schema</a></code> | *No description.* |
 
@@ -472,6 +485,12 @@ def reset_drop_cascade() -> None
 def reset_id() -> None
 ```
 
+##### `reset_language` <a name="reset_language" id="@cdktf/provider-postgresql.functionResource.FunctionResource.resetLanguage"></a>
+
+```python
+def reset_language() -> None
+```
+
 ##### `reset_returns` <a name="reset_returns" id="@cdktf/provider-postgresql.functionResource.FunctionResource.resetReturns"></a>
 
 ```python
@@ -584,6 +603,7 @@ functionResource.FunctionResource.is_terraform_resource(
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.databaseInput">database_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.dropCascadeInput">drop_cascade_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.languageInput">language_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.returnsInput">returns_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.schemaInput">schema_input</a></code> | <code>str</code> | *No description.* |
@@ -591,6 +611,7 @@ functionResource.FunctionResource.is_terraform_resource(
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.database">database</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.dropCascade">drop_cascade</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.language">language</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.returns">returns</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.schema">schema</a></code> | <code>str</code> | *No description.* |
@@ -799,6 +820,16 @@ id_input: str
 
 ---
 
+##### `language_input`<sup>Optional</sup> <a name="language_input" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.languageInput"></a>
+
+```python
+language_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.nameInput"></a>
 
 ```python
@@ -863,6 +894,16 @@ drop_cascade: typing.Union[bool, IResolvable]
 
 ```python
 id: str
+```
+
+- *Type:* str
+
+---
+
+##### `language`<sup>Required</sup> <a name="language" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.language"></a>
+
+```python
+language: str
 ```
 
 - *Type:* str
@@ -1022,6 +1063,7 @@ functionResource.FunctionResourceConfig(
   database: str = None,
   drop_cascade: typing.Union[bool, IResolvable] = None,
   id: str = None,
+  language: str = None,
   returns: str = None,
   schema: str = None
 )
@@ -1044,7 +1086,8 @@ functionResource.FunctionResourceConfig(
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.database">database</a></code> | <code>str</code> | The database where the function is located. If not specified, the provider default database is used. |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.dropCascade">drop_cascade</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Automatically drop objects that depend on the function (such as operators or triggers), and in turn all objects that depend on those objects. |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#id FunctionResource#id}. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.returns">returns</a></code> | <code>str</code> | Function return type. |
+| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.language">language</a></code> | <code>str</code> | Language of theof the function. One of: internal, sql, c, plpgsql. |
+| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.returns">returns</a></code> | <code>str</code> | Function return type. If not specified, it will be calculated based on the output arguments. |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.schema">schema</a></code> | <code>str</code> | Schema where the function is located. If not specified, the provider default schema is used. |
 
 ---
@@ -1204,6 +1247,20 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
+##### `language`<sup>Optional</sup> <a name="language" id="@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.language"></a>
+
+```python
+language: str
+```
+
+- *Type:* str
+
+Language of theof the function. One of: internal, sql, c, plpgsql.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#language FunctionResource#language}
+
+---
+
 ##### `returns`<sup>Optional</sup> <a name="returns" id="@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.returns"></a>
 
 ```python
@@ -1212,7 +1269,7 @@ returns: str
 
 - *Type:* str
 
-Function return type.
+Function return type. If not specified, it will be calculated based on the output arguments.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#returns FunctionResource#returns}
 

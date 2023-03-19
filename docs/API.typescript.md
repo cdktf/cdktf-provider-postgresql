@@ -1,6 +1,9 @@
 # Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+- [dataPostgresqlSchemas](./dataPostgresqlSchemas.typescript.md)
+- [dataPostgresqlSequences](./dataPostgresqlSequences.typescript.md)
+- [dataPostgresqlTables](./dataPostgresqlTables.typescript.md)
 - [database](./database.typescript.md)
 - [defaultPrivileges](./defaultPrivileges.typescript.md)
 - [extension](./extension.typescript.md)

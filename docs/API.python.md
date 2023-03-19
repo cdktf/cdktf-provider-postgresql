@@ -1,6 +1,9 @@
 # Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+- [dataPostgresqlSchemas](./dataPostgresqlSchemas.python.md)
+- [dataPostgresqlSequences](./dataPostgresqlSequences.python.md)
+- [dataPostgresqlTables](./dataPostgresqlTables.python.md)
 - [database](./database.python.md)
 - [defaultPrivileges](./defaultPrivileges.python.md)
 - [extension](./extension.python.md)

@@ -1,6 +1,9 @@
 # Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+- [dataPostgresqlSchemas](./dataPostgresqlSchemas.java.md)
+- [dataPostgresqlSequences](./dataPostgresqlSequences.java.md)
+- [dataPostgresqlTables](./dataPostgresqlTables.java.md)
 - [database](./database.java.md)
 - [defaultPrivileges](./defaultPrivileges.java.md)
 - [extension](./extension.java.md)

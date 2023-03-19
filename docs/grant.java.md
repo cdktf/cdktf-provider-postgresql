@@ -26,6 +26,7 @@ Grant.Builder.create(Construct scope, java.lang.String id)
     .objectType(java.lang.String)
     .privileges(java.util.List<java.lang.String>)
     .role(java.lang.String)
+//  .columns(java.util.List<java.lang.String>)
 //  .id(java.lang.String)
 //  .objects(java.util.List<java.lang.String>)
 //  .schema(java.lang.String)
@@ -46,9 +47,10 @@ Grant.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.Initializer.parameter.database">database</a></code> | <code>java.lang.String</code> | The database to grant privileges on for this role. |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.Initializer.parameter.objectType">objectType</a></code> | <code>java.lang.String</code> | The PostgreSQL object type to grant the privileges on (one of: database, function, procedure, routine, schema, sequence, table, foreign_data_wrapper, foreign_server). |
+| <code><a href="#@cdktf/provider-postgresql.grant.Grant.Initializer.parameter.objectType">objectType</a></code> | <code>java.lang.String</code> | The PostgreSQL object type to grant the privileges on (one of: database, function, procedure, routine, schema, sequence, table, foreign_data_wrapper, foreign_server, column). |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.Initializer.parameter.privileges">privileges</a></code> | <code>java.util.List<java.lang.String></code> | The list of privileges to grant. |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | The name of the role to grant privileges on. |
+| <code><a href="#@cdktf/provider-postgresql.grant.Grant.Initializer.parameter.columns">columns</a></code> | <code>java.util.List<java.lang.String></code> | The specific columns to grant privileges on for this role. |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#id Grant#id}. |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.Initializer.parameter.objects">objects</a></code> | <code>java.util.List<java.lang.String></code> | The specific objects to grant privileges on for this role (empty means all objects of the requested type). |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.Initializer.parameter.schema">schema</a></code> | <code>java.lang.String</code> | The database schema to grant privileges on for this role. |
@@ -130,7 +132,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postg
 
 - *Type:* java.lang.String
 
-The PostgreSQL object type to grant the privileges on (one of: database, function, procedure, routine, schema, sequence, table, foreign_data_wrapper, foreign_server).
+The PostgreSQL object type to grant the privileges on (one of: database, function, procedure, routine, schema, sequence, table, foreign_data_wrapper, foreign_server, column).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#object_type Grant#object_type}
 
@@ -153,6 +155,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postg
 The name of the role to grant privileges on.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#role Grant#role}
+
+---
+
+##### `columns`<sup>Optional</sup> <a name="columns" id="@cdktf/provider-postgresql.grant.Grant.Initializer.parameter.columns"></a>
+
+- *Type:* java.util.List<java.lang.String>
+
+The specific columns to grant privileges on for this role.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#columns Grant#columns}
 
 ---
 
@@ -217,6 +229,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postg
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.grant.Grant.resetColumns">resetColumns</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.resetObjects">resetObjects</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.resetSchema">resetSchema</a></code> | *No description.* |
@@ -408,6 +421,12 @@ public IResolvable interpolationForAttribute(java.lang.String terraformAttribute
 
 ---
 
+##### `resetColumns` <a name="resetColumns" id="@cdktf/provider-postgresql.grant.Grant.resetColumns"></a>
+
+```java
+public void resetColumns()
+```
+
 ##### `resetId` <a name="resetId" id="@cdktf/provider-postgresql.grant.Grant.resetId"></a>
 
 ```java
@@ -520,6 +539,7 @@ Grant.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.columnsInput">columnsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.databaseInput">databaseInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.objectsInput">objectsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -528,6 +548,7 @@ Grant.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.roleInput">roleInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.schemaInput">schemaInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.withGrantOptionInput">withGrantOptionInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.columns">columns</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.database">database</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.objects">objects</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -681,6 +702,16 @@ public java.lang.Object getProvisioners();
 
 ---
 
+##### `columnsInput`<sup>Optional</sup> <a name="columnsInput" id="@cdktf/provider-postgresql.grant.Grant.property.columnsInput"></a>
+
+```java
+public java.util.List<java.lang.String> getColumnsInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
 ##### `databaseInput`<sup>Optional</sup> <a name="databaseInput" id="@cdktf/provider-postgresql.grant.Grant.property.databaseInput"></a>
 
 ```java
@@ -758,6 +789,16 @@ public java.lang.Object getWithGrantOptionInput();
 ```
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `columns`<sup>Required</sup> <a name="columns" id="@cdktf/provider-postgresql.grant.Grant.property.columns"></a>
+
+```java
+public java.util.List<java.lang.String> getColumns();
+```
+
+- *Type:* java.util.List<java.lang.String>
 
 ---
 
@@ -883,6 +924,7 @@ GrantConfig.builder()
     .objectType(java.lang.String)
     .privileges(java.util.List<java.lang.String>)
     .role(java.lang.String)
+//  .columns(java.util.List<java.lang.String>)
 //  .id(java.lang.String)
 //  .objects(java.util.List<java.lang.String>)
 //  .schema(java.lang.String)
@@ -903,9 +945,10 @@ GrantConfig.builder()
 | <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.database">database</a></code> | <code>java.lang.String</code> | The database to grant privileges on for this role. |
-| <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.objectType">objectType</a></code> | <code>java.lang.String</code> | The PostgreSQL object type to grant the privileges on (one of: database, function, procedure, routine, schema, sequence, table, foreign_data_wrapper, foreign_server). |
+| <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.objectType">objectType</a></code> | <code>java.lang.String</code> | The PostgreSQL object type to grant the privileges on (one of: database, function, procedure, routine, schema, sequence, table, foreign_data_wrapper, foreign_server, column). |
 | <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.privileges">privileges</a></code> | <code>java.util.List<java.lang.String></code> | The list of privileges to grant. |
 | <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.role">role</a></code> | <code>java.lang.String</code> | The name of the role to grant privileges on. |
+| <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.columns">columns</a></code> | <code>java.util.List<java.lang.String></code> | The specific columns to grant privileges on for this role. |
 | <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#id Grant#id}. |
 | <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.objects">objects</a></code> | <code>java.util.List<java.lang.String></code> | The specific objects to grant privileges on for this role (empty means all objects of the requested type). |
 | <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.schema">schema</a></code> | <code>java.lang.String</code> | The database schema to grant privileges on for this role. |
@@ -1005,7 +1048,7 @@ public java.lang.String getObjectType();
 
 - *Type:* java.lang.String
 
-The PostgreSQL object type to grant the privileges on (one of: database, function, procedure, routine, schema, sequence, table, foreign_data_wrapper, foreign_server).
+The PostgreSQL object type to grant the privileges on (one of: database, function, procedure, routine, schema, sequence, table, foreign_data_wrapper, foreign_server, column).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#object_type Grant#object_type}
 
@@ -1036,6 +1079,20 @@ public java.lang.String getRole();
 The name of the role to grant privileges on.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#role Grant#role}
+
+---
+
+##### `columns`<sup>Optional</sup> <a name="columns" id="@cdktf/provider-postgresql.grant.GrantConfig.property.columns"></a>
+
+```java
+public java.util.List<java.lang.String> getColumns();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The specific columns to grant privileges on for this role.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#columns Grant#columns}
 
 ---
 

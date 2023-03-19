@@ -33,13 +33,19 @@ export interface FunctionResourceConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Language of theof the function. One of: internal, sql, c, plpgsql
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#language FunctionResource#language}
+  */
+  readonly language?: string;
+  /**
   * Name of the function.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#name FunctionResource#name}
   */
   readonly name: string;
   /**
-  * Function return type.
+  * Function return type. If not specified, it will be calculated based on the output arguments
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#returns FunctionResource#returns}
   */
@@ -267,7 +273,7 @@ export class FunctionResource extends cdktf.TerraformResource {
       terraformResourceType: 'postgresql_function',
       terraformGeneratorMetadata: {
         providerName: 'postgresql',
-        providerVersion: '1.18.0',
+        providerVersion: '1.19.0',
         providerVersionConstraint: '~> 1.14'
       },
       provider: config.provider,
@@ -282,6 +288,7 @@ export class FunctionResource extends cdktf.TerraformResource {
     this._database = config.database;
     this._dropCascade = config.dropCascade;
     this._id = config.id;
+    this._language = config.language;
     this._name = config.name;
     this._returns = config.returns;
     this._schema = config.schema;
@@ -353,6 +360,22 @@ export class FunctionResource extends cdktf.TerraformResource {
     return this._id;
   }
 
+  // language - computed: false, optional: true, required: false
+  private _language?: string; 
+  public get language() {
+    return this.getStringAttribute('language');
+  }
+  public set language(value: string) {
+    this._language = value;
+  }
+  public resetLanguage() {
+    this._language = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get languageInput() {
+    return this._language;
+  }
+
   // name - computed: false, optional: false, required: true
   private _name?: string; 
   public get name() {
@@ -366,7 +389,7 @@ export class FunctionResource extends cdktf.TerraformResource {
     return this._name;
   }
 
-  // returns - computed: false, optional: true, required: false
+  // returns - computed: true, optional: true, required: false
   private _returns?: string; 
   public get returns() {
     return this.getStringAttribute('returns');
@@ -424,6 +447,7 @@ export class FunctionResource extends cdktf.TerraformResource {
       database: cdktf.stringToTerraform(this._database),
       drop_cascade: cdktf.booleanToTerraform(this._dropCascade),
       id: cdktf.stringToTerraform(this._id),
+      language: cdktf.stringToTerraform(this._language),
       name: cdktf.stringToTerraform(this._name),
       returns: cdktf.stringToTerraform(this._returns),
       schema: cdktf.stringToTerraform(this._schema),

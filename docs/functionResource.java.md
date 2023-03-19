@@ -30,6 +30,7 @@ FunctionResource.Builder.create(Construct scope, java.lang.String id)
 //  .dropCascade(java.lang.Boolean)
 //  .dropCascade(IResolvable)
 //  .id(java.lang.String)
+//  .language(java.lang.String)
 //  .returns(java.lang.String)
 //  .schema(java.lang.String)
     .build();
@@ -52,7 +53,8 @@ FunctionResource.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.database">database</a></code> | <code>java.lang.String</code> | The database where the function is located. If not specified, the provider default database is used. |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.dropCascade">dropCascade</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Automatically drop objects that depend on the function (such as operators or triggers), and in turn all objects that depend on those objects. |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#id FunctionResource#id}. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.returns">returns</a></code> | <code>java.lang.String</code> | Function return type. |
+| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.language">language</a></code> | <code>java.lang.String</code> | Language of theof the function. One of: internal, sql, c, plpgsql. |
+| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.returns">returns</a></code> | <code>java.lang.String</code> | Function return type. If not specified, it will be calculated based on the output arguments. |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.schema">schema</a></code> | <code>java.lang.String</code> | Schema where the function is located. If not specified, the provider default schema is used. |
 
 ---
@@ -178,11 +180,21 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
+##### `language`<sup>Optional</sup> <a name="language" id="@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.language"></a>
+
+- *Type:* java.lang.String
+
+Language of theof the function. One of: internal, sql, c, plpgsql.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#language FunctionResource#language}
+
+---
+
 ##### `returns`<sup>Optional</sup> <a name="returns" id="@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.returns"></a>
 
 - *Type:* java.lang.String
 
-Function return type.
+Function return type. If not specified, it will be calculated based on the output arguments.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#returns FunctionResource#returns}
 
@@ -223,6 +235,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postg
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.resetDatabase">resetDatabase</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.resetDropCascade">resetDropCascade</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.resetLanguage">resetLanguage</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.resetReturns">resetReturns</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.resetSchema">resetSchema</a></code> | *No description.* |
 
@@ -448,6 +461,12 @@ public void resetDropCascade()
 public void resetId()
 ```
 
+##### `resetLanguage` <a name="resetLanguage" id="@cdktf/provider-postgresql.functionResource.FunctionResource.resetLanguage"></a>
+
+```java
+public void resetLanguage()
+```
+
 ##### `resetReturns` <a name="resetReturns" id="@cdktf/provider-postgresql.functionResource.FunctionResource.resetReturns"></a>
 
 ```java
@@ -554,6 +573,7 @@ FunctionResource.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.databaseInput">databaseInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.dropCascadeInput">dropCascadeInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.languageInput">languageInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.returnsInput">returnsInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.schemaInput">schemaInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -561,6 +581,7 @@ FunctionResource.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.database">database</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.dropCascade">dropCascade</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.language">language</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.returns">returns</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.schema">schema</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -769,6 +790,16 @@ public java.lang.String getIdInput();
 
 ---
 
+##### `languageInput`<sup>Optional</sup> <a name="languageInput" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.languageInput"></a>
+
+```java
+public java.lang.String getLanguageInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.nameInput"></a>
 
 ```java
@@ -833,6 +864,16 @@ public java.lang.Object getDropCascade();
 
 ```java
 public java.lang.String getId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `language`<sup>Required</sup> <a name="language" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.language"></a>
+
+```java
+public java.lang.String getLanguage();
 ```
 
 - *Type:* java.lang.String
@@ -997,6 +1038,7 @@ FunctionResourceConfig.builder()
 //  .dropCascade(java.lang.Boolean)
 //  .dropCascade(IResolvable)
 //  .id(java.lang.String)
+//  .language(java.lang.String)
 //  .returns(java.lang.String)
 //  .schema(java.lang.String)
     .build();
@@ -1019,7 +1061,8 @@ FunctionResourceConfig.builder()
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.database">database</a></code> | <code>java.lang.String</code> | The database where the function is located. If not specified, the provider default database is used. |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.dropCascade">dropCascade</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Automatically drop objects that depend on the function (such as operators or triggers), and in turn all objects that depend on those objects. |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#id FunctionResource#id}. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.returns">returns</a></code> | <code>java.lang.String</code> | Function return type. |
+| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.language">language</a></code> | <code>java.lang.String</code> | Language of theof the function. One of: internal, sql, c, plpgsql. |
+| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.returns">returns</a></code> | <code>java.lang.String</code> | Function return type. If not specified, it will be calculated based on the output arguments. |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.schema">schema</a></code> | <code>java.lang.String</code> | Schema where the function is located. If not specified, the provider default schema is used. |
 
 ---
@@ -1179,6 +1222,20 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
+##### `language`<sup>Optional</sup> <a name="language" id="@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.language"></a>
+
+```java
+public java.lang.String getLanguage();
+```
+
+- *Type:* java.lang.String
+
+Language of theof the function. One of: internal, sql, c, plpgsql.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#language FunctionResource#language}
+
+---
+
 ##### `returns`<sup>Optional</sup> <a name="returns" id="@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.returns"></a>
 
 ```java
@@ -1187,7 +1244,7 @@ public java.lang.String getReturns();
 
 - *Type:* java.lang.String
 
-Function return type.
+Function return type. If not specified, it will be calculated based on the output arguments.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#returns FunctionResource#returns}
 

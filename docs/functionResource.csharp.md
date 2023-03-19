@@ -71,6 +71,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.resetDatabase">ResetDatabase</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.resetDropCascade">ResetDropCascade</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.resetLanguage">ResetLanguage</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.resetReturns">ResetReturns</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.resetSchema">ResetSchema</a></code> | *No description.* |
 
@@ -296,6 +297,12 @@ private void ResetDropCascade()
 private void ResetId()
 ```
 
+##### `ResetLanguage` <a name="ResetLanguage" id="@cdktf/provider-postgresql.functionResource.FunctionResource.resetLanguage"></a>
+
+```csharp
+private void ResetLanguage()
+```
+
 ##### `ResetReturns` <a name="ResetReturns" id="@cdktf/provider-postgresql.functionResource.FunctionResource.resetReturns"></a>
 
 ```csharp
@@ -402,6 +409,7 @@ FunctionResource.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.databaseInput">DatabaseInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.dropCascadeInput">DropCascadeInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.languageInput">LanguageInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.returnsInput">ReturnsInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.schemaInput">SchemaInput</a></code> | <code>string</code> | *No description.* |
@@ -409,6 +417,7 @@ FunctionResource.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.database">Database</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.dropCascade">DropCascade</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.language">Language</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.returns">Returns</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.schema">Schema</a></code> | <code>string</code> | *No description.* |
@@ -617,6 +626,16 @@ public string IdInput { get; }
 
 ---
 
+##### `LanguageInput`<sup>Optional</sup> <a name="LanguageInput" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.languageInput"></a>
+
+```csharp
+public string LanguageInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.nameInput"></a>
 
 ```csharp
@@ -681,6 +700,16 @@ public object DropCascade { get; }
 
 ```csharp
 public string Id { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Language`<sup>Required</sup> <a name="Language" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.language"></a>
+
+```csharp
+public string Language { get; }
 ```
 
 - *Type:* string
@@ -840,6 +869,7 @@ new FunctionResourceConfig {
     string Database = null,
     object DropCascade = null,
     string Id = null,
+    string Language = null,
     string Returns = null,
     string Schema = null
 };
@@ -862,7 +892,8 @@ new FunctionResourceConfig {
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.database">Database</a></code> | <code>string</code> | The database where the function is located. If not specified, the provider default database is used. |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.dropCascade">DropCascade</a></code> | <code>object</code> | Automatically drop objects that depend on the function (such as operators or triggers), and in turn all objects that depend on those objects. |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#id FunctionResource#id}. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.returns">Returns</a></code> | <code>string</code> | Function return type. |
+| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.language">Language</a></code> | <code>string</code> | Language of theof the function. One of: internal, sql, c, plpgsql. |
+| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.returns">Returns</a></code> | <code>string</code> | Function return type. If not specified, it will be calculated based on the output arguments. |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.schema">Schema</a></code> | <code>string</code> | Schema where the function is located. If not specified, the provider default schema is used. |
 
 ---
@@ -1022,6 +1053,20 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
+##### `Language`<sup>Optional</sup> <a name="Language" id="@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.language"></a>
+
+```csharp
+public string Language { get; set; }
+```
+
+- *Type:* string
+
+Language of theof the function. One of: internal, sql, c, plpgsql.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#language FunctionResource#language}
+
+---
+
 ##### `Returns`<sup>Optional</sup> <a name="Returns" id="@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.returns"></a>
 
 ```csharp
@@ -1030,7 +1075,7 @@ public string Returns { get; set; }
 
 - *Type:* string
 
-Function return type.
+Function return type. If not specified, it will be calculated based on the output arguments.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#returns FunctionResource#returns}
 

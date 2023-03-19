@@ -25,6 +25,7 @@ grant.Grant(
   object_type: str,
   privileges: typing.List[str],
   role: str,
+  columns: typing.List[str] = None,
   id: str = None,
   objects: typing.List[str] = None,
   schema: str = None,
@@ -44,9 +45,10 @@ grant.Grant(
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.Initializer.parameter.database">database</a></code> | <code>str</code> | The database to grant privileges on for this role. |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.Initializer.parameter.objectType">object_type</a></code> | <code>str</code> | The PostgreSQL object type to grant the privileges on (one of: database, function, procedure, routine, schema, sequence, table, foreign_data_wrapper, foreign_server). |
+| <code><a href="#@cdktf/provider-postgresql.grant.Grant.Initializer.parameter.objectType">object_type</a></code> | <code>str</code> | The PostgreSQL object type to grant the privileges on (one of: database, function, procedure, routine, schema, sequence, table, foreign_data_wrapper, foreign_server, column). |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.Initializer.parameter.privileges">privileges</a></code> | <code>typing.List[str]</code> | The list of privileges to grant. |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.Initializer.parameter.role">role</a></code> | <code>str</code> | The name of the role to grant privileges on. |
+| <code><a href="#@cdktf/provider-postgresql.grant.Grant.Initializer.parameter.columns">columns</a></code> | <code>typing.List[str]</code> | The specific columns to grant privileges on for this role. |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#id Grant#id}. |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.Initializer.parameter.objects">objects</a></code> | <code>typing.List[str]</code> | The specific objects to grant privileges on for this role (empty means all objects of the requested type). |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.Initializer.parameter.schema">schema</a></code> | <code>str</code> | The database schema to grant privileges on for this role. |
@@ -128,7 +130,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postg
 
 - *Type:* str
 
-The PostgreSQL object type to grant the privileges on (one of: database, function, procedure, routine, schema, sequence, table, foreign_data_wrapper, foreign_server).
+The PostgreSQL object type to grant the privileges on (one of: database, function, procedure, routine, schema, sequence, table, foreign_data_wrapper, foreign_server, column).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#object_type Grant#object_type}
 
@@ -151,6 +153,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postg
 The name of the role to grant privileges on.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#role Grant#role}
+
+---
+
+##### `columns`<sup>Optional</sup> <a name="columns" id="@cdktf/provider-postgresql.grant.Grant.Initializer.parameter.columns"></a>
+
+- *Type:* typing.List[str]
+
+The specific columns to grant privileges on for this role.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#columns Grant#columns}
 
 ---
 
@@ -215,6 +227,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postg
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.getStringAttribute">get_string_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.grant.Grant.resetColumns">reset_columns</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.resetObjects">reset_objects</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.resetSchema">reset_schema</a></code> | *No description.* |
@@ -431,6 +444,12 @@ def interpolation_for_attribute(
 
 ---
 
+##### `reset_columns` <a name="reset_columns" id="@cdktf/provider-postgresql.grant.Grant.resetColumns"></a>
+
+```python
+def reset_columns() -> None
+```
+
 ##### `reset_id` <a name="reset_id" id="@cdktf/provider-postgresql.grant.Grant.resetId"></a>
 
 ```python
@@ -549,6 +568,7 @@ grant.Grant.is_terraform_resource(
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.columnsInput">columns_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.databaseInput">database_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.objectsInput">objects_input</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -557,6 +577,7 @@ grant.Grant.is_terraform_resource(
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.roleInput">role_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.schemaInput">schema_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.withGrantOptionInput">with_grant_option_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.columns">columns</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.database">database</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.objects">objects</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -710,6 +731,16 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ---
 
+##### `columns_input`<sup>Optional</sup> <a name="columns_input" id="@cdktf/provider-postgresql.grant.Grant.property.columnsInput"></a>
+
+```python
+columns_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
 ##### `database_input`<sup>Optional</sup> <a name="database_input" id="@cdktf/provider-postgresql.grant.Grant.property.databaseInput"></a>
 
 ```python
@@ -787,6 +818,16 @@ with_grant_option_input: typing.Union[bool, IResolvable]
 ```
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `columns`<sup>Required</sup> <a name="columns" id="@cdktf/provider-postgresql.grant.Grant.property.columns"></a>
+
+```python
+columns: typing.List[str]
+```
+
+- *Type:* typing.List[str]
 
 ---
 
@@ -909,6 +950,7 @@ grant.GrantConfig(
   object_type: str,
   privileges: typing.List[str],
   role: str,
+  columns: typing.List[str] = None,
   id: str = None,
   objects: typing.List[str] = None,
   schema: str = None,
@@ -928,9 +970,10 @@ grant.GrantConfig(
 | <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.database">database</a></code> | <code>str</code> | The database to grant privileges on for this role. |
-| <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.objectType">object_type</a></code> | <code>str</code> | The PostgreSQL object type to grant the privileges on (one of: database, function, procedure, routine, schema, sequence, table, foreign_data_wrapper, foreign_server). |
+| <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.objectType">object_type</a></code> | <code>str</code> | The PostgreSQL object type to grant the privileges on (one of: database, function, procedure, routine, schema, sequence, table, foreign_data_wrapper, foreign_server, column). |
 | <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.privileges">privileges</a></code> | <code>typing.List[str]</code> | The list of privileges to grant. |
 | <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.role">role</a></code> | <code>str</code> | The name of the role to grant privileges on. |
+| <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.columns">columns</a></code> | <code>typing.List[str]</code> | The specific columns to grant privileges on for this role. |
 | <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#id Grant#id}. |
 | <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.objects">objects</a></code> | <code>typing.List[str]</code> | The specific objects to grant privileges on for this role (empty means all objects of the requested type). |
 | <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.schema">schema</a></code> | <code>str</code> | The database schema to grant privileges on for this role. |
@@ -1030,7 +1073,7 @@ object_type: str
 
 - *Type:* str
 
-The PostgreSQL object type to grant the privileges on (one of: database, function, procedure, routine, schema, sequence, table, foreign_data_wrapper, foreign_server).
+The PostgreSQL object type to grant the privileges on (one of: database, function, procedure, routine, schema, sequence, table, foreign_data_wrapper, foreign_server, column).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#object_type Grant#object_type}
 
@@ -1061,6 +1104,20 @@ role: str
 The name of the role to grant privileges on.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#role Grant#role}
+
+---
+
+##### `columns`<sup>Optional</sup> <a name="columns" id="@cdktf/provider-postgresql.grant.GrantConfig.property.columns"></a>
+
+```python
+columns: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The specific columns to grant privileges on for this role.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#columns Grant#columns}
 
 ---
 

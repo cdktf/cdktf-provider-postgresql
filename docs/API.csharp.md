@@ -1,6 +1,9 @@
 # Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+- [dataPostgresqlSchemas](./dataPostgresqlSchemas.csharp.md)
+- [dataPostgresqlSequences](./dataPostgresqlSequences.csharp.md)
+- [dataPostgresqlTables](./dataPostgresqlTables.csharp.md)
 - [database](./database.csharp.md)
 - [defaultPrivileges](./defaultPrivileges.csharp.md)
 - [extension](./extension.csharp.md)

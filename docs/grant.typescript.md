@@ -66,6 +66,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.grant.Grant.resetColumns">resetColumns</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.resetObjects">resetObjects</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.resetSchema">resetSchema</a></code> | *No description.* |
@@ -257,6 +258,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetColumns` <a name="resetColumns" id="@cdktf/provider-postgresql.grant.Grant.resetColumns"></a>
+
+```typescript
+public resetColumns(): void
+```
+
 ##### `resetId` <a name="resetId" id="@cdktf/provider-postgresql.grant.Grant.resetId"></a>
 
 ```typescript
@@ -369,6 +376,7 @@ grant.Grant.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.columnsInput">columnsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.databaseInput">databaseInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.objectsInput">objectsInput</a></code> | <code>string[]</code> | *No description.* |
@@ -377,6 +385,7 @@ grant.Grant.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.roleInput">roleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.schemaInput">schemaInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.withGrantOptionInput">withGrantOptionInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.columns">columns</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.database">database</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.objects">objects</a></code> | <code>string[]</code> | *No description.* |
@@ -530,6 +539,16 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
+##### `columnsInput`<sup>Optional</sup> <a name="columnsInput" id="@cdktf/provider-postgresql.grant.Grant.property.columnsInput"></a>
+
+```typescript
+public readonly columnsInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
 ##### `databaseInput`<sup>Optional</sup> <a name="databaseInput" id="@cdktf/provider-postgresql.grant.Grant.property.databaseInput"></a>
 
 ```typescript
@@ -607,6 +626,16 @@ public readonly withGrantOptionInput: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `columns`<sup>Required</sup> <a name="columns" id="@cdktf/provider-postgresql.grant.Grant.property.columns"></a>
+
+```typescript
+public readonly columns: string[];
+```
+
+- *Type:* string[]
 
 ---
 
@@ -732,9 +761,10 @@ const grantConfig: grant.GrantConfig = { ... }
 | <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.database">database</a></code> | <code>string</code> | The database to grant privileges on for this role. |
-| <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.objectType">objectType</a></code> | <code>string</code> | The PostgreSQL object type to grant the privileges on (one of: database, function, procedure, routine, schema, sequence, table, foreign_data_wrapper, foreign_server). |
+| <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.objectType">objectType</a></code> | <code>string</code> | The PostgreSQL object type to grant the privileges on (one of: database, function, procedure, routine, schema, sequence, table, foreign_data_wrapper, foreign_server, column). |
 | <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.privileges">privileges</a></code> | <code>string[]</code> | The list of privileges to grant. |
 | <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.role">role</a></code> | <code>string</code> | The name of the role to grant privileges on. |
+| <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.columns">columns</a></code> | <code>string[]</code> | The specific columns to grant privileges on for this role. |
 | <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#id Grant#id}. |
 | <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.objects">objects</a></code> | <code>string[]</code> | The specific objects to grant privileges on for this role (empty means all objects of the requested type). |
 | <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.schema">schema</a></code> | <code>string</code> | The database schema to grant privileges on for this role. |
@@ -834,7 +864,7 @@ public readonly objectType: string;
 
 - *Type:* string
 
-The PostgreSQL object type to grant the privileges on (one of: database, function, procedure, routine, schema, sequence, table, foreign_data_wrapper, foreign_server).
+The PostgreSQL object type to grant the privileges on (one of: database, function, procedure, routine, schema, sequence, table, foreign_data_wrapper, foreign_server, column).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#object_type Grant#object_type}
 
@@ -865,6 +895,20 @@ public readonly role: string;
 The name of the role to grant privileges on.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#role Grant#role}
+
+---
+
+##### `columns`<sup>Optional</sup> <a name="columns" id="@cdktf/provider-postgresql.grant.GrantConfig.property.columns"></a>
+
+```typescript
+public readonly columns: string[];
+```
+
+- *Type:* string[]
+
+The specific columns to grant privileges on for this role.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#columns Grant#columns}
 
 ---
 
