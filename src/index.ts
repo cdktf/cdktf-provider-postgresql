@@ -13,5 +13,8 @@ export * as schema from './schema';
 export * as server from './server';
 export * as subscription from './subscription';
 export * as userMapping from './user-mapping';
+export * as dataPostgresqlSchemas from './data-postgresql-schemas';
+export * as dataPostgresqlSequences from './data-postgresql-sequences';
+export * as dataPostgresqlTables from './data-postgresql-tables';
 export * as provider from './provider';
 

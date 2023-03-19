@@ -66,6 +66,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.grant.Grant.resetColumns">ResetColumns</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.resetObjects">ResetObjects</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.resetSchema">ResetSchema</a></code> | *No description.* |
@@ -257,6 +258,12 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 
 ---
 
+##### `ResetColumns` <a name="ResetColumns" id="@cdktf/provider-postgresql.grant.Grant.resetColumns"></a>
+
+```csharp
+private void ResetColumns()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktf/provider-postgresql.grant.Grant.resetId"></a>
 
 ```csharp
@@ -369,6 +376,7 @@ Grant.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.columnsInput">ColumnsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.databaseInput">DatabaseInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.objectsInput">ObjectsInput</a></code> | <code>string[]</code> | *No description.* |
@@ -377,6 +385,7 @@ Grant.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.roleInput">RoleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.schemaInput">SchemaInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.withGrantOptionInput">WithGrantOptionInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.columns">Columns</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.database">Database</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.objects">Objects</a></code> | <code>string[]</code> | *No description.* |
@@ -530,6 +539,16 @@ public object[] Provisioners { get; }
 
 ---
 
+##### `ColumnsInput`<sup>Optional</sup> <a name="ColumnsInput" id="@cdktf/provider-postgresql.grant.Grant.property.columnsInput"></a>
+
+```csharp
+public string[] ColumnsInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
 ##### `DatabaseInput`<sup>Optional</sup> <a name="DatabaseInput" id="@cdktf/provider-postgresql.grant.Grant.property.databaseInput"></a>
 
 ```csharp
@@ -607,6 +626,16 @@ public object WithGrantOptionInput { get; }
 ```
 
 - *Type:* object
+
+---
+
+##### `Columns`<sup>Required</sup> <a name="Columns" id="@cdktf/provider-postgresql.grant.Grant.property.columns"></a>
+
+```csharp
+public string[] Columns { get; }
+```
+
+- *Type:* string[]
 
 ---
 
@@ -729,6 +758,7 @@ new GrantConfig {
     string ObjectType,
     string[] Privileges,
     string Role,
+    string[] Columns = null,
     string Id = null,
     string[] Objects = null,
     string Schema = null,
@@ -748,9 +778,10 @@ new GrantConfig {
 | <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.database">Database</a></code> | <code>string</code> | The database to grant privileges on for this role. |
-| <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.objectType">ObjectType</a></code> | <code>string</code> | The PostgreSQL object type to grant the privileges on (one of: database, function, procedure, routine, schema, sequence, table, foreign_data_wrapper, foreign_server). |
+| <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.objectType">ObjectType</a></code> | <code>string</code> | The PostgreSQL object type to grant the privileges on (one of: database, function, procedure, routine, schema, sequence, table, foreign_data_wrapper, foreign_server, column). |
 | <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.privileges">Privileges</a></code> | <code>string[]</code> | The list of privileges to grant. |
 | <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.role">Role</a></code> | <code>string</code> | The name of the role to grant privileges on. |
+| <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.columns">Columns</a></code> | <code>string[]</code> | The specific columns to grant privileges on for this role. |
 | <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#id Grant#id}. |
 | <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.objects">Objects</a></code> | <code>string[]</code> | The specific objects to grant privileges on for this role (empty means all objects of the requested type). |
 | <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.schema">Schema</a></code> | <code>string</code> | The database schema to grant privileges on for this role. |
@@ -850,7 +881,7 @@ public string ObjectType { get; set; }
 
 - *Type:* string
 
-The PostgreSQL object type to grant the privileges on (one of: database, function, procedure, routine, schema, sequence, table, foreign_data_wrapper, foreign_server).
+The PostgreSQL object type to grant the privileges on (one of: database, function, procedure, routine, schema, sequence, table, foreign_data_wrapper, foreign_server, column).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#object_type Grant#object_type}
 
@@ -881,6 +912,20 @@ public string Role { get; set; }
 The name of the role to grant privileges on.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#role Grant#role}
+
+---
+
+##### `Columns`<sup>Optional</sup> <a name="Columns" id="@cdktf/provider-postgresql.grant.GrantConfig.property.columns"></a>
+
+```csharp
+public string[] Columns { get; set; }
+```
+
+- *Type:* string[]
+
+The specific columns to grant privileges on for this role.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#columns Grant#columns}
 
 ---
 

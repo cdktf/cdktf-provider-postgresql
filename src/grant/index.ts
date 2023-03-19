@@ -8,6 +8,12 @@ import * as cdktf from 'cdktf';
 
 export interface GrantConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The specific columns to grant privileges on for this role
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#columns Grant#columns}
+  */
+  readonly columns?: string[];
+  /**
   * The database to grant privileges on for this role
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#database Grant#database}
@@ -21,7 +27,7 @@ export interface GrantConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
-  * The PostgreSQL object type to grant the privileges on (one of: database, function, procedure, routine, schema, sequence, table, foreign_data_wrapper, foreign_server)
+  * The PostgreSQL object type to grant the privileges on (one of: database, function, procedure, routine, schema, sequence, table, foreign_data_wrapper, foreign_server, column)
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#object_type Grant#object_type}
   */
@@ -84,7 +90,7 @@ export class Grant extends cdktf.TerraformResource {
       terraformResourceType: 'postgresql_grant',
       terraformGeneratorMetadata: {
         providerName: 'postgresql',
-        providerVersion: '1.18.0',
+        providerVersion: '1.19.0',
         providerVersionConstraint: '~> 1.14'
       },
       provider: config.provider,
@@ -95,6 +101,7 @@ export class Grant extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._columns = config.columns;
     this._database = config.database;
     this._id = config.id;
     this._objectType = config.objectType;
@@ -108,6 +115,22 @@ export class Grant extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // columns - computed: false, optional: true, required: false
+  private _columns?: string[]; 
+  public get columns() {
+    return cdktf.Fn.tolist(this.getListAttribute('columns'));
+  }
+  public set columns(value: string[]) {
+    this._columns = value;
+  }
+  public resetColumns() {
+    this._columns = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get columnsInput() {
+    return this._columns;
+  }
 
   // database - computed: false, optional: false, required: true
   private _database?: string; 
@@ -231,6 +254,7 @@ export class Grant extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      columns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._columns),
       database: cdktf.stringToTerraform(this._database),
       id: cdktf.stringToTerraform(this._id),
       object_type: cdktf.stringToTerraform(this._objectType),
