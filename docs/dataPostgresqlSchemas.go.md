@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/postgresql/d/schemas
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/datapostgresqlschemas"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/datapostgresqlschemas"
 
 datapostgresqlschemas.NewDataPostgresqlSchemas(scope Construct, id *string, config DataPostgresqlSchemasConfig) DataPostgresqlSchemas
 ```
@@ -308,7 +308,7 @@ func ResetRegexPattern()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/datapostgresqlschemas"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/datapostgresqlschemas"
 
 datapostgresqlschemas.DataPostgresqlSchemas_IsConstruct(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/datapostgresqlschemas"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/datapostgresqlschemas"
 
 datapostgresqlschemas.DataPostgresqlSchemas_IsTerraformElement(x interface{}) *bool
 ```
@@ -354,7 +354,7 @@ datapostgresqlschemas.DataPostgresqlSchemas_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/datapostgresqlschemas"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/datapostgresqlschemas"
 
 datapostgresqlschemas.DataPostgresqlSchemas_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -696,7 +696,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemasConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/datapostgresqlschemas"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/datapostgresqlschemas"
 
 &datapostgresqlschemas.DataPostgresqlSchemasConfig {
 	Connection: interface{},
