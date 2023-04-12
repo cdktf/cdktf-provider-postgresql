@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/replica
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.replicationSlot.ReplicationSlot.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/replicationslot"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/replicationslot"
 
 replicationslot.NewReplicationSlot(scope Construct, id *string, config ReplicationSlotConfig) ReplicationSlot
 ```
@@ -280,7 +280,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-postgresql.replicationSlot.ReplicationSlot.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/replicationslot"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/replicationslot"
 
 replicationslot.ReplicationSlot_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-postgresql.replicationSlot.ReplicationSlot.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/replicationslot"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/replicationslot"
 
 replicationslot.ReplicationSlot_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ replicationslot.ReplicationSlot_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-postgresql.replicationSlot.ReplicationSlot.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/replicationslot"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/replicationslot"
 
 replicationslot.ReplicationSlot_IsTerraformResource(x interface{}) *bool
 ```
@@ -613,7 +613,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-postgresql.replicationSlot.ReplicationSlotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/replicationslot"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/replicationslot"
 
 &replicationslot.ReplicationSlotConfig {
 	Connection: interface{},
