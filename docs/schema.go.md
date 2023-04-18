@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.schema.Schema.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/schema"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/schema"
 
 schema.NewSchema(scope Construct, id *string, config SchemaConfig) Schema
 ```
@@ -321,7 +321,7 @@ func ResetPolicy()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-postgresql.schema.Schema.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/schema"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/schema"
 
 schema.Schema_IsConstruct(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-postgresql.schema.Schema.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/schema"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/schema"
 
 schema.Schema_IsTerraformElement(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ schema.Schema_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-postgresql.schema.Schema.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/schema"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/schema"
 
 schema.Schema_IsTerraformResource(x interface{}) *bool
 ```
@@ -720,7 +720,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-postgresql.schema.SchemaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/schema"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/schema"
 
 &schema.SchemaConfig {
 	Connection: interface{},
@@ -935,7 +935,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 #### Initializer <a name="Initializer" id="@cdktf/provider-postgresql.schema.SchemaPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/schema"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/schema"
 
 &schema.SchemaPolicy {
 	Create: interface{},
@@ -1035,7 +1035,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.schema.SchemaPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/schema"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/schema"
 
 schema.NewSchemaPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SchemaPolicyList
 ```
@@ -1178,7 +1178,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/schema"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/schema"
 
 schema.NewSchemaPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SchemaPolicyOutputReference
 ```
