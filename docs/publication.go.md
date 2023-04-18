@@ -4,12 +4,12 @@
 
 ### Publication <a name="Publication" id="@cdktf/provider-postgresql.publication.Publication"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/publication postgresql_publication}.
+Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/publication postgresql_publication}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.publication.Publication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/publication"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/publication"
 
 publication.NewPublication(scope Construct, id *string, config PublicationConfig) Publication
 ```
@@ -322,7 +322,7 @@ func ResetTables()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-postgresql.publication.Publication.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/publication"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/publication"
 
 publication.Publication_IsConstruct(x interface{}) *bool
 ```
@@ -354,7 +354,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-postgresql.publication.Publication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/publication"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/publication"
 
 publication.Publication_IsTerraformElement(x interface{}) *bool
 ```
@@ -368,7 +368,7 @@ publication.Publication_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-postgresql.publication.Publication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/publication"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/publication"
 
 publication.Publication_IsTerraformResource(x interface{}) *bool
 ```
@@ -391,7 +391,7 @@ publication.Publication_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-postgresql.publication.Publication.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.publication.Publication.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.publication.Publication.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.publication.Publication.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.publication.Publication.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.publication.Publication.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.publication.Publication.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.publication.Publication.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -503,10 +503,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-postgresql.publication.Publication.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -765,11 +765,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-postgresql.publication.PublicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/publication"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/publication"
 
 &publication.PublicationConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -792,17 +792,17 @@ import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/publication"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/publication#name Publication#name}. |
+| <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/publication#name Publication#name}. |
 | <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.allTables">AllTables</a></code> | <code>interface{}</code> | Sets the tables list to publish to ALL tables. |
 | <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.database">Database</a></code> | <code>*string</code> | Sets the database to add the publication for. |
 | <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.dropCascade">DropCascade</a></code> | <code>interface{}</code> | When true, will also drop all the objects that depend on the publication, and in turn all objects that depend on those objects. |
-| <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/publication#id Publication#id}. |
+| <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/publication#id Publication#id}. |
 | <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.owner">Owner</a></code> | <code>*string</code> | Sets the owner of the publication. |
 | <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.publishParam">PublishParam</a></code> | <code>*[]*string</code> | Sets which DML operations will be published. |
 | <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.publishViaPartitionRootParam">PublishViaPartitionRootParam</a></code> | <code>interface{}</code> | Sets whether changes in a partitioned table using the identity and schema of the partitioned table. |
@@ -823,10 +823,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-postgresql.publication.PublicationConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -888,7 +888,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/publication#name Publication#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/publication#name Publication#name}.
 
 ---
 
@@ -902,7 +902,7 @@ AllTables interface{}
 
 Sets the tables list to publish to ALL tables.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/publication#all_tables Publication#all_tables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/publication#all_tables Publication#all_tables}
 
 ---
 
@@ -916,7 +916,7 @@ Database *string
 
 Sets the database to add the publication for.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/publication#database Publication#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/publication#database Publication#database}
 
 ---
 
@@ -930,7 +930,7 @@ DropCascade interface{}
 
 When true, will also drop all the objects that depend on the publication, and in turn all objects that depend on those objects.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/publication#drop_cascade Publication#drop_cascade}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/publication#drop_cascade Publication#drop_cascade}
 
 ---
 
@@ -942,7 +942,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/publication#id Publication#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/publication#id Publication#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -959,7 +959,7 @@ Owner *string
 
 Sets the owner of the publication.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/publication#owner Publication#owner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/publication#owner Publication#owner}
 
 ---
 
@@ -973,7 +973,7 @@ PublishParam *[]*string
 
 Sets which DML operations will be published.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/publication#publish_param Publication#publish_param}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/publication#publish_param Publication#publish_param}
 
 ---
 
@@ -987,7 +987,7 @@ PublishViaPartitionRootParam interface{}
 
 Sets whether changes in a partitioned table using the identity and schema of the partitioned table.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/publication#publish_via_partition_root_param Publication#publish_via_partition_root_param}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/publication#publish_via_partition_root_param Publication#publish_via_partition_root_param}
 
 ---
 
@@ -1001,7 +1001,7 @@ Tables *[]*string
 
 Sets the tables list to publish.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/publication#tables Publication#tables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/publication#tables Publication#tables}
 
 ---
 

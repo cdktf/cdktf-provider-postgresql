@@ -4,7 +4,7 @@
 
 ### Schema <a name="Schema" id="@cdktf/provider-postgresql.schema.Schema"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/schema postgresql_schema}.
+Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/schema postgresql_schema}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.schema.Schema.Initializer"></a>
 
@@ -390,7 +390,7 @@ schema.Schema.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -498,10 +498,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-postgresql.schema.Schema.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -730,7 +730,7 @@ const schemaConfig: schema.SchemaConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -739,7 +739,7 @@ const schemaConfig: schema.SchemaConfig = { ... }
 | <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.name">name</a></code> | <code>string</code> | The name of the schema. |
 | <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.database">database</a></code> | <code>string</code> | The database name to alter schema. |
 | <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.dropCascade">dropCascade</a></code> | <code>boolean \| cdktf.IResolvable</code> | When true, will also drop all the objects that are contained in the schema. |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema#id Schema#id}. |
+| <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/schema#id Schema#id}. |
 | <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.ifNotExists">ifNotExists</a></code> | <code>boolean \| cdktf.IResolvable</code> | When true, use the existing schema if it exists. |
 | <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.owner">owner</a></code> | <code>string</code> | The ROLE name who owns the schema. |
 | <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.policy">policy</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-postgresql.schema.SchemaPolicy">SchemaPolicy</a>[]</code> | policy block. |
@@ -759,10 +759,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-postgresql.schema.SchemaConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -826,7 +826,7 @@ public readonly name: string;
 
 The name of the schema.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema#name Schema#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/schema#name Schema#name}
 
 ---
 
@@ -840,7 +840,7 @@ public readonly database: string;
 
 The database name to alter schema.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema#database Schema#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/schema#database Schema#database}
 
 ---
 
@@ -854,7 +854,7 @@ public readonly dropCascade: boolean | IResolvable;
 
 When true, will also drop all the objects that are contained in the schema.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema#drop_cascade Schema#drop_cascade}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/schema#drop_cascade Schema#drop_cascade}
 
 ---
 
@@ -866,7 +866,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema#id Schema#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/schema#id Schema#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -883,7 +883,7 @@ public readonly ifNotExists: boolean | IResolvable;
 
 When true, use the existing schema if it exists.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema#if_not_exists Schema#if_not_exists}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/schema#if_not_exists Schema#if_not_exists}
 
 ---
 
@@ -897,7 +897,7 @@ public readonly owner: string;
 
 The ROLE name who owns the schema.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema#owner Schema#owner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/schema#owner Schema#owner}
 
 ---
 
@@ -911,7 +911,7 @@ public readonly policy: IResolvable | SchemaPolicy[];
 
 policy block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema#policy Schema#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/schema#policy Schema#policy}
 
 ---
 
@@ -947,7 +947,7 @@ public readonly create: boolean | IResolvable;
 
 If true, allow the specified ROLEs to CREATE new objects within the schema(s).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema#create Schema#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/schema#create Schema#create}
 
 ---
 
@@ -961,7 +961,7 @@ public readonly createWithGrant: boolean | IResolvable;
 
 If true, allow the specified ROLEs to CREATE new objects within the schema(s) and GRANT the same CREATE privilege to different ROLEs.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema#create_with_grant Schema#create_with_grant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/schema#create_with_grant Schema#create_with_grant}
 
 ---
 
@@ -975,7 +975,7 @@ public readonly role: string;
 
 ROLE who will receive this policy (default: PUBLIC).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema#role Schema#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/schema#role Schema#role}
 
 ---
 
@@ -989,7 +989,7 @@ public readonly usage: boolean | IResolvable;
 
 If true, allow the specified ROLEs to use objects within the schema(s).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema#usage Schema#usage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/schema#usage Schema#usage}
 
 ---
 
@@ -1003,7 +1003,7 @@ public readonly usageWithGrant: boolean | IResolvable;
 
 If true, allow the specified ROLEs to use objects within the schema(s) and GRANT the same USAGE privilege to different ROLEs.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/schema#usage_with_grant Schema#usage_with_grant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/schema#usage_with_grant Schema#usage_with_grant}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### FunctionResource <a name="FunctionResource" id="@cdktf/provider-postgresql.functionResource.FunctionResource"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/function postgresql_function}.
+Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/function postgresql_function}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer"></a>
 
@@ -397,7 +397,7 @@ FunctionResource.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -509,10 +509,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -802,7 +802,7 @@ public string Type { get; set; }
 
 The argument type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#type FunctionResource#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/function#type FunctionResource#type}
 
 ---
 
@@ -816,7 +816,7 @@ public string Default { get; set; }
 
 An expression to be used as default value if the parameter is not specified.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#default FunctionResource#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/function#default FunctionResource#default}
 
 ---
 
@@ -830,7 +830,7 @@ public string Mode { get; set; }
 
 The argument mode. One of: IN, OUT, INOUT, or VARIADIC.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#mode FunctionResource#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/function#mode FunctionResource#mode}
 
 ---
 
@@ -844,7 +844,7 @@ public string Name { get; set; }
 
 The argument name. The name may be required for some languages or depending on the argument mode.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#name FunctionResource#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/function#name FunctionResource#name}
 
 ---
 
@@ -857,7 +857,7 @@ using HashiCorp.Cdktf.Providers.Postgresql;
 
 new FunctionResourceConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -880,7 +880,7 @@ new FunctionResourceConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -891,7 +891,7 @@ new FunctionResourceConfig {
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.arg">Arg</a></code> | <code>object</code> | arg block. |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.database">Database</a></code> | <code>string</code> | The database where the function is located. If not specified, the provider default database is used. |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.dropCascade">DropCascade</a></code> | <code>object</code> | Automatically drop objects that depend on the function (such as operators or triggers), and in turn all objects that depend on those objects. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#id FunctionResource#id}. |
+| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/function#id FunctionResource#id}. |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.language">Language</a></code> | <code>string</code> | Language of theof the function. One of: internal, sql, c, plpgsql. |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.returns">Returns</a></code> | <code>string</code> | Function return type. If not specified, it will be calculated based on the output arguments. |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.schema">Schema</a></code> | <code>string</code> | Schema where the function is located. If not specified, the provider default schema is used. |
@@ -911,10 +911,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -978,7 +978,7 @@ public string Body { get; set; }
 
 Body of the function.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#body FunctionResource#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/function#body FunctionResource#body}
 
 ---
 
@@ -992,7 +992,7 @@ public string Name { get; set; }
 
 Name of the function.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#name FunctionResource#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/function#name FunctionResource#name}
 
 ---
 
@@ -1006,7 +1006,7 @@ public object Arg { get; set; }
 
 arg block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#arg FunctionResource#arg}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/function#arg FunctionResource#arg}
 
 ---
 
@@ -1020,7 +1020,7 @@ public string Database { get; set; }
 
 The database where the function is located. If not specified, the provider default database is used.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#database FunctionResource#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/function#database FunctionResource#database}
 
 ---
 
@@ -1034,7 +1034,7 @@ public object DropCascade { get; set; }
 
 Automatically drop objects that depend on the function (such as operators or triggers), and in turn all objects that depend on those objects.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#drop_cascade FunctionResource#drop_cascade}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/function#drop_cascade FunctionResource#drop_cascade}
 
 ---
 
@@ -1046,7 +1046,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#id FunctionResource#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/function#id FunctionResource#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1063,7 +1063,7 @@ public string Language { get; set; }
 
 Language of theof the function. One of: internal, sql, c, plpgsql.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#language FunctionResource#language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/function#language FunctionResource#language}
 
 ---
 
@@ -1077,7 +1077,7 @@ public string Returns { get; set; }
 
 Function return type. If not specified, it will be calculated based on the output arguments.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#returns FunctionResource#returns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/function#returns FunctionResource#returns}
 
 ---
 
@@ -1091,7 +1091,7 @@ public string Schema { get; set; }
 
 Schema where the function is located. If not specified, the provider default schema is used.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#schema FunctionResource#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/function#schema FunctionResource#schema}
 
 ---
 

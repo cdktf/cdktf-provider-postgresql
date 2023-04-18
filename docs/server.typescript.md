@@ -4,7 +4,7 @@
 
 ### Server <a name="Server" id="@cdktf/provider-postgresql.server.Server"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/server postgresql_server}.
+Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/server postgresql_server}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.server.Server.Initializer"></a>
 
@@ -377,7 +377,7 @@ server.Server.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-postgresql.server.Server.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.server.Server.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.server.Server.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.server.Server.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.server.Server.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.server.Server.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.server.Server.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -487,10 +487,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-postgresql.server.Server.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -739,7 +739,7 @@ const serverConfig: server.ServerConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-postgresql.server.ServerConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.ServerConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.server.ServerConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.server.ServerConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.server.ServerConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.server.ServerConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -748,7 +748,7 @@ const serverConfig: server.ServerConfig = { ... }
 | <code><a href="#@cdktf/provider-postgresql.server.ServerConfig.property.fdwName">fdwName</a></code> | <code>string</code> | The name of the foreign-data wrapper that manages the server. |
 | <code><a href="#@cdktf/provider-postgresql.server.ServerConfig.property.serverName">serverName</a></code> | <code>string</code> | The name of the foreign server to be created. |
 | <code><a href="#@cdktf/provider-postgresql.server.ServerConfig.property.dropCascade">dropCascade</a></code> | <code>boolean \| cdktf.IResolvable</code> | Automatically drop objects that depend on the server (such as user mappings), and in turn all objects that depend on those objects. |
-| <code><a href="#@cdktf/provider-postgresql.server.ServerConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/server#id Server#id}. |
+| <code><a href="#@cdktf/provider-postgresql.server.ServerConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/server#id Server#id}. |
 | <code><a href="#@cdktf/provider-postgresql.server.ServerConfig.property.options">options</a></code> | <code>{[ key: string ]: string}</code> | This clause specifies the options for the server. |
 | <code><a href="#@cdktf/provider-postgresql.server.ServerConfig.property.serverOwner">serverOwner</a></code> | <code>string</code> | The user name of the new owner of the foreign server. |
 | <code><a href="#@cdktf/provider-postgresql.server.ServerConfig.property.serverType">serverType</a></code> | <code>string</code> | Optional server type, potentially useful to foreign-data wrappers. |
@@ -769,10 +769,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-postgresql.server.ServerConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -836,7 +836,7 @@ public readonly fdwName: string;
 
 The name of the foreign-data wrapper that manages the server.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/server#fdw_name Server#fdw_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/server#fdw_name Server#fdw_name}
 
 ---
 
@@ -850,7 +850,7 @@ public readonly serverName: string;
 
 The name of the foreign server to be created.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/server#server_name Server#server_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/server#server_name Server#server_name}
 
 ---
 
@@ -866,7 +866,7 @@ Automatically drop objects that depend on the server (such as user mappings), an
 
 Drop RESTRICT is the default
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/server#drop_cascade Server#drop_cascade}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/server#drop_cascade Server#drop_cascade}
 
 ---
 
@@ -878,7 +878,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/server#id Server#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/server#id Server#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -897,7 +897,7 @@ This clause specifies the options for the server.
 
 The options typically define the connection details of the server, but the actual names and values are dependent on the server's foreign-data wrapper
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/server#options Server#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/server#options Server#options}
 
 ---
 
@@ -911,7 +911,7 @@ public readonly serverOwner: string;
 
 The user name of the new owner of the foreign server.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/server#server_owner Server#server_owner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/server#server_owner Server#server_owner}
 
 ---
 
@@ -925,7 +925,7 @@ public readonly serverType: string;
 
 Optional server type, potentially useful to foreign-data wrappers.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/server#server_type Server#server_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/server#server_type Server#server_type}
 
 ---
 
@@ -939,7 +939,7 @@ public readonly serverVersion: string;
 
 Optional server version, potentially useful to foreign-data wrappers.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/server#server_version Server#server_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/server#server_version Server#server_version}
 
 ---
 

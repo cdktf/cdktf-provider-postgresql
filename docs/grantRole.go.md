@@ -4,12 +4,12 @@
 
 ### GrantRole <a name="GrantRole" id="@cdktf/provider-postgresql.grantRole.GrantRole"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/grant_role postgresql_grant_role}.
+Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/grant_role postgresql_grant_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.grantRole.GrantRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/grantrole"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/grantrole"
 
 grantrole.NewGrantRole(scope Construct, id *string, config GrantRoleConfig) GrantRole
 ```
@@ -280,7 +280,7 @@ func ResetWithAdminOption()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-postgresql.grantRole.GrantRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/grantrole"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/grantrole"
 
 grantrole.GrantRole_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-postgresql.grantRole.GrantRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/grantrole"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/grantrole"
 
 grantrole.GrantRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ grantrole.GrantRole_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-postgresql.grantRole.GrantRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/grantrole"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/grantrole"
 
 grantrole.GrantRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ grantrole.GrantRole_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-postgresql.grantRole.GrantRole.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grantRole.GrantRole.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grantRole.GrantRole.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grantRole.GrantRole.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.grantRole.GrantRole.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grantRole.GrantRole.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grantRole.GrantRole.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grantRole.GrantRole.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -451,10 +451,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-postgresql.grantRole.GrantRole.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -613,11 +613,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-postgresql.grantRole.GrantRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/grantrole"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/grantrole"
 
 &grantrole.GrantRoleConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -635,7 +635,7 @@ import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/grantrole"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-postgresql.grantRole.GrantRoleConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grantRole.GrantRoleConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.grantRole.GrantRoleConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grantRole.GrantRoleConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grantRole.GrantRoleConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grantRole.GrantRoleConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -643,7 +643,7 @@ import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/grantrole"
 | <code><a href="#@cdktf/provider-postgresql.grantRole.GrantRoleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.grantRole.GrantRoleConfig.property.grantRole">GrantRole</a></code> | <code>*string</code> | The name of the role that is granted to role. |
 | <code><a href="#@cdktf/provider-postgresql.grantRole.GrantRoleConfig.property.role">Role</a></code> | <code>*string</code> | The name of the role to grant grant_role. |
-| <code><a href="#@cdktf/provider-postgresql.grantRole.GrantRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant_role#id GrantRole#id}. |
+| <code><a href="#@cdktf/provider-postgresql.grantRole.GrantRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/grant_role#id GrantRole#id}. |
 | <code><a href="#@cdktf/provider-postgresql.grantRole.GrantRoleConfig.property.withAdminOption">WithAdminOption</a></code> | <code>interface{}</code> | Permit the grant recipient to grant it to others. |
 
 ---
@@ -661,10 +661,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-postgresql.grantRole.GrantRoleConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -728,7 +728,7 @@ GrantRole *string
 
 The name of the role that is granted to role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant_role#grant_role GrantRole#grant_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/grant_role#grant_role GrantRole#grant_role}
 
 ---
 
@@ -742,7 +742,7 @@ Role *string
 
 The name of the role to grant grant_role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant_role#role GrantRole#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/grant_role#role GrantRole#role}
 
 ---
 
@@ -754,7 +754,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant_role#id GrantRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/grant_role#id GrantRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -771,7 +771,7 @@ WithAdminOption interface{}
 
 Permit the grant recipient to grant it to others.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant_role#with_admin_option GrantRole#with_admin_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/grant_role#with_admin_option GrantRole#with_admin_option}
 
 ---
 

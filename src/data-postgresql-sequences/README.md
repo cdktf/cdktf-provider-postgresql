@@ -1,3 +1,3 @@
 # `data_postgresql_sequences`
 
-Refer to the Terraform Registory for docs: [`data_postgresql_sequences`](https://www.terraform.io/docs/providers/postgresql/d/sequences).
+Refer to the Terraform Registory for docs: [`data_postgresql_sequences`](https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/data-sources/sequences).

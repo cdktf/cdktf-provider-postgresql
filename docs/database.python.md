@@ -4,7 +4,7 @@
 
 ### Database <a name="Database" id="@cdktf/provider-postgresql.database.Database"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/database postgresql_database}.
+Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/database postgresql_database}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.database.Database.Initializer"></a>
 
@@ -15,7 +15,7 @@ database.Database(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -40,7 +40,7 @@ database.Database(
 | <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -50,7 +50,7 @@ database.Database(
 | <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.allowConnections">allow_connections</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If false then no one can connect to this database. |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.connectionLimit">connection_limit</a></code> | <code>typing.Union[int, float]</code> | How many concurrent connections can be made to this database. |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.encoding">encoding</a></code> | <code>str</code> | Character set encoding to use in the new database. |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#id Database#id}. |
+| <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/database#id Database#id}. |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.isTemplate">is_template</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, then this database can be cloned by any user with CREATEDB privileges. |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.lcCollate">lc_collate</a></code> | <code>str</code> | Collation order (LC_COLLATE) to use in the new database. |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.lcCtype">lc_ctype</a></code> | <code>str</code> | Character classification (LC_CTYPE) to use in the new database. |
@@ -86,7 +86,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-postgresql.database.Database.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -126,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 The PostgreSQL database name to connect to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#name Database#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/database#name Database#name}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postg
 
 If false then no one can connect to this database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#allow_connections Database#allow_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/database#allow_connections Database#allow_connections}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postg
 
 How many concurrent connections can be made to this database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#connection_limit Database#connection_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/database#connection_limit Database#connection_limit}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postg
 
 Character set encoding to use in the new database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#encoding Database#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/database#encoding Database#encoding}
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postg
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#id Database#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/database#id Database#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -177,7 +177,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 If true, then this database can be cloned by any user with CREATEDB privileges.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#is_template Database#is_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/database#is_template Database#is_template}
 
 ---
 
@@ -187,7 +187,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postg
 
 Collation order (LC_COLLATE) to use in the new database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#lc_collate Database#lc_collate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/database#lc_collate Database#lc_collate}
 
 ---
 
@@ -197,7 +197,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postg
 
 Character classification (LC_CTYPE) to use in the new database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#lc_ctype Database#lc_ctype}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/database#lc_ctype Database#lc_ctype}
 
 ---
 
@@ -207,7 +207,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postg
 
 The ROLE which owns the database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#owner Database#owner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/database#owner Database#owner}
 
 ---
 
@@ -217,7 +217,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postg
 
 The name of the tablespace that will be associated with the new database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#tablespace_name Database#tablespace_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/database#tablespace_name Database#tablespace_name}
 
 ---
 
@@ -227,7 +227,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postg
 
 The name of the template from which to create the new database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#template Database#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/database#template Database#template}
 
 ---
 
@@ -621,7 +621,7 @@ database.Database.is_terraform_resource(
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.database.Database.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -737,10 +737,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-postgresql.database.Database.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1043,7 +1043,7 @@ from cdktf_cdktf_provider_postgresql import database
 
 database.DatabaseConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -1068,7 +1068,7 @@ database.DatabaseConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1078,7 +1078,7 @@ database.DatabaseConfig(
 | <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.allowConnections">allow_connections</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If false then no one can connect to this database. |
 | <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.connectionLimit">connection_limit</a></code> | <code>typing.Union[int, float]</code> | How many concurrent connections can be made to this database. |
 | <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.encoding">encoding</a></code> | <code>str</code> | Character set encoding to use in the new database. |
-| <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#id Database#id}. |
+| <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/database#id Database#id}. |
 | <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.isTemplate">is_template</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, then this database can be cloned by any user with CREATEDB privileges. |
 | <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.lcCollate">lc_collate</a></code> | <code>str</code> | Collation order (LC_COLLATE) to use in the new database. |
 | <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.lcCtype">lc_ctype</a></code> | <code>str</code> | Character classification (LC_CTYPE) to use in the new database. |
@@ -1101,10 +1101,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-postgresql.database.DatabaseConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1168,7 +1168,7 @@ name: str
 
 The PostgreSQL database name to connect to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#name Database#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/database#name Database#name}
 
 ---
 
@@ -1182,7 +1182,7 @@ allow_connections: typing.Union[bool, IResolvable]
 
 If false then no one can connect to this database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#allow_connections Database#allow_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/database#allow_connections Database#allow_connections}
 
 ---
 
@@ -1196,7 +1196,7 @@ connection_limit: typing.Union[int, float]
 
 How many concurrent connections can be made to this database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#connection_limit Database#connection_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/database#connection_limit Database#connection_limit}
 
 ---
 
@@ -1210,7 +1210,7 @@ encoding: str
 
 Character set encoding to use in the new database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#encoding Database#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/database#encoding Database#encoding}
 
 ---
 
@@ -1222,7 +1222,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#id Database#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/database#id Database#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1239,7 +1239,7 @@ is_template: typing.Union[bool, IResolvable]
 
 If true, then this database can be cloned by any user with CREATEDB privileges.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#is_template Database#is_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/database#is_template Database#is_template}
 
 ---
 
@@ -1253,7 +1253,7 @@ lc_collate: str
 
 Collation order (LC_COLLATE) to use in the new database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#lc_collate Database#lc_collate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/database#lc_collate Database#lc_collate}
 
 ---
 
@@ -1267,7 +1267,7 @@ lc_ctype: str
 
 Character classification (LC_CTYPE) to use in the new database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#lc_ctype Database#lc_ctype}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/database#lc_ctype Database#lc_ctype}
 
 ---
 
@@ -1281,7 +1281,7 @@ owner: str
 
 The ROLE which owns the database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#owner Database#owner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/database#owner Database#owner}
 
 ---
 
@@ -1295,7 +1295,7 @@ tablespace_name: str
 
 The name of the tablespace that will be associated with the new database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#tablespace_name Database#tablespace_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/database#tablespace_name Database#tablespace_name}
 
 ---
 
@@ -1309,7 +1309,7 @@ template: str
 
 The name of the template from which to create the new database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/database#template Database#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/database#template Database#template}
 
 ---
 

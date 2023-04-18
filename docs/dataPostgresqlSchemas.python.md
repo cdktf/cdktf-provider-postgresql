@@ -4,7 +4,7 @@
 
 ### DataPostgresqlSchemas <a name="DataPostgresqlSchemas" id="@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/postgresql/d/schemas postgresql_schemas}.
+Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/data-sources/schemas postgresql_schemas}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.Initializer"></a>
 
@@ -15,7 +15,7 @@ dataPostgresqlSchemas.DataPostgresqlSchemas(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -36,14 +36,14 @@ dataPostgresqlSchemas.DataPostgresqlSchemas(
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.Initializer.parameter.database">database</a></code> | <code>str</code> | The PostgreSQL database which will be queried for schema names. |
-| <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/d/schemas#id DataPostgresqlSchemas#id}. |
+| <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/data-sources/schemas#id DataPostgresqlSchemas#id}. |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.Initializer.parameter.includeSystemSchemas">include_system_schemas</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Determines whether to include system schemas (pg_ prefix and information_schema). 'public' will always be included. |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.Initializer.parameter.likeAllPatterns">like_all_patterns</a></code> | <code>typing.List[str]</code> | Expression(s) which will be pattern matched in the query using the PostgreSQL LIKE ALL operator. |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.Initializer.parameter.likeAnyPatterns">like_any_patterns</a></code> | <code>typing.List[str]</code> | Expression(s) which will be pattern matched in the query using the PostgreSQL LIKE ANY operator. |
@@ -78,7 +78,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The PostgreSQL database which will be queried for schema names.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/d/schemas#database DataPostgresqlSchemas#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/data-sources/schemas#database DataPostgresqlSchemas#database}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postg
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/d/schemas#id DataPostgresqlSchemas#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/data-sources/schemas#id DataPostgresqlSchemas#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -139,7 +139,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Determines whether to include system schemas (pg_ prefix and information_schema). 'public' will always be included.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/d/schemas#include_system_schemas DataPostgresqlSchemas#include_system_schemas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/data-sources/schemas#include_system_schemas DataPostgresqlSchemas#include_system_schemas}
 
 ---
 
@@ -149,7 +149,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postg
 
 Expression(s) which will be pattern matched in the query using the PostgreSQL LIKE ALL operator.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/d/schemas#like_all_patterns DataPostgresqlSchemas#like_all_patterns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/data-sources/schemas#like_all_patterns DataPostgresqlSchemas#like_all_patterns}
 
 ---
 
@@ -159,7 +159,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postg
 
 Expression(s) which will be pattern matched in the query using the PostgreSQL LIKE ANY operator.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/d/schemas#like_any_patterns DataPostgresqlSchemas#like_any_patterns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/data-sources/schemas#like_any_patterns DataPostgresqlSchemas#like_any_patterns}
 
 ---
 
@@ -169,7 +169,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postg
 
 Expression(s) which will be pattern matched in the query using the PostgreSQL NOT LIKE ALL operator.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/d/schemas#not_like_all_patterns DataPostgresqlSchemas#not_like_all_patterns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/data-sources/schemas#not_like_all_patterns DataPostgresqlSchemas#not_like_all_patterns}
 
 ---
 
@@ -179,7 +179,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postg
 
 Expression which will be pattern matched in the query using the PostgreSQL ~ (regular expression match) operator.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/d/schemas#regex_pattern DataPostgresqlSchemas#regex_pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/data-sources/schemas#regex_pattern DataPostgresqlSchemas#regex_pattern}
 
 ---
 
@@ -544,7 +544,7 @@ dataPostgresqlSchemas.DataPostgresqlSchemas.is_terraform_data_source(
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -642,10 +642,10 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -868,7 +868,7 @@ from cdktf_cdktf_provider_postgresql import data_postgresql_schemas
 
 dataPostgresqlSchemas.DataPostgresqlSchemasConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -889,14 +889,14 @@ dataPostgresqlSchemas.DataPostgresqlSchemasConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemasConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemasConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemasConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemasConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemasConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemasConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemasConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemasConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemasConfig.property.database">database</a></code> | <code>str</code> | The PostgreSQL database which will be queried for schema names. |
-| <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemasConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/d/schemas#id DataPostgresqlSchemas#id}. |
+| <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemasConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/data-sources/schemas#id DataPostgresqlSchemas#id}. |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemasConfig.property.includeSystemSchemas">include_system_schemas</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Determines whether to include system schemas (pg_ prefix and information_schema). 'public' will always be included. |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemasConfig.property.likeAllPatterns">like_all_patterns</a></code> | <code>typing.List[str]</code> | Expression(s) which will be pattern matched in the query using the PostgreSQL LIKE ALL operator. |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemasConfig.property.likeAnyPatterns">like_any_patterns</a></code> | <code>typing.List[str]</code> | Expression(s) which will be pattern matched in the query using the PostgreSQL LIKE ANY operator. |
@@ -918,10 +918,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemasConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -985,7 +985,7 @@ database: str
 
 The PostgreSQL database which will be queried for schema names.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/d/schemas#database DataPostgresqlSchemas#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/data-sources/schemas#database DataPostgresqlSchemas#database}
 
 ---
 
@@ -997,7 +997,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/d/schemas#id DataPostgresqlSchemas#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/data-sources/schemas#id DataPostgresqlSchemas#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1014,7 +1014,7 @@ include_system_schemas: typing.Union[bool, IResolvable]
 
 Determines whether to include system schemas (pg_ prefix and information_schema). 'public' will always be included.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/d/schemas#include_system_schemas DataPostgresqlSchemas#include_system_schemas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/data-sources/schemas#include_system_schemas DataPostgresqlSchemas#include_system_schemas}
 
 ---
 
@@ -1028,7 +1028,7 @@ like_all_patterns: typing.List[str]
 
 Expression(s) which will be pattern matched in the query using the PostgreSQL LIKE ALL operator.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/d/schemas#like_all_patterns DataPostgresqlSchemas#like_all_patterns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/data-sources/schemas#like_all_patterns DataPostgresqlSchemas#like_all_patterns}
 
 ---
 
@@ -1042,7 +1042,7 @@ like_any_patterns: typing.List[str]
 
 Expression(s) which will be pattern matched in the query using the PostgreSQL LIKE ANY operator.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/d/schemas#like_any_patterns DataPostgresqlSchemas#like_any_patterns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/data-sources/schemas#like_any_patterns DataPostgresqlSchemas#like_any_patterns}
 
 ---
 
@@ -1056,7 +1056,7 @@ not_like_all_patterns: typing.List[str]
 
 Expression(s) which will be pattern matched in the query using the PostgreSQL NOT LIKE ALL operator.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/d/schemas#not_like_all_patterns DataPostgresqlSchemas#not_like_all_patterns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/data-sources/schemas#not_like_all_patterns DataPostgresqlSchemas#not_like_all_patterns}
 
 ---
 
@@ -1070,7 +1070,7 @@ regex_pattern: str
 
 Expression which will be pattern matched in the query using the PostgreSQL ~ (regular expression match) operator.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/d/schemas#regex_pattern DataPostgresqlSchemas#regex_pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/data-sources/schemas#regex_pattern DataPostgresqlSchemas#regex_pattern}
 
 ---
 

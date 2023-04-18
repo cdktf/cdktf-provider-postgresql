@@ -4,7 +4,7 @@
 
 ### DataPostgresqlSchemas <a name="DataPostgresqlSchemas" id="@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/postgresql/d/schemas postgresql_schemas}.
+Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/data-sources/schemas postgresql_schemas}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.Initializer"></a>
 
@@ -376,7 +376,7 @@ dataPostgresqlSchemas.DataPostgresqlSchemas.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -474,10 +474,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -706,14 +706,14 @@ const dataPostgresqlSchemasConfig: dataPostgresqlSchemas.DataPostgresqlSchemasCo
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemasConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemasConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemasConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemasConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemasConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemasConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemasConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemasConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemasConfig.property.database">database</a></code> | <code>string</code> | The PostgreSQL database which will be queried for schema names. |
-| <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemasConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/d/schemas#id DataPostgresqlSchemas#id}. |
+| <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemasConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/data-sources/schemas#id DataPostgresqlSchemas#id}. |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemasConfig.property.includeSystemSchemas">includeSystemSchemas</a></code> | <code>boolean \| cdktf.IResolvable</code> | Determines whether to include system schemas (pg_ prefix and information_schema). 'public' will always be included. |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemasConfig.property.likeAllPatterns">likeAllPatterns</a></code> | <code>string[]</code> | Expression(s) which will be pattern matched in the query using the PostgreSQL LIKE ALL operator. |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemasConfig.property.likeAnyPatterns">likeAnyPatterns</a></code> | <code>string[]</code> | Expression(s) which will be pattern matched in the query using the PostgreSQL LIKE ANY operator. |
@@ -735,10 +735,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemasConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -802,7 +802,7 @@ public readonly database: string;
 
 The PostgreSQL database which will be queried for schema names.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/d/schemas#database DataPostgresqlSchemas#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/data-sources/schemas#database DataPostgresqlSchemas#database}
 
 ---
 
@@ -814,7 +814,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/d/schemas#id DataPostgresqlSchemas#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/data-sources/schemas#id DataPostgresqlSchemas#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -831,7 +831,7 @@ public readonly includeSystemSchemas: boolean | IResolvable;
 
 Determines whether to include system schemas (pg_ prefix and information_schema). 'public' will always be included.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/d/schemas#include_system_schemas DataPostgresqlSchemas#include_system_schemas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/data-sources/schemas#include_system_schemas DataPostgresqlSchemas#include_system_schemas}
 
 ---
 
@@ -845,7 +845,7 @@ public readonly likeAllPatterns: string[];
 
 Expression(s) which will be pattern matched in the query using the PostgreSQL LIKE ALL operator.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/d/schemas#like_all_patterns DataPostgresqlSchemas#like_all_patterns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/data-sources/schemas#like_all_patterns DataPostgresqlSchemas#like_all_patterns}
 
 ---
 
@@ -859,7 +859,7 @@ public readonly likeAnyPatterns: string[];
 
 Expression(s) which will be pattern matched in the query using the PostgreSQL LIKE ANY operator.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/d/schemas#like_any_patterns DataPostgresqlSchemas#like_any_patterns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/data-sources/schemas#like_any_patterns DataPostgresqlSchemas#like_any_patterns}
 
 ---
 
@@ -873,7 +873,7 @@ public readonly notLikeAllPatterns: string[];
 
 Expression(s) which will be pattern matched in the query using the PostgreSQL NOT LIKE ALL operator.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/d/schemas#not_like_all_patterns DataPostgresqlSchemas#not_like_all_patterns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/data-sources/schemas#not_like_all_patterns DataPostgresqlSchemas#not_like_all_patterns}
 
 ---
 
@@ -887,7 +887,7 @@ public readonly regexPattern: string;
 
 Expression which will be pattern matched in the query using the PostgreSQL ~ (regular expression match) operator.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/d/schemas#regex_pattern DataPostgresqlSchemas#regex_pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/data-sources/schemas#regex_pattern DataPostgresqlSchemas#regex_pattern}
 
 ---
 

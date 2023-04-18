@@ -4,7 +4,7 @@
 
 ### Subscription <a name="Subscription" id="@cdktf/provider-postgresql.subscription.Subscription"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/subscription postgresql_subscription}.
+Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/subscription postgresql_subscription}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.subscription.Subscription.Initializer"></a>
 
@@ -363,7 +363,7 @@ Subscription.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-postgresql.subscription.Subscription.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.subscription.Subscription.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.subscription.Subscription.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.subscription.Subscription.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.subscription.Subscription.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.subscription.Subscription.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.subscription.Subscription.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.subscription.Subscription.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -471,10 +471,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-postgresql.subscription.Subscription.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -697,7 +697,7 @@ using HashiCorp.Cdktf.Providers.Postgresql;
 
 new SubscriptionConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -718,7 +718,7 @@ new SubscriptionConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-postgresql.subscription.SubscriptionConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.subscription.SubscriptionConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.subscription.SubscriptionConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.subscription.SubscriptionConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.subscription.SubscriptionConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.subscription.SubscriptionConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -729,7 +729,7 @@ new SubscriptionConfig {
 | <code><a href="#@cdktf/provider-postgresql.subscription.SubscriptionConfig.property.publications">Publications</a></code> | <code>string[]</code> | Names of the publications on the publisher to subscribe to. |
 | <code><a href="#@cdktf/provider-postgresql.subscription.SubscriptionConfig.property.createSlot">CreateSlot</a></code> | <code>object</code> | Specifies whether the command should create the replication slot on the publisher. |
 | <code><a href="#@cdktf/provider-postgresql.subscription.SubscriptionConfig.property.database">Database</a></code> | <code>string</code> | Sets the database to add the subscription for. |
-| <code><a href="#@cdktf/provider-postgresql.subscription.SubscriptionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/subscription#id Subscription#id}. |
+| <code><a href="#@cdktf/provider-postgresql.subscription.SubscriptionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/subscription#id Subscription#id}. |
 | <code><a href="#@cdktf/provider-postgresql.subscription.SubscriptionConfig.property.slotName">SlotName</a></code> | <code>string</code> | Name of the replication slot to use. |
 
 ---
@@ -747,10 +747,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-postgresql.subscription.SubscriptionConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -814,7 +814,7 @@ public string Conninfo { get; set; }
 
 The connection string to the publisher. It should follow the keyword/value format (https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/subscription#conninfo Subscription#conninfo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/subscription#conninfo Subscription#conninfo}
 
 ---
 
@@ -828,7 +828,7 @@ public string Name { get; set; }
 
 The name of the subscription.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/subscription#name Subscription#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/subscription#name Subscription#name}
 
 ---
 
@@ -842,7 +842,7 @@ public string[] Publications { get; set; }
 
 Names of the publications on the publisher to subscribe to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/subscription#publications Subscription#publications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/subscription#publications Subscription#publications}
 
 ---
 
@@ -856,7 +856,7 @@ public object CreateSlot { get; set; }
 
 Specifies whether the command should create the replication slot on the publisher.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/subscription#create_slot Subscription#create_slot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/subscription#create_slot Subscription#create_slot}
 
 ---
 
@@ -870,7 +870,7 @@ public string Database { get; set; }
 
 Sets the database to add the subscription for.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/subscription#database Subscription#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/subscription#database Subscription#database}
 
 ---
 
@@ -882,7 +882,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/subscription#id Subscription#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/subscription#id Subscription#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -901,7 +901,7 @@ Name of the replication slot to use.
 
 The default behavior is to use the name of the subscription for the slot name
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/subscription#slot_name Subscription#slot_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/subscription#slot_name Subscription#slot_name}
 
 ---
 

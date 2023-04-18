@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/postgresql/d/tables
+// https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/data-sources/tables
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface DataPostgresqlTablesConfig extends cdktf.TerraformMetaArguments
   /**
   * The PostgreSQL database which will be queried for table names
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/d/tables#database DataPostgresqlTables#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/data-sources/tables#database DataPostgresqlTables#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/d/tables#id DataPostgresqlTables#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/data-sources/tables#id DataPostgresqlTables#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,37 +23,37 @@ export interface DataPostgresqlTablesConfig extends cdktf.TerraformMetaArguments
   /**
   * Expression(s) which will be pattern matched against table names in the query using the PostgreSQL LIKE ALL operator
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/d/tables#like_all_patterns DataPostgresqlTables#like_all_patterns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/data-sources/tables#like_all_patterns DataPostgresqlTables#like_all_patterns}
   */
   readonly likeAllPatterns?: string[];
   /**
   * Expression(s) which will be pattern matched against table names in the query using the PostgreSQL LIKE ANY operator
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/d/tables#like_any_patterns DataPostgresqlTables#like_any_patterns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/data-sources/tables#like_any_patterns DataPostgresqlTables#like_any_patterns}
   */
   readonly likeAnyPatterns?: string[];
   /**
   * Expression(s) which will be pattern matched against table names in the query using the PostgreSQL NOT LIKE ALL operator
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/d/tables#not_like_all_patterns DataPostgresqlTables#not_like_all_patterns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/data-sources/tables#not_like_all_patterns DataPostgresqlTables#not_like_all_patterns}
   */
   readonly notLikeAllPatterns?: string[];
   /**
   * Expression which will be pattern matched against table names in the query using the PostgreSQL ~ (regular expression match) operator
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/d/tables#regex_pattern DataPostgresqlTables#regex_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/data-sources/tables#regex_pattern DataPostgresqlTables#regex_pattern}
   */
   readonly regexPattern?: string;
   /**
   * The PostgreSQL schema(s) which will be queried for table names. Queries all schemas in the database by default
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/d/tables#schemas DataPostgresqlTables#schemas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/data-sources/tables#schemas DataPostgresqlTables#schemas}
   */
   readonly schemas?: string[];
   /**
   * The PostgreSQL table types which will be queried for table names. Includes all table types by default. Use 'BASE TABLE' for normal tables only
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/d/tables#table_types DataPostgresqlTables#table_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/data-sources/tables#table_types DataPostgresqlTables#table_types}
   */
   readonly tableTypes?: string[];
 }
@@ -133,7 +133,7 @@ export class DataPostgresqlTablesTablesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/postgresql/d/tables postgresql_tables}
+* Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/data-sources/tables postgresql_tables}
 */
 export class DataPostgresqlTables extends cdktf.TerraformDataSource {
 
@@ -147,7 +147,7 @@ export class DataPostgresqlTables extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/postgresql/d/tables postgresql_tables} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/data-sources/tables postgresql_tables} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
