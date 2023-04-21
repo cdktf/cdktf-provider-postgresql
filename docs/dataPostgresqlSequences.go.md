@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.dataPostgresqlSequences.DataPostgresqlSequences.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/datapostgresqlsequences"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/datapostgresqlsequences"
 
 datapostgresqlsequences.NewDataPostgresqlSequences(scope Construct, id *string, config DataPostgresqlSequencesConfig) DataPostgresqlSequences
 ```
@@ -308,7 +308,7 @@ func ResetSchemas()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-postgresql.dataPostgresqlSequences.DataPostgresqlSequences.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/datapostgresqlsequences"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/datapostgresqlsequences"
 
 datapostgresqlsequences.DataPostgresqlSequences_IsConstruct(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-postgresql.dataPostgresqlSequences.DataPostgresqlSequences.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/datapostgresqlsequences"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/datapostgresqlsequences"
 
 datapostgresqlsequences.DataPostgresqlSequences_IsTerraformElement(x interface{}) *bool
 ```
@@ -354,7 +354,7 @@ datapostgresqlsequences.DataPostgresqlSequences_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-postgresql.dataPostgresqlSequences.DataPostgresqlSequences.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/datapostgresqlsequences"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/datapostgresqlsequences"
 
 datapostgresqlsequences.DataPostgresqlSequences_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -696,7 +696,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-postgresql.dataPostgresqlSequences.DataPostgresqlSequencesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/datapostgresqlsequences"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/datapostgresqlsequences"
 
 &datapostgresqlsequences.DataPostgresqlSequencesConfig {
 	Connection: interface{},
@@ -911,7 +911,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 #### Initializer <a name="Initializer" id="@cdktf/provider-postgresql.dataPostgresqlSequences.DataPostgresqlSequencesSequences.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/datapostgresqlsequences"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/datapostgresqlsequences"
 
 &datapostgresqlsequences.DataPostgresqlSequencesSequences {
 
@@ -926,7 +926,7 @@ import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/datapostgres
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.dataPostgresqlSequences.DataPostgresqlSequencesSequencesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/datapostgresqlsequences"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/datapostgresqlsequences"
 
 datapostgresqlsequences.NewDataPostgresqlSequencesSequencesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataPostgresqlSequencesSequencesList
 ```
@@ -1058,7 +1058,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.dataPostgresqlSequences.DataPostgresqlSequencesSequencesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/datapostgresqlsequences"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/datapostgresqlsequences"
 
 datapostgresqlsequences.NewDataPostgresqlSequencesSequencesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataPostgresqlSequencesSequencesOutputReference
 ```
