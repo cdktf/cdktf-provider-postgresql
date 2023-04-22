@@ -1,3 +1,7 @@
+# `postgresql_schema`
+
+Refer to the Terraform Registory for docs: [`postgresql_schema`](https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/schema).
+
 # `schema` Submodule <a name="`schema` Submodule" id="@cdktf/provider-postgresql.schema"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `data_postgresql_sequences`
+
+Refer to the Terraform Registory for docs: [`data_postgresql_sequences`](https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/data-sources/sequences).
+
 # `dataPostgresqlSequences` Submodule <a name="`dataPostgresqlSequences` Submodule" id="@cdktf/provider-postgresql.dataPostgresqlSequences"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

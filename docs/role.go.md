@@ -1,3 +1,7 @@
+# `postgresql_role`
+
+Refer to the Terraform Registory for docs: [`postgresql_role`](https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/role).
+
 # `role` Submodule <a name="`role` Submodule" id="@cdktf/provider-postgresql.role"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

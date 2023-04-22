@@ -1,3 +1,7 @@
+# `postgresql_user_mapping`
+
+Refer to the Terraform Registory for docs: [`postgresql_user_mapping`](https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/user_mapping).
+
 # `userMapping` Submodule <a name="`userMapping` Submodule" id="@cdktf/provider-postgresql.userMapping"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

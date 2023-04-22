@@ -1,3 +1,7 @@
+# `postgresql_function`
+
+Refer to the Terraform Registory for docs: [`postgresql_function`](https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/function).
+
 # `functionResource` Submodule <a name="`functionResource` Submodule" id="@cdktf/provider-postgresql.functionResource"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
