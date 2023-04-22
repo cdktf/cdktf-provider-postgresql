@@ -1,3 +1,7 @@
+# `provider`
+
+Refer to the Terraform Registory for docs: [`postgresql`](https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs).
+
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-postgresql.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `postgresql_database`
+
+Refer to the Terraform Registory for docs: [`postgresql_database`](https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/database).
+
 # `database` Submodule <a name="`database` Submodule" id="@cdktf/provider-postgresql.database"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
