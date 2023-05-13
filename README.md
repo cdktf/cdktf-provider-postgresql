@@ -61,7 +61,8 @@ This project is explicitly not tracking the Terraform postgresql Provider versio
 These are the upstream dependencies:
 
 - [Terraform CDK](https://cdk.tf)
-- [Terraform postgresql Provider](https://github.com/terraform-providers/terraform-provider-postgresql)
+- [Terraform postgresql Provider](https://registry.terraform.io/providers/cyrilgdn/postgresql/1.14.0)
+    - This links to the minimum version being tracked, you can find the latest released version [in our releases](https://github.com/cdktf/cdktf-provider-postgresql/releases)
 - [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.
