@@ -1479,7 +1479,7 @@ public resetName(): void
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.mode">mode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArg">FunctionResourceArg</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArg">FunctionResourceArg</a></code> | *No description.* |
 
 ---
 
@@ -1590,10 +1590,10 @@ public readonly type: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: FunctionResourceArg | IResolvable;
+public readonly internalValue: IResolvable | FunctionResourceArg;
 ```
 
-- *Type:* <a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArg">FunctionResourceArg</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArg">FunctionResourceArg</a>
 
 ---
 

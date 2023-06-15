@@ -1655,7 +1655,7 @@ def reset_usage_with_grant() -> None
 | <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.role">role</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.usage">usage</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.usageWithGrant">usage_with_grant</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-postgresql.schema.SchemaPolicy">SchemaPolicy</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-postgresql.schema.SchemaPolicy">SchemaPolicy</a>]</code> | *No description.* |
 
 ---
 
@@ -1786,10 +1786,10 @@ usage_with_grant: typing.Union[bool, IResolvable]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SchemaPolicy, IResolvable]
+internal_value: typing.Union[IResolvable, SchemaPolicy]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-postgresql.schema.SchemaPolicy">SchemaPolicy</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-postgresql.schema.SchemaPolicy">SchemaPolicy</a>]
 
 ---
 
