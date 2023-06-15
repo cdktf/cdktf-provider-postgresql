@@ -1429,7 +1429,7 @@ public resetUsageWithGrant(): void
 | <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.role">role</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.usage">usage</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.usageWithGrant">usageWithGrant</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicy">SchemaPolicy</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-postgresql.schema.SchemaPolicy">SchemaPolicy</a></code> | *No description.* |
 
 ---
 
@@ -1560,10 +1560,10 @@ public readonly usageWithGrant: boolean | IResolvable;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SchemaPolicy | IResolvable;
+public readonly internalValue: IResolvable | SchemaPolicy;
 ```
 
-- *Type:* <a href="#@cdktf/provider-postgresql.schema.SchemaPolicy">SchemaPolicy</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-postgresql.schema.SchemaPolicy">SchemaPolicy</a>
 
 ---
 
