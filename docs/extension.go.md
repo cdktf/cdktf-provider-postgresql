@@ -1,6 +1,6 @@
 # `postgresql_extension`
 
-Refer to the Terraform Registory for docs: [`postgresql_extension`](https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/extension).
+Refer to the Terraform Registory for docs: [`postgresql_extension`](https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/extension).
 
 # `extension` Submodule <a name="`extension` Submodule" id="@cdktf/provider-postgresql.extension"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`postgresql_extension`](https://regi
 
 ### Extension <a name="Extension" id="@cdktf/provider-postgresql.extension.Extension"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/extension postgresql_extension}.
+Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/extension postgresql_extension}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.extension.Extension.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v8/extension"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/extension"
 
 extension.NewExtension(scope Construct, id *string, config ExtensionConfig) Extension
 ```
@@ -312,7 +312,7 @@ func ResetVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-postgresql.extension.Extension.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v8/extension"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/extension"
 
 extension.Extension_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-postgresql.extension.Extension.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v8/extension"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/extension"
 
 extension.Extension_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ extension.Extension_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-postgresql.extension.Extension.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v8/extension"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/extension"
 
 extension.Extension_IsTerraformResource(x interface{}) *bool
 ```
@@ -711,7 +711,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-postgresql.extension.ExtensionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v8/extension"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/extension"
 
 &extension.ExtensionConfig {
 	Connection: interface{},
@@ -742,11 +742,11 @@ import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v8/extension"
 | <code><a href="#@cdktf/provider-postgresql.extension.ExtensionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.extension.ExtensionConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.extension.ExtensionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.extension.ExtensionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/extension#name Extension#name}. |
+| <code><a href="#@cdktf/provider-postgresql.extension.ExtensionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/extension#name Extension#name}. |
 | <code><a href="#@cdktf/provider-postgresql.extension.ExtensionConfig.property.createCascade">CreateCascade</a></code> | <code>interface{}</code> | When true, will also create any extensions that this extension depends on that are not already installed. |
 | <code><a href="#@cdktf/provider-postgresql.extension.ExtensionConfig.property.database">Database</a></code> | <code>*string</code> | Sets the database to add the extension to. |
 | <code><a href="#@cdktf/provider-postgresql.extension.ExtensionConfig.property.dropCascade">DropCascade</a></code> | <code>interface{}</code> | When true, will also drop all the objects that depend on the extension, and in turn all objects that depend on those objects. |
-| <code><a href="#@cdktf/provider-postgresql.extension.ExtensionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/extension#id Extension#id}. |
+| <code><a href="#@cdktf/provider-postgresql.extension.ExtensionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/extension#id Extension#id}. |
 | <code><a href="#@cdktf/provider-postgresql.extension.ExtensionConfig.property.schema">Schema</a></code> | <code>*string</code> | Sets the schema of an extension. |
 | <code><a href="#@cdktf/provider-postgresql.extension.ExtensionConfig.property.version">Version</a></code> | <code>*string</code> | Sets the version number of the extension. |
 
@@ -830,7 +830,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/extension#name Extension#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/extension#name Extension#name}.
 
 ---
 
@@ -844,7 +844,7 @@ CreateCascade interface{}
 
 When true, will also create any extensions that this extension depends on that are not already installed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/extension#create_cascade Extension#create_cascade}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/extension#create_cascade Extension#create_cascade}
 
 ---
 
@@ -858,7 +858,7 @@ Database *string
 
 Sets the database to add the extension to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/extension#database Extension#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/extension#database Extension#database}
 
 ---
 
@@ -872,7 +872,7 @@ DropCascade interface{}
 
 When true, will also drop all the objects that depend on the extension, and in turn all objects that depend on those objects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/extension#drop_cascade Extension#drop_cascade}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/extension#drop_cascade Extension#drop_cascade}
 
 ---
 
@@ -884,7 +884,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/extension#id Extension#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/extension#id Extension#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -901,7 +901,7 @@ Schema *string
 
 Sets the schema of an extension.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/extension#schema Extension#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/extension#schema Extension#schema}
 
 ---
 
@@ -915,7 +915,7 @@ Version *string
 
 Sets the version number of the extension.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/extension#version Extension#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/extension#version Extension#version}
 
 ---
 
