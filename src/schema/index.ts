@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/schema
+// https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/schema
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface SchemaConfig extends cdktf.TerraformMetaArguments {
   /**
   * The database name to alter schema
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/schema#database Schema#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/schema#database Schema#database}
   */
   readonly database?: string;
   /**
   * When true, will also drop all the objects that are contained in the schema
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/schema#drop_cascade Schema#drop_cascade}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/schema#drop_cascade Schema#drop_cascade}
   */
   readonly dropCascade?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/schema#id Schema#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/schema#id Schema#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,25 +34,25 @@ export interface SchemaConfig extends cdktf.TerraformMetaArguments {
   /**
   * When true, use the existing schema if it exists
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/schema#if_not_exists Schema#if_not_exists}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/schema#if_not_exists Schema#if_not_exists}
   */
   readonly ifNotExists?: boolean | cdktf.IResolvable;
   /**
   * The name of the schema
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/schema#name Schema#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/schema#name Schema#name}
   */
   readonly name: string;
   /**
   * The ROLE name who owns the schema
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/schema#owner Schema#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/schema#owner Schema#owner}
   */
   readonly owner?: string;
   /**
   * policy block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/schema#policy Schema#policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/schema#policy Schema#policy}
   */
   readonly policy?: SchemaPolicy[] | cdktf.IResolvable;
 }
@@ -60,31 +60,31 @@ export interface SchemaPolicy {
   /**
   * If true, allow the specified ROLEs to CREATE new objects within the schema(s)
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/schema#create Schema#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/schema#create Schema#create}
   */
   readonly create?: boolean | cdktf.IResolvable;
   /**
   * If true, allow the specified ROLEs to CREATE new objects within the schema(s) and GRANT the same CREATE privilege to different ROLEs
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/schema#create_with_grant Schema#create_with_grant}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/schema#create_with_grant Schema#create_with_grant}
   */
   readonly createWithGrant?: boolean | cdktf.IResolvable;
   /**
   * ROLE who will receive this policy (default: PUBLIC)
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/schema#role Schema#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/schema#role Schema#role}
   */
   readonly role?: string;
   /**
   * If true, allow the specified ROLEs to use objects within the schema(s)
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/schema#usage Schema#usage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/schema#usage Schema#usage}
   */
   readonly usage?: boolean | cdktf.IResolvable;
   /**
   * If true, allow the specified ROLEs to use objects within the schema(s) and GRANT the same USAGE privilege to different ROLEs
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/schema#usage_with_grant Schema#usage_with_grant}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/schema#usage_with_grant Schema#usage_with_grant}
   */
   readonly usageWithGrant?: boolean | cdktf.IResolvable;
 }
@@ -273,7 +273,7 @@ export class SchemaPolicyList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/schema postgresql_schema}
+* Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/schema postgresql_schema}
 */
 export class Schema extends cdktf.TerraformResource {
 
@@ -287,7 +287,7 @@ export class Schema extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/schema postgresql_schema} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/schema postgresql_schema} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -298,7 +298,7 @@ export class Schema extends cdktf.TerraformResource {
       terraformResourceType: 'postgresql_schema',
       terraformGeneratorMetadata: {
         providerName: 'postgresql',
-        providerVersion: '1.19.0',
+        providerVersion: '1.20.0',
         providerVersionConstraint: '~> 1.14'
       },
       provider: config.provider,

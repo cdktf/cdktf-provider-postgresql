@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/publication
+// https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/publication
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,60 +15,60 @@ export interface PublicationConfig extends cdktf.TerraformMetaArguments {
   /**
   * Sets the tables list to publish to ALL tables
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/publication#all_tables Publication#all_tables}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/publication#all_tables Publication#all_tables}
   */
   readonly allTables?: boolean | cdktf.IResolvable;
   /**
   * Sets the database to add the publication for
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/publication#database Publication#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/publication#database Publication#database}
   */
   readonly database?: string;
   /**
   * When true, will also drop all the objects that depend on the publication, and in turn all objects that depend on those objects
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/publication#drop_cascade Publication#drop_cascade}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/publication#drop_cascade Publication#drop_cascade}
   */
   readonly dropCascade?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/publication#id Publication#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/publication#id Publication#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/publication#name Publication#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/publication#name Publication#name}
   */
   readonly name: string;
   /**
   * Sets the owner of the publication
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/publication#owner Publication#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/publication#owner Publication#owner}
   */
   readonly owner?: string;
   /**
   * Sets which DML operations will be published
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/publication#publish_param Publication#publish_param}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/publication#publish_param Publication#publish_param}
   */
   readonly publishParam?: string[];
   /**
   * Sets whether changes in a partitioned table using the identity and schema of the partitioned table
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/publication#publish_via_partition_root_param Publication#publish_via_partition_root_param}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/publication#publish_via_partition_root_param Publication#publish_via_partition_root_param}
   */
   readonly publishViaPartitionRootParam?: boolean | cdktf.IResolvable;
   /**
   * Sets the tables list to publish
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/publication#tables Publication#tables}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/publication#tables Publication#tables}
   */
   readonly tables?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/publication postgresql_publication}
+* Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/publication postgresql_publication}
 */
 export class Publication extends cdktf.TerraformResource {
 
@@ -82,7 +82,7 @@ export class Publication extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/publication postgresql_publication} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/publication postgresql_publication} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -93,7 +93,7 @@ export class Publication extends cdktf.TerraformResource {
       terraformResourceType: 'postgresql_publication',
       terraformGeneratorMetadata: {
         providerName: 'postgresql',
-        providerVersion: '1.19.0',
+        providerVersion: '1.20.0',
         providerVersionConstraint: '~> 1.14'
       },
       provider: config.provider,

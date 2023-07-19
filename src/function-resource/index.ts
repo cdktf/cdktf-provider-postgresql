@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/function
+// https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface FunctionResourceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Body of the function.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/function#body FunctionResource#body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#body FunctionResource#body}
   */
   readonly body: string;
   /**
   * The database where the function is located. If not specified, the provider default database is used.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/function#database FunctionResource#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#database FunctionResource#database}
   */
   readonly database?: string;
   /**
   * Automatically drop objects that depend on the function (such as operators or triggers), and in turn all objects that depend on those objects.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/function#drop_cascade FunctionResource#drop_cascade}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#drop_cascade FunctionResource#drop_cascade}
   */
   readonly dropCascade?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/function#id FunctionResource#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#id FunctionResource#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,31 +40,31 @@ export interface FunctionResourceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Language of theof the function. One of: internal, sql, c, plpgsql
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/function#language FunctionResource#language}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#language FunctionResource#language}
   */
   readonly language?: string;
   /**
   * Name of the function.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/function#name FunctionResource#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#name FunctionResource#name}
   */
   readonly name: string;
   /**
   * Function return type. If not specified, it will be calculated based on the output arguments
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/function#returns FunctionResource#returns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#returns FunctionResource#returns}
   */
   readonly returns?: string;
   /**
   * Schema where the function is located. If not specified, the provider default schema is used.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/function#schema FunctionResource#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#schema FunctionResource#schema}
   */
   readonly schema?: string;
   /**
   * arg block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/function#arg FunctionResource#arg}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#arg FunctionResource#arg}
   */
   readonly arg?: FunctionResourceArg[] | cdktf.IResolvable;
 }
@@ -72,25 +72,25 @@ export interface FunctionResourceArg {
   /**
   * An expression to be used as default value if the parameter is not specified.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/function#default FunctionResource#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#default FunctionResource#default}
   */
   readonly default?: string;
   /**
   * The argument mode. One of: IN, OUT, INOUT, or VARIADIC
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/function#mode FunctionResource#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#mode FunctionResource#mode}
   */
   readonly mode?: string;
   /**
   * The argument name. The name may be required for some languages or depending on the argument mode.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/function#name FunctionResource#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#name FunctionResource#name}
   */
   readonly name?: string;
   /**
   * The argument type.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/function#type FunctionResource#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#type FunctionResource#type}
   */
   readonly type: string;
 }
@@ -253,7 +253,7 @@ export class FunctionResourceArgList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/function postgresql_function}
+* Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function postgresql_function}
 */
 export class FunctionResource extends cdktf.TerraformResource {
 
@@ -267,7 +267,7 @@ export class FunctionResource extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/function postgresql_function} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function postgresql_function} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -278,7 +278,7 @@ export class FunctionResource extends cdktf.TerraformResource {
       terraformResourceType: 'postgresql_function',
       terraformGeneratorMetadata: {
         providerName: 'postgresql',
-        providerVersion: '1.19.0',
+        providerVersion: '1.20.0',
         providerVersionConstraint: '~> 1.14'
       },
       provider: config.provider,
