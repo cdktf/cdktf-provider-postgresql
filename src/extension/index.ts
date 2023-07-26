@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/extension
 // generated from terraform resource schema
 
@@ -14,19 +9,19 @@ import * as cdktf from 'cdktf';
 export interface ExtensionConfig extends cdktf.TerraformMetaArguments {
   /**
   * When true, will also create any extensions that this extension depends on that are not already installed
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/extension#create_cascade Extension#create_cascade}
   */
   readonly createCascade?: boolean | cdktf.IResolvable;
   /**
   * Sets the database to add the extension to
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/extension#database Extension#database}
   */
   readonly database?: string;
   /**
   * When true, will also drop all the objects that depend on the extension, and in turn all objects that depend on those objects
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/extension#drop_cascade Extension#drop_cascade}
   */
   readonly dropCascade?: boolean | cdktf.IResolvable;
@@ -43,13 +38,13 @@ export interface ExtensionConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   /**
   * Sets the schema of an extension
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/extension#schema Extension#schema}
   */
   readonly schema?: string;
   /**
   * Sets the version number of the extension
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/extension#version Extension#version}
   */
   readonly version?: string;

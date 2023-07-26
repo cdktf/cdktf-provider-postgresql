@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/server
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface ServerConfig extends cdktf.TerraformMetaArguments {
   /**
   * Automatically drop objects that depend on the server (such as user mappings), and in turn all objects that depend on those objects. Drop RESTRICT is the default
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/server#drop_cascade Server#drop_cascade}
   */
   readonly dropCascade?: boolean | cdktf.IResolvable;
   /**
   * The name of the foreign-data wrapper that manages the server
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/server#fdw_name Server#fdw_name}
   */
   readonly fdwName: string;
@@ -33,31 +28,31 @@ export interface ServerConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * This clause specifies the options for the server. The options typically define the connection details of the server, but the actual names and values are dependent on the server's foreign-data wrapper
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/server#options Server#options}
   */
   readonly options?: { [key: string]: string };
   /**
   * The name of the foreign server to be created
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/server#server_name Server#server_name}
   */
   readonly serverName: string;
   /**
   * The user name of the new owner of the foreign server
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/server#server_owner Server#server_owner}
   */
   readonly serverOwner?: string;
   /**
   * Optional server type, potentially useful to foreign-data wrappers
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/server#server_type Server#server_type}
   */
   readonly serverType?: string;
   /**
   * Optional server version, potentially useful to foreign-data wrappers.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/server#server_version Server#server_version}
   */
   readonly serverVersion?: string;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/schema
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface SchemaConfig extends cdktf.TerraformMetaArguments {
   /**
   * The database name to alter schema
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/schema#database Schema#database}
   */
   readonly database?: string;
   /**
   * When true, will also drop all the objects that are contained in the schema
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/schema#drop_cascade Schema#drop_cascade}
   */
   readonly dropCascade?: boolean | cdktf.IResolvable;
@@ -33,25 +28,25 @@ export interface SchemaConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * When true, use the existing schema if it exists
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/schema#if_not_exists Schema#if_not_exists}
   */
   readonly ifNotExists?: boolean | cdktf.IResolvable;
   /**
   * The name of the schema
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/schema#name Schema#name}
   */
   readonly name: string;
   /**
   * The ROLE name who owns the schema
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/schema#owner Schema#owner}
   */
   readonly owner?: string;
   /**
   * policy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/schema#policy Schema#policy}
   */
   readonly policy?: SchemaPolicy[] | cdktf.IResolvable;
@@ -59,31 +54,31 @@ export interface SchemaConfig extends cdktf.TerraformMetaArguments {
 export interface SchemaPolicy {
   /**
   * If true, allow the specified ROLEs to CREATE new objects within the schema(s)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/schema#create Schema#create}
   */
   readonly create?: boolean | cdktf.IResolvable;
   /**
   * If true, allow the specified ROLEs to CREATE new objects within the schema(s) and GRANT the same CREATE privilege to different ROLEs
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/schema#create_with_grant Schema#create_with_grant}
   */
   readonly createWithGrant?: boolean | cdktf.IResolvable;
   /**
   * ROLE who will receive this policy (default: PUBLIC)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/schema#role Schema#role}
   */
   readonly role?: string;
   /**
   * If true, allow the specified ROLEs to use objects within the schema(s)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/schema#usage Schema#usage}
   */
   readonly usage?: boolean | cdktf.IResolvable;
   /**
   * If true, allow the specified ROLEs to use objects within the schema(s) and GRANT the same USAGE privilege to different ROLEs
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/schema#usage_with_grant Schema#usage_with_grant}
   */
   readonly usageWithGrant?: boolean | cdktf.IResolvable;

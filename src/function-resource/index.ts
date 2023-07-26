@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function
 // generated from terraform resource schema
 
@@ -14,19 +9,19 @@ import * as cdktf from 'cdktf';
 export interface FunctionResourceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Body of the function.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#body FunctionResource#body}
   */
   readonly body: string;
   /**
   * The database where the function is located. If not specified, the provider default database is used.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#database FunctionResource#database}
   */
   readonly database?: string;
   /**
   * Automatically drop objects that depend on the function (such as operators or triggers), and in turn all objects that depend on those objects.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#drop_cascade FunctionResource#drop_cascade}
   */
   readonly dropCascade?: boolean | cdktf.IResolvable;
@@ -39,31 +34,31 @@ export interface FunctionResourceConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Language of theof the function. One of: internal, sql, c, plpgsql
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#language FunctionResource#language}
   */
   readonly language?: string;
   /**
   * Name of the function.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#name FunctionResource#name}
   */
   readonly name: string;
   /**
   * Function return type. If not specified, it will be calculated based on the output arguments
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#returns FunctionResource#returns}
   */
   readonly returns?: string;
   /**
   * Schema where the function is located. If not specified, the provider default schema is used.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#schema FunctionResource#schema}
   */
   readonly schema?: string;
   /**
   * arg block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#arg FunctionResource#arg}
   */
   readonly arg?: FunctionResourceArg[] | cdktf.IResolvable;
@@ -71,25 +66,25 @@ export interface FunctionResourceConfig extends cdktf.TerraformMetaArguments {
 export interface FunctionResourceArg {
   /**
   * An expression to be used as default value if the parameter is not specified.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#default FunctionResource#default}
   */
   readonly default?: string;
   /**
   * The argument mode. One of: IN, OUT, INOUT, or VARIADIC
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#mode FunctionResource#mode}
   */
   readonly mode?: string;
   /**
   * The argument name. The name may be required for some languages or depending on the argument mode.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#name FunctionResource#name}
   */
   readonly name?: string;
   /**
   * The argument type.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#type FunctionResource#type}
   */
   readonly type: string;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/role
 // generated from terraform resource schema
 
@@ -14,31 +9,31 @@ import * as cdktf from 'cdktf';
 export interface RoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Role to switch to at login
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/role#assume_role Role#assume_role}
   */
   readonly assumeRole?: string;
   /**
   * Determine whether a role bypasses every row-level security (RLS) policy
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/role#bypass_row_level_security Role#bypass_row_level_security}
   */
   readonly bypassRowLevelSecurity?: boolean | cdktf.IResolvable;
   /**
   * How many concurrent connections can be made with this role
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/role#connection_limit Role#connection_limit}
   */
   readonly connectionLimit?: number;
   /**
   * Define a role's ability to create databases
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/role#create_database Role#create_database}
   */
   readonly createDatabase?: boolean | cdktf.IResolvable;
   /**
   * Determine whether this role will be permitted to create new roles
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/role#create_role Role#create_role}
   */
   readonly createRole?: boolean | cdktf.IResolvable;
@@ -48,7 +43,7 @@ export interface RoleConfig extends cdktf.TerraformMetaArguments {
   readonly encrypted?: string;
   /**
   * Control whether the password is stored encrypted in the system catalogs
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/role#encrypted_password Role#encrypted_password}
   */
   readonly encryptedPassword?: boolean | cdktf.IResolvable;
@@ -61,79 +56,79 @@ export interface RoleConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Terminate any session with an open transaction that has been idle for longer than the specified duration in milliseconds
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/role#idle_in_transaction_session_timeout Role#idle_in_transaction_session_timeout}
   */
   readonly idleInTransactionSessionTimeout?: number;
   /**
   * Determine whether a role "inherits" the privileges of roles it is a member of
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/role#inherit Role#inherit}
   */
   readonly inherit?: boolean | cdktf.IResolvable;
   /**
   * Determine whether a role is allowed to log in
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/role#login Role#login}
   */
   readonly login?: boolean | cdktf.IResolvable;
   /**
   * The name of the role
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/role#name Role#name}
   */
   readonly name: string;
   /**
   * Sets the role's password
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/role#password Role#password}
   */
   readonly password?: string;
   /**
   * Determine whether a role is allowed to initiate streaming replication or put the system in and out of backup mode
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/role#replication Role#replication}
   */
   readonly replication?: boolean | cdktf.IResolvable;
   /**
   * Role(s) to grant to this new role
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/role#roles Role#roles}
   */
   readonly roles?: string[];
   /**
   * Sets the role's search path
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/role#search_path Role#search_path}
   */
   readonly searchPath?: string[];
   /**
   * Skip actually running the DROP ROLE command when removing a ROLE from PostgreSQL
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/role#skip_drop_role Role#skip_drop_role}
   */
   readonly skipDropRole?: boolean | cdktf.IResolvable;
   /**
   * Skip actually running the REASSIGN OWNED command when removing a role from PostgreSQL
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/role#skip_reassign_owned Role#skip_reassign_owned}
   */
   readonly skipReassignOwned?: boolean | cdktf.IResolvable;
   /**
   * Abort any statement that takes more than the specified number of milliseconds
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/role#statement_timeout Role#statement_timeout}
   */
   readonly statementTimeout?: number;
   /**
   * Determine whether the new role is a "superuser"
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/role#superuser Role#superuser}
   */
   readonly superuser?: boolean | cdktf.IResolvable;
   /**
   * Sets a date and time after which the role's password is no longer valid
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/role#valid_until Role#valid_until}
   */
   readonly validUntil?: string;
