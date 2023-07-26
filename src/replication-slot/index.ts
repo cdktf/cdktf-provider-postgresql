@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface ReplicationSlotConfig extends cdktf.TerraformMetaArguments {
   /**
   * Sets the database to add the replication slot to
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/replication_slot#database ReplicationSlot#database}
   */
   readonly database?: string;
@@ -31,7 +31,7 @@ export interface ReplicationSlotConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   /**
   * Sets the output plugin to use
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/replication_slot#plugin ReplicationSlot#plugin}
   */
   readonly plugin: string;

@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface GrantConfig extends cdktf.TerraformMetaArguments {
   /**
   * The specific columns to grant privileges on for this role
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/grant#columns Grant#columns}
   */
   readonly columns?: string[];
   /**
   * The database to grant privileges on for this role
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/grant#database Grant#database}
   */
   readonly database: string;
@@ -33,37 +33,37 @@ export interface GrantConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The PostgreSQL object type to grant the privileges on (one of: database, function, procedure, routine, schema, sequence, table, foreign_data_wrapper, foreign_server, column)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/grant#object_type Grant#object_type}
   */
   readonly objectType: string;
   /**
   * The specific objects to grant privileges on for this role (empty means all objects of the requested type)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/grant#objects Grant#objects}
   */
   readonly objects?: string[];
   /**
   * The list of privileges to grant
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/grant#privileges Grant#privileges}
   */
   readonly privileges: string[];
   /**
   * The name of the role to grant privileges on
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/grant#role Grant#role}
   */
   readonly role: string;
   /**
   * The database schema to grant privileges on for this role
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/grant#schema Grant#schema}
   */
   readonly schema?: string;
   /**
   * Permit the grant recipient to grant it to others
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/grant#with_grant_option Grant#with_grant_option}
   */
   readonly withGrantOption?: boolean | cdktf.IResolvable;

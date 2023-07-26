@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface DataPostgresqlSequencesConfig extends cdktf.TerraformMetaArguments {
   /**
   * The PostgreSQL database which will be queried for sequence names
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/data-sources/sequences#database DataPostgresqlSequences#database}
   */
   readonly database: string;
@@ -27,31 +27,31 @@ export interface DataPostgresqlSequencesConfig extends cdktf.TerraformMetaArgume
   readonly id?: string;
   /**
   * Expression(s) which will be pattern matched against sequence names in the query using the PostgreSQL LIKE ALL operator
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/data-sources/sequences#like_all_patterns DataPostgresqlSequences#like_all_patterns}
   */
   readonly likeAllPatterns?: string[];
   /**
   * Expression(s) which will be pattern matched against sequence names in the query using the PostgreSQL LIKE ANY operator
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/data-sources/sequences#like_any_patterns DataPostgresqlSequences#like_any_patterns}
   */
   readonly likeAnyPatterns?: string[];
   /**
   * Expression(s) which will be pattern matched against sequence names in the query using the PostgreSQL NOT LIKE ALL operator
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/data-sources/sequences#not_like_all_patterns DataPostgresqlSequences#not_like_all_patterns}
   */
   readonly notLikeAllPatterns?: string[];
   /**
   * Expression which will be pattern matched against sequence names in the query using the PostgreSQL ~ (regular expression match) operator
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/data-sources/sequences#regex_pattern DataPostgresqlSequences#regex_pattern}
   */
   readonly regexPattern?: string;
   /**
   * The PostgreSQL schema(s) which will be queried for sequence names. Queries all schemas in the database by default
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/data-sources/sequences#schemas DataPostgresqlSequences#schemas}
   */
   readonly schemas?: string[];

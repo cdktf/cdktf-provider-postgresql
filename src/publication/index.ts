@@ -14,19 +14,19 @@ import * as cdktf from 'cdktf';
 export interface PublicationConfig extends cdktf.TerraformMetaArguments {
   /**
   * Sets the tables list to publish to ALL tables
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/publication#all_tables Publication#all_tables}
   */
   readonly allTables?: boolean | cdktf.IResolvable;
   /**
   * Sets the database to add the publication for
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/publication#database Publication#database}
   */
   readonly database?: string;
   /**
   * When true, will also drop all the objects that depend on the publication, and in turn all objects that depend on those objects
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/publication#drop_cascade Publication#drop_cascade}
   */
   readonly dropCascade?: boolean | cdktf.IResolvable;
@@ -43,25 +43,25 @@ export interface PublicationConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   /**
   * Sets the owner of the publication
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/publication#owner Publication#owner}
   */
   readonly owner?: string;
   /**
   * Sets which DML operations will be published
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/publication#publish_param Publication#publish_param}
   */
   readonly publishParam?: string[];
   /**
   * Sets whether changes in a partitioned table using the identity and schema of the partitioned table
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/publication#publish_via_partition_root_param Publication#publish_via_partition_root_param}
   */
   readonly publishViaPartitionRootParam?: boolean | cdktf.IResolvable;
   /**
   * Sets the tables list to publish
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/publication#tables Publication#tables}
   */
   readonly tables?: string[];

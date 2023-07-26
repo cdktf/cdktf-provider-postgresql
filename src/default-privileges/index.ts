@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface DefaultPrivilegesConfig extends cdktf.TerraformMetaArguments {
   /**
   * The database to grant default privileges for this role
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/default_privileges#database DefaultPrivileges#database}
   */
   readonly database: string;
@@ -27,37 +27,37 @@ export interface DefaultPrivilegesConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The PostgreSQL object type to set the default privileges on (one of: table, sequence, function, type, schema)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/default_privileges#object_type DefaultPrivileges#object_type}
   */
   readonly objectType: string;
   /**
   * Target role for which to alter default privileges.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/default_privileges#owner DefaultPrivileges#owner}
   */
   readonly owner: string;
   /**
   * The list of privileges to apply as default privileges
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/default_privileges#privileges DefaultPrivileges#privileges}
   */
   readonly privileges: string[];
   /**
   * The name of the role to which grant default privileges on
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/default_privileges#role DefaultPrivileges#role}
   */
   readonly role: string;
   /**
   * The database schema to set default privileges for this role
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/default_privileges#schema DefaultPrivileges#schema}
   */
   readonly schema?: string;
   /**
   * Permit the grant recipient to grant it to others
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/default_privileges#with_grant_option DefaultPrivileges#with_grant_option}
   */
   readonly withGrantOption?: boolean | cdktf.IResolvable;

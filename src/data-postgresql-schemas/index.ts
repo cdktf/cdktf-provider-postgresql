@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface DataPostgresqlSchemasConfig extends cdktf.TerraformMetaArguments {
   /**
   * The PostgreSQL database which will be queried for schema names
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/data-sources/schemas#database DataPostgresqlSchemas#database}
   */
   readonly database: string;
@@ -27,31 +27,31 @@ export interface DataPostgresqlSchemasConfig extends cdktf.TerraformMetaArgument
   readonly id?: string;
   /**
   * Determines whether to include system schemas (pg_ prefix and information_schema). 'public' will always be included.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/data-sources/schemas#include_system_schemas DataPostgresqlSchemas#include_system_schemas}
   */
   readonly includeSystemSchemas?: boolean | cdktf.IResolvable;
   /**
   * Expression(s) which will be pattern matched in the query using the PostgreSQL LIKE ALL operator
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/data-sources/schemas#like_all_patterns DataPostgresqlSchemas#like_all_patterns}
   */
   readonly likeAllPatterns?: string[];
   /**
   * Expression(s) which will be pattern matched in the query using the PostgreSQL LIKE ANY operator
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/data-sources/schemas#like_any_patterns DataPostgresqlSchemas#like_any_patterns}
   */
   readonly likeAnyPatterns?: string[];
   /**
   * Expression(s) which will be pattern matched in the query using the PostgreSQL NOT LIKE ALL operator
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/data-sources/schemas#not_like_all_patterns DataPostgresqlSchemas#not_like_all_patterns}
   */
   readonly notLikeAllPatterns?: string[];
   /**
   * Expression which will be pattern matched in the query using the PostgreSQL ~ (regular expression match) operator
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/data-sources/schemas#regex_pattern DataPostgresqlSchemas#regex_pattern}
   */
   readonly regexPattern?: string;

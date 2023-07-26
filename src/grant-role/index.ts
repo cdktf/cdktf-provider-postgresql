@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface GrantRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the role that is granted to role
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/grant_role#grant_role GrantRole#grant_role}
   */
   readonly grantRole: string;
@@ -27,13 +27,13 @@ export interface GrantRoleConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The name of the role to grant grant_role
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/grant_role#role GrantRole#role}
   */
   readonly role: string;
   /**
   * Permit the grant recipient to grant it to others
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/grant_role#with_admin_option GrantRole#with_admin_option}
   */
   readonly withAdminOption?: boolean | cdktf.IResolvable;
