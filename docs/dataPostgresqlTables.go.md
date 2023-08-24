@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.dataPostgresqlTables.DataPostgresqlTables.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v8/datapostgresqltables"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v9/datapostgresqltables"
 
 datapostgresqltables.NewDataPostgresqlTables(scope Construct, id *string, config DataPostgresqlTablesConfig) DataPostgresqlTables
 ```
@@ -319,7 +319,7 @@ func ResetTableTypes()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-postgresql.dataPostgresqlTables.DataPostgresqlTables.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v8/datapostgresqltables"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v9/datapostgresqltables"
 
 datapostgresqltables.DataPostgresqlTables_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-postgresql.dataPostgresqlTables.DataPostgresqlTables.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v8/datapostgresqltables"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v9/datapostgresqltables"
 
 datapostgresqltables.DataPostgresqlTables_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datapostgresqltables.DataPostgresqlTables_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-postgresql.dataPostgresqlTables.DataPostgresqlTables.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v8/datapostgresqltables"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v9/datapostgresqltables"
 
 datapostgresqltables.DataPostgresqlTables_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -729,7 +729,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-postgresql.dataPostgresqlTables.DataPostgresqlTablesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v8/datapostgresqltables"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v9/datapostgresqltables"
 
 &datapostgresqltables.DataPostgresqlTablesConfig {
 	Connection: interface{},
@@ -962,7 +962,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 #### Initializer <a name="Initializer" id="@cdktf/provider-postgresql.dataPostgresqlTables.DataPostgresqlTablesTables.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v8/datapostgresqltables"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v9/datapostgresqltables"
 
 &datapostgresqltables.DataPostgresqlTablesTables {
 
@@ -977,7 +977,7 @@ import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v8/datapostgres
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.dataPostgresqlTables.DataPostgresqlTablesTablesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v8/datapostgresqltables"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v9/datapostgresqltables"
 
 datapostgresqltables.NewDataPostgresqlTablesTablesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataPostgresqlTablesTablesList
 ```
@@ -1109,7 +1109,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.dataPostgresqlTables.DataPostgresqlTablesTablesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v8/datapostgresqltables"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v9/datapostgresqltables"
 
 datapostgresqltables.NewDataPostgresqlTablesTablesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataPostgresqlTablesTablesOutputReference
 ```
