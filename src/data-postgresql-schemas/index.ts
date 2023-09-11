@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/data-sources/schemas
+// https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/data-sources/schemas
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DataPostgresqlSchemasConfig extends cdktf.TerraformMetaArgument
   /**
   * The PostgreSQL database which will be queried for schema names
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/data-sources/schemas#database DataPostgresqlSchemas#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/data-sources/schemas#database DataPostgresqlSchemas#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/data-sources/schemas#id DataPostgresqlSchemas#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/data-sources/schemas#id DataPostgresqlSchemas#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,37 +28,37 @@ export interface DataPostgresqlSchemasConfig extends cdktf.TerraformMetaArgument
   /**
   * Determines whether to include system schemas (pg_ prefix and information_schema). 'public' will always be included.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/data-sources/schemas#include_system_schemas DataPostgresqlSchemas#include_system_schemas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/data-sources/schemas#include_system_schemas DataPostgresqlSchemas#include_system_schemas}
   */
   readonly includeSystemSchemas?: boolean | cdktf.IResolvable;
   /**
   * Expression(s) which will be pattern matched in the query using the PostgreSQL LIKE ALL operator
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/data-sources/schemas#like_all_patterns DataPostgresqlSchemas#like_all_patterns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/data-sources/schemas#like_all_patterns DataPostgresqlSchemas#like_all_patterns}
   */
   readonly likeAllPatterns?: string[];
   /**
   * Expression(s) which will be pattern matched in the query using the PostgreSQL LIKE ANY operator
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/data-sources/schemas#like_any_patterns DataPostgresqlSchemas#like_any_patterns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/data-sources/schemas#like_any_patterns DataPostgresqlSchemas#like_any_patterns}
   */
   readonly likeAnyPatterns?: string[];
   /**
   * Expression(s) which will be pattern matched in the query using the PostgreSQL NOT LIKE ALL operator
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/data-sources/schemas#not_like_all_patterns DataPostgresqlSchemas#not_like_all_patterns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/data-sources/schemas#not_like_all_patterns DataPostgresqlSchemas#not_like_all_patterns}
   */
   readonly notLikeAllPatterns?: string[];
   /**
   * Expression which will be pattern matched in the query using the PostgreSQL ~ (regular expression match) operator
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/data-sources/schemas#regex_pattern DataPostgresqlSchemas#regex_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/data-sources/schemas#regex_pattern DataPostgresqlSchemas#regex_pattern}
   */
   readonly regexPattern?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/data-sources/schemas postgresql_schemas}
+* Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/data-sources/schemas postgresql_schemas}
 */
 export class DataPostgresqlSchemas extends cdktf.TerraformDataSource {
 
@@ -72,7 +72,7 @@ export class DataPostgresqlSchemas extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/data-sources/schemas postgresql_schemas} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/data-sources/schemas postgresql_schemas} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +83,7 @@ export class DataPostgresqlSchemas extends cdktf.TerraformDataSource {
       terraformResourceType: 'postgresql_schemas',
       terraformGeneratorMetadata: {
         providerName: 'postgresql',
-        providerVersion: '1.20.0',
+        providerVersion: '1.21.0',
         providerVersionConstraint: '~> 1.14'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/server
+// https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/server
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface ServerConfig extends cdktf.TerraformMetaArguments {
   /**
   * Automatically drop objects that depend on the server (such as user mappings), and in turn all objects that depend on those objects. Drop RESTRICT is the default
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/server#drop_cascade Server#drop_cascade}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/server#drop_cascade Server#drop_cascade}
   */
   readonly dropCascade?: boolean | cdktf.IResolvable;
   /**
   * The name of the foreign-data wrapper that manages the server
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/server#fdw_name Server#fdw_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/server#fdw_name Server#fdw_name}
   */
   readonly fdwName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/server#id Server#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/server#id Server#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,37 +34,37 @@ export interface ServerConfig extends cdktf.TerraformMetaArguments {
   /**
   * This clause specifies the options for the server. The options typically define the connection details of the server, but the actual names and values are dependent on the server's foreign-data wrapper
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/server#options Server#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/server#options Server#options}
   */
   readonly options?: { [key: string]: string };
   /**
   * The name of the foreign server to be created
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/server#server_name Server#server_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/server#server_name Server#server_name}
   */
   readonly serverName: string;
   /**
   * The user name of the new owner of the foreign server
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/server#server_owner Server#server_owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/server#server_owner Server#server_owner}
   */
   readonly serverOwner?: string;
   /**
   * Optional server type, potentially useful to foreign-data wrappers
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/server#server_type Server#server_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/server#server_type Server#server_type}
   */
   readonly serverType?: string;
   /**
   * Optional server version, potentially useful to foreign-data wrappers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/server#server_version Server#server_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/server#server_version Server#server_version}
   */
   readonly serverVersion?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/server postgresql_server}
+* Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/server postgresql_server}
 */
 export class Server extends cdktf.TerraformResource {
 
@@ -78,7 +78,7 @@ export class Server extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/server postgresql_server} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/server postgresql_server} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -89,7 +89,7 @@ export class Server extends cdktf.TerraformResource {
       terraformResourceType: 'postgresql_server',
       terraformGeneratorMetadata: {
         providerName: 'postgresql',
-        providerVersion: '1.20.0',
+        providerVersion: '1.21.0',
         providerVersionConstraint: '~> 1.14'
       },
       provider: config.provider,

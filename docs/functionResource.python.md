@@ -1,6 +1,6 @@
 # `postgresql_function`
 
-Refer to the Terraform Registory for docs: [`postgresql_function`](https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function).
+Refer to the Terraform Registory for docs: [`postgresql_function`](https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/function).
 
 # `functionResource` Submodule <a name="`functionResource` Submodule" id="@cdktf/provider-postgresql.functionResource"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`postgresql_function`](https://regis
 
 ### FunctionResource <a name="FunctionResource" id="@cdktf/provider-postgresql.functionResource.FunctionResource"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function postgresql_function}.
+Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/function postgresql_function}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer"></a>
 
@@ -32,8 +32,12 @@ functionResource.FunctionResource(
   drop_cascade: typing.Union[bool, IResolvable] = None,
   id: str = None,
   language: str = None,
+  parallel: str = None,
   returns: str = None,
-  schema: str = None
+  schema: str = None,
+  security_definer: typing.Union[bool, IResolvable] = None,
+  strict: typing.Union[bool, IResolvable] = None,
+  volatility: str = None
 )
 ```
 
@@ -53,10 +57,14 @@ functionResource.FunctionResource(
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.arg">arg</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArg">FunctionResourceArg</a>]]</code> | arg block. |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.database">database</a></code> | <code>str</code> | The database where the function is located. If not specified, the provider default database is used. |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.dropCascade">drop_cascade</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Automatically drop objects that depend on the function (such as operators or triggers), and in turn all objects that depend on those objects. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#id FunctionResource#id}. |
+| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/function#id FunctionResource#id}. |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.language">language</a></code> | <code>str</code> | Language of theof the function. One of: internal, sql, c, plpgsql. |
+| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.parallel">parallel</a></code> | <code>str</code> | If the function can be executed in parallel for a single query execution. One of: UNSAFE, RESTRICTED, SAFE. |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.returns">returns</a></code> | <code>str</code> | Function return type. If not specified, it will be calculated based on the output arguments. |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.schema">schema</a></code> | <code>str</code> | Schema where the function is located. If not specified, the provider default schema is used. |
+| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.securityDefiner">security_definer</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If the function should execute with the permissions of the function owner instead of the permissions of the caller. |
+| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.strict">strict</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If the function should always return NULL if any of it's inputs is NULL. |
+| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.volatility">volatility</a></code> | <code>str</code> | Volatility of the function. One of: VOLATILE, STABLE, IMMUTABLE. |
 
 ---
 
@@ -126,7 +134,7 @@ Must be unique amongst siblings in the same scope
 
 Body of the function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#body FunctionResource#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/function#body FunctionResource#body}
 
 ---
 
@@ -136,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 Name of the function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#name FunctionResource#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/function#name FunctionResource#name}
 
 ---
 
@@ -146,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 arg block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#arg FunctionResource#arg}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/function#arg FunctionResource#arg}
 
 ---
 
@@ -156,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 The database where the function is located. If not specified, the provider default database is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#database FunctionResource#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/function#database FunctionResource#database}
 
 ---
 
@@ -166,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 Automatically drop objects that depend on the function (such as operators or triggers), and in turn all objects that depend on those objects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#drop_cascade FunctionResource#drop_cascade}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/function#drop_cascade FunctionResource#drop_cascade}
 
 ---
 
@@ -174,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#id FunctionResource#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/function#id FunctionResource#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -187,7 +195,17 @@ If you experience problems setting this value it might not be settable. Please t
 
 Language of theof the function. One of: internal, sql, c, plpgsql.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#language FunctionResource#language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/function#language FunctionResource#language}
+
+---
+
+##### `parallel`<sup>Optional</sup> <a name="parallel" id="@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.parallel"></a>
+
+- *Type:* str
+
+If the function can be executed in parallel for a single query execution. One of: UNSAFE, RESTRICTED, SAFE.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/function#parallel FunctionResource#parallel}
 
 ---
 
@@ -197,7 +215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 Function return type. If not specified, it will be calculated based on the output arguments.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#returns FunctionResource#returns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/function#returns FunctionResource#returns}
 
 ---
 
@@ -207,7 +225,37 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 Schema where the function is located. If not specified, the provider default schema is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#schema FunctionResource#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/function#schema FunctionResource#schema}
+
+---
+
+##### `security_definer`<sup>Optional</sup> <a name="security_definer" id="@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.securityDefiner"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+If the function should execute with the permissions of the function owner instead of the permissions of the caller.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/function#security_definer FunctionResource#security_definer}
+
+---
+
+##### `strict`<sup>Optional</sup> <a name="strict" id="@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.strict"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+If the function should always return NULL if any of it's inputs is NULL.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/function#strict FunctionResource#strict}
+
+---
+
+##### `volatility`<sup>Optional</sup> <a name="volatility" id="@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.volatility"></a>
+
+- *Type:* str
+
+Volatility of the function. One of: VOLATILE, STABLE, IMMUTABLE.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/function#volatility FunctionResource#volatility}
 
 ---
 
@@ -237,8 +285,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.resetDropCascade">reset_drop_cascade</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.resetLanguage">reset_language</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.resetParallel">reset_parallel</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.resetReturns">reset_returns</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.resetSchema">reset_schema</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.resetSecurityDefiner">reset_security_definer</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.resetStrict">reset_strict</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.resetVolatility">reset_volatility</a></code> | *No description.* |
 
 ---
 
@@ -495,6 +547,12 @@ def reset_id() -> None
 def reset_language() -> None
 ```
 
+##### `reset_parallel` <a name="reset_parallel" id="@cdktf/provider-postgresql.functionResource.FunctionResource.resetParallel"></a>
+
+```python
+def reset_parallel() -> None
+```
+
 ##### `reset_returns` <a name="reset_returns" id="@cdktf/provider-postgresql.functionResource.FunctionResource.resetReturns"></a>
 
 ```python
@@ -505,6 +563,24 @@ def reset_returns() -> None
 
 ```python
 def reset_schema() -> None
+```
+
+##### `reset_security_definer` <a name="reset_security_definer" id="@cdktf/provider-postgresql.functionResource.FunctionResource.resetSecurityDefiner"></a>
+
+```python
+def reset_security_definer() -> None
+```
+
+##### `reset_strict` <a name="reset_strict" id="@cdktf/provider-postgresql.functionResource.FunctionResource.resetStrict"></a>
+
+```python
+def reset_strict() -> None
+```
+
+##### `reset_volatility` <a name="reset_volatility" id="@cdktf/provider-postgresql.functionResource.FunctionResource.resetVolatility"></a>
+
+```python
+def reset_volatility() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -609,16 +685,24 @@ functionResource.FunctionResource.is_terraform_resource(
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.languageInput">language_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.parallelInput">parallel_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.returnsInput">returns_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.schemaInput">schema_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.securityDefinerInput">security_definer_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.strictInput">strict_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.volatilityInput">volatility_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.body">body</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.database">database</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.dropCascade">drop_cascade</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.language">language</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.parallel">parallel</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.returns">returns</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.schema">schema</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.securityDefiner">security_definer</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.strict">strict</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.volatility">volatility</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -844,6 +928,16 @@ name_input: str
 
 ---
 
+##### `parallel_input`<sup>Optional</sup> <a name="parallel_input" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.parallelInput"></a>
+
+```python
+parallel_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `returns_input`<sup>Optional</sup> <a name="returns_input" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.returnsInput"></a>
 
 ```python
@@ -858,6 +952,36 @@ returns_input: str
 
 ```python
 schema_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `security_definer_input`<sup>Optional</sup> <a name="security_definer_input" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.securityDefinerInput"></a>
+
+```python
+security_definer_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `strict_input`<sup>Optional</sup> <a name="strict_input" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.strictInput"></a>
+
+```python
+strict_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `volatility_input`<sup>Optional</sup> <a name="volatility_input" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.volatilityInput"></a>
+
+```python
+volatility_input: str
 ```
 
 - *Type:* str
@@ -924,6 +1048,16 @@ name: str
 
 ---
 
+##### `parallel`<sup>Required</sup> <a name="parallel" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.parallel"></a>
+
+```python
+parallel: str
+```
+
+- *Type:* str
+
+---
+
 ##### `returns`<sup>Required</sup> <a name="returns" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.returns"></a>
 
 ```python
@@ -938,6 +1072,36 @@ returns: str
 
 ```python
 schema: str
+```
+
+- *Type:* str
+
+---
+
+##### `security_definer`<sup>Required</sup> <a name="security_definer" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.securityDefiner"></a>
+
+```python
+security_definer: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `strict`<sup>Required</sup> <a name="strict" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.strict"></a>
+
+```python
+strict: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `volatility`<sup>Required</sup> <a name="volatility" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.volatility"></a>
+
+```python
+volatility: str
 ```
 
 - *Type:* str
@@ -1000,7 +1164,7 @@ type: str
 
 The argument type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#type FunctionResource#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/function#type FunctionResource#type}
 
 ---
 
@@ -1014,7 +1178,7 @@ default: str
 
 An expression to be used as default value if the parameter is not specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#default FunctionResource#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/function#default FunctionResource#default}
 
 ---
 
@@ -1028,7 +1192,7 @@ mode: str
 
 The argument mode. One of: IN, OUT, INOUT, or VARIADIC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#mode FunctionResource#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/function#mode FunctionResource#mode}
 
 ---
 
@@ -1042,7 +1206,7 @@ name: str
 
 The argument name. The name may be required for some languages or depending on the argument mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#name FunctionResource#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/function#name FunctionResource#name}
 
 ---
 
@@ -1068,8 +1232,12 @@ functionResource.FunctionResourceConfig(
   drop_cascade: typing.Union[bool, IResolvable] = None,
   id: str = None,
   language: str = None,
+  parallel: str = None,
   returns: str = None,
-  schema: str = None
+  schema: str = None,
+  security_definer: typing.Union[bool, IResolvable] = None,
+  strict: typing.Union[bool, IResolvable] = None,
+  volatility: str = None
 )
 ```
 
@@ -1089,10 +1257,14 @@ functionResource.FunctionResourceConfig(
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.arg">arg</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArg">FunctionResourceArg</a>]]</code> | arg block. |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.database">database</a></code> | <code>str</code> | The database where the function is located. If not specified, the provider default database is used. |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.dropCascade">drop_cascade</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Automatically drop objects that depend on the function (such as operators or triggers), and in turn all objects that depend on those objects. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#id FunctionResource#id}. |
+| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/function#id FunctionResource#id}. |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.language">language</a></code> | <code>str</code> | Language of theof the function. One of: internal, sql, c, plpgsql. |
+| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.parallel">parallel</a></code> | <code>str</code> | If the function can be executed in parallel for a single query execution. One of: UNSAFE, RESTRICTED, SAFE. |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.returns">returns</a></code> | <code>str</code> | Function return type. If not specified, it will be calculated based on the output arguments. |
 | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.schema">schema</a></code> | <code>str</code> | Schema where the function is located. If not specified, the provider default schema is used. |
+| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.securityDefiner">security_definer</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If the function should execute with the permissions of the function owner instead of the permissions of the caller. |
+| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.strict">strict</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If the function should always return NULL if any of it's inputs is NULL. |
+| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.volatility">volatility</a></code> | <code>str</code> | Volatility of the function. One of: VOLATILE, STABLE, IMMUTABLE. |
 
 ---
 
@@ -1176,7 +1348,7 @@ body: str
 
 Body of the function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#body FunctionResource#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/function#body FunctionResource#body}
 
 ---
 
@@ -1190,7 +1362,7 @@ name: str
 
 Name of the function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#name FunctionResource#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/function#name FunctionResource#name}
 
 ---
 
@@ -1204,7 +1376,7 @@ arg: typing.Union[IResolvable, typing.List[FunctionResourceArg]]
 
 arg block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#arg FunctionResource#arg}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/function#arg FunctionResource#arg}
 
 ---
 
@@ -1218,7 +1390,7 @@ database: str
 
 The database where the function is located. If not specified, the provider default database is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#database FunctionResource#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/function#database FunctionResource#database}
 
 ---
 
@@ -1232,7 +1404,7 @@ drop_cascade: typing.Union[bool, IResolvable]
 
 Automatically drop objects that depend on the function (such as operators or triggers), and in turn all objects that depend on those objects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#drop_cascade FunctionResource#drop_cascade}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/function#drop_cascade FunctionResource#drop_cascade}
 
 ---
 
@@ -1244,7 +1416,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#id FunctionResource#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/function#id FunctionResource#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1261,7 +1433,21 @@ language: str
 
 Language of theof the function. One of: internal, sql, c, plpgsql.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#language FunctionResource#language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/function#language FunctionResource#language}
+
+---
+
+##### `parallel`<sup>Optional</sup> <a name="parallel" id="@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.parallel"></a>
+
+```python
+parallel: str
+```
+
+- *Type:* str
+
+If the function can be executed in parallel for a single query execution. One of: UNSAFE, RESTRICTED, SAFE.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/function#parallel FunctionResource#parallel}
 
 ---
 
@@ -1275,7 +1461,7 @@ returns: str
 
 Function return type. If not specified, it will be calculated based on the output arguments.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#returns FunctionResource#returns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/function#returns FunctionResource#returns}
 
 ---
 
@@ -1289,7 +1475,49 @@ schema: str
 
 Schema where the function is located. If not specified, the provider default schema is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function#schema FunctionResource#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/function#schema FunctionResource#schema}
+
+---
+
+##### `security_definer`<sup>Optional</sup> <a name="security_definer" id="@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.securityDefiner"></a>
+
+```python
+security_definer: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+If the function should execute with the permissions of the function owner instead of the permissions of the caller.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/function#security_definer FunctionResource#security_definer}
+
+---
+
+##### `strict`<sup>Optional</sup> <a name="strict" id="@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.strict"></a>
+
+```python
+strict: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+If the function should always return NULL if any of it's inputs is NULL.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/function#strict FunctionResource#strict}
+
+---
+
+##### `volatility`<sup>Optional</sup> <a name="volatility" id="@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.volatility"></a>
+
+```python
+volatility: str
+```
+
+- *Type:* str
+
+Volatility of the function. One of: VOLATILE, STABLE, IMMUTABLE.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/function#volatility FunctionResource#volatility}
 
 ---
 

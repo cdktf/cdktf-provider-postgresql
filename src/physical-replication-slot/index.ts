@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/physical_replication_slot
+// https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/physical_replication_slot
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,20 +13,20 @@ import * as cdktf from 'cdktf';
 
 export interface PhysicalReplicationSlotConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/physical_replication_slot#id PhysicalReplicationSlot#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/physical_replication_slot#id PhysicalReplicationSlot#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/physical_replication_slot#name PhysicalReplicationSlot#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/physical_replication_slot#name PhysicalReplicationSlot#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/physical_replication_slot postgresql_physical_replication_slot}
+* Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/physical_replication_slot postgresql_physical_replication_slot}
 */
 export class PhysicalReplicationSlot extends cdktf.TerraformResource {
 
@@ -40,7 +40,7 @@ export class PhysicalReplicationSlot extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/physical_replication_slot postgresql_physical_replication_slot} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/physical_replication_slot postgresql_physical_replication_slot} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -51,7 +51,7 @@ export class PhysicalReplicationSlot extends cdktf.TerraformResource {
       terraformResourceType: 'postgresql_physical_replication_slot',
       terraformGeneratorMetadata: {
         providerName: 'postgresql',
-        providerVersion: '1.20.0',
+        providerVersion: '1.21.0',
         providerVersionConstraint: '~> 1.14'
       },
       provider: config.provider,
