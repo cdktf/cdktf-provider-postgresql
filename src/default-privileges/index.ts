@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/default_privileges
 // generated from terraform resource schema
 
