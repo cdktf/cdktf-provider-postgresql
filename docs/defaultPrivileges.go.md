@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/defaultprivileges"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/defaultprivileges"
 
 defaultprivileges.NewDefaultPrivileges(scope Construct, id *string, config DefaultPrivilegesConfig) DefaultPrivileges
 ```
@@ -291,7 +291,7 @@ func ResetWithGrantOption()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/defaultprivileges"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/defaultprivileges"
 
 defaultprivileges.DefaultPrivileges_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/defaultprivileges"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/defaultprivileges"
 
 defaultprivileges.DefaultPrivileges_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ defaultprivileges.DefaultPrivileges_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/defaultprivileges"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/defaultprivileges"
 
 defaultprivileges.DefaultPrivileges_IsTerraformResource(x interface{}) *bool
 ```
@@ -712,7 +712,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/defaultprivileges"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/defaultprivileges"
 
 &defaultprivileges.DefaultPrivilegesConfig {
 	Connection: interface{},
