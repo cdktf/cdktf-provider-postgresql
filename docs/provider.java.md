@@ -526,6 +526,7 @@ public void resetUsername()
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.isTerraformProvider">isTerraformProvider</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a PostgresqlProvider resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -586,6 +587,50 @@ PostgresqlProvider.isTerraformProvider(java.lang.Object x)
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.isTerraformProvider.parameter.x"></a>
 
 - *Type:* java.lang.Object
+
+---
+
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.generateConfigForImport"></a>
+
+```java
+import com.hashicorp.cdktf.providers.postgresql.provider.PostgresqlProvider;
+
+PostgresqlProvider.generateConfigForImport(Construct scope, java.lang.String importToId, java.lang.String importFromId),PostgresqlProvider.generateConfigForImport(Construct scope, java.lang.String importToId, java.lang.String importFromId, TerraformProvider provider)
+```
+
+Generates CDKTF code for importing a PostgresqlProvider resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* software.constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* java.lang.String
+
+The construct id used in the generated config for the PostgresqlProvider to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* java.lang.String
+
+The id of the existing PostgresqlProvider that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* com.hashicorp.cdktf.TerraformProvider
+
+? Optional instance of the provider where the PostgresqlProvider to import is found.
 
 ---
 
