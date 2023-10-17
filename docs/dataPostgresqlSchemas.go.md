@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/datapostgresqlschemas"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/datapostgresqlschemas"
 
 datapostgresqlschemas.NewDataPostgresqlSchemas(scope Construct, id *string, config DataPostgresqlSchemasConfig) DataPostgresqlSchemas
 ```
@@ -306,13 +306,14 @@ func ResetRegexPattern()
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataPostgresqlSchemas resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/datapostgresqlschemas"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/datapostgresqlschemas"
 
 datapostgresqlschemas.DataPostgresqlSchemas_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +345,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/datapostgresqlschemas"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/datapostgresqlschemas"
 
 datapostgresqlschemas.DataPostgresqlSchemas_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +359,7 @@ datapostgresqlschemas.DataPostgresqlSchemas_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/datapostgresqlschemas"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/datapostgresqlschemas"
 
 datapostgresqlschemas.DataPostgresqlSchemas_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -366,6 +367,50 @@ datapostgresqlschemas.DataPostgresqlSchemas_IsTerraformDataSource(x interface{})
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/datapostgresqlschemas"
+
+datapostgresqlschemas.DataPostgresqlSchemas_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataPostgresqlSchemas resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataPostgresqlSchemas to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataPostgresqlSchemas that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/data-sources/schemas#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataPostgresqlSchemas to import is found.
 
 ---
 
@@ -700,7 +745,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemasConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/datapostgresqlschemas"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/datapostgresqlschemas"
 
 &datapostgresqlschemas.DataPostgresqlSchemasConfig {
 	Connection: interface{},
