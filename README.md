@@ -1,7 +1,9 @@
 
-# Terraform CDK postgresql Provider ~> 1.14
+# Terraform CDK postgresql Provider tracks ~> 1.14
 
 This repo builds and publishes the Terraform postgresql Provider bindings for [CDK for Terraform](https://cdk.tf).
+
+Is based directly on postgresql 1.21.0
 
 ## Available Packages
 
@@ -61,7 +63,7 @@ This project is explicitly not tracking the Terraform postgresql Provider versio
 These are the upstream dependencies:
 
 - [Terraform CDK](https://cdk.tf)
-- [Terraform postgresql Provider](https://registry.terraform.io/providers/cyrilgdn/postgresql/1.14.0)
+- [Terraform postgresql Provider](https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0)
     - This links to the minimum version being tracked, you can find the latest released version [in our releases](https://github.com/cdktf/cdktf-provider-postgresql/releases)
 - [Terraform Engine](https://terraform.io)
 
