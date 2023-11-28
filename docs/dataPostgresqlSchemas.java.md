@@ -1,7 +1,3 @@
-# `data_postgresql_schemas`
-
-Refer to the Terraform Registory for docs: [`data_postgresql_schemas`](https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/data-sources/schemas).
-
 # `dataPostgresqlSchemas` Submodule <a name="`dataPostgresqlSchemas` Submodule" id="@cdktf/provider-postgresql.dataPostgresqlSchemas"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `postgresql_grant_role`
-
-Refer to the Terraform Registory for docs: [`postgresql_grant_role`](https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/grant_role).
-
 # `grantRole` Submodule <a name="`grantRole` Submodule" id="@cdktf/provider-postgresql.grantRole"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.grantRole.GrantRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/grantrole"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/grantrole"
 
 grantrole.NewGrantRole(scope Construct, id *string, config GrantRoleConfig) GrantRole
 ```
@@ -346,7 +342,7 @@ func ResetWithAdminOption()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-postgresql.grantRole.GrantRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/grantrole"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/grantrole"
 
 grantrole.GrantRole_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +374,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-postgresql.grantRole.GrantRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/grantrole"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/grantrole"
 
 grantrole.GrantRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +388,7 @@ grantrole.GrantRole_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-postgresql.grantRole.GrantRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/grantrole"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/grantrole"
 
 grantrole.GrantRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -406,7 +402,7 @@ grantrole.GrantRole_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-postgresql.grantRole.GrantRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/grantrole"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/grantrole"
 
 grantrole.GrantRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -723,7 +719,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-postgresql.grantRole.GrantRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/grantrole"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/grantrole"
 
 &grantrole.GrantRoleConfig {
 	Connection: interface{},

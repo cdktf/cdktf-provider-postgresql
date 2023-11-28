@@ -1,7 +1,3 @@
-# `data_postgresql_schemas`
-
-Refer to the Terraform Registory for docs: [`data_postgresql_schemas`](https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/data-sources/schemas).
-
 # `dataPostgresqlSchemas` Submodule <a name="`dataPostgresqlSchemas` Submodule" id="@cdktf/provider-postgresql.dataPostgresqlSchemas"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/datapostgresqlschemas"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/datapostgresqlschemas"
 
 datapostgresqlschemas.NewDataPostgresqlSchemas(scope Construct, id *string, config DataPostgresqlSchemasConfig) DataPostgresqlSchemas
 ```
@@ -313,7 +309,7 @@ func ResetRegexPattern()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/datapostgresqlschemas"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/datapostgresqlschemas"
 
 datapostgresqlschemas.DataPostgresqlSchemas_IsConstruct(x interface{}) *bool
 ```
@@ -345,7 +341,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/datapostgresqlschemas"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/datapostgresqlschemas"
 
 datapostgresqlschemas.DataPostgresqlSchemas_IsTerraformElement(x interface{}) *bool
 ```
@@ -359,7 +355,7 @@ datapostgresqlschemas.DataPostgresqlSchemas_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/datapostgresqlschemas"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/datapostgresqlschemas"
 
 datapostgresqlschemas.DataPostgresqlSchemas_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -373,7 +369,7 @@ datapostgresqlschemas.DataPostgresqlSchemas_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/datapostgresqlschemas"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/datapostgresqlschemas"
 
 datapostgresqlschemas.DataPostgresqlSchemas_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -745,7 +741,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemasConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/datapostgresqlschemas"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/datapostgresqlschemas"
 
 &datapostgresqlschemas.DataPostgresqlSchemasConfig {
 	Connection: interface{},
