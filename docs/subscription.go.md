@@ -1,7 +1,3 @@
-# `postgresql_subscription`
-
-Refer to the Terraform Registory for docs: [`postgresql_subscription`](https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/subscription).
-
 # `subscription` Submodule <a name="`subscription` Submodule" id="@cdktf/provider-postgresql.subscription"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

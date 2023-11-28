@@ -1,7 +1,3 @@
-# `data_postgresql_tables`
-
-Refer to the Terraform Registory for docs: [`data_postgresql_tables`](https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/data-sources/tables).
-
 # `dataPostgresqlTables` Submodule <a name="`dataPostgresqlTables` Submodule" id="@cdktf/provider-postgresql.dataPostgresqlTables"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
