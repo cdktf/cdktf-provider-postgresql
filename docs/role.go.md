@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.role.Role.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/role"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/role"
 
 role.NewRole(scope Construct, id *string, config RoleConfig) Role
 ```
@@ -468,7 +468,7 @@ func ResetValidUntil()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-postgresql.role.Role.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/role"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/role"
 
 role.Role_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-postgresql.role.Role.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/role"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/role"
 
 role.Role_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ role.Role_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-postgresql.role.Role.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/role"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/role"
 
 role.Role_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ role.Role_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-postgresql.role.Role.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/role"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/role"
 
 role.Role_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1219,7 +1219,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-postgresql.role.RoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/role"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/role"
 
 &role.RoleConfig {
 	Connection: interface{},
