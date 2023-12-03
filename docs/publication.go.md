@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.publication.Publication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/publication"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/publication"
 
 publication.NewPublication(scope Construct, id *string, config PublicationConfig) Publication
 ```
@@ -384,7 +384,7 @@ func ResetTables()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-postgresql.publication.Publication.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/publication"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/publication"
 
 publication.Publication_IsConstruct(x interface{}) *bool
 ```
@@ -416,7 +416,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-postgresql.publication.Publication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/publication"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/publication"
 
 publication.Publication_IsTerraformElement(x interface{}) *bool
 ```
@@ -430,7 +430,7 @@ publication.Publication_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-postgresql.publication.Publication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/publication"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/publication"
 
 publication.Publication_IsTerraformResource(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ publication.Publication_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-postgresql.publication.Publication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/publication"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/publication"
 
 publication.Publication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -871,7 +871,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-postgresql.publication.PublicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/publication"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/publication"
 
 &publication.PublicationConfig {
 	Connection: interface{},
