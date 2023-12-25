@@ -1,6 +1,9 @@
-# Submodules <a name="Submodules" id="submodules"></a>
+# API Reference <a name="API Reference" id="api-reference"></a>
+
+## Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+
 - [dataPostgresqlSchemas](./dataPostgresqlSchemas.go.md)
 - [dataPostgresqlSequences](./dataPostgresqlSequences.go.md)
 - [dataPostgresqlTables](./dataPostgresqlTables.go.md)
@@ -19,3 +22,8 @@ The following submodules are available:
 - [server](./server.go.md)
 - [subscription](./subscription.go.md)
 - [userMapping](./userMapping.go.md)
+
+
+
+
+
