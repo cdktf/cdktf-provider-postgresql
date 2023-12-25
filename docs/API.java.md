@@ -1,6 +1,9 @@
-# Submodules <a name="Submodules" id="submodules"></a>
+# API Reference <a name="API Reference" id="api-reference"></a>
+
+## Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+
 - [dataPostgresqlSchemas](./dataPostgresqlSchemas.java.md)
 - [dataPostgresqlSequences](./dataPostgresqlSequences.java.md)
 - [dataPostgresqlTables](./dataPostgresqlTables.java.md)
@@ -19,3 +22,8 @@ The following submodules are available:
 - [server](./server.java.md)
 - [subscription](./subscription.java.md)
 - [userMapping](./userMapping.java.md)
+
+
+
+
+
