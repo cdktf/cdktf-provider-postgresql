@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/database
 // generated from terraform resource schema
 
@@ -340,5 +335,79 @@ export class Database extends cdktf.TerraformResource {
       tablespace_name: cdktf.stringToTerraform(this._tablespaceName),
       template: cdktf.stringToTerraform(this._template),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      allow_connections: {
+        value: cdktf.booleanToHclTerraform(this._allowConnections),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      connection_limit: {
+        value: cdktf.numberToHclTerraform(this._connectionLimit),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      encoding: {
+        value: cdktf.stringToHclTerraform(this._encoding),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      is_template: {
+        value: cdktf.booleanToHclTerraform(this._isTemplate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      lc_collate: {
+        value: cdktf.stringToHclTerraform(this._lcCollate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      lc_ctype: {
+        value: cdktf.stringToHclTerraform(this._lcCtype),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      owner: {
+        value: cdktf.stringToHclTerraform(this._owner),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tablespace_name: {
+        value: cdktf.stringToHclTerraform(this._tablespaceName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      template: {
+        value: cdktf.stringToHclTerraform(this._template),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

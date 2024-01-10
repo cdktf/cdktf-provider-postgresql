@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/defaultprivileges"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/defaultprivileges"
 
 defaultprivileges.NewDefaultPrivileges(scope Construct, id *string, config DefaultPrivilegesConfig) DefaultPrivileges
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -127,6 +128,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.toMetadata"></a>
 
@@ -392,7 +399,7 @@ func ResetWithGrantOption()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/defaultprivileges"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/defaultprivileges"
 
 defaultprivileges.DefaultPrivileges_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/defaultprivileges"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/defaultprivileges"
 
 defaultprivileges.DefaultPrivileges_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +445,7 @@ defaultprivileges.DefaultPrivileges_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/defaultprivileges"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/defaultprivileges"
 
 defaultprivileges.DefaultPrivileges_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +459,7 @@ defaultprivileges.DefaultPrivileges_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/defaultprivileges"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/defaultprivileges"
 
 defaultprivileges.DefaultPrivileges_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -857,7 +864,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/defaultprivileges"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/defaultprivileges"
 
 &defaultprivileges.DefaultPrivilegesConfig {
 	Connection: interface{},

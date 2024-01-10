@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/default_privileges
 // generated from terraform resource schema
 
@@ -256,5 +251,61 @@ export class DefaultPrivileges extends cdktf.TerraformResource {
       schema: cdktf.stringToTerraform(this._schema),
       with_grant_option: cdktf.booleanToTerraform(this._withGrantOption),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      database: {
+        value: cdktf.stringToHclTerraform(this._database),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      object_type: {
+        value: cdktf.stringToHclTerraform(this._objectType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      owner: {
+        value: cdktf.stringToHclTerraform(this._owner),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      privileges: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._privileges),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      role: {
+        value: cdktf.stringToHclTerraform(this._role),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      schema: {
+        value: cdktf.stringToHclTerraform(this._schema),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      with_grant_option: {
+        value: cdktf.booleanToHclTerraform(this._withGrantOption),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

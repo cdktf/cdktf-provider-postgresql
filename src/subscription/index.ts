@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/subscription
 // generated from terraform resource schema
 
@@ -238,5 +233,55 @@ export class Subscription extends cdktf.TerraformResource {
       publications: cdktf.listMapper(cdktf.stringToTerraform, false)(this._publications),
       slot_name: cdktf.stringToTerraform(this._slotName),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      conninfo: {
+        value: cdktf.stringToHclTerraform(this._conninfo),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      create_slot: {
+        value: cdktf.booleanToHclTerraform(this._createSlot),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      database: {
+        value: cdktf.stringToHclTerraform(this._database),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      publications: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._publications),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      slot_name: {
+        value: cdktf.stringToHclTerraform(this._slotName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/publication
 // generated from terraform resource schema
 
@@ -290,5 +285,67 @@ export class Publication extends cdktf.TerraformResource {
       publish_via_partition_root_param: cdktf.booleanToTerraform(this._publishViaPartitionRootParam),
       tables: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tables),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      all_tables: {
+        value: cdktf.booleanToHclTerraform(this._allTables),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      database: {
+        value: cdktf.stringToHclTerraform(this._database),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      drop_cascade: {
+        value: cdktf.booleanToHclTerraform(this._dropCascade),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      owner: {
+        value: cdktf.stringToHclTerraform(this._owner),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      publish_param: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._publishParam),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      publish_via_partition_root_param: {
+        value: cdktf.booleanToHclTerraform(this._publishViaPartitionRootParam),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tables: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tables),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

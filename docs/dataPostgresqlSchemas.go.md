@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/datapostgresqlschemas"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/datapostgresqlschemas"
 
 datapostgresqlschemas.NewDataPostgresqlSchemas(scope Construct, id *string, config DataPostgresqlSchemasConfig) DataPostgresqlSchemas
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -124,6 +125,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.toMetadata"></a>
 
@@ -309,7 +318,7 @@ func ResetRegexPattern()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/datapostgresqlschemas"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/datapostgresqlschemas"
 
 datapostgresqlschemas.DataPostgresqlSchemas_IsConstruct(x interface{}) *bool
 ```
@@ -341,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/datapostgresqlschemas"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/datapostgresqlschemas"
 
 datapostgresqlschemas.DataPostgresqlSchemas_IsTerraformElement(x interface{}) *bool
 ```
@@ -355,7 +364,7 @@ datapostgresqlschemas.DataPostgresqlSchemas_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/datapostgresqlschemas"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/datapostgresqlschemas"
 
 datapostgresqlschemas.DataPostgresqlSchemas_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -369,7 +378,7 @@ datapostgresqlschemas.DataPostgresqlSchemas_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/datapostgresqlschemas"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/datapostgresqlschemas"
 
 datapostgresqlschemas.DataPostgresqlSchemas_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -741,7 +750,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemasConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/datapostgresqlschemas"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/datapostgresqlschemas"
 
 &datapostgresqlschemas.DataPostgresqlSchemasConfig {
 	Connection: interface{},

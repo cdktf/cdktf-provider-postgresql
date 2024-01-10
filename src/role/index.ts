@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/role
 // generated from terraform resource schema
 
@@ -578,5 +573,139 @@ export class Role extends cdktf.TerraformResource {
       superuser: cdktf.booleanToTerraform(this._superuser),
       valid_until: cdktf.stringToTerraform(this._validUntil),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      assume_role: {
+        value: cdktf.stringToHclTerraform(this._assumeRole),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      bypass_row_level_security: {
+        value: cdktf.booleanToHclTerraform(this._bypassRowLevelSecurity),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      connection_limit: {
+        value: cdktf.numberToHclTerraform(this._connectionLimit),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      create_database: {
+        value: cdktf.booleanToHclTerraform(this._createDatabase),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      create_role: {
+        value: cdktf.booleanToHclTerraform(this._createRole),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      encrypted: {
+        value: cdktf.stringToHclTerraform(this._encrypted),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      encrypted_password: {
+        value: cdktf.booleanToHclTerraform(this._encryptedPassword),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      idle_in_transaction_session_timeout: {
+        value: cdktf.numberToHclTerraform(this._idleInTransactionSessionTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      inherit: {
+        value: cdktf.booleanToHclTerraform(this._inherit),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      login: {
+        value: cdktf.booleanToHclTerraform(this._login),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      password: {
+        value: cdktf.stringToHclTerraform(this._password),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      replication: {
+        value: cdktf.booleanToHclTerraform(this._replication),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      roles: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._roles),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      search_path: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._searchPath),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      skip_drop_role: {
+        value: cdktf.booleanToHclTerraform(this._skipDropRole),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      skip_reassign_owned: {
+        value: cdktf.booleanToHclTerraform(this._skipReassignOwned),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      statement_timeout: {
+        value: cdktf.numberToHclTerraform(this._statementTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      superuser: {
+        value: cdktf.booleanToHclTerraform(this._superuser),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      valid_until: {
+        value: cdktf.stringToHclTerraform(this._validUntil),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

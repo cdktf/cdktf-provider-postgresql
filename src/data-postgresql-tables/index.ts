@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/data-sources/tables
 // generated from terraform resource schema
 
@@ -72,6 +67,17 @@ export function dataPostgresqlTablesTablesToTerraform(struct?: DataPostgresqlTab
   }
   return {
   }
+}
+
+
+export function dataPostgresqlTablesTablesToHclTerraform(struct?: DataPostgresqlTablesTables): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataPostgresqlTablesTablesOutputReference extends cdktf.ComplexObject {
@@ -348,5 +354,61 @@ export class DataPostgresqlTables extends cdktf.TerraformDataSource {
       schemas: cdktf.listMapper(cdktf.stringToTerraform, false)(this._schemas),
       table_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tableTypes),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      database: {
+        value: cdktf.stringToHclTerraform(this._database),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      like_all_patterns: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._likeAllPatterns),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      like_any_patterns: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._likeAnyPatterns),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      not_like_all_patterns: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._notLikeAllPatterns),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      regex_pattern: {
+        value: cdktf.stringToHclTerraform(this._regexPattern),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      schemas: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._schemas),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      table_types: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tableTypes),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

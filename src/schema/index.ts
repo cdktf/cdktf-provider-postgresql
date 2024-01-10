@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/schema
 // generated from terraform resource schema
 
@@ -101,6 +96,49 @@ export function schemaPolicyToTerraform(struct?: SchemaPolicy | cdktf.IResolvabl
     usage: cdktf.booleanToTerraform(struct!.usage),
     usage_with_grant: cdktf.booleanToTerraform(struct!.usageWithGrant),
   }
+}
+
+
+export function schemaPolicyToHclTerraform(struct?: SchemaPolicy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.booleanToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    create_with_grant: {
+      value: cdktf.booleanToHclTerraform(struct!.createWithGrant),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    role: {
+      value: cdktf.stringToHclTerraform(struct!.role),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    usage: {
+      value: cdktf.booleanToHclTerraform(struct!.usage),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    usage_with_grant: {
+      value: cdktf.booleanToHclTerraform(struct!.usageWithGrant),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SchemaPolicyOutputReference extends cdktf.ComplexObject {
@@ -459,5 +497,55 @@ export class Schema extends cdktf.TerraformResource {
       owner: cdktf.stringToTerraform(this._owner),
       policy: cdktf.listMapper(schemaPolicyToTerraform, true)(this._policy.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      database: {
+        value: cdktf.stringToHclTerraform(this._database),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      drop_cascade: {
+        value: cdktf.booleanToHclTerraform(this._dropCascade),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      if_not_exists: {
+        value: cdktf.booleanToHclTerraform(this._ifNotExists),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      owner: {
+        value: cdktf.stringToHclTerraform(this._owner),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      policy: {
+        value: cdktf.listMapperHcl(schemaPolicyToHclTerraform, true)(this._policy.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "SchemaPolicyList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

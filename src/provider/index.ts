@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs
 // generated from terraform resource schema
 
@@ -166,6 +161,37 @@ export function postgresqlProviderClientcertToTerraform(struct?: PostgresqlProvi
     key: cdktf.stringToTerraform(struct!.key),
     sslinline: cdktf.booleanToTerraform(struct!.sslinline),
   }
+}
+
+
+export function postgresqlProviderClientcertToHclTerraform(struct?: PostgresqlProviderClientcert): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cert: {
+      value: cdktf.stringToHclTerraform(struct!.cert),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sslinline: {
+      value: cdktf.booleanToHclTerraform(struct!.sslinline),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 
@@ -605,5 +631,139 @@ export class PostgresqlProvider extends cdktf.TerraformProvider {
       alias: cdktf.stringToTerraform(this._alias),
       clientcert: postgresqlProviderClientcertToTerraform(this._clientcert),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      aws_rds_iam_auth: {
+        value: cdktf.booleanToHclTerraform(this._awsRdsIamAuth),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      aws_rds_iam_profile: {
+        value: cdktf.stringToHclTerraform(this._awsRdsIamProfile),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      aws_rds_iam_region: {
+        value: cdktf.stringToHclTerraform(this._awsRdsIamRegion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      azure_identity_auth: {
+        value: cdktf.booleanToHclTerraform(this._azureIdentityAuth),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      azure_tenant_id: {
+        value: cdktf.stringToHclTerraform(this._azureTenantId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      connect_timeout: {
+        value: cdktf.numberToHclTerraform(this._connectTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      database: {
+        value: cdktf.stringToHclTerraform(this._database),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      database_username: {
+        value: cdktf.stringToHclTerraform(this._databaseUsername),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      expected_version: {
+        value: cdktf.stringToHclTerraform(this._expectedVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      host: {
+        value: cdktf.stringToHclTerraform(this._host),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_connections: {
+        value: cdktf.numberToHclTerraform(this._maxConnections),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      password: {
+        value: cdktf.stringToHclTerraform(this._password),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      port: {
+        value: cdktf.numberToHclTerraform(this._port),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      scheme: {
+        value: cdktf.stringToHclTerraform(this._scheme),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ssl_mode: {
+        value: cdktf.stringToHclTerraform(this._sslMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sslmode: {
+        value: cdktf.stringToHclTerraform(this._sslmode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sslrootcert: {
+        value: cdktf.stringToHclTerraform(this._sslrootcert),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      superuser: {
+        value: cdktf.booleanToHclTerraform(this._superuser),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      username: {
+        value: cdktf.stringToHclTerraform(this._username),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      alias: {
+        value: cdktf.stringToHclTerraform(this._alias),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      clientcert: {
+        value: postgresqlProviderClientcertToHclTerraform(this._clientcert),
+        isBlock: true,
+        type: "list",
+        storageClassType: "PostgresqlProviderClientcertList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }
