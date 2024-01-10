@@ -299,6 +299,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.addOverride">addOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.toHclTerraform">toHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.toMetadata">toMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetAlias">resetAlias</a></code> | *No description.* |
@@ -374,6 +375,12 @@ public void resetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.toHclTerraform"></a>
+
+```java
+public java.lang.Object toHclTerraform()
+```
 
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.toMetadata"></a>
 

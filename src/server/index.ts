@@ -266,4 +266,60 @@ export class Server extends cdktf.TerraformResource {
       server_version: cdktf.stringToTerraform(this._serverVersion),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      drop_cascade: {
+        value: cdktf.booleanToHclTerraform(this._dropCascade),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      fdw_name: {
+        value: cdktf.stringToHclTerraform(this._fdwName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      options: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._options),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      server_name: {
+        value: cdktf.stringToHclTerraform(this._serverName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      server_owner: {
+        value: cdktf.stringToHclTerraform(this._serverOwner),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      server_type: {
+        value: cdktf.stringToHclTerraform(this._serverType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      server_version: {
+        value: cdktf.stringToHclTerraform(this._serverVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

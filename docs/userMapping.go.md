@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.userMapping.UserMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/usermapping"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/usermapping"
 
 usermapping.NewUserMapping(scope Construct, id *string, config UserMappingConfig) UserMapping
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-postgresql.userMapping.UserMapping.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.userMapping.UserMapping.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-postgresql.userMapping.UserMapping.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-postgresql.userMapping.UserMapping.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.userMapping.UserMapping.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.userMapping.UserMapping.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-postgresql.userMapping.UserMapping.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -126,6 +127,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-postgresql.userMapping.UserMapping.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-postgresql.userMapping.UserMapping.toMetadata"></a>
 
@@ -385,7 +392,7 @@ func ResetOptions()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-postgresql.userMapping.UserMapping.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/usermapping"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/usermapping"
 
 usermapping.UserMapping_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-postgresql.userMapping.UserMapping.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/usermapping"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/usermapping"
 
 usermapping.UserMapping_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +438,7 @@ usermapping.UserMapping_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-postgresql.userMapping.UserMapping.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/usermapping"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/usermapping"
 
 usermapping.UserMapping_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +452,7 @@ usermapping.UserMapping_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-postgresql.userMapping.UserMapping.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/usermapping"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/usermapping"
 
 usermapping.UserMapping_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -762,7 +769,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-postgresql.userMapping.UserMappingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/usermapping"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/usermapping"
 
 &usermapping.UserMappingConfig {
 	Connection: interface{},

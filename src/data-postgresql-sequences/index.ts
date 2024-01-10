@@ -68,6 +68,17 @@ export function dataPostgresqlSequencesSequencesToTerraform(struct?: DataPostgre
   }
 }
 
+
+export function dataPostgresqlSequencesSequencesToHclTerraform(struct?: DataPostgresqlSequencesSequences): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataPostgresqlSequencesSequencesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -324,5 +335,55 @@ export class DataPostgresqlSequences extends cdktf.TerraformDataSource {
       regex_pattern: cdktf.stringToTerraform(this._regexPattern),
       schemas: cdktf.listMapper(cdktf.stringToTerraform, false)(this._schemas),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      database: {
+        value: cdktf.stringToHclTerraform(this._database),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      like_all_patterns: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._likeAllPatterns),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      like_any_patterns: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._likeAnyPatterns),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      not_like_all_patterns: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._notLikeAllPatterns),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      regex_pattern: {
+        value: cdktf.stringToHclTerraform(this._regexPattern),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      schemas: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._schemas),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }
