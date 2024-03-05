@@ -1,7 +1,7 @@
 
-# CDKTF prebuilt bindings for cyrilgdn/postgresql provider version 1.21.0
+# CDKTF prebuilt bindings for cyrilgdn/postgresql provider version 1.22.0
 
-This repo builds and publishes the [Terraform postgresql provider](https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
+This repo builds and publishes the [Terraform postgresql provider](https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
 
 ## Available Packages
 
@@ -63,7 +63,7 @@ This project is explicitly not tracking the Terraform postgresql provider versio
 These are the upstream dependencies:
 
 - [CDK for Terraform](https://cdk.tf)
-- [Terraform postgresql provider](https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0)
+- [Terraform postgresql provider](https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0)
 - [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.

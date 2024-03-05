@@ -1,3 +1,3 @@
 # `postgresql_user_mapping`
 
-Refer to the Terraform Registry for docs: [`postgresql_user_mapping`](https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/user_mapping).
+Refer to the Terraform Registry for docs: [`postgresql_user_mapping`](https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/user_mapping).

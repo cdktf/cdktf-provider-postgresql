@@ -4,7 +4,7 @@
 
 ### UserMapping <a name="UserMapping" id="@cdktf/provider-postgresql.userMapping.UserMapping"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/user_mapping postgresql_user_mapping}.
+Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/user_mapping postgresql_user_mapping}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.userMapping.UserMapping.Initializer"></a>
 
@@ -41,7 +41,7 @@ userMapping.UserMapping(
 | <code><a href="#@cdktf/provider-postgresql.userMapping.UserMapping.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.userMapping.UserMapping.Initializer.parameter.serverName">server_name</a></code> | <code>str</code> | The name of an existing server for which the user mapping is to be created. |
 | <code><a href="#@cdktf/provider-postgresql.userMapping.UserMapping.Initializer.parameter.userName">user_name</a></code> | <code>str</code> | The name of an existing user that is mapped to foreign server. |
-| <code><a href="#@cdktf/provider-postgresql.userMapping.UserMapping.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/user_mapping#id UserMapping#id}. |
+| <code><a href="#@cdktf/provider-postgresql.userMapping.UserMapping.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/user_mapping#id UserMapping#id}. |
 | <code><a href="#@cdktf/provider-postgresql.userMapping.UserMapping.Initializer.parameter.options">options</a></code> | <code>typing.Mapping[str]</code> | This clause specifies the options of the user mapping. |
 
 ---
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The name of an existing server for which the user mapping is to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/user_mapping#server_name UserMapping#server_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/user_mapping#server_name UserMapping#server_name}
 
 ---
 
@@ -124,7 +124,7 @@ The name of an existing user that is mapped to foreign server.
 
 CURRENT_ROLE, CURRENT_USER, and USER match the name of the current user. When PUBLIC is specified, a so-called public mapping is created that is used when no user-specific mapping is applicable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/user_mapping#user_name UserMapping#user_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/user_mapping#user_name UserMapping#user_name}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/user_mapping#id UserMapping#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/user_mapping#id UserMapping#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -147,7 +147,7 @@ This clause specifies the options of the user mapping.
 
 The options typically define the actual user name and password of the mapping. Option names must be unique. The allowed option names and values are specific to the server's foreign-data wrapper
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/user_mapping#options UserMapping#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/user_mapping#options UserMapping#options}
 
 ---
 
@@ -634,7 +634,7 @@ The construct id used in the generated config for the UserMapping to import.
 
 The id of the existing UserMapping that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/user_mapping#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/user_mapping#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -952,7 +952,7 @@ userMapping.UserMappingConfig(
 | <code><a href="#@cdktf/provider-postgresql.userMapping.UserMappingConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.userMapping.UserMappingConfig.property.serverName">server_name</a></code> | <code>str</code> | The name of an existing server for which the user mapping is to be created. |
 | <code><a href="#@cdktf/provider-postgresql.userMapping.UserMappingConfig.property.userName">user_name</a></code> | <code>str</code> | The name of an existing user that is mapped to foreign server. |
-| <code><a href="#@cdktf/provider-postgresql.userMapping.UserMappingConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/user_mapping#id UserMapping#id}. |
+| <code><a href="#@cdktf/provider-postgresql.userMapping.UserMappingConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/user_mapping#id UserMapping#id}. |
 | <code><a href="#@cdktf/provider-postgresql.userMapping.UserMappingConfig.property.options">options</a></code> | <code>typing.Mapping[str]</code> | This clause specifies the options of the user mapping. |
 
 ---
@@ -1037,7 +1037,7 @@ server_name: str
 
 The name of an existing server for which the user mapping is to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/user_mapping#server_name UserMapping#server_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/user_mapping#server_name UserMapping#server_name}
 
 ---
 
@@ -1053,7 +1053,7 @@ The name of an existing user that is mapped to foreign server.
 
 CURRENT_ROLE, CURRENT_USER, and USER match the name of the current user. When PUBLIC is specified, a so-called public mapping is created that is used when no user-specific mapping is applicable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/user_mapping#user_name UserMapping#user_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/user_mapping#user_name UserMapping#user_name}
 
 ---
 
@@ -1065,7 +1065,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/user_mapping#id UserMapping#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/user_mapping#id UserMapping#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1084,7 +1084,7 @@ This clause specifies the options of the user mapping.
 
 The options typically define the actual user name and password of the mapping. Option names must be unique. The allowed option names and values are specific to the server's foreign-data wrapper
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/user_mapping#options UserMapping#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/user_mapping#options UserMapping#options}
 
 ---
 

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/data-sources/sequences
+// https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/data-sources/sequences
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface DataPostgresqlSequencesConfig extends cdktf.TerraformMetaArgume
   /**
   * The PostgreSQL database which will be queried for sequence names
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/data-sources/sequences#database DataPostgresqlSequences#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/data-sources/sequences#database DataPostgresqlSequences#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/data-sources/sequences#id DataPostgresqlSequences#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/data-sources/sequences#id DataPostgresqlSequences#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,31 +23,31 @@ export interface DataPostgresqlSequencesConfig extends cdktf.TerraformMetaArgume
   /**
   * Expression(s) which will be pattern matched against sequence names in the query using the PostgreSQL LIKE ALL operator
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/data-sources/sequences#like_all_patterns DataPostgresqlSequences#like_all_patterns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/data-sources/sequences#like_all_patterns DataPostgresqlSequences#like_all_patterns}
   */
   readonly likeAllPatterns?: string[];
   /**
   * Expression(s) which will be pattern matched against sequence names in the query using the PostgreSQL LIKE ANY operator
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/data-sources/sequences#like_any_patterns DataPostgresqlSequences#like_any_patterns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/data-sources/sequences#like_any_patterns DataPostgresqlSequences#like_any_patterns}
   */
   readonly likeAnyPatterns?: string[];
   /**
   * Expression(s) which will be pattern matched against sequence names in the query using the PostgreSQL NOT LIKE ALL operator
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/data-sources/sequences#not_like_all_patterns DataPostgresqlSequences#not_like_all_patterns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/data-sources/sequences#not_like_all_patterns DataPostgresqlSequences#not_like_all_patterns}
   */
   readonly notLikeAllPatterns?: string[];
   /**
   * Expression which will be pattern matched against sequence names in the query using the PostgreSQL ~ (regular expression match) operator
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/data-sources/sequences#regex_pattern DataPostgresqlSequences#regex_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/data-sources/sequences#regex_pattern DataPostgresqlSequences#regex_pattern}
   */
   readonly regexPattern?: string;
   /**
   * The PostgreSQL schema(s) which will be queried for sequence names. Queries all schemas in the database by default
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/data-sources/sequences#schemas DataPostgresqlSequences#schemas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/data-sources/sequences#schemas DataPostgresqlSequences#schemas}
   */
   readonly schemas?: string[];
 }
@@ -143,7 +138,7 @@ export class DataPostgresqlSequencesSequencesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/data-sources/sequences postgresql_sequences}
+* Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/data-sources/sequences postgresql_sequences}
 */
 export class DataPostgresqlSequences extends cdktf.TerraformDataSource {
 
@@ -159,7 +154,7 @@ export class DataPostgresqlSequences extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataPostgresqlSequences resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataPostgresqlSequences to import
-  * @param importFromId The id of the existing DataPostgresqlSequences that should be imported. Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/data-sources/sequences#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataPostgresqlSequences that should be imported. Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/data-sources/sequences#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataPostgresqlSequences to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -171,7 +166,7 @@ export class DataPostgresqlSequences extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/data-sources/sequences postgresql_sequences} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/data-sources/sequences postgresql_sequences} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -182,7 +177,7 @@ export class DataPostgresqlSequences extends cdktf.TerraformDataSource {
       terraformResourceType: 'postgresql_sequences',
       terraformGeneratorMetadata: {
         providerName: 'postgresql',
-        providerVersion: '1.21.0',
+        providerVersion: '1.22.0',
         providerVersionConstraint: '~> 1.14'
       },
       provider: config.provider,
