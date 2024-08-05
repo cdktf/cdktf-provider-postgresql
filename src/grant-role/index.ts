@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/grant_role
 // generated from terraform resource schema
 
