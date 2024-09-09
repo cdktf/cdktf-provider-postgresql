@@ -4,7 +4,7 @@
 
 ### Publication <a name="Publication" id="@cdktf/provider-postgresql.publication.Publication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/publication postgresql_publication}.
+Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/publication postgresql_publication}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.publication.Publication.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the Publication to import.
 
 The id of the existing Publication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/publication#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/publication#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -954,11 +954,11 @@ import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/publication
 | <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/publication#name Publication#name}. |
+| <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/publication#name Publication#name}. |
 | <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.allTables">AllTables</a></code> | <code>interface{}</code> | Sets the tables list to publish to ALL tables. |
 | <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.database">Database</a></code> | <code>*string</code> | Sets the database to add the publication for. |
 | <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.dropCascade">DropCascade</a></code> | <code>interface{}</code> | When true, will also drop all the objects that depend on the publication, and in turn all objects that depend on those objects. |
-| <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/publication#id Publication#id}. |
+| <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/publication#id Publication#id}. |
 | <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.owner">Owner</a></code> | <code>*string</code> | Sets the owner of the publication. |
 | <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.publishParam">PublishParam</a></code> | <code>*[]*string</code> | Sets which DML operations will be published. |
 | <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.publishViaPartitionRootParam">PublishViaPartitionRootParam</a></code> | <code>interface{}</code> | Sets whether changes in a partitioned table using the identity and schema of the partitioned table. |
@@ -1044,7 +1044,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/publication#name Publication#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/publication#name Publication#name}.
 
 ---
 
@@ -1058,7 +1058,7 @@ AllTables interface{}
 
 Sets the tables list to publish to ALL tables.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/publication#all_tables Publication#all_tables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/publication#all_tables Publication#all_tables}
 
 ---
 
@@ -1072,7 +1072,7 @@ Database *string
 
 Sets the database to add the publication for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/publication#database Publication#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/publication#database Publication#database}
 
 ---
 
@@ -1086,7 +1086,7 @@ DropCascade interface{}
 
 When true, will also drop all the objects that depend on the publication, and in turn all objects that depend on those objects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/publication#drop_cascade Publication#drop_cascade}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/publication#drop_cascade Publication#drop_cascade}
 
 ---
 
@@ -1098,7 +1098,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/publication#id Publication#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/publication#id Publication#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1115,7 +1115,7 @@ Owner *string
 
 Sets the owner of the publication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/publication#owner Publication#owner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/publication#owner Publication#owner}
 
 ---
 
@@ -1129,7 +1129,7 @@ PublishParam *[]*string
 
 Sets which DML operations will be published.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/publication#publish_param Publication#publish_param}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/publication#publish_param Publication#publish_param}
 
 ---
 
@@ -1143,7 +1143,7 @@ PublishViaPartitionRootParam interface{}
 
 Sets whether changes in a partitioned table using the identity and schema of the partitioned table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/publication#publish_via_partition_root_param Publication#publish_via_partition_root_param}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/publication#publish_via_partition_root_param Publication#publish_via_partition_root_param}
 
 ---
 
@@ -1157,7 +1157,7 @@ Tables *[]*string
 
 Sets the tables list to publish.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/publication#tables Publication#tables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/publication#tables Publication#tables}
 
 ---
 

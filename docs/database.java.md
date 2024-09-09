@@ -4,7 +4,7 @@
 
 ### Database <a name="Database" id="@cdktf/provider-postgresql.database.Database"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/database postgresql_database}.
+Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database postgresql_database}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.database.Database.Initializer"></a>
 
@@ -26,6 +26,8 @@ Database.Builder.create(Construct scope, java.lang.String id)
     .name(java.lang.String)
 //  .allowConnections(java.lang.Boolean)
 //  .allowConnections(IResolvable)
+//  .alterObjectOwnership(java.lang.Boolean)
+//  .alterObjectOwnership(IResolvable)
 //  .connectionLimit(java.lang.Number)
 //  .encoding(java.lang.String)
 //  .id(java.lang.String)
@@ -52,9 +54,10 @@ Database.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The PostgreSQL database name to connect to. |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.allowConnections">allowConnections</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If false then no one can connect to this database. |
+| <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.alterObjectOwnership">alterObjectOwnership</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If true, the owner of already existing objects will change if the owner changes. |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.connectionLimit">connectionLimit</a></code> | <code>java.lang.Number</code> | How many concurrent connections can be made to this database. |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.encoding">encoding</a></code> | <code>java.lang.String</code> | Character set encoding to use in the new database. |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/database#id Database#id}. |
+| <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database#id Database#id}. |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.isTemplate">isTemplate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If true, then this database can be cloned by any user with CREATEDB privileges. |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.lcCollate">lcCollate</a></code> | <code>java.lang.String</code> | Collation order (LC_COLLATE) to use in the new database. |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.lcCtype">lcCtype</a></code> | <code>java.lang.String</code> | Character classification (LC_CTYPE) to use in the new database. |
@@ -130,7 +133,7 @@ Must be unique amongst siblings in the same scope
 
 The PostgreSQL database name to connect to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/database#name Database#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database#name Database#name}
 
 ---
 
@@ -140,7 +143,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 If false then no one can connect to this database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/database#allow_connections Database#allow_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database#allow_connections Database#allow_connections}
+
+---
+
+##### `alterObjectOwnership`<sup>Optional</sup> <a name="alterObjectOwnership" id="@cdktf/provider-postgresql.database.Database.Initializer.parameter.alterObjectOwnership"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+If true, the owner of already existing objects will change if the owner changes.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database#alter_object_ownership Database#alter_object_ownership}
 
 ---
 
@@ -150,7 +163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 How many concurrent connections can be made to this database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/database#connection_limit Database#connection_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database#connection_limit Database#connection_limit}
 
 ---
 
@@ -160,7 +173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 Character set encoding to use in the new database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/database#encoding Database#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database#encoding Database#encoding}
 
 ---
 
@@ -168,7 +181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/database#id Database#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database#id Database#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -181,7 +194,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 If true, then this database can be cloned by any user with CREATEDB privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/database#is_template Database#is_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database#is_template Database#is_template}
 
 ---
 
@@ -191,7 +204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 Collation order (LC_COLLATE) to use in the new database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/database#lc_collate Database#lc_collate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database#lc_collate Database#lc_collate}
 
 ---
 
@@ -201,7 +214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 Character classification (LC_CTYPE) to use in the new database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/database#lc_ctype Database#lc_ctype}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database#lc_ctype Database#lc_ctype}
 
 ---
 
@@ -211,7 +224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 The ROLE which owns the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/database#owner Database#owner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database#owner Database#owner}
 
 ---
 
@@ -221,7 +234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 The name of the tablespace that will be associated with the new database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/database#tablespace_name Database#tablespace_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database#tablespace_name Database#tablespace_name}
 
 ---
 
@@ -231,7 +244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 The name of the template from which to create the new database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/database#template Database#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database#template Database#template}
 
 ---
 
@@ -263,6 +276,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 | <code><a href="#@cdktf/provider-postgresql.database.Database.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.resetAllowConnections">resetAllowConnections</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.database.Database.resetAlterObjectOwnership">resetAlterObjectOwnership</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.resetConnectionLimit">resetConnectionLimit</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.resetEncoding">resetEncoding</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.resetId">resetId</a></code> | *No description.* |
@@ -571,6 +585,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 public void resetAllowConnections()
 ```
 
+##### `resetAlterObjectOwnership` <a name="resetAlterObjectOwnership" id="@cdktf/provider-postgresql.database.Database.resetAlterObjectOwnership"></a>
+
+```java
+public void resetAlterObjectOwnership()
+```
+
 ##### `resetConnectionLimit` <a name="resetConnectionLimit" id="@cdktf/provider-postgresql.database.Database.resetConnectionLimit"></a>
 
 ```java
@@ -728,7 +748,7 @@ The construct id used in the generated config for the Database to import.
 
 The id of the existing Database that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/database#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -759,6 +779,7 @@ Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.allowConnectionsInput">allowConnectionsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.database.Database.property.alterObjectOwnershipInput">alterObjectOwnershipInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.connectionLimitInput">connectionLimitInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.encodingInput">encodingInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -770,6 +791,7 @@ Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.tablespaceNameInput">tablespaceNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.templateInput">templateInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.allowConnections">allowConnections</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.database.Database.property.alterObjectOwnership">alterObjectOwnership</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.connectionLimit">connectionLimit</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.encoding">encoding</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -935,6 +957,16 @@ public java.lang.Object getAllowConnectionsInput();
 
 ---
 
+##### `alterObjectOwnershipInput`<sup>Optional</sup> <a name="alterObjectOwnershipInput" id="@cdktf/provider-postgresql.database.Database.property.alterObjectOwnershipInput"></a>
+
+```java
+public java.lang.Object getAlterObjectOwnershipInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
 ##### `connectionLimitInput`<sup>Optional</sup> <a name="connectionLimitInput" id="@cdktf/provider-postgresql.database.Database.property.connectionLimitInput"></a>
 
 ```java
@@ -1039,6 +1071,16 @@ public java.lang.String getTemplateInput();
 
 ```java
 public java.lang.Object getAllowConnections();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `alterObjectOwnership`<sup>Required</sup> <a name="alterObjectOwnership" id="@cdktf/provider-postgresql.database.Database.property.alterObjectOwnership"></a>
+
+```java
+public java.lang.Object getAlterObjectOwnership();
 ```
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
@@ -1187,6 +1229,8 @@ DatabaseConfig.builder()
     .name(java.lang.String)
 //  .allowConnections(java.lang.Boolean)
 //  .allowConnections(IResolvable)
+//  .alterObjectOwnership(java.lang.Boolean)
+//  .alterObjectOwnership(IResolvable)
 //  .connectionLimit(java.lang.Number)
 //  .encoding(java.lang.String)
 //  .id(java.lang.String)
@@ -1213,9 +1257,10 @@ DatabaseConfig.builder()
 | <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.name">name</a></code> | <code>java.lang.String</code> | The PostgreSQL database name to connect to. |
 | <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.allowConnections">allowConnections</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If false then no one can connect to this database. |
+| <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.alterObjectOwnership">alterObjectOwnership</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If true, the owner of already existing objects will change if the owner changes. |
 | <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.connectionLimit">connectionLimit</a></code> | <code>java.lang.Number</code> | How many concurrent connections can be made to this database. |
 | <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.encoding">encoding</a></code> | <code>java.lang.String</code> | Character set encoding to use in the new database. |
-| <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/database#id Database#id}. |
+| <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database#id Database#id}. |
 | <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.isTemplate">isTemplate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If true, then this database can be cloned by any user with CREATEDB privileges. |
 | <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.lcCollate">lcCollate</a></code> | <code>java.lang.String</code> | Collation order (LC_COLLATE) to use in the new database. |
 | <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.lcCtype">lcCtype</a></code> | <code>java.lang.String</code> | Character classification (LC_CTYPE) to use in the new database. |
@@ -1305,7 +1350,7 @@ public java.lang.String getName();
 
 The PostgreSQL database name to connect to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/database#name Database#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database#name Database#name}
 
 ---
 
@@ -1319,7 +1364,21 @@ public java.lang.Object getAllowConnections();
 
 If false then no one can connect to this database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/database#allow_connections Database#allow_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database#allow_connections Database#allow_connections}
+
+---
+
+##### `alterObjectOwnership`<sup>Optional</sup> <a name="alterObjectOwnership" id="@cdktf/provider-postgresql.database.DatabaseConfig.property.alterObjectOwnership"></a>
+
+```java
+public java.lang.Object getAlterObjectOwnership();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+If true, the owner of already existing objects will change if the owner changes.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database#alter_object_ownership Database#alter_object_ownership}
 
 ---
 
@@ -1333,7 +1392,7 @@ public java.lang.Number getConnectionLimit();
 
 How many concurrent connections can be made to this database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/database#connection_limit Database#connection_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database#connection_limit Database#connection_limit}
 
 ---
 
@@ -1347,7 +1406,7 @@ public java.lang.String getEncoding();
 
 Character set encoding to use in the new database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/database#encoding Database#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database#encoding Database#encoding}
 
 ---
 
@@ -1359,7 +1418,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/database#id Database#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database#id Database#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1376,7 +1435,7 @@ public java.lang.Object getIsTemplate();
 
 If true, then this database can be cloned by any user with CREATEDB privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/database#is_template Database#is_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database#is_template Database#is_template}
 
 ---
 
@@ -1390,7 +1449,7 @@ public java.lang.String getLcCollate();
 
 Collation order (LC_COLLATE) to use in the new database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/database#lc_collate Database#lc_collate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database#lc_collate Database#lc_collate}
 
 ---
 
@@ -1404,7 +1463,7 @@ public java.lang.String getLcCtype();
 
 Character classification (LC_CTYPE) to use in the new database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/database#lc_ctype Database#lc_ctype}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database#lc_ctype Database#lc_ctype}
 
 ---
 
@@ -1418,7 +1477,7 @@ public java.lang.String getOwner();
 
 The ROLE which owns the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/database#owner Database#owner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database#owner Database#owner}
 
 ---
 
@@ -1432,7 +1491,7 @@ public java.lang.String getTablespaceName();
 
 The name of the tablespace that will be associated with the new database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/database#tablespace_name Database#tablespace_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database#tablespace_name Database#tablespace_name}
 
 ---
 
@@ -1446,7 +1505,7 @@ public java.lang.String getTemplate();
 
 The name of the template from which to create the new database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/database#template Database#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database#template Database#template}
 
 ---
 
