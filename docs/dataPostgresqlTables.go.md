@@ -4,12 +4,12 @@
 
 ### DataPostgresqlTables <a name="DataPostgresqlTables" id="@cdktf/provider-postgresql.dataPostgresqlTables.DataPostgresqlTables"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/data-sources/tables postgresql_tables}.
+Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/data-sources/tables postgresql_tables}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.dataPostgresqlTables.DataPostgresqlTables.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/datapostgresqltables"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/datapostgresqltables"
 
 datapostgresqltables.NewDataPostgresqlTables(scope Construct, id *string, config DataPostgresqlTablesConfig) DataPostgresqlTables
 ```
@@ -325,7 +325,7 @@ func ResetTableTypes()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-postgresql.dataPostgresqlTables.DataPostgresqlTables.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/datapostgresqltables"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/datapostgresqltables"
 
 datapostgresqltables.DataPostgresqlTables_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-postgresql.dataPostgresqlTables.DataPostgresqlTables.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/datapostgresqltables"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/datapostgresqltables"
 
 datapostgresqltables.DataPostgresqlTables_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ datapostgresqltables.DataPostgresqlTables_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-postgresql.dataPostgresqlTables.DataPostgresqlTables.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/datapostgresqltables"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/datapostgresqltables"
 
 datapostgresqltables.DataPostgresqlTables_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ datapostgresqltables.DataPostgresqlTables_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-postgresql.dataPostgresqlTables.DataPostgresqlTables.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/datapostgresqltables"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/datapostgresqltables"
 
 datapostgresqltables.DataPostgresqlTables_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataPostgresqlTables to im
 
 The id of the existing DataPostgresqlTables that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/data-sources/tables#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/data-sources/tables#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -779,7 +779,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-postgresql.dataPostgresqlTables.DataPostgresqlTablesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/datapostgresqltables"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/datapostgresqltables"
 
 &datapostgresqltables.DataPostgresqlTablesConfig {
 	Connection: interface{},
@@ -812,7 +812,7 @@ import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/datapostgre
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlTables.DataPostgresqlTablesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlTables.DataPostgresqlTablesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlTables.DataPostgresqlTablesConfig.property.database">Database</a></code> | <code>*string</code> | The PostgreSQL database which will be queried for table names. |
-| <code><a href="#@cdktf/provider-postgresql.dataPostgresqlTables.DataPostgresqlTablesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/data-sources/tables#id DataPostgresqlTables#id}. |
+| <code><a href="#@cdktf/provider-postgresql.dataPostgresqlTables.DataPostgresqlTablesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/data-sources/tables#id DataPostgresqlTables#id}. |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlTables.DataPostgresqlTablesConfig.property.likeAllPatterns">LikeAllPatterns</a></code> | <code>*[]*string</code> | Expression(s) which will be pattern matched against table names in the query using the PostgreSQL LIKE ALL operator. |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlTables.DataPostgresqlTablesConfig.property.likeAnyPatterns">LikeAnyPatterns</a></code> | <code>*[]*string</code> | Expression(s) which will be pattern matched against table names in the query using the PostgreSQL LIKE ANY operator. |
 | <code><a href="#@cdktf/provider-postgresql.dataPostgresqlTables.DataPostgresqlTablesConfig.property.notLikeAllPatterns">NotLikeAllPatterns</a></code> | <code>*[]*string</code> | Expression(s) which will be pattern matched against table names in the query using the PostgreSQL NOT LIKE ALL operator. |
@@ -902,7 +902,7 @@ Database *string
 
 The PostgreSQL database which will be queried for table names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/data-sources/tables#database DataPostgresqlTables#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/data-sources/tables#database DataPostgresqlTables#database}
 
 ---
 
@@ -914,7 +914,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/data-sources/tables#id DataPostgresqlTables#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/data-sources/tables#id DataPostgresqlTables#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -931,7 +931,7 @@ LikeAllPatterns *[]*string
 
 Expression(s) which will be pattern matched against table names in the query using the PostgreSQL LIKE ALL operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/data-sources/tables#like_all_patterns DataPostgresqlTables#like_all_patterns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/data-sources/tables#like_all_patterns DataPostgresqlTables#like_all_patterns}
 
 ---
 
@@ -945,7 +945,7 @@ LikeAnyPatterns *[]*string
 
 Expression(s) which will be pattern matched against table names in the query using the PostgreSQL LIKE ANY operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/data-sources/tables#like_any_patterns DataPostgresqlTables#like_any_patterns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/data-sources/tables#like_any_patterns DataPostgresqlTables#like_any_patterns}
 
 ---
 
@@ -959,7 +959,7 @@ NotLikeAllPatterns *[]*string
 
 Expression(s) which will be pattern matched against table names in the query using the PostgreSQL NOT LIKE ALL operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/data-sources/tables#not_like_all_patterns DataPostgresqlTables#not_like_all_patterns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/data-sources/tables#not_like_all_patterns DataPostgresqlTables#not_like_all_patterns}
 
 ---
 
@@ -973,7 +973,7 @@ RegexPattern *string
 
 Expression which will be pattern matched against table names in the query using the PostgreSQL ~ (regular expression match) operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/data-sources/tables#regex_pattern DataPostgresqlTables#regex_pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/data-sources/tables#regex_pattern DataPostgresqlTables#regex_pattern}
 
 ---
 
@@ -987,7 +987,7 @@ Schemas *[]*string
 
 The PostgreSQL schema(s) which will be queried for table names. Queries all schemas in the database by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/data-sources/tables#schemas DataPostgresqlTables#schemas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/data-sources/tables#schemas DataPostgresqlTables#schemas}
 
 ---
 
@@ -1003,7 +1003,7 @@ The PostgreSQL table types which will be queried for table names.
 
 Includes all table types by default. Use 'BASE TABLE' for normal tables only
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/data-sources/tables#table_types DataPostgresqlTables#table_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/data-sources/tables#table_types DataPostgresqlTables#table_types}
 
 ---
 
@@ -1012,7 +1012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 #### Initializer <a name="Initializer" id="@cdktf/provider-postgresql.dataPostgresqlTables.DataPostgresqlTablesTables.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/datapostgresqltables"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/datapostgresqltables"
 
 &datapostgresqltables.DataPostgresqlTablesTables {
 
@@ -1027,7 +1027,7 @@ import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/datapostgre
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.dataPostgresqlTables.DataPostgresqlTablesTablesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/datapostgresqltables"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/datapostgresqltables"
 
 datapostgresqltables.NewDataPostgresqlTablesTablesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataPostgresqlTablesTablesList
 ```
@@ -1176,7 +1176,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.dataPostgresqlTables.DataPostgresqlTablesTablesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/datapostgresqltables"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/datapostgresqltables"
 
 datapostgresqltables.NewDataPostgresqlTablesTablesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataPostgresqlTablesTablesOutputReference
 ```

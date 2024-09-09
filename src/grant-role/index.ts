@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/grant_role
+// https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/grant_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface GrantRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the role that is granted to role
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/grant_role#grant_role GrantRole#grant_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/grant_role#grant_role GrantRole#grant_role}
   */
   readonly grantRole: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/grant_role#id GrantRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/grant_role#id GrantRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,19 +23,19 @@ export interface GrantRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the role to grant grant_role
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/grant_role#role GrantRole#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/grant_role#role GrantRole#role}
   */
   readonly role: string;
   /**
   * Permit the grant recipient to grant it to others
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/grant_role#with_admin_option GrantRole#with_admin_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/grant_role#with_admin_option GrantRole#with_admin_option}
   */
   readonly withAdminOption?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/grant_role postgresql_grant_role}
+* Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/grant_role postgresql_grant_role}
 */
 export class GrantRole extends cdktf.TerraformResource {
 
@@ -56,7 +51,7 @@ export class GrantRole extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GrantRole resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GrantRole to import
-  * @param importFromId The id of the existing GrantRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/grant_role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GrantRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/grant_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GrantRole to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -68,7 +63,7 @@ export class GrantRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/grant_role postgresql_grant_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/grant_role postgresql_grant_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +74,7 @@ export class GrantRole extends cdktf.TerraformResource {
       terraformResourceType: 'postgresql_grant_role',
       terraformGeneratorMetadata: {
         providerName: 'postgresql',
-        providerVersion: '1.22.0',
+        providerVersion: '1.23.0',
         providerVersionConstraint: '~> 1.14'
       },
       provider: config.provider,

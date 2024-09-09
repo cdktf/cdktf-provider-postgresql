@@ -4,12 +4,12 @@
 
 ### Database <a name="Database" id="@cdktf/provider-postgresql.database.Database"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/database postgresql_database}.
+Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database postgresql_database}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.database.Database.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/database"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/database"
 
 database.NewDatabase(scope Construct, id *string, config DatabaseConfig) Database
 ```
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-postgresql.database.Database.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.resetAllowConnections">ResetAllowConnections</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.database.Database.resetAlterObjectOwnership">ResetAlterObjectOwnership</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.resetConnectionLimit">ResetConnectionLimit</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.resetEncoding">ResetEncoding</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.resetId">ResetId</a></code> | *No description.* |
@@ -380,6 +381,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 func ResetAllowConnections()
 ```
 
+##### `ResetAlterObjectOwnership` <a name="ResetAlterObjectOwnership" id="@cdktf/provider-postgresql.database.Database.resetAlterObjectOwnership"></a>
+
+```go
+func ResetAlterObjectOwnership()
+```
+
 ##### `ResetConnectionLimit` <a name="ResetConnectionLimit" id="@cdktf/provider-postgresql.database.Database.resetConnectionLimit"></a>
 
 ```go
@@ -448,7 +455,7 @@ func ResetTemplate()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-postgresql.database.Database.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/database"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/database"
 
 database.Database_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-postgresql.database.Database.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/database"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/database"
 
 database.Database_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +501,7 @@ database.Database_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-postgresql.database.Database.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/database"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/database"
 
 database.Database_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +515,7 @@ database.Database_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-postgresql.database.Database.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/database"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/database"
 
 database.Database_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -537,7 +544,7 @@ The construct id used in the generated config for the Database to import.
 
 The id of the existing Database that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/database#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -568,6 +575,7 @@ Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.allowConnectionsInput">AllowConnectionsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.database.Database.property.alterObjectOwnershipInput">AlterObjectOwnershipInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.connectionLimitInput">ConnectionLimitInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.encodingInput">EncodingInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
@@ -579,6 +587,7 @@ Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.tablespaceNameInput">TablespaceNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.templateInput">TemplateInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.allowConnections">AllowConnections</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.database.Database.property.alterObjectOwnership">AlterObjectOwnership</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.connectionLimit">ConnectionLimit</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.encoding">Encoding</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.id">Id</a></code> | <code>*string</code> | *No description.* |
@@ -744,6 +753,16 @@ func AllowConnectionsInput() interface{}
 
 ---
 
+##### `AlterObjectOwnershipInput`<sup>Optional</sup> <a name="AlterObjectOwnershipInput" id="@cdktf/provider-postgresql.database.Database.property.alterObjectOwnershipInput"></a>
+
+```go
+func AlterObjectOwnershipInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `ConnectionLimitInput`<sup>Optional</sup> <a name="ConnectionLimitInput" id="@cdktf/provider-postgresql.database.Database.property.connectionLimitInput"></a>
 
 ```go
@@ -848,6 +867,16 @@ func TemplateInput() *string
 
 ```go
 func AllowConnections() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `AlterObjectOwnership`<sup>Required</sup> <a name="AlterObjectOwnership" id="@cdktf/provider-postgresql.database.Database.property.alterObjectOwnership"></a>
+
+```go
+func AlterObjectOwnership() interface{}
 ```
 
 - *Type:* interface{}
@@ -979,7 +1008,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-postgresql.database.DatabaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/database"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/database"
 
 &database.DatabaseConfig {
 	Connection: interface{},
@@ -991,6 +1020,7 @@ import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/database"
 	Provisioners: *[]interface{},
 	Name: *string,
 	AllowConnections: interface{},
+	AlterObjectOwnership: interface{},
 	ConnectionLimit: *f64,
 	Encoding: *string,
 	Id: *string,
@@ -1016,9 +1046,10 @@ import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/database"
 | <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.name">Name</a></code> | <code>*string</code> | The PostgreSQL database name to connect to. |
 | <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.allowConnections">AllowConnections</a></code> | <code>interface{}</code> | If false then no one can connect to this database. |
+| <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.alterObjectOwnership">AlterObjectOwnership</a></code> | <code>interface{}</code> | If true, the owner of already existing objects will change if the owner changes. |
 | <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.connectionLimit">ConnectionLimit</a></code> | <code>*f64</code> | How many concurrent connections can be made to this database. |
 | <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.encoding">Encoding</a></code> | <code>*string</code> | Character set encoding to use in the new database. |
-| <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/database#id Database#id}. |
+| <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database#id Database#id}. |
 | <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.isTemplate">IsTemplate</a></code> | <code>interface{}</code> | If true, then this database can be cloned by any user with CREATEDB privileges. |
 | <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.lcCollate">LcCollate</a></code> | <code>*string</code> | Collation order (LC_COLLATE) to use in the new database. |
 | <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.lcCtype">LcCtype</a></code> | <code>*string</code> | Character classification (LC_CTYPE) to use in the new database. |
@@ -1108,7 +1139,7 @@ Name *string
 
 The PostgreSQL database name to connect to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/database#name Database#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database#name Database#name}
 
 ---
 
@@ -1122,7 +1153,21 @@ AllowConnections interface{}
 
 If false then no one can connect to this database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/database#allow_connections Database#allow_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database#allow_connections Database#allow_connections}
+
+---
+
+##### `AlterObjectOwnership`<sup>Optional</sup> <a name="AlterObjectOwnership" id="@cdktf/provider-postgresql.database.DatabaseConfig.property.alterObjectOwnership"></a>
+
+```go
+AlterObjectOwnership interface{}
+```
+
+- *Type:* interface{}
+
+If true, the owner of already existing objects will change if the owner changes.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database#alter_object_ownership Database#alter_object_ownership}
 
 ---
 
@@ -1136,7 +1181,7 @@ ConnectionLimit *f64
 
 How many concurrent connections can be made to this database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/database#connection_limit Database#connection_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database#connection_limit Database#connection_limit}
 
 ---
 
@@ -1150,7 +1195,7 @@ Encoding *string
 
 Character set encoding to use in the new database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/database#encoding Database#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database#encoding Database#encoding}
 
 ---
 
@@ -1162,7 +1207,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/database#id Database#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database#id Database#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1179,7 +1224,7 @@ IsTemplate interface{}
 
 If true, then this database can be cloned by any user with CREATEDB privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/database#is_template Database#is_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database#is_template Database#is_template}
 
 ---
 
@@ -1193,7 +1238,7 @@ LcCollate *string
 
 Collation order (LC_COLLATE) to use in the new database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/database#lc_collate Database#lc_collate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database#lc_collate Database#lc_collate}
 
 ---
 
@@ -1207,7 +1252,7 @@ LcCtype *string
 
 Character classification (LC_CTYPE) to use in the new database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/database#lc_ctype Database#lc_ctype}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database#lc_ctype Database#lc_ctype}
 
 ---
 
@@ -1221,7 +1266,7 @@ Owner *string
 
 The ROLE which owns the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/database#owner Database#owner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database#owner Database#owner}
 
 ---
 
@@ -1235,7 +1280,7 @@ TablespaceName *string
 
 The name of the tablespace that will be associated with the new database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/database#tablespace_name Database#tablespace_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database#tablespace_name Database#tablespace_name}
 
 ---
 
@@ -1249,7 +1294,7 @@ Template *string
 
 The name of the template from which to create the new database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/database#template Database#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database#template Database#template}
 
 ---
 
