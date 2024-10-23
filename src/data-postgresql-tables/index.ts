@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/data-sources/tables
+// https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/data-sources/tables
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DataPostgresqlTablesConfig extends cdktf.TerraformMetaArguments
   /**
   * The PostgreSQL database which will be queried for table names
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/data-sources/tables#database DataPostgresqlTables#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/data-sources/tables#database DataPostgresqlTables#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/data-sources/tables#id DataPostgresqlTables#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/data-sources/tables#id DataPostgresqlTables#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,37 +28,37 @@ export interface DataPostgresqlTablesConfig extends cdktf.TerraformMetaArguments
   /**
   * Expression(s) which will be pattern matched against table names in the query using the PostgreSQL LIKE ALL operator
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/data-sources/tables#like_all_patterns DataPostgresqlTables#like_all_patterns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/data-sources/tables#like_all_patterns DataPostgresqlTables#like_all_patterns}
   */
   readonly likeAllPatterns?: string[];
   /**
   * Expression(s) which will be pattern matched against table names in the query using the PostgreSQL LIKE ANY operator
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/data-sources/tables#like_any_patterns DataPostgresqlTables#like_any_patterns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/data-sources/tables#like_any_patterns DataPostgresqlTables#like_any_patterns}
   */
   readonly likeAnyPatterns?: string[];
   /**
   * Expression(s) which will be pattern matched against table names in the query using the PostgreSQL NOT LIKE ALL operator
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/data-sources/tables#not_like_all_patterns DataPostgresqlTables#not_like_all_patterns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/data-sources/tables#not_like_all_patterns DataPostgresqlTables#not_like_all_patterns}
   */
   readonly notLikeAllPatterns?: string[];
   /**
   * Expression which will be pattern matched against table names in the query using the PostgreSQL ~ (regular expression match) operator
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/data-sources/tables#regex_pattern DataPostgresqlTables#regex_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/data-sources/tables#regex_pattern DataPostgresqlTables#regex_pattern}
   */
   readonly regexPattern?: string;
   /**
   * The PostgreSQL schema(s) which will be queried for table names. Queries all schemas in the database by default
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/data-sources/tables#schemas DataPostgresqlTables#schemas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/data-sources/tables#schemas DataPostgresqlTables#schemas}
   */
   readonly schemas?: string[];
   /**
   * The PostgreSQL table types which will be queried for table names. Includes all table types by default. Use 'BASE TABLE' for normal tables only
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/data-sources/tables#table_types DataPostgresqlTables#table_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/data-sources/tables#table_types DataPostgresqlTables#table_types}
   */
   readonly tableTypes?: string[];
 }
@@ -149,7 +149,7 @@ export class DataPostgresqlTablesTablesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/data-sources/tables postgresql_tables}
+* Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/data-sources/tables postgresql_tables}
 */
 export class DataPostgresqlTables extends cdktf.TerraformDataSource {
 
@@ -165,7 +165,7 @@ export class DataPostgresqlTables extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataPostgresqlTables resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataPostgresqlTables to import
-  * @param importFromId The id of the existing DataPostgresqlTables that should be imported. Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/data-sources/tables#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataPostgresqlTables that should be imported. Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/data-sources/tables#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataPostgresqlTables to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -177,7 +177,7 @@ export class DataPostgresqlTables extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/data-sources/tables postgresql_tables} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/data-sources/tables postgresql_tables} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -188,7 +188,7 @@ export class DataPostgresqlTables extends cdktf.TerraformDataSource {
       terraformResourceType: 'postgresql_tables',
       terraformGeneratorMetadata: {
         providerName: 'postgresql',
-        providerVersion: '1.23.0',
+        providerVersion: '1.24.0',
         providerVersionConstraint: '~> 1.14'
       },
       provider: config.provider,
