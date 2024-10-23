@@ -4,7 +4,7 @@
 
 ### PostgresqlProvider <a name="PostgresqlProvider" id="@cdktf/provider-postgresql.provider.PostgresqlProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs postgresql}.
+Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs postgresql}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer"></a>
 
@@ -387,7 +387,7 @@ The construct id used in the generated config for the PostgresqlProvider to impo
 
 The id of the existing PostgresqlProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1030,7 +1030,7 @@ public readonly cert: string;
 
 The SSL client certificate file path. The file must contain PEM encoded data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs#cert PostgresqlProvider#cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs#cert PostgresqlProvider#cert}
 
 ---
 
@@ -1044,7 +1044,7 @@ public readonly key: string;
 
 The SSL client certificate private key file path. The file must contain PEM encoded data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs#key PostgresqlProvider#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs#key PostgresqlProvider#key}
 
 ---
 
@@ -1058,7 +1058,7 @@ public readonly sslinline: boolean | IResolvable;
 
 Must be set to true if you are inlining the cert/key instead of using a file path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs#sslinline PostgresqlProvider#sslinline}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs#sslinline PostgresqlProvider#sslinline}
 
 ---
 
@@ -1092,9 +1092,9 @@ const postgresqlProviderConfig: provider.PostgresqlProviderConfig = { ... }
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.maxConnections">maxConnections</a></code> | <code>number</code> | Maximum number of connections to establish to the database. Zero means unlimited. |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.password">password</a></code> | <code>string</code> | Password to be used if the PostgreSQL server demands password authentication. |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.port">port</a></code> | <code>number</code> | The PostgreSQL port number to connect to at the server host, or socket file name extension for Unix-domain connections. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.scheme">scheme</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs#scheme PostgresqlProvider#scheme}. |
+| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.scheme">scheme</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs#scheme PostgresqlProvider#scheme}. |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.sslmode">sslmode</a></code> | <code>string</code> | This option determines whether or with what priority a secure SSL TCP/IP connection will be negotiated with the PostgreSQL server. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.sslMode">sslMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs#ssl_mode PostgresqlProvider#ssl_mode}. |
+| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.sslMode">sslMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs#ssl_mode PostgresqlProvider#ssl_mode}. |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.sslrootcert">sslrootcert</a></code> | <code>string</code> | The SSL server root certificate file path. The file must contain PEM encoded data. |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.superuser">superuser</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specify if the user to connect as is a Postgres superuser or not.If not, some feature might be disabled (e.g.: Refreshing state password from Postgres). |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.username">username</a></code> | <code>string</code> | PostgreSQL user name to connect as. |
@@ -1111,7 +1111,7 @@ public readonly alias: string;
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs#alias PostgresqlProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs#alias PostgresqlProvider#alias}
 
 ---
 
@@ -1125,7 +1125,7 @@ public readonly awsRdsIamAuth: boolean | IResolvable;
 
 Use rds_iam instead of password authentication (see: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.html).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs#aws_rds_iam_auth PostgresqlProvider#aws_rds_iam_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs#aws_rds_iam_auth PostgresqlProvider#aws_rds_iam_auth}
 
 ---
 
@@ -1139,7 +1139,7 @@ public readonly awsRdsIamProfile: string;
 
 AWS profile to use for IAM auth.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs#aws_rds_iam_profile PostgresqlProvider#aws_rds_iam_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs#aws_rds_iam_profile PostgresqlProvider#aws_rds_iam_profile}
 
 ---
 
@@ -1153,7 +1153,7 @@ public readonly awsRdsIamRegion: string;
 
 AWS region to use for IAM auth.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs#aws_rds_iam_region PostgresqlProvider#aws_rds_iam_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs#aws_rds_iam_region PostgresqlProvider#aws_rds_iam_region}
 
 ---
 
@@ -1167,7 +1167,7 @@ public readonly azureIdentityAuth: boolean | IResolvable;
 
 Use MS Azure identity OAuth token (see: https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/how-to-configure-sign-in-azure-ad-authentication).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs#azure_identity_auth PostgresqlProvider#azure_identity_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs#azure_identity_auth PostgresqlProvider#azure_identity_auth}
 
 ---
 
@@ -1181,7 +1181,7 @@ public readonly azureTenantId: string;
 
 MS Azure tenant ID (see: https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/client_config.html).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs#azure_tenant_id PostgresqlProvider#azure_tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs#azure_tenant_id PostgresqlProvider#azure_tenant_id}
 
 ---
 
@@ -1195,7 +1195,7 @@ public readonly clientcert: PostgresqlProviderClientcert;
 
 clientcert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs#clientcert PostgresqlProvider#clientcert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs#clientcert PostgresqlProvider#clientcert}
 
 ---
 
@@ -1209,7 +1209,7 @@ public readonly connectTimeout: number;
 
 Maximum wait for connection, in seconds. Zero or not specified means wait indefinitely.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs#connect_timeout PostgresqlProvider#connect_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs#connect_timeout PostgresqlProvider#connect_timeout}
 
 ---
 
@@ -1223,7 +1223,7 @@ public readonly database: string;
 
 The name of the database to connect to in order to conenct to (defaults to `postgres`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs#database PostgresqlProvider#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs#database PostgresqlProvider#database}
 
 ---
 
@@ -1237,7 +1237,7 @@ public readonly databaseUsername: string;
 
 Database username associated to the connected user (for user name maps).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs#database_username PostgresqlProvider#database_username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs#database_username PostgresqlProvider#database_username}
 
 ---
 
@@ -1251,7 +1251,7 @@ public readonly expectedVersion: string;
 
 Specify the expected version of PostgreSQL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs#expected_version PostgresqlProvider#expected_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs#expected_version PostgresqlProvider#expected_version}
 
 ---
 
@@ -1265,7 +1265,7 @@ public readonly gcpIamImpersonateServiceAccount: string;
 
 Service account to impersonate when using GCP IAM authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs#gcp_iam_impersonate_service_account PostgresqlProvider#gcp_iam_impersonate_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs#gcp_iam_impersonate_service_account PostgresqlProvider#gcp_iam_impersonate_service_account}
 
 ---
 
@@ -1279,7 +1279,7 @@ public readonly host: string;
 
 Name of PostgreSQL server address to connect to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs#host PostgresqlProvider#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs#host PostgresqlProvider#host}
 
 ---
 
@@ -1293,7 +1293,7 @@ public readonly maxConnections: number;
 
 Maximum number of connections to establish to the database. Zero means unlimited.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs#max_connections PostgresqlProvider#max_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs#max_connections PostgresqlProvider#max_connections}
 
 ---
 
@@ -1307,7 +1307,7 @@ public readonly password: string;
 
 Password to be used if the PostgreSQL server demands password authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs#password PostgresqlProvider#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs#password PostgresqlProvider#password}
 
 ---
 
@@ -1321,7 +1321,7 @@ public readonly port: number;
 
 The PostgreSQL port number to connect to at the server host, or socket file name extension for Unix-domain connections.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs#port PostgresqlProvider#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs#port PostgresqlProvider#port}
 
 ---
 
@@ -1333,7 +1333,7 @@ public readonly scheme: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs#scheme PostgresqlProvider#scheme}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs#scheme PostgresqlProvider#scheme}.
 
 ---
 
@@ -1347,7 +1347,7 @@ public readonly sslmode: string;
 
 This option determines whether or with what priority a secure SSL TCP/IP connection will be negotiated with the PostgreSQL server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs#sslmode PostgresqlProvider#sslmode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs#sslmode PostgresqlProvider#sslmode}
 
 ---
 
@@ -1359,7 +1359,7 @@ public readonly sslMode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs#ssl_mode PostgresqlProvider#ssl_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs#ssl_mode PostgresqlProvider#ssl_mode}.
 
 ---
 
@@ -1373,7 +1373,7 @@ public readonly sslrootcert: string;
 
 The SSL server root certificate file path. The file must contain PEM encoded data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs#sslrootcert PostgresqlProvider#sslrootcert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs#sslrootcert PostgresqlProvider#sslrootcert}
 
 ---
 
@@ -1387,7 +1387,7 @@ public readonly superuser: boolean | IResolvable;
 
 Specify if the user to connect as is a Postgres superuser or not.If not, some feature might be disabled (e.g.: Refreshing state password from Postgres).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs#superuser PostgresqlProvider#superuser}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs#superuser PostgresqlProvider#superuser}
 
 ---
 
@@ -1401,7 +1401,7 @@ public readonly username: string;
 
 PostgreSQL user name to connect as.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs#username PostgresqlProvider#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs#username PostgresqlProvider#username}
 
 ---
 

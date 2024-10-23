@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/extension
+// https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/extension
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,48 +10,48 @@ export interface ExtensionConfig extends cdktf.TerraformMetaArguments {
   /**
   * When true, will also create any extensions that this extension depends on that are not already installed
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/extension#create_cascade Extension#create_cascade}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/extension#create_cascade Extension#create_cascade}
   */
   readonly createCascade?: boolean | cdktf.IResolvable;
   /**
   * Sets the database to add the extension to
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/extension#database Extension#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/extension#database Extension#database}
   */
   readonly database?: string;
   /**
   * When true, will also drop all the objects that depend on the extension, and in turn all objects that depend on those objects
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/extension#drop_cascade Extension#drop_cascade}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/extension#drop_cascade Extension#drop_cascade}
   */
   readonly dropCascade?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/extension#id Extension#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/extension#id Extension#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/extension#name Extension#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/extension#name Extension#name}
   */
   readonly name: string;
   /**
   * Sets the schema of an extension
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/extension#schema Extension#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/extension#schema Extension#schema}
   */
   readonly schema?: string;
   /**
   * Sets the version number of the extension
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/extension#version Extension#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/extension#version Extension#version}
   */
   readonly version?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/extension postgresql_extension}
+* Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/extension postgresql_extension}
 */
 export class Extension extends cdktf.TerraformResource {
 
@@ -72,7 +67,7 @@ export class Extension extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Extension resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Extension to import
-  * @param importFromId The id of the existing Extension that should be imported. Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/extension#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Extension that should be imported. Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/extension#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Extension to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -84,7 +79,7 @@ export class Extension extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/extension postgresql_extension} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/extension postgresql_extension} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -95,7 +90,7 @@ export class Extension extends cdktf.TerraformResource {
       terraformResourceType: 'postgresql_extension',
       terraformGeneratorMetadata: {
         providerName: 'postgresql',
-        providerVersion: '1.23.0',
+        providerVersion: '1.24.0',
         providerVersionConstraint: '~> 1.14'
       },
       provider: config.provider,
