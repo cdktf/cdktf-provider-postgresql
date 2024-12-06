@@ -4,7 +4,7 @@
 
 ### Database <a name="Database" id="@cdktf/provider-postgresql.database.Database"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/database postgresql_database}.
+Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/database postgresql_database}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.database.Database.Initializer"></a>
 
@@ -544,7 +544,7 @@ The construct id used in the generated config for the Database to import.
 
 The id of the existing Database that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/database#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/database#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1049,7 +1049,7 @@ import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/database"
 | <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.alterObjectOwnership">AlterObjectOwnership</a></code> | <code>interface{}</code> | If true, the owner of already existing objects will change if the owner changes. |
 | <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.connectionLimit">ConnectionLimit</a></code> | <code>*f64</code> | How many concurrent connections can be made to this database. |
 | <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.encoding">Encoding</a></code> | <code>*string</code> | Character set encoding to use in the new database. |
-| <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/database#id Database#id}. |
+| <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/database#id Database#id}. |
 | <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.isTemplate">IsTemplate</a></code> | <code>interface{}</code> | If true, then this database can be cloned by any user with CREATEDB privileges. |
 | <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.lcCollate">LcCollate</a></code> | <code>*string</code> | Collation order (LC_COLLATE) to use in the new database. |
 | <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.lcCtype">LcCtype</a></code> | <code>*string</code> | Character classification (LC_CTYPE) to use in the new database. |
@@ -1139,7 +1139,7 @@ Name *string
 
 The PostgreSQL database name to connect to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/database#name Database#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/database#name Database#name}
 
 ---
 
@@ -1153,7 +1153,7 @@ AllowConnections interface{}
 
 If false then no one can connect to this database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/database#allow_connections Database#allow_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/database#allow_connections Database#allow_connections}
 
 ---
 
@@ -1167,7 +1167,7 @@ AlterObjectOwnership interface{}
 
 If true, the owner of already existing objects will change if the owner changes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/database#alter_object_ownership Database#alter_object_ownership}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/database#alter_object_ownership Database#alter_object_ownership}
 
 ---
 
@@ -1181,7 +1181,7 @@ ConnectionLimit *f64
 
 How many concurrent connections can be made to this database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/database#connection_limit Database#connection_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/database#connection_limit Database#connection_limit}
 
 ---
 
@@ -1195,7 +1195,7 @@ Encoding *string
 
 Character set encoding to use in the new database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/database#encoding Database#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/database#encoding Database#encoding}
 
 ---
 
@@ -1207,7 +1207,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/database#id Database#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/database#id Database#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1224,7 +1224,7 @@ IsTemplate interface{}
 
 If true, then this database can be cloned by any user with CREATEDB privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/database#is_template Database#is_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/database#is_template Database#is_template}
 
 ---
 
@@ -1238,7 +1238,7 @@ LcCollate *string
 
 Collation order (LC_COLLATE) to use in the new database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/database#lc_collate Database#lc_collate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/database#lc_collate Database#lc_collate}
 
 ---
 
@@ -1252,7 +1252,7 @@ LcCtype *string
 
 Character classification (LC_CTYPE) to use in the new database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/database#lc_ctype Database#lc_ctype}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/database#lc_ctype Database#lc_ctype}
 
 ---
 
@@ -1266,7 +1266,7 @@ Owner *string
 
 The ROLE which owns the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/database#owner Database#owner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/database#owner Database#owner}
 
 ---
 
@@ -1280,7 +1280,7 @@ TablespaceName *string
 
 The name of the tablespace that will be associated with the new database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/database#tablespace_name Database#tablespace_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/database#tablespace_name Database#tablespace_name}
 
 ---
 
@@ -1294,7 +1294,7 @@ Template *string
 
 The name of the template from which to create the new database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/database#template Database#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/database#template Database#template}
 
 ---
 

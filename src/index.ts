@@ -15,6 +15,7 @@ export * as publication from './publication';
 export * as replicationSlot from './replication-slot';
 export * as role from './role';
 export * as schema from './schema';
+export * as securityLabel from './security-label';
 export * as server from './server';
 export * as subscription from './subscription';
 export * as userMapping from './user-mapping';

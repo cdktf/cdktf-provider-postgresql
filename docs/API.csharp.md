@@ -19,6 +19,7 @@ The following submodules are available:
 - [replicationSlot](./replicationSlot.csharp.md)
 - [role](./role.csharp.md)
 - [schema](./schema.csharp.md)
+- [securityLabel](./securityLabel.csharp.md)
 - [server](./server.csharp.md)
 - [subscription](./subscription.csharp.md)
 - [userMapping](./userMapping.csharp.md)

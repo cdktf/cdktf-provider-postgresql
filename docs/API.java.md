@@ -19,6 +19,7 @@ The following submodules are available:
 - [replicationSlot](./replicationSlot.java.md)
 - [role](./role.java.md)
 - [schema](./schema.java.md)
+- [securityLabel](./securityLabel.java.md)
 - [server](./server.java.md)
 - [subscription](./subscription.java.md)
 - [userMapping](./userMapping.java.md)

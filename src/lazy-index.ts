@@ -15,6 +15,7 @@ Object.defineProperty(exports, 'publication', { get: function () { return requir
 Object.defineProperty(exports, 'replicationSlot', { get: function () { return require('./replication-slot'); } });
 Object.defineProperty(exports, 'role', { get: function () { return require('./role'); } });
 Object.defineProperty(exports, 'schema', { get: function () { return require('./schema'); } });
+Object.defineProperty(exports, 'securityLabel', { get: function () { return require('./security-label'); } });
 Object.defineProperty(exports, 'server', { get: function () { return require('./server'); } });
 Object.defineProperty(exports, 'subscription', { get: function () { return require('./subscription'); } });
 Object.defineProperty(exports, 'userMapping', { get: function () { return require('./user-mapping'); } });

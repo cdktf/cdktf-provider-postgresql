@@ -19,6 +19,7 @@ The following submodules are available:
 - [replicationSlot](./replicationSlot.go.md)
 - [role](./role.go.md)
 - [schema](./schema.go.md)
+- [securityLabel](./securityLabel.go.md)
 - [server](./server.go.md)
 - [subscription](./subscription.go.md)
 - [userMapping](./userMapping.go.md)

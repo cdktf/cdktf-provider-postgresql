@@ -19,6 +19,7 @@ The following submodules are available:
 - [replicationSlot](./replicationSlot.typescript.md)
 - [role](./role.typescript.md)
 - [schema](./schema.typescript.md)
+- [securityLabel](./securityLabel.typescript.md)
 - [server](./server.typescript.md)
 - [subscription](./subscription.typescript.md)
 - [userMapping](./userMapping.typescript.md)

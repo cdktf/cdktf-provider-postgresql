@@ -19,6 +19,7 @@ The following submodules are available:
 - [replicationSlot](./replicationSlot.python.md)
 - [role](./role.python.md)
 - [schema](./schema.python.md)
+- [securityLabel](./securityLabel.python.md)
 - [server](./server.python.md)
 - [subscription](./subscription.python.md)
 - [userMapping](./userMapping.python.md)
