@@ -4,12 +4,12 @@
 
 ### Server <a name="Server" id="@cdktf/provider-postgresql.server.Server"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/server postgresql_server}.
+Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/server postgresql_server}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.server.Server.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/server"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/server"
 
 server.NewServer(scope Construct, id *string, config ServerConfig) Server
 ```
@@ -420,7 +420,7 @@ func ResetServerVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-postgresql.server.Server.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/server"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/server"
 
 server.Server_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-postgresql.server.Server.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/server"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/server"
 
 server.Server_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ server.Server_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-postgresql.server.Server.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/server"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/server"
 
 server.Server_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ server.Server_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-postgresql.server.Server.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/server"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/server"
 
 server.Server_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -509,7 +509,7 @@ The construct id used in the generated config for the Server to import.
 
 The id of the existing Server that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/server#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/server#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -885,7 +885,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-postgresql.server.ServerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/server"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/server"
 
 &server.ServerConfig {
 	Connection: interface{},
@@ -920,7 +920,7 @@ import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/server"
 | <code><a href="#@cdktf/provider-postgresql.server.ServerConfig.property.fdwName">FdwName</a></code> | <code>*string</code> | The name of the foreign-data wrapper that manages the server. |
 | <code><a href="#@cdktf/provider-postgresql.server.ServerConfig.property.serverName">ServerName</a></code> | <code>*string</code> | The name of the foreign server to be created. |
 | <code><a href="#@cdktf/provider-postgresql.server.ServerConfig.property.dropCascade">DropCascade</a></code> | <code>interface{}</code> | Automatically drop objects that depend on the server (such as user mappings), and in turn all objects that depend on those objects. |
-| <code><a href="#@cdktf/provider-postgresql.server.ServerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/server#id Server#id}. |
+| <code><a href="#@cdktf/provider-postgresql.server.ServerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/server#id Server#id}. |
 | <code><a href="#@cdktf/provider-postgresql.server.ServerConfig.property.options">Options</a></code> | <code>*map[string]*string</code> | This clause specifies the options for the server. |
 | <code><a href="#@cdktf/provider-postgresql.server.ServerConfig.property.serverOwner">ServerOwner</a></code> | <code>*string</code> | The user name of the new owner of the foreign server. |
 | <code><a href="#@cdktf/provider-postgresql.server.ServerConfig.property.serverType">ServerType</a></code> | <code>*string</code> | Optional server type, potentially useful to foreign-data wrappers. |
@@ -1008,7 +1008,7 @@ FdwName *string
 
 The name of the foreign-data wrapper that manages the server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/server#fdw_name Server#fdw_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/server#fdw_name Server#fdw_name}
 
 ---
 
@@ -1022,7 +1022,7 @@ ServerName *string
 
 The name of the foreign server to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/server#server_name Server#server_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/server#server_name Server#server_name}
 
 ---
 
@@ -1038,7 +1038,7 @@ Automatically drop objects that depend on the server (such as user mappings), an
 
 Drop RESTRICT is the default
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/server#drop_cascade Server#drop_cascade}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/server#drop_cascade Server#drop_cascade}
 
 ---
 
@@ -1050,7 +1050,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/server#id Server#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/server#id Server#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1069,7 +1069,7 @@ This clause specifies the options for the server.
 
 The options typically define the connection details of the server, but the actual names and values are dependent on the server's foreign-data wrapper
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/server#options Server#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/server#options Server#options}
 
 ---
 
@@ -1083,7 +1083,7 @@ ServerOwner *string
 
 The user name of the new owner of the foreign server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/server#server_owner Server#server_owner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/server#server_owner Server#server_owner}
 
 ---
 
@@ -1097,7 +1097,7 @@ ServerType *string
 
 Optional server type, potentially useful to foreign-data wrappers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/server#server_type Server#server_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/server#server_type Server#server_type}
 
 ---
 
@@ -1111,7 +1111,7 @@ ServerVersion *string
 
 Optional server version, potentially useful to foreign-data wrappers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/server#server_version Server#server_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/server#server_version Server#server_version}
 
 ---
 

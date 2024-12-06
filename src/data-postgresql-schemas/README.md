@@ -1,3 +1,3 @@
 # `data_postgresql_schemas`
 
-Refer to the Terraform Registry for docs: [`data_postgresql_schemas`](https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/data-sources/schemas).
+Refer to the Terraform Registry for docs: [`data_postgresql_schemas`](https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/data-sources/schemas).

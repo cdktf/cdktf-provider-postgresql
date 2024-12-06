@@ -4,7 +4,7 @@
 
 ### Subscription <a name="Subscription" id="@cdktf/provider-postgresql.subscription.Subscription"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/subscription postgresql_subscription}.
+Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/subscription postgresql_subscription}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.subscription.Subscription.Initializer"></a>
 
@@ -495,7 +495,7 @@ The construct id used in the generated config for the Subscription to import.
 
 The id of the existing Subscription that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/subscription#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/subscription#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -870,7 +870,7 @@ const subscriptionConfig: subscription.SubscriptionConfig = { ... }
 | <code><a href="#@cdktf/provider-postgresql.subscription.SubscriptionConfig.property.publications">publications</a></code> | <code>string[]</code> | Names of the publications on the publisher to subscribe to. |
 | <code><a href="#@cdktf/provider-postgresql.subscription.SubscriptionConfig.property.createSlot">createSlot</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies whether the command should create the replication slot on the publisher. |
 | <code><a href="#@cdktf/provider-postgresql.subscription.SubscriptionConfig.property.database">database</a></code> | <code>string</code> | Sets the database to add the subscription for. |
-| <code><a href="#@cdktf/provider-postgresql.subscription.SubscriptionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/subscription#id Subscription#id}. |
+| <code><a href="#@cdktf/provider-postgresql.subscription.SubscriptionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/subscription#id Subscription#id}. |
 | <code><a href="#@cdktf/provider-postgresql.subscription.SubscriptionConfig.property.slotName">slotName</a></code> | <code>string</code> | Name of the replication slot to use. |
 
 ---
@@ -955,7 +955,7 @@ public readonly conninfo: string;
 
 The connection string to the publisher. It should follow the keyword/value format (https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/subscription#conninfo Subscription#conninfo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/subscription#conninfo Subscription#conninfo}
 
 ---
 
@@ -969,7 +969,7 @@ public readonly name: string;
 
 The name of the subscription.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/subscription#name Subscription#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/subscription#name Subscription#name}
 
 ---
 
@@ -983,7 +983,7 @@ public readonly publications: string[];
 
 Names of the publications on the publisher to subscribe to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/subscription#publications Subscription#publications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/subscription#publications Subscription#publications}
 
 ---
 
@@ -997,7 +997,7 @@ public readonly createSlot: boolean | IResolvable;
 
 Specifies whether the command should create the replication slot on the publisher.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/subscription#create_slot Subscription#create_slot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/subscription#create_slot Subscription#create_slot}
 
 ---
 
@@ -1011,7 +1011,7 @@ public readonly database: string;
 
 Sets the database to add the subscription for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/subscription#database Subscription#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/subscription#database Subscription#database}
 
 ---
 
@@ -1023,7 +1023,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/subscription#id Subscription#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/subscription#id Subscription#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1042,7 +1042,7 @@ Name of the replication slot to use.
 
 The default behavior is to use the name of the subscription for the slot name
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/subscription#slot_name Subscription#slot_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/subscription#slot_name Subscription#slot_name}
 
 ---
 

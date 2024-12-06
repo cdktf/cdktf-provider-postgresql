@@ -4,7 +4,7 @@
 
 ### ReplicationSlot <a name="ReplicationSlot" id="@cdktf/provider-postgresql.replicationSlot.ReplicationSlot"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/replication_slot postgresql_replication_slot}.
+Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/replication_slot postgresql_replication_slot}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.replicationSlot.ReplicationSlot.Initializer"></a>
 
@@ -41,10 +41,10 @@ ReplicationSlot.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-postgresql.replicationSlot.ReplicationSlot.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.replicationSlot.ReplicationSlot.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.replicationSlot.ReplicationSlot.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.replicationSlot.ReplicationSlot.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/replication_slot#name ReplicationSlot#name}. |
+| <code><a href="#@cdktf/provider-postgresql.replicationSlot.ReplicationSlot.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/replication_slot#name ReplicationSlot#name}. |
 | <code><a href="#@cdktf/provider-postgresql.replicationSlot.ReplicationSlot.Initializer.parameter.plugin">plugin</a></code> | <code>java.lang.String</code> | Sets the output plugin to use. |
 | <code><a href="#@cdktf/provider-postgresql.replicationSlot.ReplicationSlot.Initializer.parameter.database">database</a></code> | <code>java.lang.String</code> | Sets the database to add the replication slot to. |
-| <code><a href="#@cdktf/provider-postgresql.replicationSlot.ReplicationSlot.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/replication_slot#id ReplicationSlot#id}. |
+| <code><a href="#@cdktf/provider-postgresql.replicationSlot.ReplicationSlot.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/replication_slot#id ReplicationSlot#id}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/replication_slot#name ReplicationSlot#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/replication_slot#name ReplicationSlot#name}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 Sets the output plugin to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/replication_slot#plugin ReplicationSlot#plugin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/replication_slot#plugin ReplicationSlot#plugin}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 Sets the database to add the replication slot to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/replication_slot#database ReplicationSlot#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/replication_slot#database ReplicationSlot#database}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/replication_slot#id ReplicationSlot#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/replication_slot#id ReplicationSlot#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -584,7 +584,7 @@ The construct id used in the generated config for the ReplicationSlot to import.
 
 The id of the existing ReplicationSlot that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/replication_slot#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/replication_slot#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -904,10 +904,10 @@ ReplicationSlotConfig.builder()
 | <code><a href="#@cdktf/provider-postgresql.replicationSlot.ReplicationSlotConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.replicationSlot.ReplicationSlotConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.replicationSlot.ReplicationSlotConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.replicationSlot.ReplicationSlotConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/replication_slot#name ReplicationSlot#name}. |
+| <code><a href="#@cdktf/provider-postgresql.replicationSlot.ReplicationSlotConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/replication_slot#name ReplicationSlot#name}. |
 | <code><a href="#@cdktf/provider-postgresql.replicationSlot.ReplicationSlotConfig.property.plugin">plugin</a></code> | <code>java.lang.String</code> | Sets the output plugin to use. |
 | <code><a href="#@cdktf/provider-postgresql.replicationSlot.ReplicationSlotConfig.property.database">database</a></code> | <code>java.lang.String</code> | Sets the database to add the replication slot to. |
-| <code><a href="#@cdktf/provider-postgresql.replicationSlot.ReplicationSlotConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/replication_slot#id ReplicationSlot#id}. |
+| <code><a href="#@cdktf/provider-postgresql.replicationSlot.ReplicationSlotConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/replication_slot#id ReplicationSlot#id}. |
 
 ---
 
@@ -989,7 +989,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/replication_slot#name ReplicationSlot#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/replication_slot#name ReplicationSlot#name}.
 
 ---
 
@@ -1003,7 +1003,7 @@ public java.lang.String getPlugin();
 
 Sets the output plugin to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/replication_slot#plugin ReplicationSlot#plugin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/replication_slot#plugin ReplicationSlot#plugin}
 
 ---
 
@@ -1017,7 +1017,7 @@ public java.lang.String getDatabase();
 
 Sets the database to add the replication slot to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/replication_slot#database ReplicationSlot#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/replication_slot#database ReplicationSlot#database}
 
 ---
 
@@ -1029,7 +1029,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/replication_slot#id ReplicationSlot#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/replication_slot#id ReplicationSlot#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
