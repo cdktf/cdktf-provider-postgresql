@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.securityLabel.SecurityLabel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/securitylabel"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/securitylabel"
 
 securitylabel.NewSecurityLabel(scope Construct, id *string, config SecurityLabelConfig) SecurityLabel
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-postgresql.securityLabel.SecurityLabel.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/securitylabel"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/securitylabel"
 
 securitylabel.SecurityLabel_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-postgresql.securityLabel.SecurityLabel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/securitylabel"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/securitylabel"
 
 securitylabel.SecurityLabel_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ securitylabel.SecurityLabel_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-postgresql.securityLabel.SecurityLabel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/securitylabel"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/securitylabel"
 
 securitylabel.SecurityLabel_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ securitylabel.SecurityLabel_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-postgresql.securityLabel.SecurityLabel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/securitylabel"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/securitylabel"
 
 securitylabel.SecurityLabel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -784,7 +784,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-postgresql.securityLabel.SecurityLabelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/securitylabel"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/securitylabel"
 
 &securitylabel.SecurityLabelConfig {
 	Connection: interface{},
