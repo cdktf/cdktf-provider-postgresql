@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.server.Server.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/server"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v12/server"
 
 server.NewServer(scope Construct, id *string, config ServerConfig) Server
 ```
@@ -420,7 +420,7 @@ func ResetServerVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-postgresql.server.Server.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/server"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v12/server"
 
 server.Server_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-postgresql.server.Server.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/server"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v12/server"
 
 server.Server_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ server.Server_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-postgresql.server.Server.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/server"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v12/server"
 
 server.Server_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ server.Server_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-postgresql.server.Server.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/server"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v12/server"
 
 server.Server_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -885,7 +885,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-postgresql.server.ServerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/server"
+import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v12/server"
 
 &server.ServerConfig {
 	Connection: interface{},
