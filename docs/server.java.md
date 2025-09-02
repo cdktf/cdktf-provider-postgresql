@@ -4,7 +4,7 @@
 
 ### Server <a name="Server" id="@cdktf/provider-postgresql.server.Server"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/server postgresql_server}.
+Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/server postgresql_server}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.server.Server.Initializer"></a>
 
@@ -49,7 +49,7 @@ Server.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-postgresql.server.Server.Initializer.parameter.fdwName">fdwName</a></code> | <code>java.lang.String</code> | The name of the foreign-data wrapper that manages the server. |
 | <code><a href="#@cdktf/provider-postgresql.server.Server.Initializer.parameter.serverName">serverName</a></code> | <code>java.lang.String</code> | The name of the foreign server to be created. |
 | <code><a href="#@cdktf/provider-postgresql.server.Server.Initializer.parameter.dropCascade">dropCascade</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Automatically drop objects that depend on the server (such as user mappings), and in turn all objects that depend on those objects. |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/server#id Server#id}. |
+| <code><a href="#@cdktf/provider-postgresql.server.Server.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/server#id Server#id}. |
 | <code><a href="#@cdktf/provider-postgresql.server.Server.Initializer.parameter.options">options</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | This clause specifies the options for the server. |
 | <code><a href="#@cdktf/provider-postgresql.server.Server.Initializer.parameter.serverOwner">serverOwner</a></code> | <code>java.lang.String</code> | The user name of the new owner of the foreign server. |
 | <code><a href="#@cdktf/provider-postgresql.server.Server.Initializer.parameter.serverType">serverType</a></code> | <code>java.lang.String</code> | Optional server type, potentially useful to foreign-data wrappers. |
@@ -123,7 +123,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the foreign-data wrapper that manages the server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/server#fdw_name Server#fdw_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/server#fdw_name Server#fdw_name}
 
 ---
 
@@ -133,7 +133,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 The name of the foreign server to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/server#server_name Server#server_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/server#server_name Server#server_name}
 
 ---
 
@@ -145,7 +145,7 @@ Automatically drop objects that depend on the server (such as user mappings), an
 
 Drop RESTRICT is the default
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/server#drop_cascade Server#drop_cascade}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/server#drop_cascade Server#drop_cascade}
 
 ---
 
@@ -153,7 +153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/server#id Server#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/server#id Server#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -168,7 +168,7 @@ This clause specifies the options for the server.
 
 The options typically define the connection details of the server, but the actual names and values are dependent on the server's foreign-data wrapper
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/server#options Server#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/server#options Server#options}
 
 ---
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 The user name of the new owner of the foreign server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/server#server_owner Server#server_owner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/server#server_owner Server#server_owner}
 
 ---
 
@@ -188,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 Optional server type, potentially useful to foreign-data wrappers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/server#server_type Server#server_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/server#server_type Server#server_type}
 
 ---
 
@@ -198,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 Optional server version, potentially useful to foreign-data wrappers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/server#server_version Server#server_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/server#server_version Server#server_version}
 
 ---
 
@@ -667,7 +667,7 @@ The construct id used in the generated config for the Server to import.
 
 The id of the existing Server that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/server#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/server#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1083,7 +1083,7 @@ ServerConfig.builder()
 | <code><a href="#@cdktf/provider-postgresql.server.ServerConfig.property.fdwName">fdwName</a></code> | <code>java.lang.String</code> | The name of the foreign-data wrapper that manages the server. |
 | <code><a href="#@cdktf/provider-postgresql.server.ServerConfig.property.serverName">serverName</a></code> | <code>java.lang.String</code> | The name of the foreign server to be created. |
 | <code><a href="#@cdktf/provider-postgresql.server.ServerConfig.property.dropCascade">dropCascade</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Automatically drop objects that depend on the server (such as user mappings), and in turn all objects that depend on those objects. |
-| <code><a href="#@cdktf/provider-postgresql.server.ServerConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/server#id Server#id}. |
+| <code><a href="#@cdktf/provider-postgresql.server.ServerConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/server#id Server#id}. |
 | <code><a href="#@cdktf/provider-postgresql.server.ServerConfig.property.options">options</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | This clause specifies the options for the server. |
 | <code><a href="#@cdktf/provider-postgresql.server.ServerConfig.property.serverOwner">serverOwner</a></code> | <code>java.lang.String</code> | The user name of the new owner of the foreign server. |
 | <code><a href="#@cdktf/provider-postgresql.server.ServerConfig.property.serverType">serverType</a></code> | <code>java.lang.String</code> | Optional server type, potentially useful to foreign-data wrappers. |
@@ -1171,7 +1171,7 @@ public java.lang.String getFdwName();
 
 The name of the foreign-data wrapper that manages the server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/server#fdw_name Server#fdw_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/server#fdw_name Server#fdw_name}
 
 ---
 
@@ -1185,7 +1185,7 @@ public java.lang.String getServerName();
 
 The name of the foreign server to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/server#server_name Server#server_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/server#server_name Server#server_name}
 
 ---
 
@@ -1201,7 +1201,7 @@ Automatically drop objects that depend on the server (such as user mappings), an
 
 Drop RESTRICT is the default
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/server#drop_cascade Server#drop_cascade}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/server#drop_cascade Server#drop_cascade}
 
 ---
 
@@ -1213,7 +1213,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/server#id Server#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/server#id Server#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1232,7 +1232,7 @@ This clause specifies the options for the server.
 
 The options typically define the connection details of the server, but the actual names and values are dependent on the server's foreign-data wrapper
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/server#options Server#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/server#options Server#options}
 
 ---
 
@@ -1246,7 +1246,7 @@ public java.lang.String getServerOwner();
 
 The user name of the new owner of the foreign server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/server#server_owner Server#server_owner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/server#server_owner Server#server_owner}
 
 ---
 
@@ -1260,7 +1260,7 @@ public java.lang.String getServerType();
 
 Optional server type, potentially useful to foreign-data wrappers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/server#server_type Server#server_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/server#server_type Server#server_type}
 
 ---
 
@@ -1274,7 +1274,7 @@ public java.lang.String getServerVersion();
 
 Optional server version, potentially useful to foreign-data wrappers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/server#server_version Server#server_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/server#server_version Server#server_version}
 
 ---
 

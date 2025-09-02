@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/replication_slot
+// https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/replication_slot
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,30 +15,30 @@ export interface ReplicationSlotConfig extends cdktf.TerraformMetaArguments {
   /**
   * Sets the database to add the replication slot to
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/replication_slot#database ReplicationSlot#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/replication_slot#database ReplicationSlot#database}
   */
   readonly database?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/replication_slot#id ReplicationSlot#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/replication_slot#id ReplicationSlot#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/replication_slot#name ReplicationSlot#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/replication_slot#name ReplicationSlot#name}
   */
   readonly name: string;
   /**
   * Sets the output plugin to use
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/replication_slot#plugin ReplicationSlot#plugin}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/replication_slot#plugin ReplicationSlot#plugin}
   */
   readonly plugin: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/replication_slot postgresql_replication_slot}
+* Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/replication_slot postgresql_replication_slot}
 */
 export class ReplicationSlot extends cdktf.TerraformResource {
 
@@ -54,7 +54,7 @@ export class ReplicationSlot extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ReplicationSlot resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ReplicationSlot to import
-  * @param importFromId The id of the existing ReplicationSlot that should be imported. Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/replication_slot#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ReplicationSlot that should be imported. Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/replication_slot#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ReplicationSlot to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -66,7 +66,7 @@ export class ReplicationSlot extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/replication_slot postgresql_replication_slot} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/replication_slot postgresql_replication_slot} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +77,7 @@ export class ReplicationSlot extends cdktf.TerraformResource {
       terraformResourceType: 'postgresql_replication_slot',
       terraformGeneratorMetadata: {
         providerName: 'postgresql',
-        providerVersion: '1.25.0',
+        providerVersion: '1.26.0',
         providerVersionConstraint: '~> 1.14'
       },
       provider: config.provider,
