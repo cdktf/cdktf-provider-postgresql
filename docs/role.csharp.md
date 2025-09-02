@@ -4,7 +4,7 @@
 
 ### Role <a name="Role" id="@cdktf/provider-postgresql.role.Role"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/role postgresql_role}.
+Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role postgresql_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.role.Role.Initializer"></a>
 
@@ -85,6 +85,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-postgresql.role.Role.resetInherit">ResetInherit</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.resetLogin">ResetLogin</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.resetPassword">ResetPassword</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.resetPasswordWo">ResetPasswordWo</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.resetPasswordWoVersion">ResetPasswordWoVersion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.resetReplication">ResetReplication</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.resetRoles">ResetRoles</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.resetSearchPath">ResetSearchPath</a></code> | *No description.* |
@@ -456,6 +458,18 @@ private void ResetLogin()
 private void ResetPassword()
 ```
 
+##### `ResetPasswordWo` <a name="ResetPasswordWo" id="@cdktf/provider-postgresql.role.Role.resetPasswordWo"></a>
+
+```csharp
+private void ResetPasswordWo()
+```
+
+##### `ResetPasswordWoVersion` <a name="ResetPasswordWoVersion" id="@cdktf/provider-postgresql.role.Role.resetPasswordWoVersion"></a>
+
+```csharp
+private void ResetPasswordWoVersion()
+```
+
 ##### `ResetReplication` <a name="ResetReplication" id="@cdktf/provider-postgresql.role.Role.resetReplication"></a>
 
 ```csharp
@@ -607,7 +621,7 @@ The construct id used in the generated config for the Role to import.
 
 The id of the existing Role that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -650,6 +664,8 @@ Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.loginInput">LoginInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.passwordInput">PasswordInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.passwordWoInput">PasswordWoInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.passwordWoVersionInput">PasswordWoVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.replicationInput">ReplicationInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.rolesInput">RolesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.searchPathInput">SearchPathInput</a></code> | <code>string[]</code> | *No description.* |
@@ -671,6 +687,8 @@ Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.login">Login</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.password">Password</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.passwordWo">PasswordWo</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.passwordWoVersion">PasswordWoVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.replication">Replication</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.roles">Roles</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.searchPath">SearchPath</a></code> | <code>string[]</code> | *No description.* |
@@ -954,6 +972,26 @@ public string PasswordInput { get; }
 
 ---
 
+##### `PasswordWoInput`<sup>Optional</sup> <a name="PasswordWoInput" id="@cdktf/provider-postgresql.role.Role.property.passwordWoInput"></a>
+
+```csharp
+public string PasswordWoInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `PasswordWoVersionInput`<sup>Optional</sup> <a name="PasswordWoVersionInput" id="@cdktf/provider-postgresql.role.Role.property.passwordWoVersionInput"></a>
+
+```csharp
+public string PasswordWoVersionInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `ReplicationInput`<sup>Optional</sup> <a name="ReplicationInput" id="@cdktf/provider-postgresql.role.Role.property.replicationInput"></a>
 
 ```csharp
@@ -1164,6 +1202,26 @@ public string Password { get; }
 
 ---
 
+##### `PasswordWo`<sup>Required</sup> <a name="PasswordWo" id="@cdktf/provider-postgresql.role.Role.property.passwordWo"></a>
+
+```csharp
+public string PasswordWo { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `PasswordWoVersion`<sup>Required</sup> <a name="PasswordWoVersion" id="@cdktf/provider-postgresql.role.Role.property.passwordWoVersion"></a>
+
+```csharp
+public string PasswordWoVersion { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `Replication`<sup>Required</sup> <a name="Replication" id="@cdktf/provider-postgresql.role.Role.property.replication"></a>
 
 ```csharp
@@ -1292,6 +1350,8 @@ new RoleConfig {
     object Inherit = null,
     object Login = null,
     string Password = null,
+    string PasswordWo = null,
+    string PasswordWoVersion = null,
     object Replication = null,
     string[] Roles = null,
     string[] SearchPath = null,
@@ -1320,13 +1380,15 @@ new RoleConfig {
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.connectionLimit">ConnectionLimit</a></code> | <code>double</code> | How many concurrent connections can be made with this role. |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.createDatabase">CreateDatabase</a></code> | <code>object</code> | Define a role's ability to create databases. |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.createRole">CreateRole</a></code> | <code>object</code> | Determine whether this role will be permitted to create new roles. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.encrypted">Encrypted</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/role#encrypted Role#encrypted}. |
+| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.encrypted">Encrypted</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#encrypted Role#encrypted}. |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.encryptedPassword">EncryptedPassword</a></code> | <code>object</code> | Control whether the password is stored encrypted in the system catalogs. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/role#id Role#id}. |
+| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#id Role#id}. |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.idleInTransactionSessionTimeout">IdleInTransactionSessionTimeout</a></code> | <code>double</code> | Terminate any session with an open transaction that has been idle for longer than the specified duration in milliseconds. |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.inherit">Inherit</a></code> | <code>object</code> | Determine whether a role "inherits" the privileges of roles it is a member of. |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.login">Login</a></code> | <code>object</code> | Determine whether a role is allowed to log in. |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.password">Password</a></code> | <code>string</code> | Sets the role's password. |
+| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.passwordWo">PasswordWo</a></code> | <code>string</code> | Sets the role's password without storing it in the state file. |
+| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.passwordWoVersion">PasswordWoVersion</a></code> | <code>string</code> | Prevents applies from updating the role password on every apply unless the value changes. |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.replication">Replication</a></code> | <code>object</code> | Determine whether a role is allowed to initiate streaming replication or put the system in and out of backup mode. |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.roles">Roles</a></code> | <code>string[]</code> | Role(s) to grant to this new role. |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.searchPath">SearchPath</a></code> | <code>string[]</code> | Sets the role's search path. |
@@ -1418,7 +1480,7 @@ public string Name { get; set; }
 
 The name of the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/role#name Role#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#name Role#name}
 
 ---
 
@@ -1432,7 +1494,7 @@ public string AssumeRole { get; set; }
 
 Role to switch to at login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/role#assume_role Role#assume_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#assume_role Role#assume_role}
 
 ---
 
@@ -1446,7 +1508,7 @@ public object BypassRowLevelSecurity { get; set; }
 
 Determine whether a role bypasses every row-level security (RLS) policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/role#bypass_row_level_security Role#bypass_row_level_security}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#bypass_row_level_security Role#bypass_row_level_security}
 
 ---
 
@@ -1460,7 +1522,7 @@ public double ConnectionLimit { get; set; }
 
 How many concurrent connections can be made with this role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/role#connection_limit Role#connection_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#connection_limit Role#connection_limit}
 
 ---
 
@@ -1474,7 +1536,7 @@ public object CreateDatabase { get; set; }
 
 Define a role's ability to create databases.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/role#create_database Role#create_database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#create_database Role#create_database}
 
 ---
 
@@ -1488,7 +1550,7 @@ public object CreateRole { get; set; }
 
 Determine whether this role will be permitted to create new roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/role#create_role Role#create_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#create_role Role#create_role}
 
 ---
 
@@ -1500,7 +1562,7 @@ public string Encrypted { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/role#encrypted Role#encrypted}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#encrypted Role#encrypted}.
 
 ---
 
@@ -1514,7 +1576,7 @@ public object EncryptedPassword { get; set; }
 
 Control whether the password is stored encrypted in the system catalogs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/role#encrypted_password Role#encrypted_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#encrypted_password Role#encrypted_password}
 
 ---
 
@@ -1526,7 +1588,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/role#id Role#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#id Role#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1543,7 +1605,7 @@ public double IdleInTransactionSessionTimeout { get; set; }
 
 Terminate any session with an open transaction that has been idle for longer than the specified duration in milliseconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/role#idle_in_transaction_session_timeout Role#idle_in_transaction_session_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#idle_in_transaction_session_timeout Role#idle_in_transaction_session_timeout}
 
 ---
 
@@ -1557,7 +1619,7 @@ public object Inherit { get; set; }
 
 Determine whether a role "inherits" the privileges of roles it is a member of.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/role#inherit Role#inherit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#inherit Role#inherit}
 
 ---
 
@@ -1571,7 +1633,7 @@ public object Login { get; set; }
 
 Determine whether a role is allowed to log in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/role#login Role#login}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#login Role#login}
 
 ---
 
@@ -1585,7 +1647,35 @@ public string Password { get; set; }
 
 Sets the role's password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/role#password Role#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#password Role#password}
+
+---
+
+##### `PasswordWo`<sup>Optional</sup> <a name="PasswordWo" id="@cdktf/provider-postgresql.role.RoleConfig.property.passwordWo"></a>
+
+```csharp
+public string PasswordWo { get; set; }
+```
+
+- *Type:* string
+
+Sets the role's password without storing it in the state file.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#password_wo Role#password_wo}
+
+---
+
+##### `PasswordWoVersion`<sup>Optional</sup> <a name="PasswordWoVersion" id="@cdktf/provider-postgresql.role.RoleConfig.property.passwordWoVersion"></a>
+
+```csharp
+public string PasswordWoVersion { get; set; }
+```
+
+- *Type:* string
+
+Prevents applies from updating the role password on every apply unless the value changes.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#password_wo_version Role#password_wo_version}
 
 ---
 
@@ -1599,7 +1689,7 @@ public object Replication { get; set; }
 
 Determine whether a role is allowed to initiate streaming replication or put the system in and out of backup mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/role#replication Role#replication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#replication Role#replication}
 
 ---
 
@@ -1613,7 +1703,7 @@ public string[] Roles { get; set; }
 
 Role(s) to grant to this new role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/role#roles Role#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#roles Role#roles}
 
 ---
 
@@ -1627,7 +1717,7 @@ public string[] SearchPath { get; set; }
 
 Sets the role's search path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/role#search_path Role#search_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#search_path Role#search_path}
 
 ---
 
@@ -1641,7 +1731,7 @@ public object SkipDropRole { get; set; }
 
 Skip actually running the DROP ROLE command when removing a ROLE from PostgreSQL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/role#skip_drop_role Role#skip_drop_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#skip_drop_role Role#skip_drop_role}
 
 ---
 
@@ -1655,7 +1745,7 @@ public object SkipReassignOwned { get; set; }
 
 Skip actually running the REASSIGN OWNED command when removing a role from PostgreSQL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/role#skip_reassign_owned Role#skip_reassign_owned}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#skip_reassign_owned Role#skip_reassign_owned}
 
 ---
 
@@ -1669,7 +1759,7 @@ public double StatementTimeout { get; set; }
 
 Abort any statement that takes more than the specified number of milliseconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/role#statement_timeout Role#statement_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#statement_timeout Role#statement_timeout}
 
 ---
 
@@ -1683,7 +1773,7 @@ public object Superuser { get; set; }
 
 Determine whether the new role is a "superuser".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/role#superuser Role#superuser}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#superuser Role#superuser}
 
 ---
 
@@ -1697,7 +1787,7 @@ public string ValidUntil { get; set; }
 
 Sets a date and time after which the role's password is no longer valid.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/role#valid_until Role#valid_until}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#valid_until Role#valid_until}
 
 ---
 
