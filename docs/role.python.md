@@ -14,35 +14,35 @@ from cdktf_cdktf_provider_postgresql import role
 role.Role(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
   assume_role: str = None,
-  bypass_row_level_security: typing.Union[bool, IResolvable] = None,
+  bypass_row_level_security: bool | IResolvable = None,
   connection_limit: typing.Union[int, float] = None,
-  create_database: typing.Union[bool, IResolvable] = None,
-  create_role: typing.Union[bool, IResolvable] = None,
+  create_database: bool | IResolvable = None,
+  create_role: bool | IResolvable = None,
   encrypted: str = None,
-  encrypted_password: typing.Union[bool, IResolvable] = None,
+  encrypted_password: bool | IResolvable = None,
   id: str = None,
   idle_in_transaction_session_timeout: typing.Union[int, float] = None,
-  inherit: typing.Union[bool, IResolvable] = None,
-  login: typing.Union[bool, IResolvable] = None,
+  inherit: bool | IResolvable = None,
+  login: bool | IResolvable = None,
   password: str = None,
   password_wo: str = None,
   password_wo_version: str = None,
-  replication: typing.Union[bool, IResolvable] = None,
+  replication: bool | IResolvable = None,
   roles: typing.List[str] = None,
   search_path: typing.List[str] = None,
-  skip_drop_role: typing.Union[bool, IResolvable] = None,
-  skip_reassign_owned: typing.Union[bool, IResolvable] = None,
+  skip_drop_role: bool | IResolvable = None,
+  skip_reassign_owned: bool | IResolvable = None,
   statement_timeout: typing.Union[int, float] = None,
-  superuser: typing.Union[bool, IResolvable] = None,
+  superuser: bool | IResolvable = None,
   valid_until: str = None
 )
 ```
@@ -51,35 +51,35 @@ role.Role(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the role. |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.assumeRole">assume_role</a></code> | <code>str</code> | Role to switch to at login. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.bypassRowLevelSecurity">bypass_row_level_security</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Determine whether a role bypasses every row-level security (RLS) policy. |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.bypassRowLevelSecurity">bypass_row_level_security</a></code> | <code>bool \| cdktf.IResolvable</code> | Determine whether a role bypasses every row-level security (RLS) policy. |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.connectionLimit">connection_limit</a></code> | <code>typing.Union[int, float]</code> | How many concurrent connections can be made with this role. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.createDatabase">create_database</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Define a role's ability to create databases. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.createRole">create_role</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Determine whether this role will be permitted to create new roles. |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.createDatabase">create_database</a></code> | <code>bool \| cdktf.IResolvable</code> | Define a role's ability to create databases. |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.createRole">create_role</a></code> | <code>bool \| cdktf.IResolvable</code> | Determine whether this role will be permitted to create new roles. |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.encrypted">encrypted</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#encrypted Role#encrypted}. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.encryptedPassword">encrypted_password</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Control whether the password is stored encrypted in the system catalogs. |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.encryptedPassword">encrypted_password</a></code> | <code>bool \| cdktf.IResolvable</code> | Control whether the password is stored encrypted in the system catalogs. |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#id Role#id}. |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.idleInTransactionSessionTimeout">idle_in_transaction_session_timeout</a></code> | <code>typing.Union[int, float]</code> | Terminate any session with an open transaction that has been idle for longer than the specified duration in milliseconds. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.inherit">inherit</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Determine whether a role "inherits" the privileges of roles it is a member of. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.login">login</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Determine whether a role is allowed to log in. |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.inherit">inherit</a></code> | <code>bool \| cdktf.IResolvable</code> | Determine whether a role "inherits" the privileges of roles it is a member of. |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.login">login</a></code> | <code>bool \| cdktf.IResolvable</code> | Determine whether a role is allowed to log in. |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.password">password</a></code> | <code>str</code> | Sets the role's password. |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.passwordWo">password_wo</a></code> | <code>str</code> | Sets the role's password without storing it in the state file. |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.passwordWoVersion">password_wo_version</a></code> | <code>str</code> | Prevents applies from updating the role password on every apply unless the value changes. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.replication">replication</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Determine whether a role is allowed to initiate streaming replication or put the system in and out of backup mode. |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.replication">replication</a></code> | <code>bool \| cdktf.IResolvable</code> | Determine whether a role is allowed to initiate streaming replication or put the system in and out of backup mode. |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.roles">roles</a></code> | <code>typing.List[str]</code> | Role(s) to grant to this new role. |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.searchPath">search_path</a></code> | <code>typing.List[str]</code> | Sets the role's search path. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.skipDropRole">skip_drop_role</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Skip actually running the DROP ROLE command when removing a ROLE from PostgreSQL. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.skipReassignOwned">skip_reassign_owned</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Skip actually running the REASSIGN OWNED command when removing a role from PostgreSQL. |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.skipDropRole">skip_drop_role</a></code> | <code>bool \| cdktf.IResolvable</code> | Skip actually running the DROP ROLE command when removing a ROLE from PostgreSQL. |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.skipReassignOwned">skip_reassign_owned</a></code> | <code>bool \| cdktf.IResolvable</code> | Skip actually running the REASSIGN OWNED command when removing a role from PostgreSQL. |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.statementTimeout">statement_timeout</a></code> | <code>typing.Union[int, float]</code> | Abort any statement that takes more than the specified number of milliseconds. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.superuser">superuser</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Determine whether the new role is a "superuser". |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.superuser">superuser</a></code> | <code>bool \| cdktf.IResolvable</code> | Determine whether the new role is a "superuser". |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.validUntil">valid_until</a></code> | <code>str</code> | Sets a date and time after which the role's password is no longer valid. |
 
 ---
@@ -104,13 +104,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -140,7 +140,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ##### `bypass_row_level_security`<sup>Optional</sup> <a name="bypass_row_level_security" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.bypassRowLevelSecurity"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Determine whether a role bypasses every row-level security (RLS) policy.
 
@@ -186,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ##### `create_database`<sup>Optional</sup> <a name="create_database" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.createDatabase"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Define a role's ability to create databases.
 
@@ -196,7 +196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ##### `create_role`<sup>Optional</sup> <a name="create_role" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.createRole"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Determine whether this role will be permitted to create new roles.
 
@@ -214,7 +214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ##### `encrypted_password`<sup>Optional</sup> <a name="encrypted_password" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.encryptedPassword"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Control whether the password is stored encrypted in the system catalogs.
 
@@ -245,7 +245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ##### `inherit`<sup>Optional</sup> <a name="inherit" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.inherit"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Determine whether a role "inherits" the privileges of roles it is a member of.
 
@@ -255,7 +255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ##### `login`<sup>Optional</sup> <a name="login" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.login"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Determine whether a role is allowed to log in.
 
@@ -295,7 +295,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ##### `replication`<sup>Optional</sup> <a name="replication" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.replication"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Determine whether a role is allowed to initiate streaming replication or put the system in and out of backup mode.
 
@@ -325,7 +325,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ##### `skip_drop_role`<sup>Optional</sup> <a name="skip_drop_role" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.skipDropRole"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Skip actually running the DROP ROLE command when removing a ROLE from PostgreSQL.
 
@@ -335,7 +335,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ##### `skip_reassign_owned`<sup>Optional</sup> <a name="skip_reassign_owned" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.skipReassignOwned"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Skip actually running the REASSIGN OWNED command when removing a role from PostgreSQL.
 
@@ -355,7 +355,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ##### `superuser`<sup>Optional</sup> <a name="superuser" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.superuser"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Determine whether the new role is a "superuser".
 
@@ -647,7 +647,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-postgresql.role.Role.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-postgresql.role.Role.importFrom"></a>
@@ -710,7 +710,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -726,7 +726,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-postgresql.role.Role.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -1019,58 +1019,58 @@ Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.assumeRoleInput">assume_role_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.bypassRowLevelSecurityInput">bypass_row_level_security_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.bypassRowLevelSecurityInput">bypass_row_level_security_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.connectionLimitInput">connection_limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.createDatabaseInput">create_database_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.createRoleInput">create_role_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.createDatabaseInput">create_database_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.createRoleInput">create_role_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.encryptedInput">encrypted_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.encryptedPasswordInput">encrypted_password_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.encryptedPasswordInput">encrypted_password_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.idleInTransactionSessionTimeoutInput">idle_in_transaction_session_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.inheritInput">inherit_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.loginInput">login_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.inheritInput">inherit_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.loginInput">login_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.passwordInput">password_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.passwordWoInput">password_wo_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.passwordWoVersionInput">password_wo_version_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.replicationInput">replication_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.replicationInput">replication_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.rolesInput">roles_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.searchPathInput">search_path_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.skipDropRoleInput">skip_drop_role_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.skipReassignOwnedInput">skip_reassign_owned_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.skipDropRoleInput">skip_drop_role_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.skipReassignOwnedInput">skip_reassign_owned_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.statementTimeoutInput">statement_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.superuserInput">superuser_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.superuserInput">superuser_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.validUntilInput">valid_until_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.assumeRole">assume_role</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.bypassRowLevelSecurity">bypass_row_level_security</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.bypassRowLevelSecurity">bypass_row_level_security</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.connectionLimit">connection_limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.createDatabase">create_database</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.createRole">create_role</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.createDatabase">create_database</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.createRole">create_role</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.encrypted">encrypted</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.encryptedPassword">encrypted_password</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.encryptedPassword">encrypted_password</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.idleInTransactionSessionTimeout">idle_in_transaction_session_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.inherit">inherit</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.login">login</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.inherit">inherit</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.login">login</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.password">password</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.passwordWo">password_wo</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.passwordWoVersion">password_wo_version</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.replication">replication</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.replication">replication</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.roles">roles</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.searchPath">search_path</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.skipDropRole">skip_drop_role</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.skipReassignOwned">skip_reassign_owned</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.skipDropRole">skip_drop_role</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.skipReassignOwned">skip_reassign_owned</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.statementTimeout">statement_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.superuser">superuser</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.superuser">superuser</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.validUntil">valid_until</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -1150,20 +1150,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-postgresql.role.Role.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-postgresql.role.Role.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1210,10 +1210,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-postgresql.role.Role.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1230,10 +1230,10 @@ assume_role_input: str
 ##### `bypass_row_level_security_input`<sup>Optional</sup> <a name="bypass_row_level_security_input" id="@cdktf/provider-postgresql.role.Role.property.bypassRowLevelSecurityInput"></a>
 
 ```python
-bypass_row_level_security_input: typing.Union[bool, IResolvable]
+bypass_row_level_security_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1250,20 +1250,20 @@ connection_limit_input: typing.Union[int, float]
 ##### `create_database_input`<sup>Optional</sup> <a name="create_database_input" id="@cdktf/provider-postgresql.role.Role.property.createDatabaseInput"></a>
 
 ```python
-create_database_input: typing.Union[bool, IResolvable]
+create_database_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `create_role_input`<sup>Optional</sup> <a name="create_role_input" id="@cdktf/provider-postgresql.role.Role.property.createRoleInput"></a>
 
 ```python
-create_role_input: typing.Union[bool, IResolvable]
+create_role_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1280,10 +1280,10 @@ encrypted_input: str
 ##### `encrypted_password_input`<sup>Optional</sup> <a name="encrypted_password_input" id="@cdktf/provider-postgresql.role.Role.property.encryptedPasswordInput"></a>
 
 ```python
-encrypted_password_input: typing.Union[bool, IResolvable]
+encrypted_password_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1310,20 +1310,20 @@ idle_in_transaction_session_timeout_input: typing.Union[int, float]
 ##### `inherit_input`<sup>Optional</sup> <a name="inherit_input" id="@cdktf/provider-postgresql.role.Role.property.inheritInput"></a>
 
 ```python
-inherit_input: typing.Union[bool, IResolvable]
+inherit_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `login_input`<sup>Optional</sup> <a name="login_input" id="@cdktf/provider-postgresql.role.Role.property.loginInput"></a>
 
 ```python
-login_input: typing.Union[bool, IResolvable]
+login_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1370,10 +1370,10 @@ password_wo_version_input: str
 ##### `replication_input`<sup>Optional</sup> <a name="replication_input" id="@cdktf/provider-postgresql.role.Role.property.replicationInput"></a>
 
 ```python
-replication_input: typing.Union[bool, IResolvable]
+replication_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1400,20 +1400,20 @@ search_path_input: typing.List[str]
 ##### `skip_drop_role_input`<sup>Optional</sup> <a name="skip_drop_role_input" id="@cdktf/provider-postgresql.role.Role.property.skipDropRoleInput"></a>
 
 ```python
-skip_drop_role_input: typing.Union[bool, IResolvable]
+skip_drop_role_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `skip_reassign_owned_input`<sup>Optional</sup> <a name="skip_reassign_owned_input" id="@cdktf/provider-postgresql.role.Role.property.skipReassignOwnedInput"></a>
 
 ```python
-skip_reassign_owned_input: typing.Union[bool, IResolvable]
+skip_reassign_owned_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1430,10 +1430,10 @@ statement_timeout_input: typing.Union[int, float]
 ##### `superuser_input`<sup>Optional</sup> <a name="superuser_input" id="@cdktf/provider-postgresql.role.Role.property.superuserInput"></a>
 
 ```python
-superuser_input: typing.Union[bool, IResolvable]
+superuser_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1460,10 +1460,10 @@ assume_role: str
 ##### `bypass_row_level_security`<sup>Required</sup> <a name="bypass_row_level_security" id="@cdktf/provider-postgresql.role.Role.property.bypassRowLevelSecurity"></a>
 
 ```python
-bypass_row_level_security: typing.Union[bool, IResolvable]
+bypass_row_level_security: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1480,20 +1480,20 @@ connection_limit: typing.Union[int, float]
 ##### `create_database`<sup>Required</sup> <a name="create_database" id="@cdktf/provider-postgresql.role.Role.property.createDatabase"></a>
 
 ```python
-create_database: typing.Union[bool, IResolvable]
+create_database: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `create_role`<sup>Required</sup> <a name="create_role" id="@cdktf/provider-postgresql.role.Role.property.createRole"></a>
 
 ```python
-create_role: typing.Union[bool, IResolvable]
+create_role: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1510,10 +1510,10 @@ encrypted: str
 ##### `encrypted_password`<sup>Required</sup> <a name="encrypted_password" id="@cdktf/provider-postgresql.role.Role.property.encryptedPassword"></a>
 
 ```python
-encrypted_password: typing.Union[bool, IResolvable]
+encrypted_password: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1540,20 +1540,20 @@ idle_in_transaction_session_timeout: typing.Union[int, float]
 ##### `inherit`<sup>Required</sup> <a name="inherit" id="@cdktf/provider-postgresql.role.Role.property.inherit"></a>
 
 ```python
-inherit: typing.Union[bool, IResolvable]
+inherit: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `login`<sup>Required</sup> <a name="login" id="@cdktf/provider-postgresql.role.Role.property.login"></a>
 
 ```python
-login: typing.Union[bool, IResolvable]
+login: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1600,10 +1600,10 @@ password_wo_version: str
 ##### `replication`<sup>Required</sup> <a name="replication" id="@cdktf/provider-postgresql.role.Role.property.replication"></a>
 
 ```python
-replication: typing.Union[bool, IResolvable]
+replication: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1630,20 +1630,20 @@ search_path: typing.List[str]
 ##### `skip_drop_role`<sup>Required</sup> <a name="skip_drop_role" id="@cdktf/provider-postgresql.role.Role.property.skipDropRole"></a>
 
 ```python
-skip_drop_role: typing.Union[bool, IResolvable]
+skip_drop_role: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `skip_reassign_owned`<sup>Required</sup> <a name="skip_reassign_owned" id="@cdktf/provider-postgresql.role.Role.property.skipReassignOwned"></a>
 
 ```python
-skip_reassign_owned: typing.Union[bool, IResolvable]
+skip_reassign_owned: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1660,10 +1660,10 @@ statement_timeout: typing.Union[int, float]
 ##### `superuser`<sup>Required</sup> <a name="superuser" id="@cdktf/provider-postgresql.role.Role.property.superuser"></a>
 
 ```python
-superuser: typing.Union[bool, IResolvable]
+superuser: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1705,35 +1705,35 @@ tfResourceType: str
 from cdktf_cdktf_provider_postgresql import role
 
 role.RoleConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
   assume_role: str = None,
-  bypass_row_level_security: typing.Union[bool, IResolvable] = None,
+  bypass_row_level_security: bool | IResolvable = None,
   connection_limit: typing.Union[int, float] = None,
-  create_database: typing.Union[bool, IResolvable] = None,
-  create_role: typing.Union[bool, IResolvable] = None,
+  create_database: bool | IResolvable = None,
+  create_role: bool | IResolvable = None,
   encrypted: str = None,
-  encrypted_password: typing.Union[bool, IResolvable] = None,
+  encrypted_password: bool | IResolvable = None,
   id: str = None,
   idle_in_transaction_session_timeout: typing.Union[int, float] = None,
-  inherit: typing.Union[bool, IResolvable] = None,
-  login: typing.Union[bool, IResolvable] = None,
+  inherit: bool | IResolvable = None,
+  login: bool | IResolvable = None,
   password: str = None,
   password_wo: str = None,
   password_wo_version: str = None,
-  replication: typing.Union[bool, IResolvable] = None,
+  replication: bool | IResolvable = None,
   roles: typing.List[str] = None,
   search_path: typing.List[str] = None,
-  skip_drop_role: typing.Union[bool, IResolvable] = None,
-  skip_reassign_owned: typing.Union[bool, IResolvable] = None,
+  skip_drop_role: bool | IResolvable = None,
+  skip_reassign_owned: bool | IResolvable = None,
   statement_timeout: typing.Union[int, float] = None,
-  superuser: typing.Union[bool, IResolvable] = None,
+  superuser: bool | IResolvable = None,
   valid_until: str = None
 )
 ```
@@ -1742,35 +1742,35 @@ role.RoleConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.name">name</a></code> | <code>str</code> | The name of the role. |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.assumeRole">assume_role</a></code> | <code>str</code> | Role to switch to at login. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.bypassRowLevelSecurity">bypass_row_level_security</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Determine whether a role bypasses every row-level security (RLS) policy. |
+| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.bypassRowLevelSecurity">bypass_row_level_security</a></code> | <code>bool \| cdktf.IResolvable</code> | Determine whether a role bypasses every row-level security (RLS) policy. |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.connectionLimit">connection_limit</a></code> | <code>typing.Union[int, float]</code> | How many concurrent connections can be made with this role. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.createDatabase">create_database</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Define a role's ability to create databases. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.createRole">create_role</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Determine whether this role will be permitted to create new roles. |
+| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.createDatabase">create_database</a></code> | <code>bool \| cdktf.IResolvable</code> | Define a role's ability to create databases. |
+| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.createRole">create_role</a></code> | <code>bool \| cdktf.IResolvable</code> | Determine whether this role will be permitted to create new roles. |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.encrypted">encrypted</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#encrypted Role#encrypted}. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.encryptedPassword">encrypted_password</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Control whether the password is stored encrypted in the system catalogs. |
+| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.encryptedPassword">encrypted_password</a></code> | <code>bool \| cdktf.IResolvable</code> | Control whether the password is stored encrypted in the system catalogs. |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#id Role#id}. |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.idleInTransactionSessionTimeout">idle_in_transaction_session_timeout</a></code> | <code>typing.Union[int, float]</code> | Terminate any session with an open transaction that has been idle for longer than the specified duration in milliseconds. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.inherit">inherit</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Determine whether a role "inherits" the privileges of roles it is a member of. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.login">login</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Determine whether a role is allowed to log in. |
+| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.inherit">inherit</a></code> | <code>bool \| cdktf.IResolvable</code> | Determine whether a role "inherits" the privileges of roles it is a member of. |
+| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.login">login</a></code> | <code>bool \| cdktf.IResolvable</code> | Determine whether a role is allowed to log in. |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.password">password</a></code> | <code>str</code> | Sets the role's password. |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.passwordWo">password_wo</a></code> | <code>str</code> | Sets the role's password without storing it in the state file. |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.passwordWoVersion">password_wo_version</a></code> | <code>str</code> | Prevents applies from updating the role password on every apply unless the value changes. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.replication">replication</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Determine whether a role is allowed to initiate streaming replication or put the system in and out of backup mode. |
+| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.replication">replication</a></code> | <code>bool \| cdktf.IResolvable</code> | Determine whether a role is allowed to initiate streaming replication or put the system in and out of backup mode. |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.roles">roles</a></code> | <code>typing.List[str]</code> | Role(s) to grant to this new role. |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.searchPath">search_path</a></code> | <code>typing.List[str]</code> | Sets the role's search path. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.skipDropRole">skip_drop_role</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Skip actually running the DROP ROLE command when removing a ROLE from PostgreSQL. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.skipReassignOwned">skip_reassign_owned</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Skip actually running the REASSIGN OWNED command when removing a role from PostgreSQL. |
+| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.skipDropRole">skip_drop_role</a></code> | <code>bool \| cdktf.IResolvable</code> | Skip actually running the DROP ROLE command when removing a ROLE from PostgreSQL. |
+| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.skipReassignOwned">skip_reassign_owned</a></code> | <code>bool \| cdktf.IResolvable</code> | Skip actually running the REASSIGN OWNED command when removing a role from PostgreSQL. |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.statementTimeout">statement_timeout</a></code> | <code>typing.Union[int, float]</code> | Abort any statement that takes more than the specified number of milliseconds. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.superuser">superuser</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Determine whether the new role is a "superuser". |
+| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.superuser">superuser</a></code> | <code>bool \| cdktf.IResolvable</code> | Determine whether the new role is a "superuser". |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.validUntil">valid_until</a></code> | <code>str</code> | Sets a date and time after which the role's password is no longer valid. |
 
 ---
@@ -1778,20 +1778,20 @@ role.RoleConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-postgresql.role.RoleConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-postgresql.role.RoleConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1838,10 +1838,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-postgresql.role.RoleConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1876,10 +1876,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `bypass_row_level_security`<sup>Optional</sup> <a name="bypass_row_level_security" id="@cdktf/provider-postgresql.role.RoleConfig.property.bypassRowLevelSecurity"></a>
 
 ```python
-bypass_row_level_security: typing.Union[bool, IResolvable]
+bypass_row_level_security: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Determine whether a role bypasses every row-level security (RLS) policy.
 
@@ -1904,10 +1904,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `create_database`<sup>Optional</sup> <a name="create_database" id="@cdktf/provider-postgresql.role.RoleConfig.property.createDatabase"></a>
 
 ```python
-create_database: typing.Union[bool, IResolvable]
+create_database: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Define a role's ability to create databases.
 
@@ -1918,10 +1918,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `create_role`<sup>Optional</sup> <a name="create_role" id="@cdktf/provider-postgresql.role.RoleConfig.property.createRole"></a>
 
 ```python
-create_role: typing.Union[bool, IResolvable]
+create_role: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Determine whether this role will be permitted to create new roles.
 
@@ -1944,10 +1944,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `encrypted_password`<sup>Optional</sup> <a name="encrypted_password" id="@cdktf/provider-postgresql.role.RoleConfig.property.encryptedPassword"></a>
 
 ```python
-encrypted_password: typing.Union[bool, IResolvable]
+encrypted_password: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Control whether the password is stored encrypted in the system catalogs.
 
@@ -1987,10 +1987,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `inherit`<sup>Optional</sup> <a name="inherit" id="@cdktf/provider-postgresql.role.RoleConfig.property.inherit"></a>
 
 ```python
-inherit: typing.Union[bool, IResolvable]
+inherit: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Determine whether a role "inherits" the privileges of roles it is a member of.
 
@@ -2001,10 +2001,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `login`<sup>Optional</sup> <a name="login" id="@cdktf/provider-postgresql.role.RoleConfig.property.login"></a>
 
 ```python
-login: typing.Union[bool, IResolvable]
+login: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Determine whether a role is allowed to log in.
 
@@ -2057,10 +2057,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `replication`<sup>Optional</sup> <a name="replication" id="@cdktf/provider-postgresql.role.RoleConfig.property.replication"></a>
 
 ```python
-replication: typing.Union[bool, IResolvable]
+replication: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Determine whether a role is allowed to initiate streaming replication or put the system in and out of backup mode.
 
@@ -2099,10 +2099,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `skip_drop_role`<sup>Optional</sup> <a name="skip_drop_role" id="@cdktf/provider-postgresql.role.RoleConfig.property.skipDropRole"></a>
 
 ```python
-skip_drop_role: typing.Union[bool, IResolvable]
+skip_drop_role: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Skip actually running the DROP ROLE command when removing a ROLE from PostgreSQL.
 
@@ -2113,10 +2113,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `skip_reassign_owned`<sup>Optional</sup> <a name="skip_reassign_owned" id="@cdktf/provider-postgresql.role.RoleConfig.property.skipReassignOwned"></a>
 
 ```python
-skip_reassign_owned: typing.Union[bool, IResolvable]
+skip_reassign_owned: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Skip actually running the REASSIGN OWNED command when removing a role from PostgreSQL.
 
@@ -2141,10 +2141,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `superuser`<sup>Optional</sup> <a name="superuser" id="@cdktf/provider-postgresql.role.RoleConfig.property.superuser"></a>
 
 ```python
-superuser: typing.Union[bool, IResolvable]
+superuser: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Determine whether the new role is a "superuser".
 

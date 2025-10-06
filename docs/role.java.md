@@ -12,49 +12,35 @@ Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 import com.hashicorp.cdktf.providers.postgresql.role.Role;
 
 Role.Builder.create(Construct scope, java.lang.String id)
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .name(java.lang.String)
 //  .assumeRole(java.lang.String)
-//  .bypassRowLevelSecurity(java.lang.Boolean)
-//  .bypassRowLevelSecurity(IResolvable)
+//  .bypassRowLevelSecurity(java.lang.Boolean|IResolvable)
 //  .connectionLimit(java.lang.Number)
-//  .createDatabase(java.lang.Boolean)
-//  .createDatabase(IResolvable)
-//  .createRole(java.lang.Boolean)
-//  .createRole(IResolvable)
+//  .createDatabase(java.lang.Boolean|IResolvable)
+//  .createRole(java.lang.Boolean|IResolvable)
 //  .encrypted(java.lang.String)
-//  .encryptedPassword(java.lang.Boolean)
-//  .encryptedPassword(IResolvable)
+//  .encryptedPassword(java.lang.Boolean|IResolvable)
 //  .id(java.lang.String)
 //  .idleInTransactionSessionTimeout(java.lang.Number)
-//  .inherit(java.lang.Boolean)
-//  .inherit(IResolvable)
-//  .login(java.lang.Boolean)
-//  .login(IResolvable)
+//  .inherit(java.lang.Boolean|IResolvable)
+//  .login(java.lang.Boolean|IResolvable)
 //  .password(java.lang.String)
 //  .passwordWo(java.lang.String)
 //  .passwordWoVersion(java.lang.String)
-//  .replication(java.lang.Boolean)
-//  .replication(IResolvable)
+//  .replication(java.lang.Boolean|IResolvable)
 //  .roles(java.util.List<java.lang.String>)
 //  .searchPath(java.util.List<java.lang.String>)
-//  .skipDropRole(java.lang.Boolean)
-//  .skipDropRole(IResolvable)
-//  .skipReassignOwned(java.lang.Boolean)
-//  .skipReassignOwned(IResolvable)
+//  .skipDropRole(java.lang.Boolean|IResolvable)
+//  .skipReassignOwned(java.lang.Boolean|IResolvable)
 //  .statementTimeout(java.lang.Number)
-//  .superuser(java.lang.Boolean)
-//  .superuser(IResolvable)
+//  .superuser(java.lang.Boolean|IResolvable)
 //  .validUntil(java.lang.String)
     .build();
 ```
@@ -63,35 +49,35 @@ Role.Builder.create(Construct scope, java.lang.String id)
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the role. |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.assumeRole">assumeRole</a></code> | <code>java.lang.String</code> | Role to switch to at login. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.bypassRowLevelSecurity">bypassRowLevelSecurity</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determine whether a role bypasses every row-level security (RLS) policy. |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.bypassRowLevelSecurity">bypassRowLevelSecurity</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Determine whether a role bypasses every row-level security (RLS) policy. |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.connectionLimit">connectionLimit</a></code> | <code>java.lang.Number</code> | How many concurrent connections can be made with this role. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.createDatabase">createDatabase</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Define a role's ability to create databases. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.createRole">createRole</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determine whether this role will be permitted to create new roles. |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.createDatabase">createDatabase</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Define a role's ability to create databases. |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.createRole">createRole</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Determine whether this role will be permitted to create new roles. |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.encrypted">encrypted</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#encrypted Role#encrypted}. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.encryptedPassword">encryptedPassword</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Control whether the password is stored encrypted in the system catalogs. |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.encryptedPassword">encryptedPassword</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Control whether the password is stored encrypted in the system catalogs. |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#id Role#id}. |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.idleInTransactionSessionTimeout">idleInTransactionSessionTimeout</a></code> | <code>java.lang.Number</code> | Terminate any session with an open transaction that has been idle for longer than the specified duration in milliseconds. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.inherit">inherit</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determine whether a role "inherits" the privileges of roles it is a member of. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.login">login</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determine whether a role is allowed to log in. |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.inherit">inherit</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Determine whether a role "inherits" the privileges of roles it is a member of. |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.login">login</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Determine whether a role is allowed to log in. |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.password">password</a></code> | <code>java.lang.String</code> | Sets the role's password. |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.passwordWo">passwordWo</a></code> | <code>java.lang.String</code> | Sets the role's password without storing it in the state file. |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.passwordWoVersion">passwordWoVersion</a></code> | <code>java.lang.String</code> | Prevents applies from updating the role password on every apply unless the value changes. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.replication">replication</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determine whether a role is allowed to initiate streaming replication or put the system in and out of backup mode. |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.replication">replication</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Determine whether a role is allowed to initiate streaming replication or put the system in and out of backup mode. |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.roles">roles</a></code> | <code>java.util.List<java.lang.String></code> | Role(s) to grant to this new role. |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.searchPath">searchPath</a></code> | <code>java.util.List<java.lang.String></code> | Sets the role's search path. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.skipDropRole">skipDropRole</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Skip actually running the DROP ROLE command when removing a ROLE from PostgreSQL. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.skipReassignOwned">skipReassignOwned</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Skip actually running the REASSIGN OWNED command when removing a role from PostgreSQL. |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.skipDropRole">skipDropRole</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Skip actually running the DROP ROLE command when removing a ROLE from PostgreSQL. |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.skipReassignOwned">skipReassignOwned</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Skip actually running the REASSIGN OWNED command when removing a role from PostgreSQL. |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.statementTimeout">statementTimeout</a></code> | <code>java.lang.Number</code> | Abort any statement that takes more than the specified number of milliseconds. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.superuser">superuser</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determine whether the new role is a "superuser". |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.superuser">superuser</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Determine whether the new role is a "superuser". |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.validUntil">validUntil</a></code> | <code>java.lang.String</code> | Sets a date and time after which the role's password is no longer valid. |
 
 ---
@@ -116,13 +102,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.connection"></a>
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -152,7 +138,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.provisioners"></a>
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -178,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ##### `bypassRowLevelSecurity`<sup>Optional</sup> <a name="bypassRowLevelSecurity" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.bypassRowLevelSecurity"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Determine whether a role bypasses every row-level security (RLS) policy.
 
@@ -198,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ##### `createDatabase`<sup>Optional</sup> <a name="createDatabase" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.createDatabase"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Define a role's ability to create databases.
 
@@ -208,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ##### `createRole`<sup>Optional</sup> <a name="createRole" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.createRole"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Determine whether this role will be permitted to create new roles.
 
@@ -226,7 +212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ##### `encryptedPassword`<sup>Optional</sup> <a name="encryptedPassword" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.encryptedPassword"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Control whether the password is stored encrypted in the system catalogs.
 
@@ -257,7 +243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ##### `inherit`<sup>Optional</sup> <a name="inherit" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.inherit"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Determine whether a role "inherits" the privileges of roles it is a member of.
 
@@ -267,7 +253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ##### `login`<sup>Optional</sup> <a name="login" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.login"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Determine whether a role is allowed to log in.
 
@@ -307,7 +293,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ##### `replication`<sup>Optional</sup> <a name="replication" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.replication"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Determine whether a role is allowed to initiate streaming replication or put the system in and out of backup mode.
 
@@ -337,7 +323,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ##### `skipDropRole`<sup>Optional</sup> <a name="skipDropRole" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.skipDropRole"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Skip actually running the DROP ROLE command when removing a ROLE from PostgreSQL.
 
@@ -347,7 +333,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ##### `skipReassignOwned`<sup>Optional</sup> <a name="skipReassignOwned" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.skipReassignOwned"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Skip actually running the REASSIGN OWNED command when removing a role from PostgreSQL.
 
@@ -367,7 +353,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ##### `superuser`<sup>Optional</sup> <a name="superuser" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.superuser"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Determine whether the new role is a "superuser".
 
@@ -634,7 +620,7 @@ public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(j
 ##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-postgresql.role.Role.hasResourceMove"></a>
 
 ```java
-public TerraformResourceMoveByTarget OR TerraformResourceMoveById hasResourceMove()
+public TerraformResourceMoveByTarget|TerraformResourceMoveById hasResourceMove()
 ```
 
 ##### `importFrom` <a name="importFrom" id="@cdktf/provider-postgresql.role.Role.importFrom"></a>
@@ -690,7 +676,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ```java
 public void moveTo(java.lang.String moveTarget)
-public void moveTo(java.lang.String moveTarget, java.lang.String OR java.lang.Number index)
+public void moveTo(java.lang.String moveTarget, java.lang.String|java.lang.Number index)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -705,7 +691,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-postgresql.role.Role.moveTo.parameter.index"></a>
 
-- *Type:* java.lang.String OR java.lang.Number
+- *Type:* java.lang.String|java.lang.Number
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -985,58 +971,58 @@ Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.assumeRoleInput">assumeRoleInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.bypassRowLevelSecurityInput">bypassRowLevelSecurityInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.bypassRowLevelSecurityInput">bypassRowLevelSecurityInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.connectionLimitInput">connectionLimitInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.createDatabaseInput">createDatabaseInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.createRoleInput">createRoleInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.createDatabaseInput">createDatabaseInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.createRoleInput">createRoleInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.encryptedInput">encryptedInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.encryptedPasswordInput">encryptedPasswordInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.encryptedPasswordInput">encryptedPasswordInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.idleInTransactionSessionTimeoutInput">idleInTransactionSessionTimeoutInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.inheritInput">inheritInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.loginInput">loginInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.inheritInput">inheritInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.loginInput">loginInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.passwordInput">passwordInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.passwordWoInput">passwordWoInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.passwordWoVersionInput">passwordWoVersionInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.replicationInput">replicationInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.replicationInput">replicationInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.rolesInput">rolesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.searchPathInput">searchPathInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.skipDropRoleInput">skipDropRoleInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.skipReassignOwnedInput">skipReassignOwnedInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.skipDropRoleInput">skipDropRoleInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.skipReassignOwnedInput">skipReassignOwnedInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.statementTimeoutInput">statementTimeoutInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.superuserInput">superuserInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.superuserInput">superuserInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.validUntilInput">validUntilInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.assumeRole">assumeRole</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.bypassRowLevelSecurity">bypassRowLevelSecurity</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.bypassRowLevelSecurity">bypassRowLevelSecurity</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.connectionLimit">connectionLimit</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.createDatabase">createDatabase</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.createRole">createRole</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.createDatabase">createDatabase</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.createRole">createRole</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.encrypted">encrypted</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.encryptedPassword">encryptedPassword</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.encryptedPassword">encryptedPassword</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.idleInTransactionSessionTimeout">idleInTransactionSessionTimeout</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.inherit">inherit</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.login">login</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.inherit">inherit</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.login">login</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.password">password</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.passwordWo">passwordWo</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.passwordWoVersion">passwordWoVersion</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.replication">replication</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.replication">replication</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.roles">roles</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.searchPath">searchPath</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.skipDropRole">skipDropRole</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.skipReassignOwned">skipReassignOwned</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.skipDropRole">skipDropRole</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.skipReassignOwned">skipReassignOwned</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.statementTimeout">statementTimeout</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.superuser">superuser</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.superuser">superuser</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.validUntil">validUntil</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
@@ -1116,20 +1102,20 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-postgresql.role.Role.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-postgresql.role.Role.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1176,10 +1162,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-postgresql.role.Role.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -1196,10 +1182,10 @@ public java.lang.String getAssumeRoleInput();
 ##### `bypassRowLevelSecurityInput`<sup>Optional</sup> <a name="bypassRowLevelSecurityInput" id="@cdktf/provider-postgresql.role.Role.property.bypassRowLevelSecurityInput"></a>
 
 ```java
-public java.lang.Object getBypassRowLevelSecurityInput();
+public java.lang.Boolean|IResolvable getBypassRowLevelSecurityInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1216,20 +1202,20 @@ public java.lang.Number getConnectionLimitInput();
 ##### `createDatabaseInput`<sup>Optional</sup> <a name="createDatabaseInput" id="@cdktf/provider-postgresql.role.Role.property.createDatabaseInput"></a>
 
 ```java
-public java.lang.Object getCreateDatabaseInput();
+public java.lang.Boolean|IResolvable getCreateDatabaseInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `createRoleInput`<sup>Optional</sup> <a name="createRoleInput" id="@cdktf/provider-postgresql.role.Role.property.createRoleInput"></a>
 
 ```java
-public java.lang.Object getCreateRoleInput();
+public java.lang.Boolean|IResolvable getCreateRoleInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1246,10 +1232,10 @@ public java.lang.String getEncryptedInput();
 ##### `encryptedPasswordInput`<sup>Optional</sup> <a name="encryptedPasswordInput" id="@cdktf/provider-postgresql.role.Role.property.encryptedPasswordInput"></a>
 
 ```java
-public java.lang.Object getEncryptedPasswordInput();
+public java.lang.Boolean|IResolvable getEncryptedPasswordInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1276,20 +1262,20 @@ public java.lang.Number getIdleInTransactionSessionTimeoutInput();
 ##### `inheritInput`<sup>Optional</sup> <a name="inheritInput" id="@cdktf/provider-postgresql.role.Role.property.inheritInput"></a>
 
 ```java
-public java.lang.Object getInheritInput();
+public java.lang.Boolean|IResolvable getInheritInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `loginInput`<sup>Optional</sup> <a name="loginInput" id="@cdktf/provider-postgresql.role.Role.property.loginInput"></a>
 
 ```java
-public java.lang.Object getLoginInput();
+public java.lang.Boolean|IResolvable getLoginInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1336,10 +1322,10 @@ public java.lang.String getPasswordWoVersionInput();
 ##### `replicationInput`<sup>Optional</sup> <a name="replicationInput" id="@cdktf/provider-postgresql.role.Role.property.replicationInput"></a>
 
 ```java
-public java.lang.Object getReplicationInput();
+public java.lang.Boolean|IResolvable getReplicationInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1366,20 +1352,20 @@ public java.util.List<java.lang.String> getSearchPathInput();
 ##### `skipDropRoleInput`<sup>Optional</sup> <a name="skipDropRoleInput" id="@cdktf/provider-postgresql.role.Role.property.skipDropRoleInput"></a>
 
 ```java
-public java.lang.Object getSkipDropRoleInput();
+public java.lang.Boolean|IResolvable getSkipDropRoleInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `skipReassignOwnedInput`<sup>Optional</sup> <a name="skipReassignOwnedInput" id="@cdktf/provider-postgresql.role.Role.property.skipReassignOwnedInput"></a>
 
 ```java
-public java.lang.Object getSkipReassignOwnedInput();
+public java.lang.Boolean|IResolvable getSkipReassignOwnedInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1396,10 +1382,10 @@ public java.lang.Number getStatementTimeoutInput();
 ##### `superuserInput`<sup>Optional</sup> <a name="superuserInput" id="@cdktf/provider-postgresql.role.Role.property.superuserInput"></a>
 
 ```java
-public java.lang.Object getSuperuserInput();
+public java.lang.Boolean|IResolvable getSuperuserInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1426,10 +1412,10 @@ public java.lang.String getAssumeRole();
 ##### `bypassRowLevelSecurity`<sup>Required</sup> <a name="bypassRowLevelSecurity" id="@cdktf/provider-postgresql.role.Role.property.bypassRowLevelSecurity"></a>
 
 ```java
-public java.lang.Object getBypassRowLevelSecurity();
+public java.lang.Boolean|IResolvable getBypassRowLevelSecurity();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1446,20 +1432,20 @@ public java.lang.Number getConnectionLimit();
 ##### `createDatabase`<sup>Required</sup> <a name="createDatabase" id="@cdktf/provider-postgresql.role.Role.property.createDatabase"></a>
 
 ```java
-public java.lang.Object getCreateDatabase();
+public java.lang.Boolean|IResolvable getCreateDatabase();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `createRole`<sup>Required</sup> <a name="createRole" id="@cdktf/provider-postgresql.role.Role.property.createRole"></a>
 
 ```java
-public java.lang.Object getCreateRole();
+public java.lang.Boolean|IResolvable getCreateRole();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1476,10 +1462,10 @@ public java.lang.String getEncrypted();
 ##### `encryptedPassword`<sup>Required</sup> <a name="encryptedPassword" id="@cdktf/provider-postgresql.role.Role.property.encryptedPassword"></a>
 
 ```java
-public java.lang.Object getEncryptedPassword();
+public java.lang.Boolean|IResolvable getEncryptedPassword();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1506,20 +1492,20 @@ public java.lang.Number getIdleInTransactionSessionTimeout();
 ##### `inherit`<sup>Required</sup> <a name="inherit" id="@cdktf/provider-postgresql.role.Role.property.inherit"></a>
 
 ```java
-public java.lang.Object getInherit();
+public java.lang.Boolean|IResolvable getInherit();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `login`<sup>Required</sup> <a name="login" id="@cdktf/provider-postgresql.role.Role.property.login"></a>
 
 ```java
-public java.lang.Object getLogin();
+public java.lang.Boolean|IResolvable getLogin();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1566,10 +1552,10 @@ public java.lang.String getPasswordWoVersion();
 ##### `replication`<sup>Required</sup> <a name="replication" id="@cdktf/provider-postgresql.role.Role.property.replication"></a>
 
 ```java
-public java.lang.Object getReplication();
+public java.lang.Boolean|IResolvable getReplication();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1596,20 +1582,20 @@ public java.util.List<java.lang.String> getSearchPath();
 ##### `skipDropRole`<sup>Required</sup> <a name="skipDropRole" id="@cdktf/provider-postgresql.role.Role.property.skipDropRole"></a>
 
 ```java
-public java.lang.Object getSkipDropRole();
+public java.lang.Boolean|IResolvable getSkipDropRole();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `skipReassignOwned`<sup>Required</sup> <a name="skipReassignOwned" id="@cdktf/provider-postgresql.role.Role.property.skipReassignOwned"></a>
 
 ```java
-public java.lang.Object getSkipReassignOwned();
+public java.lang.Boolean|IResolvable getSkipReassignOwned();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1626,10 +1612,10 @@ public java.lang.Number getStatementTimeout();
 ##### `superuser`<sup>Required</sup> <a name="superuser" id="@cdktf/provider-postgresql.role.Role.property.superuser"></a>
 
 ```java
-public java.lang.Object getSuperuser();
+public java.lang.Boolean|IResolvable getSuperuser();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1671,49 +1657,35 @@ public java.lang.String getTfResourceType();
 import com.hashicorp.cdktf.providers.postgresql.role.RoleConfig;
 
 RoleConfig.builder()
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .name(java.lang.String)
 //  .assumeRole(java.lang.String)
-//  .bypassRowLevelSecurity(java.lang.Boolean)
-//  .bypassRowLevelSecurity(IResolvable)
+//  .bypassRowLevelSecurity(java.lang.Boolean|IResolvable)
 //  .connectionLimit(java.lang.Number)
-//  .createDatabase(java.lang.Boolean)
-//  .createDatabase(IResolvable)
-//  .createRole(java.lang.Boolean)
-//  .createRole(IResolvable)
+//  .createDatabase(java.lang.Boolean|IResolvable)
+//  .createRole(java.lang.Boolean|IResolvable)
 //  .encrypted(java.lang.String)
-//  .encryptedPassword(java.lang.Boolean)
-//  .encryptedPassword(IResolvable)
+//  .encryptedPassword(java.lang.Boolean|IResolvable)
 //  .id(java.lang.String)
 //  .idleInTransactionSessionTimeout(java.lang.Number)
-//  .inherit(java.lang.Boolean)
-//  .inherit(IResolvable)
-//  .login(java.lang.Boolean)
-//  .login(IResolvable)
+//  .inherit(java.lang.Boolean|IResolvable)
+//  .login(java.lang.Boolean|IResolvable)
 //  .password(java.lang.String)
 //  .passwordWo(java.lang.String)
 //  .passwordWoVersion(java.lang.String)
-//  .replication(java.lang.Boolean)
-//  .replication(IResolvable)
+//  .replication(java.lang.Boolean|IResolvable)
 //  .roles(java.util.List<java.lang.String>)
 //  .searchPath(java.util.List<java.lang.String>)
-//  .skipDropRole(java.lang.Boolean)
-//  .skipDropRole(IResolvable)
-//  .skipReassignOwned(java.lang.Boolean)
-//  .skipReassignOwned(IResolvable)
+//  .skipDropRole(java.lang.Boolean|IResolvable)
+//  .skipReassignOwned(java.lang.Boolean|IResolvable)
 //  .statementTimeout(java.lang.Number)
-//  .superuser(java.lang.Boolean)
-//  .superuser(IResolvable)
+//  .superuser(java.lang.Boolean|IResolvable)
 //  .validUntil(java.lang.String)
     .build();
 ```
@@ -1722,35 +1694,35 @@ RoleConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the role. |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.assumeRole">assumeRole</a></code> | <code>java.lang.String</code> | Role to switch to at login. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.bypassRowLevelSecurity">bypassRowLevelSecurity</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determine whether a role bypasses every row-level security (RLS) policy. |
+| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.bypassRowLevelSecurity">bypassRowLevelSecurity</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Determine whether a role bypasses every row-level security (RLS) policy. |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.connectionLimit">connectionLimit</a></code> | <code>java.lang.Number</code> | How many concurrent connections can be made with this role. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.createDatabase">createDatabase</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Define a role's ability to create databases. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.createRole">createRole</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determine whether this role will be permitted to create new roles. |
+| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.createDatabase">createDatabase</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Define a role's ability to create databases. |
+| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.createRole">createRole</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Determine whether this role will be permitted to create new roles. |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.encrypted">encrypted</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#encrypted Role#encrypted}. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.encryptedPassword">encryptedPassword</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Control whether the password is stored encrypted in the system catalogs. |
+| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.encryptedPassword">encryptedPassword</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Control whether the password is stored encrypted in the system catalogs. |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#id Role#id}. |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.idleInTransactionSessionTimeout">idleInTransactionSessionTimeout</a></code> | <code>java.lang.Number</code> | Terminate any session with an open transaction that has been idle for longer than the specified duration in milliseconds. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.inherit">inherit</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determine whether a role "inherits" the privileges of roles it is a member of. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.login">login</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determine whether a role is allowed to log in. |
+| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.inherit">inherit</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Determine whether a role "inherits" the privileges of roles it is a member of. |
+| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.login">login</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Determine whether a role is allowed to log in. |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.password">password</a></code> | <code>java.lang.String</code> | Sets the role's password. |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.passwordWo">passwordWo</a></code> | <code>java.lang.String</code> | Sets the role's password without storing it in the state file. |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.passwordWoVersion">passwordWoVersion</a></code> | <code>java.lang.String</code> | Prevents applies from updating the role password on every apply unless the value changes. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.replication">replication</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determine whether a role is allowed to initiate streaming replication or put the system in and out of backup mode. |
+| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.replication">replication</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Determine whether a role is allowed to initiate streaming replication or put the system in and out of backup mode. |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.roles">roles</a></code> | <code>java.util.List<java.lang.String></code> | Role(s) to grant to this new role. |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.searchPath">searchPath</a></code> | <code>java.util.List<java.lang.String></code> | Sets the role's search path. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.skipDropRole">skipDropRole</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Skip actually running the DROP ROLE command when removing a ROLE from PostgreSQL. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.skipReassignOwned">skipReassignOwned</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Skip actually running the REASSIGN OWNED command when removing a role from PostgreSQL. |
+| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.skipDropRole">skipDropRole</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Skip actually running the DROP ROLE command when removing a ROLE from PostgreSQL. |
+| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.skipReassignOwned">skipReassignOwned</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Skip actually running the REASSIGN OWNED command when removing a role from PostgreSQL. |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.statementTimeout">statementTimeout</a></code> | <code>java.lang.Number</code> | Abort any statement that takes more than the specified number of milliseconds. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.superuser">superuser</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determine whether the new role is a "superuser". |
+| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.superuser">superuser</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Determine whether the new role is a "superuser". |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.validUntil">validUntil</a></code> | <code>java.lang.String</code> | Sets a date and time after which the role's password is no longer valid. |
 
 ---
@@ -1758,20 +1730,20 @@ RoleConfig.builder()
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-postgresql.role.RoleConfig.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-postgresql.role.RoleConfig.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1818,10 +1790,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-postgresql.role.RoleConfig.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -1856,10 +1828,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `bypassRowLevelSecurity`<sup>Optional</sup> <a name="bypassRowLevelSecurity" id="@cdktf/provider-postgresql.role.RoleConfig.property.bypassRowLevelSecurity"></a>
 
 ```java
-public java.lang.Object getBypassRowLevelSecurity();
+public java.lang.Boolean|IResolvable getBypassRowLevelSecurity();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Determine whether a role bypasses every row-level security (RLS) policy.
 
@@ -1884,10 +1856,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `createDatabase`<sup>Optional</sup> <a name="createDatabase" id="@cdktf/provider-postgresql.role.RoleConfig.property.createDatabase"></a>
 
 ```java
-public java.lang.Object getCreateDatabase();
+public java.lang.Boolean|IResolvable getCreateDatabase();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Define a role's ability to create databases.
 
@@ -1898,10 +1870,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `createRole`<sup>Optional</sup> <a name="createRole" id="@cdktf/provider-postgresql.role.RoleConfig.property.createRole"></a>
 
 ```java
-public java.lang.Object getCreateRole();
+public java.lang.Boolean|IResolvable getCreateRole();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Determine whether this role will be permitted to create new roles.
 
@@ -1924,10 +1896,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `encryptedPassword`<sup>Optional</sup> <a name="encryptedPassword" id="@cdktf/provider-postgresql.role.RoleConfig.property.encryptedPassword"></a>
 
 ```java
-public java.lang.Object getEncryptedPassword();
+public java.lang.Boolean|IResolvable getEncryptedPassword();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Control whether the password is stored encrypted in the system catalogs.
 
@@ -1967,10 +1939,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `inherit`<sup>Optional</sup> <a name="inherit" id="@cdktf/provider-postgresql.role.RoleConfig.property.inherit"></a>
 
 ```java
-public java.lang.Object getInherit();
+public java.lang.Boolean|IResolvable getInherit();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Determine whether a role "inherits" the privileges of roles it is a member of.
 
@@ -1981,10 +1953,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `login`<sup>Optional</sup> <a name="login" id="@cdktf/provider-postgresql.role.RoleConfig.property.login"></a>
 
 ```java
-public java.lang.Object getLogin();
+public java.lang.Boolean|IResolvable getLogin();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Determine whether a role is allowed to log in.
 
@@ -2037,10 +2009,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `replication`<sup>Optional</sup> <a name="replication" id="@cdktf/provider-postgresql.role.RoleConfig.property.replication"></a>
 
 ```java
-public java.lang.Object getReplication();
+public java.lang.Boolean|IResolvable getReplication();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Determine whether a role is allowed to initiate streaming replication or put the system in and out of backup mode.
 
@@ -2079,10 +2051,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `skipDropRole`<sup>Optional</sup> <a name="skipDropRole" id="@cdktf/provider-postgresql.role.RoleConfig.property.skipDropRole"></a>
 
 ```java
-public java.lang.Object getSkipDropRole();
+public java.lang.Boolean|IResolvable getSkipDropRole();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Skip actually running the DROP ROLE command when removing a ROLE from PostgreSQL.
 
@@ -2093,10 +2065,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `skipReassignOwned`<sup>Optional</sup> <a name="skipReassignOwned" id="@cdktf/provider-postgresql.role.RoleConfig.property.skipReassignOwned"></a>
 
 ```java
-public java.lang.Object getSkipReassignOwned();
+public java.lang.Boolean|IResolvable getSkipReassignOwned();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Skip actually running the REASSIGN OWNED command when removing a role from PostgreSQL.
 
@@ -2121,10 +2093,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `superuser`<sup>Optional</sup> <a name="superuser" id="@cdktf/provider-postgresql.role.RoleConfig.property.superuser"></a>
 
 ```java
-public java.lang.Object getSuperuser();
+public java.lang.Boolean|IResolvable getSuperuser();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Determine whether the new role is a "superuser".
 
