@@ -279,7 +279,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-postgresql.extension.Extension.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-postgresql.extension.Extension.importFrom"></a>
@@ -333,7 +333,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-postgresql.extension.Extension.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -348,7 +348,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-postgresql.extension.Extension.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -532,23 +532,23 @@ Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 | <code><a href="#@cdktf/provider-postgresql.extension.Extension.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.extension.Extension.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.extension.Extension.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.extension.Extension.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.extension.Extension.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.extension.Extension.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.extension.Extension.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.extension.Extension.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.extension.Extension.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.extension.Extension.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.extension.Extension.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.extension.Extension.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.extension.Extension.property.createCascadeInput">CreateCascadeInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.extension.Extension.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.extension.Extension.property.createCascadeInput">CreateCascadeInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.extension.Extension.property.databaseInput">DatabaseInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.extension.Extension.property.dropCascadeInput">DropCascadeInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.extension.Extension.property.dropCascadeInput">DropCascadeInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.extension.Extension.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.extension.Extension.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.extension.Extension.property.schemaInput">SchemaInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.extension.Extension.property.versionInput">VersionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.extension.Extension.property.createCascade">CreateCascade</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.extension.Extension.property.createCascade">CreateCascade</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.extension.Extension.property.database">Database</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.extension.Extension.property.dropCascade">DropCascade</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.extension.Extension.property.dropCascade">DropCascade</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.extension.Extension.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.extension.Extension.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.extension.Extension.property.schema">Schema</a></code> | <code>string</code> | *No description.* |
@@ -631,20 +631,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-postgresql.extension.Extension.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-postgresql.extension.Extension.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -691,20 +691,20 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-postgresql.extension.Extension.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
 ##### `CreateCascadeInput`<sup>Optional</sup> <a name="CreateCascadeInput" id="@cdktf/provider-postgresql.extension.Extension.property.createCascadeInput"></a>
 
 ```csharp
-public object CreateCascadeInput { get; }
+public bool|IResolvable CreateCascadeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -721,10 +721,10 @@ public string DatabaseInput { get; }
 ##### `DropCascadeInput`<sup>Optional</sup> <a name="DropCascadeInput" id="@cdktf/provider-postgresql.extension.Extension.property.dropCascadeInput"></a>
 
 ```csharp
-public object DropCascadeInput { get; }
+public bool|IResolvable DropCascadeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -771,10 +771,10 @@ public string VersionInput { get; }
 ##### `CreateCascade`<sup>Required</sup> <a name="CreateCascade" id="@cdktf/provider-postgresql.extension.Extension.property.createCascade"></a>
 
 ```csharp
-public object CreateCascade { get; }
+public bool|IResolvable CreateCascade { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -791,10 +791,10 @@ public string Database { get; }
 ##### `DropCascade`<sup>Required</sup> <a name="DropCascade" id="@cdktf/provider-postgresql.extension.Extension.property.dropCascade"></a>
 
 ```csharp
-public object DropCascade { get; }
+public bool|IResolvable DropCascade { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -866,17 +866,17 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Postgresql;
 
 new ExtensionConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Name,
-    object CreateCascade = null,
+    bool|IResolvable CreateCascade = null,
     string Database = null,
-    object DropCascade = null,
+    bool|IResolvable DropCascade = null,
     string Id = null,
     string Schema = null,
     string Version = null
@@ -887,17 +887,17 @@ new ExtensionConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.extension.ExtensionConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.extension.ExtensionConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.extension.ExtensionConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.extension.ExtensionConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.extension.ExtensionConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.extension.ExtensionConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.extension.ExtensionConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.extension.ExtensionConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.extension.ExtensionConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.extension.ExtensionConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.extension.ExtensionConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/extension#name Extension#name}. |
-| <code><a href="#@cdktf/provider-postgresql.extension.ExtensionConfig.property.createCascade">CreateCascade</a></code> | <code>object</code> | When true, will also create any extensions that this extension depends on that are not already installed. |
+| <code><a href="#@cdktf/provider-postgresql.extension.ExtensionConfig.property.createCascade">CreateCascade</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | When true, will also create any extensions that this extension depends on that are not already installed. |
 | <code><a href="#@cdktf/provider-postgresql.extension.ExtensionConfig.property.database">Database</a></code> | <code>string</code> | Sets the database to add the extension to. |
-| <code><a href="#@cdktf/provider-postgresql.extension.ExtensionConfig.property.dropCascade">DropCascade</a></code> | <code>object</code> | When true, will also drop all the objects that depend on the extension, and in turn all objects that depend on those objects. |
+| <code><a href="#@cdktf/provider-postgresql.extension.ExtensionConfig.property.dropCascade">DropCascade</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | When true, will also drop all the objects that depend on the extension, and in turn all objects that depend on those objects. |
 | <code><a href="#@cdktf/provider-postgresql.extension.ExtensionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/extension#id Extension#id}. |
 | <code><a href="#@cdktf/provider-postgresql.extension.ExtensionConfig.property.schema">Schema</a></code> | <code>string</code> | Sets the schema of an extension. |
 | <code><a href="#@cdktf/provider-postgresql.extension.ExtensionConfig.property.version">Version</a></code> | <code>string</code> | Sets the version number of the extension. |
@@ -907,20 +907,20 @@ new ExtensionConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-postgresql.extension.ExtensionConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-postgresql.extension.ExtensionConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -967,10 +967,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-postgresql.extension.ExtensionConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -989,10 +989,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `CreateCascade`<sup>Optional</sup> <a name="CreateCascade" id="@cdktf/provider-postgresql.extension.ExtensionConfig.property.createCascade"></a>
 
 ```csharp
-public object CreateCascade { get; set; }
+public bool|IResolvable CreateCascade { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 When true, will also create any extensions that this extension depends on that are not already installed.
 
@@ -1017,10 +1017,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `DropCascade`<sup>Optional</sup> <a name="DropCascade" id="@cdktf/provider-postgresql.extension.ExtensionConfig.property.dropCascade"></a>
 
 ```csharp
-public object DropCascade { get; set; }
+public bool|IResolvable DropCascade { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 When true, will also drop all the objects that depend on the extension, and in turn all objects that depend on those objects.
 

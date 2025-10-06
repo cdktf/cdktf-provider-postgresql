@@ -420,11 +420,11 @@ Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.terraformProviderSource">TerraformProviderSource</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.alias">Alias</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.aliasInput">AliasInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamAuthInput">AwsRdsIamAuthInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamAuthInput">AwsRdsIamAuthInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamProfileInput">AwsRdsIamProfileInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamProviderRoleArnInput">AwsRdsIamProviderRoleArnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamRegionInput">AwsRdsIamRegionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.azureIdentityAuthInput">AzureIdentityAuthInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.azureIdentityAuthInput">AzureIdentityAuthInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.azureTenantIdInput">AzureTenantIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.clientcertInput">ClientcertInput</a></code> | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert">PostgresqlProviderClientcert</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.connectTimeoutInput">ConnectTimeoutInput</a></code> | <code>double</code> | *No description.* |
@@ -440,13 +440,13 @@ Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.sslmodeInput">SslmodeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.sslModeInput">SslModeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.sslrootcertInput">SslrootcertInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.superuserInput">SuperuserInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.superuserInput">SuperuserInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.usernameInput">UsernameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamAuth">AwsRdsIamAuth</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamAuth">AwsRdsIamAuth</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamProfile">AwsRdsIamProfile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamProviderRoleArn">AwsRdsIamProviderRoleArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamRegion">AwsRdsIamRegion</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.azureIdentityAuth">AzureIdentityAuth</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.azureIdentityAuth">AzureIdentityAuth</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.azureTenantId">AzureTenantId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.clientcert">Clientcert</a></code> | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert">PostgresqlProviderClientcert</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.connectTimeout">ConnectTimeout</a></code> | <code>double</code> | *No description.* |
@@ -462,7 +462,7 @@ Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.sslmode">Sslmode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.sslMode">SslMode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.sslrootcert">Sslrootcert</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.superuser">Superuser</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.superuser">Superuser</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.username">Username</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -572,10 +572,10 @@ public string AliasInput { get; }
 ##### `AwsRdsIamAuthInput`<sup>Optional</sup> <a name="AwsRdsIamAuthInput" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamAuthInput"></a>
 
 ```csharp
-public object AwsRdsIamAuthInput { get; }
+public bool|IResolvable AwsRdsIamAuthInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -612,10 +612,10 @@ public string AwsRdsIamRegionInput { get; }
 ##### `AzureIdentityAuthInput`<sup>Optional</sup> <a name="AzureIdentityAuthInput" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.azureIdentityAuthInput"></a>
 
 ```csharp
-public object AzureIdentityAuthInput { get; }
+public bool|IResolvable AzureIdentityAuthInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -772,10 +772,10 @@ public string SslrootcertInput { get; }
 ##### `SuperuserInput`<sup>Optional</sup> <a name="SuperuserInput" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.superuserInput"></a>
 
 ```csharp
-public object SuperuserInput { get; }
+public bool|IResolvable SuperuserInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -792,10 +792,10 @@ public string UsernameInput { get; }
 ##### `AwsRdsIamAuth`<sup>Optional</sup> <a name="AwsRdsIamAuth" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamAuth"></a>
 
 ```csharp
-public object AwsRdsIamAuth { get; }
+public bool|IResolvable AwsRdsIamAuth { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -832,10 +832,10 @@ public string AwsRdsIamRegion { get; }
 ##### `AzureIdentityAuth`<sup>Optional</sup> <a name="AzureIdentityAuth" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.azureIdentityAuth"></a>
 
 ```csharp
-public object AzureIdentityAuth { get; }
+public bool|IResolvable AzureIdentityAuth { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -992,10 +992,10 @@ public string Sslrootcert { get; }
 ##### `Superuser`<sup>Optional</sup> <a name="Superuser" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.superuser"></a>
 
 ```csharp
-public object Superuser { get; }
+public bool|IResolvable Superuser { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1039,7 +1039,7 @@ using HashiCorp.Cdktf.Providers.Postgresql;
 new PostgresqlProviderClientcert {
     string Cert,
     string Key,
-    object Sslinline = null
+    bool|IResolvable Sslinline = null
 };
 ```
 
@@ -1049,7 +1049,7 @@ new PostgresqlProviderClientcert {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert.property.cert">Cert</a></code> | <code>string</code> | The SSL client certificate file path. The file must contain PEM encoded data. |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert.property.key">Key</a></code> | <code>string</code> | The SSL client certificate private key file path. The file must contain PEM encoded data. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert.property.sslinline">Sslinline</a></code> | <code>object</code> | Must be set to true if you are inlining the cert/key instead of using a file path. |
+| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert.property.sslinline">Sslinline</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Must be set to true if you are inlining the cert/key instead of using a file path. |
 
 ---
 
@@ -1084,10 +1084,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `Sslinline`<sup>Optional</sup> <a name="Sslinline" id="@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert.property.sslinline"></a>
 
 ```csharp
-public object Sslinline { get; set; }
+public bool|IResolvable Sslinline { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Must be set to true if you are inlining the cert/key instead of using a file path.
 
@@ -1104,11 +1104,11 @@ using HashiCorp.Cdktf.Providers.Postgresql;
 
 new PostgresqlProviderConfig {
     string Alias = null,
-    object AwsRdsIamAuth = null,
+    bool|IResolvable AwsRdsIamAuth = null,
     string AwsRdsIamProfile = null,
     string AwsRdsIamProviderRoleArn = null,
     string AwsRdsIamRegion = null,
-    object AzureIdentityAuth = null,
+    bool|IResolvable AzureIdentityAuth = null,
     string AzureTenantId = null,
     PostgresqlProviderClientcert Clientcert = null,
     double ConnectTimeout = null,
@@ -1124,7 +1124,7 @@ new PostgresqlProviderConfig {
     string Sslmode = null,
     string SslMode = null,
     string Sslrootcert = null,
-    object Superuser = null,
+    bool|IResolvable Superuser = null,
     string Username = null
 };
 ```
@@ -1134,11 +1134,11 @@ new PostgresqlProviderConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.alias">Alias</a></code> | <code>string</code> | Alias name. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.awsRdsIamAuth">AwsRdsIamAuth</a></code> | <code>object</code> | Use rds_iam instead of password authentication (see: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.html). |
+| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.awsRdsIamAuth">AwsRdsIamAuth</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Use rds_iam instead of password authentication (see: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.html). |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.awsRdsIamProfile">AwsRdsIamProfile</a></code> | <code>string</code> | AWS profile to use for IAM auth. |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.awsRdsIamProviderRoleArn">AwsRdsIamProviderRoleArn</a></code> | <code>string</code> | AWS IAM role to assume for IAM auth. |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.awsRdsIamRegion">AwsRdsIamRegion</a></code> | <code>string</code> | AWS region to use for IAM auth. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.azureIdentityAuth">AzureIdentityAuth</a></code> | <code>object</code> | Use MS Azure identity OAuth token (see: https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/how-to-configure-sign-in-azure-ad-authentication). |
+| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.azureIdentityAuth">AzureIdentityAuth</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Use MS Azure identity OAuth token (see: https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/how-to-configure-sign-in-azure-ad-authentication). |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.azureTenantId">AzureTenantId</a></code> | <code>string</code> | MS Azure tenant ID (see: https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/client_config.html). |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.clientcert">Clientcert</a></code> | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert">PostgresqlProviderClientcert</a></code> | clientcert block. |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.connectTimeout">ConnectTimeout</a></code> | <code>double</code> | Maximum wait for connection, in seconds. Zero or not specified means wait indefinitely. |
@@ -1154,7 +1154,7 @@ new PostgresqlProviderConfig {
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.sslmode">Sslmode</a></code> | <code>string</code> | This option determines whether or with what priority a secure SSL TCP/IP connection will be negotiated with the PostgreSQL server. |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.sslMode">SslMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs#ssl_mode PostgresqlProvider#ssl_mode}. |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.sslrootcert">Sslrootcert</a></code> | <code>string</code> | The SSL server root certificate file path. The file must contain PEM encoded data. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.superuser">Superuser</a></code> | <code>object</code> | Specify if the user to connect as is a Postgres superuser or not.If not, some feature might be disabled (e.g.: Refreshing state password from Postgres). |
+| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.superuser">Superuser</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specify if the user to connect as is a Postgres superuser or not.If not, some feature might be disabled (e.g.: Refreshing state password from Postgres). |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.username">Username</a></code> | <code>string</code> | PostgreSQL user name to connect as. |
 
 ---
@@ -1176,10 +1176,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `AwsRdsIamAuth`<sup>Optional</sup> <a name="AwsRdsIamAuth" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.awsRdsIamAuth"></a>
 
 ```csharp
-public object AwsRdsIamAuth { get; set; }
+public bool|IResolvable AwsRdsIamAuth { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Use rds_iam instead of password authentication (see: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.html).
 
@@ -1232,10 +1232,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `AzureIdentityAuth`<sup>Optional</sup> <a name="AzureIdentityAuth" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.azureIdentityAuth"></a>
 
 ```csharp
-public object AzureIdentityAuth { get; set; }
+public bool|IResolvable AzureIdentityAuth { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Use MS Azure identity OAuth token (see: https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/how-to-configure-sign-in-azure-ad-authentication).
 
@@ -1452,10 +1452,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `Superuser`<sup>Optional</sup> <a name="Superuser" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.superuser"></a>
 
 ```csharp
-public object Superuser { get; set; }
+public bool|IResolvable Superuser { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specify if the user to connect as is a Postgres superuser or not.If not, some feature might be disabled (e.g.: Refreshing state password from Postgres).
 

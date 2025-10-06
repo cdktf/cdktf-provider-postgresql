@@ -281,7 +281,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-postgresql.publication.Publication.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-postgresql.publication.Publication.importFrom"></a>
@@ -335,7 +335,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-postgresql.publication.Publication.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -350,7 +350,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-postgresql.publication.Publication.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -546,30 +546,30 @@ Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 | <code><a href="#@cdktf/provider-postgresql.publication.Publication.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.publication.Publication.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.publication.Publication.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.publication.Publication.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.publication.Publication.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.publication.Publication.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.publication.Publication.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.publication.Publication.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.publication.Publication.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.publication.Publication.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.publication.Publication.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.publication.Publication.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.publication.Publication.property.allTablesInput">AllTablesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.publication.Publication.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.publication.Publication.property.allTablesInput">AllTablesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.publication.Publication.property.databaseInput">DatabaseInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.publication.Publication.property.dropCascadeInput">DropCascadeInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.publication.Publication.property.dropCascadeInput">DropCascadeInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.publication.Publication.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.publication.Publication.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.publication.Publication.property.ownerInput">OwnerInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.publication.Publication.property.publishParamInput">PublishParamInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.publication.Publication.property.publishViaPartitionRootParamInput">PublishViaPartitionRootParamInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.publication.Publication.property.publishViaPartitionRootParamInput">PublishViaPartitionRootParamInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.publication.Publication.property.tablesInput">TablesInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.publication.Publication.property.allTables">AllTables</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.publication.Publication.property.allTables">AllTables</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.publication.Publication.property.database">Database</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.publication.Publication.property.dropCascade">DropCascade</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.publication.Publication.property.dropCascade">DropCascade</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.publication.Publication.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.publication.Publication.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.publication.Publication.property.owner">Owner</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.publication.Publication.property.publishParam">PublishParam</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.publication.Publication.property.publishViaPartitionRootParam">PublishViaPartitionRootParam</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.publication.Publication.property.publishViaPartitionRootParam">PublishViaPartitionRootParam</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.publication.Publication.property.tables">Tables</a></code> | <code>string[]</code> | *No description.* |
 
 ---
@@ -649,20 +649,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-postgresql.publication.Publication.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-postgresql.publication.Publication.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -709,20 +709,20 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-postgresql.publication.Publication.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
 ##### `AllTablesInput`<sup>Optional</sup> <a name="AllTablesInput" id="@cdktf/provider-postgresql.publication.Publication.property.allTablesInput"></a>
 
 ```csharp
-public object AllTablesInput { get; }
+public bool|IResolvable AllTablesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -739,10 +739,10 @@ public string DatabaseInput { get; }
 ##### `DropCascadeInput`<sup>Optional</sup> <a name="DropCascadeInput" id="@cdktf/provider-postgresql.publication.Publication.property.dropCascadeInput"></a>
 
 ```csharp
-public object DropCascadeInput { get; }
+public bool|IResolvable DropCascadeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -789,10 +789,10 @@ public string[] PublishParamInput { get; }
 ##### `PublishViaPartitionRootParamInput`<sup>Optional</sup> <a name="PublishViaPartitionRootParamInput" id="@cdktf/provider-postgresql.publication.Publication.property.publishViaPartitionRootParamInput"></a>
 
 ```csharp
-public object PublishViaPartitionRootParamInput { get; }
+public bool|IResolvable PublishViaPartitionRootParamInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -809,10 +809,10 @@ public string[] TablesInput { get; }
 ##### `AllTables`<sup>Required</sup> <a name="AllTables" id="@cdktf/provider-postgresql.publication.Publication.property.allTables"></a>
 
 ```csharp
-public object AllTables { get; }
+public bool|IResolvable AllTables { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -829,10 +829,10 @@ public string Database { get; }
 ##### `DropCascade`<sup>Required</sup> <a name="DropCascade" id="@cdktf/provider-postgresql.publication.Publication.property.dropCascade"></a>
 
 ```csharp
-public object DropCascade { get; }
+public bool|IResolvable DropCascade { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -879,10 +879,10 @@ public string[] PublishParam { get; }
 ##### `PublishViaPartitionRootParam`<sup>Required</sup> <a name="PublishViaPartitionRootParam" id="@cdktf/provider-postgresql.publication.Publication.property.publishViaPartitionRootParam"></a>
 
 ```csharp
-public object PublishViaPartitionRootParam { get; }
+public bool|IResolvable PublishViaPartitionRootParam { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -924,21 +924,21 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Postgresql;
 
 new PublicationConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Name,
-    object AllTables = null,
+    bool|IResolvable AllTables = null,
     string Database = null,
-    object DropCascade = null,
+    bool|IResolvable DropCascade = null,
     string Id = null,
     string Owner = null,
     string[] PublishParam = null,
-    object PublishViaPartitionRootParam = null,
+    bool|IResolvable PublishViaPartitionRootParam = null,
     string[] Tables = null
 };
 ```
@@ -947,21 +947,21 @@ new PublicationConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/publication#name Publication#name}. |
-| <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.allTables">AllTables</a></code> | <code>object</code> | Sets the tables list to publish to ALL tables. |
+| <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.allTables">AllTables</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Sets the tables list to publish to ALL tables. |
 | <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.database">Database</a></code> | <code>string</code> | Sets the database to add the publication for. |
-| <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.dropCascade">DropCascade</a></code> | <code>object</code> | When true, will also drop all the objects that depend on the publication, and in turn all objects that depend on those objects. |
+| <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.dropCascade">DropCascade</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | When true, will also drop all the objects that depend on the publication, and in turn all objects that depend on those objects. |
 | <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/publication#id Publication#id}. |
 | <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.owner">Owner</a></code> | <code>string</code> | Sets the owner of the publication. |
 | <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.publishParam">PublishParam</a></code> | <code>string[]</code> | Sets which DML operations will be published. |
-| <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.publishViaPartitionRootParam">PublishViaPartitionRootParam</a></code> | <code>object</code> | Sets whether changes in a partitioned table using the identity and schema of the partitioned table. |
+| <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.publishViaPartitionRootParam">PublishViaPartitionRootParam</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Sets whether changes in a partitioned table using the identity and schema of the partitioned table. |
 | <code><a href="#@cdktf/provider-postgresql.publication.PublicationConfig.property.tables">Tables</a></code> | <code>string[]</code> | Sets the tables list to publish. |
 
 ---
@@ -969,20 +969,20 @@ new PublicationConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-postgresql.publication.PublicationConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-postgresql.publication.PublicationConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1029,10 +1029,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-postgresql.publication.PublicationConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1051,10 +1051,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `AllTables`<sup>Optional</sup> <a name="AllTables" id="@cdktf/provider-postgresql.publication.PublicationConfig.property.allTables"></a>
 
 ```csharp
-public object AllTables { get; set; }
+public bool|IResolvable AllTables { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Sets the tables list to publish to ALL tables.
 
@@ -1079,10 +1079,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `DropCascade`<sup>Optional</sup> <a name="DropCascade" id="@cdktf/provider-postgresql.publication.PublicationConfig.property.dropCascade"></a>
 
 ```csharp
-public object DropCascade { get; set; }
+public bool|IResolvable DropCascade { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 When true, will also drop all the objects that depend on the publication, and in turn all objects that depend on those objects.
 
@@ -1136,10 +1136,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `PublishViaPartitionRootParam`<sup>Optional</sup> <a name="PublishViaPartitionRootParam" id="@cdktf/provider-postgresql.publication.PublicationConfig.property.publishViaPartitionRootParam"></a>
 
 ```csharp
-public object PublishViaPartitionRootParam { get; set; }
+public bool|IResolvable PublishViaPartitionRootParam { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Sets whether changes in a partitioned table using the identity and schema of the partitioned table.
 

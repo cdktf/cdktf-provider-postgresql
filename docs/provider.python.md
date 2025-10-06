@@ -15,11 +15,11 @@ provider.PostgresqlProvider(
   scope: Construct,
   id: str,
   alias: str = None,
-  aws_rds_iam_auth: typing.Union[bool, IResolvable] = None,
+  aws_rds_iam_auth: bool | IResolvable = None,
   aws_rds_iam_profile: str = None,
   aws_rds_iam_provider_role_arn: str = None,
   aws_rds_iam_region: str = None,
-  azure_identity_auth: typing.Union[bool, IResolvable] = None,
+  azure_identity_auth: bool | IResolvable = None,
   azure_tenant_id: str = None,
   clientcert: PostgresqlProviderClientcert = None,
   connect_timeout: typing.Union[int, float] = None,
@@ -35,7 +35,7 @@ provider.PostgresqlProvider(
   sslmode: str = None,
   ssl_mode: str = None,
   sslrootcert: str = None,
-  superuser: typing.Union[bool, IResolvable] = None,
+  superuser: bool | IResolvable = None,
   username: str = None
 )
 ```
@@ -45,11 +45,11 @@ provider.PostgresqlProvider(
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.alias">alias</a></code> | <code>str</code> | Alias name. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.awsRdsIamAuth">aws_rds_iam_auth</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Use rds_iam instead of password authentication (see: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.html). |
+| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.awsRdsIamAuth">aws_rds_iam_auth</a></code> | <code>bool \| cdktf.IResolvable</code> | Use rds_iam instead of password authentication (see: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.html). |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.awsRdsIamProfile">aws_rds_iam_profile</a></code> | <code>str</code> | AWS profile to use for IAM auth. |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.awsRdsIamProviderRoleArn">aws_rds_iam_provider_role_arn</a></code> | <code>str</code> | AWS IAM role to assume for IAM auth. |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.awsRdsIamRegion">aws_rds_iam_region</a></code> | <code>str</code> | AWS region to use for IAM auth. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.azureIdentityAuth">azure_identity_auth</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Use MS Azure identity OAuth token (see: https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/how-to-configure-sign-in-azure-ad-authentication). |
+| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.azureIdentityAuth">azure_identity_auth</a></code> | <code>bool \| cdktf.IResolvable</code> | Use MS Azure identity OAuth token (see: https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/how-to-configure-sign-in-azure-ad-authentication). |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.azureTenantId">azure_tenant_id</a></code> | <code>str</code> | MS Azure tenant ID (see: https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/client_config.html). |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.clientcert">clientcert</a></code> | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert">PostgresqlProviderClientcert</a></code> | clientcert block. |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.connectTimeout">connect_timeout</a></code> | <code>typing.Union[int, float]</code> | Maximum wait for connection, in seconds. Zero or not specified means wait indefinitely. |
@@ -65,7 +65,7 @@ provider.PostgresqlProvider(
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.sslmode">sslmode</a></code> | <code>str</code> | This option determines whether or with what priority a secure SSL TCP/IP connection will be negotiated with the PostgreSQL server. |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.sslMode">ssl_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs#ssl_mode PostgresqlProvider#ssl_mode}. |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.sslrootcert">sslrootcert</a></code> | <code>str</code> | The SSL server root certificate file path. The file must contain PEM encoded data. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.superuser">superuser</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specify if the user to connect as is a Postgres superuser or not.If not, some feature might be disabled (e.g.: Refreshing state password from Postgres). |
+| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.superuser">superuser</a></code> | <code>bool \| cdktf.IResolvable</code> | Specify if the user to connect as is a Postgres superuser or not.If not, some feature might be disabled (e.g.: Refreshing state password from Postgres). |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.username">username</a></code> | <code>str</code> | PostgreSQL user name to connect as. |
 
 ---
@@ -100,7 +100,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ##### `aws_rds_iam_auth`<sup>Optional</sup> <a name="aws_rds_iam_auth" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.awsRdsIamAuth"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Use rds_iam instead of password authentication (see: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.html).
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ##### `azure_identity_auth`<sup>Optional</sup> <a name="azure_identity_auth" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.azureIdentityAuth"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Use MS Azure identity OAuth token (see: https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/how-to-configure-sign-in-azure-ad-authentication).
 
@@ -296,7 +296,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ##### `superuser`<sup>Optional</sup> <a name="superuser" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.superuser"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specify if the user to connect as is a Postgres superuser or not.If not, some feature might be disabled (e.g.: Refreshing state password from Postgres).
 
@@ -704,11 +704,11 @@ Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.terraformProviderSource">terraform_provider_source</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.alias">alias</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.aliasInput">alias_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamAuthInput">aws_rds_iam_auth_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamAuthInput">aws_rds_iam_auth_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamProfileInput">aws_rds_iam_profile_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamProviderRoleArnInput">aws_rds_iam_provider_role_arn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamRegionInput">aws_rds_iam_region_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.azureIdentityAuthInput">azure_identity_auth_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.azureIdentityAuthInput">azure_identity_auth_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.azureTenantIdInput">azure_tenant_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.clientcertInput">clientcert_input</a></code> | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert">PostgresqlProviderClientcert</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.connectTimeoutInput">connect_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -724,13 +724,13 @@ Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.sslmodeInput">sslmode_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.sslModeInput">ssl_mode_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.sslrootcertInput">sslrootcert_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.superuserInput">superuser_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.superuserInput">superuser_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.usernameInput">username_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamAuth">aws_rds_iam_auth</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamAuth">aws_rds_iam_auth</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamProfile">aws_rds_iam_profile</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamProviderRoleArn">aws_rds_iam_provider_role_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamRegion">aws_rds_iam_region</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.azureIdentityAuth">azure_identity_auth</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.azureIdentityAuth">azure_identity_auth</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.azureTenantId">azure_tenant_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.clientcert">clientcert</a></code> | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert">PostgresqlProviderClientcert</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.connectTimeout">connect_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -746,7 +746,7 @@ Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.sslmode">sslmode</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.sslMode">ssl_mode</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.sslrootcert">sslrootcert</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.superuser">superuser</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.superuser">superuser</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.username">username</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -856,10 +856,10 @@ alias_input: str
 ##### `aws_rds_iam_auth_input`<sup>Optional</sup> <a name="aws_rds_iam_auth_input" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamAuthInput"></a>
 
 ```python
-aws_rds_iam_auth_input: typing.Union[bool, IResolvable]
+aws_rds_iam_auth_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -896,10 +896,10 @@ aws_rds_iam_region_input: str
 ##### `azure_identity_auth_input`<sup>Optional</sup> <a name="azure_identity_auth_input" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.azureIdentityAuthInput"></a>
 
 ```python
-azure_identity_auth_input: typing.Union[bool, IResolvable]
+azure_identity_auth_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1056,10 +1056,10 @@ sslrootcert_input: str
 ##### `superuser_input`<sup>Optional</sup> <a name="superuser_input" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.superuserInput"></a>
 
 ```python
-superuser_input: typing.Union[bool, IResolvable]
+superuser_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1076,10 +1076,10 @@ username_input: str
 ##### `aws_rds_iam_auth`<sup>Optional</sup> <a name="aws_rds_iam_auth" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamAuth"></a>
 
 ```python
-aws_rds_iam_auth: typing.Union[bool, IResolvable]
+aws_rds_iam_auth: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1116,10 +1116,10 @@ aws_rds_iam_region: str
 ##### `azure_identity_auth`<sup>Optional</sup> <a name="azure_identity_auth" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.azureIdentityAuth"></a>
 
 ```python
-azure_identity_auth: typing.Union[bool, IResolvable]
+azure_identity_auth: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1276,10 +1276,10 @@ sslrootcert: str
 ##### `superuser`<sup>Optional</sup> <a name="superuser" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.superuser"></a>
 
 ```python
-superuser: typing.Union[bool, IResolvable]
+superuser: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1323,7 +1323,7 @@ from cdktf_cdktf_provider_postgresql import provider
 provider.PostgresqlProviderClientcert(
   cert: str,
   key: str,
-  sslinline: typing.Union[bool, IResolvable] = None
+  sslinline: bool | IResolvable = None
 )
 ```
 
@@ -1333,7 +1333,7 @@ provider.PostgresqlProviderClientcert(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert.property.cert">cert</a></code> | <code>str</code> | The SSL client certificate file path. The file must contain PEM encoded data. |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert.property.key">key</a></code> | <code>str</code> | The SSL client certificate private key file path. The file must contain PEM encoded data. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert.property.sslinline">sslinline</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Must be set to true if you are inlining the cert/key instead of using a file path. |
+| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert.property.sslinline">sslinline</a></code> | <code>bool \| cdktf.IResolvable</code> | Must be set to true if you are inlining the cert/key instead of using a file path. |
 
 ---
 
@@ -1368,10 +1368,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `sslinline`<sup>Optional</sup> <a name="sslinline" id="@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert.property.sslinline"></a>
 
 ```python
-sslinline: typing.Union[bool, IResolvable]
+sslinline: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Must be set to true if you are inlining the cert/key instead of using a file path.
 
@@ -1388,11 +1388,11 @@ from cdktf_cdktf_provider_postgresql import provider
 
 provider.PostgresqlProviderConfig(
   alias: str = None,
-  aws_rds_iam_auth: typing.Union[bool, IResolvable] = None,
+  aws_rds_iam_auth: bool | IResolvable = None,
   aws_rds_iam_profile: str = None,
   aws_rds_iam_provider_role_arn: str = None,
   aws_rds_iam_region: str = None,
-  azure_identity_auth: typing.Union[bool, IResolvable] = None,
+  azure_identity_auth: bool | IResolvable = None,
   azure_tenant_id: str = None,
   clientcert: PostgresqlProviderClientcert = None,
   connect_timeout: typing.Union[int, float] = None,
@@ -1408,7 +1408,7 @@ provider.PostgresqlProviderConfig(
   sslmode: str = None,
   ssl_mode: str = None,
   sslrootcert: str = None,
-  superuser: typing.Union[bool, IResolvable] = None,
+  superuser: bool | IResolvable = None,
   username: str = None
 )
 ```
@@ -1418,11 +1418,11 @@ provider.PostgresqlProviderConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.alias">alias</a></code> | <code>str</code> | Alias name. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.awsRdsIamAuth">aws_rds_iam_auth</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Use rds_iam instead of password authentication (see: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.html). |
+| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.awsRdsIamAuth">aws_rds_iam_auth</a></code> | <code>bool \| cdktf.IResolvable</code> | Use rds_iam instead of password authentication (see: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.html). |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.awsRdsIamProfile">aws_rds_iam_profile</a></code> | <code>str</code> | AWS profile to use for IAM auth. |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.awsRdsIamProviderRoleArn">aws_rds_iam_provider_role_arn</a></code> | <code>str</code> | AWS IAM role to assume for IAM auth. |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.awsRdsIamRegion">aws_rds_iam_region</a></code> | <code>str</code> | AWS region to use for IAM auth. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.azureIdentityAuth">azure_identity_auth</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Use MS Azure identity OAuth token (see: https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/how-to-configure-sign-in-azure-ad-authentication). |
+| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.azureIdentityAuth">azure_identity_auth</a></code> | <code>bool \| cdktf.IResolvable</code> | Use MS Azure identity OAuth token (see: https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/how-to-configure-sign-in-azure-ad-authentication). |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.azureTenantId">azure_tenant_id</a></code> | <code>str</code> | MS Azure tenant ID (see: https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/client_config.html). |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.clientcert">clientcert</a></code> | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert">PostgresqlProviderClientcert</a></code> | clientcert block. |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.connectTimeout">connect_timeout</a></code> | <code>typing.Union[int, float]</code> | Maximum wait for connection, in seconds. Zero or not specified means wait indefinitely. |
@@ -1438,7 +1438,7 @@ provider.PostgresqlProviderConfig(
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.sslmode">sslmode</a></code> | <code>str</code> | This option determines whether or with what priority a secure SSL TCP/IP connection will be negotiated with the PostgreSQL server. |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.sslMode">ssl_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs#ssl_mode PostgresqlProvider#ssl_mode}. |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.sslrootcert">sslrootcert</a></code> | <code>str</code> | The SSL server root certificate file path. The file must contain PEM encoded data. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.superuser">superuser</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specify if the user to connect as is a Postgres superuser or not.If not, some feature might be disabled (e.g.: Refreshing state password from Postgres). |
+| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.superuser">superuser</a></code> | <code>bool \| cdktf.IResolvable</code> | Specify if the user to connect as is a Postgres superuser or not.If not, some feature might be disabled (e.g.: Refreshing state password from Postgres). |
 | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.username">username</a></code> | <code>str</code> | PostgreSQL user name to connect as. |
 
 ---
@@ -1460,10 +1460,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `aws_rds_iam_auth`<sup>Optional</sup> <a name="aws_rds_iam_auth" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.awsRdsIamAuth"></a>
 
 ```python
-aws_rds_iam_auth: typing.Union[bool, IResolvable]
+aws_rds_iam_auth: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Use rds_iam instead of password authentication (see: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.html).
 
@@ -1516,10 +1516,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `azure_identity_auth`<sup>Optional</sup> <a name="azure_identity_auth" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.azureIdentityAuth"></a>
 
 ```python
-azure_identity_auth: typing.Union[bool, IResolvable]
+azure_identity_auth: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Use MS Azure identity OAuth token (see: https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/how-to-configure-sign-in-azure-ad-authentication).
 
@@ -1736,10 +1736,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `superuser`<sup>Optional</sup> <a name="superuser" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.superuser"></a>
 
 ```python
-superuser: typing.Union[bool, IResolvable]
+superuser: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specify if the user to connect as is a Postgres superuser or not.If not, some feature might be disabled (e.g.: Refreshing state password from Postgres).
 

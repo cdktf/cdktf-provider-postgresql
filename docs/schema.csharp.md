@@ -280,7 +280,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-postgresql.schema.Schema.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-postgresql.schema.Schema.importFrom"></a>
@@ -334,7 +334,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-postgresql.schema.Schema.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -349,7 +349,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-postgresql.schema.Schema.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -374,12 +374,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `PutPolicy` <a name="PutPolicy" id="@cdktf/provider-postgresql.schema.Schema.putPolicy"></a>
 
 ```csharp
-private void PutPolicy(object Value)
+private void PutPolicy(IResolvable|SchemaPolicy[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-postgresql.schema.Schema.putPolicy.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-postgresql.schema.SchemaPolicy">SchemaPolicy</a>[]
 
 ---
 
@@ -545,25 +545,25 @@ Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 | <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.policy">Policy</a></code> | <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyList">SchemaPolicyList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.databaseInput">DatabaseInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.dropCascadeInput">DropCascadeInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.dropCascadeInput">DropCascadeInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.ifNotExistsInput">IfNotExistsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.ifNotExistsInput">IfNotExistsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.ownerInput">OwnerInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.policyInput">PolicyInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.policyInput">PolicyInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-postgresql.schema.SchemaPolicy">SchemaPolicy</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.database">Database</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.dropCascade">DropCascade</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.dropCascade">DropCascade</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.id">Id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.ifNotExists">IfNotExists</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.ifNotExists">IfNotExists</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.owner">Owner</a></code> | <code>string</code> | *No description.* |
 
@@ -644,20 +644,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-postgresql.schema.Schema.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-postgresql.schema.Schema.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -704,10 +704,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-postgresql.schema.Schema.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -734,10 +734,10 @@ public string DatabaseInput { get; }
 ##### `DropCascadeInput`<sup>Optional</sup> <a name="DropCascadeInput" id="@cdktf/provider-postgresql.schema.Schema.property.dropCascadeInput"></a>
 
 ```csharp
-public object DropCascadeInput { get; }
+public bool|IResolvable DropCascadeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -754,10 +754,10 @@ public string IdInput { get; }
 ##### `IfNotExistsInput`<sup>Optional</sup> <a name="IfNotExistsInput" id="@cdktf/provider-postgresql.schema.Schema.property.ifNotExistsInput"></a>
 
 ```csharp
-public object IfNotExistsInput { get; }
+public bool|IResolvable IfNotExistsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -784,10 +784,10 @@ public string OwnerInput { get; }
 ##### `PolicyInput`<sup>Optional</sup> <a name="PolicyInput" id="@cdktf/provider-postgresql.schema.Schema.property.policyInput"></a>
 
 ```csharp
-public object PolicyInput { get; }
+public IResolvable|SchemaPolicy[] PolicyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-postgresql.schema.SchemaPolicy">SchemaPolicy</a>[]
 
 ---
 
@@ -804,10 +804,10 @@ public string Database { get; }
 ##### `DropCascade`<sup>Required</sup> <a name="DropCascade" id="@cdktf/provider-postgresql.schema.Schema.property.dropCascade"></a>
 
 ```csharp
-public object DropCascade { get; }
+public bool|IResolvable DropCascade { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -824,10 +824,10 @@ public string Id { get; }
 ##### `IfNotExists`<sup>Required</sup> <a name="IfNotExists" id="@cdktf/provider-postgresql.schema.Schema.property.ifNotExists"></a>
 
 ```csharp
-public object IfNotExists { get; }
+public bool|IResolvable IfNotExists { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -879,20 +879,20 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Postgresql;
 
 new SchemaConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Name,
     string Database = null,
-    object DropCascade = null,
+    bool|IResolvable DropCascade = null,
     string Id = null,
-    object IfNotExists = null,
+    bool|IResolvable IfNotExists = null,
     string Owner = null,
-    object Policy = null
+    IResolvable|SchemaPolicy[] Policy = null
 };
 ```
 
@@ -900,40 +900,40 @@ new SchemaConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.name">Name</a></code> | <code>string</code> | The name of the schema. |
 | <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.database">Database</a></code> | <code>string</code> | The database name to alter schema. |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.dropCascade">DropCascade</a></code> | <code>object</code> | When true, will also drop all the objects that are contained in the schema. |
+| <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.dropCascade">DropCascade</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | When true, will also drop all the objects that are contained in the schema. |
 | <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#id Schema#id}. |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.ifNotExists">IfNotExists</a></code> | <code>object</code> | When true, use the existing schema if it exists. |
+| <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.ifNotExists">IfNotExists</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | When true, use the existing schema if it exists. |
 | <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.owner">Owner</a></code> | <code>string</code> | The ROLE name who owns the schema. |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.policy">Policy</a></code> | <code>object</code> | policy block. |
+| <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.policy">Policy</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-postgresql.schema.SchemaPolicy">SchemaPolicy</a>[]</code> | policy block. |
 
 ---
 
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-postgresql.schema.SchemaConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-postgresql.schema.SchemaConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -980,10 +980,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-postgresql.schema.SchemaConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1018,10 +1018,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `DropCascade`<sup>Optional</sup> <a name="DropCascade" id="@cdktf/provider-postgresql.schema.SchemaConfig.property.dropCascade"></a>
 
 ```csharp
-public object DropCascade { get; set; }
+public bool|IResolvable DropCascade { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 When true, will also drop all the objects that are contained in the schema.
 
@@ -1047,10 +1047,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `IfNotExists`<sup>Optional</sup> <a name="IfNotExists" id="@cdktf/provider-postgresql.schema.SchemaConfig.property.ifNotExists"></a>
 
 ```csharp
-public object IfNotExists { get; set; }
+public bool|IResolvable IfNotExists { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 When true, use the existing schema if it exists.
 
@@ -1075,10 +1075,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `Policy`<sup>Optional</sup> <a name="Policy" id="@cdktf/provider-postgresql.schema.SchemaConfig.property.policy"></a>
 
 ```csharp
-public object Policy { get; set; }
+public IResolvable|SchemaPolicy[] Policy { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-postgresql.schema.SchemaPolicy">SchemaPolicy</a>[]
 
 policy block.
 
@@ -1094,11 +1094,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 using HashiCorp.Cdktf.Providers.Postgresql;
 
 new SchemaPolicy {
-    object Create = null,
-    object CreateWithGrant = null,
+    bool|IResolvable Create = null,
+    bool|IResolvable CreateWithGrant = null,
     string Role = null,
-    object Usage = null,
-    object UsageWithGrant = null
+    bool|IResolvable Usage = null,
+    bool|IResolvable UsageWithGrant = null
 };
 ```
 
@@ -1106,21 +1106,21 @@ new SchemaPolicy {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicy.property.create">Create</a></code> | <code>object</code> | If true, allow the specified ROLEs to CREATE new objects within the schema(s). |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicy.property.createWithGrant">CreateWithGrant</a></code> | <code>object</code> | If true, allow the specified ROLEs to CREATE new objects within the schema(s) and GRANT the same CREATE privilege to different ROLEs. |
+| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicy.property.create">Create</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If true, allow the specified ROLEs to CREATE new objects within the schema(s). |
+| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicy.property.createWithGrant">CreateWithGrant</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If true, allow the specified ROLEs to CREATE new objects within the schema(s) and GRANT the same CREATE privilege to different ROLEs. |
 | <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicy.property.role">Role</a></code> | <code>string</code> | ROLE who will receive this policy (default: PUBLIC). |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicy.property.usage">Usage</a></code> | <code>object</code> | If true, allow the specified ROLEs to use objects within the schema(s). |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicy.property.usageWithGrant">UsageWithGrant</a></code> | <code>object</code> | If true, allow the specified ROLEs to use objects within the schema(s) and GRANT the same USAGE privilege to different ROLEs. |
+| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicy.property.usage">Usage</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If true, allow the specified ROLEs to use objects within the schema(s). |
+| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicy.property.usageWithGrant">UsageWithGrant</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If true, allow the specified ROLEs to use objects within the schema(s) and GRANT the same USAGE privilege to different ROLEs. |
 
 ---
 
 ##### `Create`<sup>Optional</sup> <a name="Create" id="@cdktf/provider-postgresql.schema.SchemaPolicy.property.create"></a>
 
 ```csharp
-public object Create { get; set; }
+public bool|IResolvable Create { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If true, allow the specified ROLEs to CREATE new objects within the schema(s).
 
@@ -1131,10 +1131,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `CreateWithGrant`<sup>Optional</sup> <a name="CreateWithGrant" id="@cdktf/provider-postgresql.schema.SchemaPolicy.property.createWithGrant"></a>
 
 ```csharp
-public object CreateWithGrant { get; set; }
+public bool|IResolvable CreateWithGrant { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If true, allow the specified ROLEs to CREATE new objects within the schema(s) and GRANT the same CREATE privilege to different ROLEs.
 
@@ -1159,10 +1159,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `Usage`<sup>Optional</sup> <a name="Usage" id="@cdktf/provider-postgresql.schema.SchemaPolicy.property.usage"></a>
 
 ```csharp
-public object Usage { get; set; }
+public bool|IResolvable Usage { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If true, allow the specified ROLEs to use objects within the schema(s).
 
@@ -1173,10 +1173,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `UsageWithGrant`<sup>Optional</sup> <a name="UsageWithGrant" id="@cdktf/provider-postgresql.schema.SchemaPolicy.property.usageWithGrant"></a>
 
 ```csharp
-public object UsageWithGrant { get; set; }
+public bool|IResolvable UsageWithGrant { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If true, allow the specified ROLEs to use objects within the schema(s) and GRANT the same USAGE privilege to different ROLEs.
 
@@ -1307,7 +1307,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-postgresql.schema.SchemaPolicy">SchemaPolicy</a>[]</code> | *No description.* |
 
 ---
 
@@ -1338,10 +1338,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-postgresql.schema.SchemaPolicyList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SchemaPolicy[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-postgresql.schema.SchemaPolicy">SchemaPolicy</a>[]
 
 ---
 
@@ -1609,17 +1609,17 @@ private void ResetUsageWithGrant()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.createInput">CreateInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.createWithGrantInput">CreateWithGrantInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.createInput">CreateInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.createWithGrantInput">CreateWithGrantInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.roleInput">RoleInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.usageInput">UsageInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.usageWithGrantInput">UsageWithGrantInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.create">Create</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.createWithGrant">CreateWithGrant</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.usageInput">UsageInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.usageWithGrantInput">UsageWithGrantInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.create">Create</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.createWithGrant">CreateWithGrant</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.role">Role</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.usage">Usage</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.usageWithGrant">UsageWithGrant</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.usage">Usage</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.usageWithGrant">UsageWithGrant</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-postgresql.schema.SchemaPolicy">SchemaPolicy</a></code> | *No description.* |
 
 ---
 
@@ -1650,20 +1650,20 @@ public string Fqn { get; }
 ##### `CreateInput`<sup>Optional</sup> <a name="CreateInput" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.createInput"></a>
 
 ```csharp
-public object CreateInput { get; }
+public bool|IResolvable CreateInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `CreateWithGrantInput`<sup>Optional</sup> <a name="CreateWithGrantInput" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.createWithGrantInput"></a>
 
 ```csharp
-public object CreateWithGrantInput { get; }
+public bool|IResolvable CreateWithGrantInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1680,40 +1680,40 @@ public string RoleInput { get; }
 ##### `UsageInput`<sup>Optional</sup> <a name="UsageInput" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.usageInput"></a>
 
 ```csharp
-public object UsageInput { get; }
+public bool|IResolvable UsageInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `UsageWithGrantInput`<sup>Optional</sup> <a name="UsageWithGrantInput" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.usageWithGrantInput"></a>
 
 ```csharp
-public object UsageWithGrantInput { get; }
+public bool|IResolvable UsageWithGrantInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `Create`<sup>Required</sup> <a name="Create" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.create"></a>
 
 ```csharp
-public object Create { get; }
+public bool|IResolvable Create { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `CreateWithGrant`<sup>Required</sup> <a name="CreateWithGrant" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.createWithGrant"></a>
 
 ```csharp
-public object CreateWithGrant { get; }
+public bool|IResolvable CreateWithGrant { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1730,30 +1730,30 @@ public string Role { get; }
 ##### `Usage`<sup>Required</sup> <a name="Usage" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.usage"></a>
 
 ```csharp
-public object Usage { get; }
+public bool|IResolvable Usage { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `UsageWithGrant`<sup>Required</sup> <a name="UsageWithGrant" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.usageWithGrant"></a>
 
 ```csharp
-public object UsageWithGrant { get; }
+public bool|IResolvable UsageWithGrant { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SchemaPolicy InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-postgresql.schema.SchemaPolicy">SchemaPolicy</a>
 
 ---
 

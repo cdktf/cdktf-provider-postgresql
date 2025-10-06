@@ -284,7 +284,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-postgresql.database.Database.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-postgresql.database.Database.importFrom"></a>
@@ -338,7 +338,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-postgresql.database.Database.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -353,7 +353,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-postgresql.database.Database.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -567,31 +567,31 @@ Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.database.Database.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.database.Database.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.allowConnectionsInput">AllowConnectionsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.alterObjectOwnershipInput">AlterObjectOwnershipInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.database.Database.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.database.Database.property.allowConnectionsInput">AllowConnectionsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.database.Database.property.alterObjectOwnershipInput">AlterObjectOwnershipInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.connectionLimitInput">ConnectionLimitInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.encodingInput">EncodingInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.isTemplateInput">IsTemplateInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.database.Database.property.isTemplateInput">IsTemplateInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.lcCollateInput">LcCollateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.lcCtypeInput">LcCtypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.ownerInput">OwnerInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.tablespaceNameInput">TablespaceNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.templateInput">TemplateInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.allowConnections">AllowConnections</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.alterObjectOwnership">AlterObjectOwnership</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.database.Database.property.allowConnections">AllowConnections</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.database.Database.property.alterObjectOwnership">AlterObjectOwnership</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.connectionLimit">ConnectionLimit</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.encoding">Encoding</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.id">Id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.isTemplate">IsTemplate</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.database.Database.property.isTemplate">IsTemplate</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.lcCollate">LcCollate</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.lcCtype">LcCtype</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.Database.property.name">Name</a></code> | <code>string</code> | *No description.* |
@@ -676,20 +676,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-postgresql.database.Database.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-postgresql.database.Database.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -736,30 +736,30 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-postgresql.database.Database.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
 ##### `AllowConnectionsInput`<sup>Optional</sup> <a name="AllowConnectionsInput" id="@cdktf/provider-postgresql.database.Database.property.allowConnectionsInput"></a>
 
 ```csharp
-public object AllowConnectionsInput { get; }
+public bool|IResolvable AllowConnectionsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AlterObjectOwnershipInput`<sup>Optional</sup> <a name="AlterObjectOwnershipInput" id="@cdktf/provider-postgresql.database.Database.property.alterObjectOwnershipInput"></a>
 
 ```csharp
-public object AlterObjectOwnershipInput { get; }
+public bool|IResolvable AlterObjectOwnershipInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -796,10 +796,10 @@ public string IdInput { get; }
 ##### `IsTemplateInput`<sup>Optional</sup> <a name="IsTemplateInput" id="@cdktf/provider-postgresql.database.Database.property.isTemplateInput"></a>
 
 ```csharp
-public object IsTemplateInput { get; }
+public bool|IResolvable IsTemplateInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -866,20 +866,20 @@ public string TemplateInput { get; }
 ##### `AllowConnections`<sup>Required</sup> <a name="AllowConnections" id="@cdktf/provider-postgresql.database.Database.property.allowConnections"></a>
 
 ```csharp
-public object AllowConnections { get; }
+public bool|IResolvable AllowConnections { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AlterObjectOwnership`<sup>Required</sup> <a name="AlterObjectOwnership" id="@cdktf/provider-postgresql.database.Database.property.alterObjectOwnership"></a>
 
 ```csharp
-public object AlterObjectOwnership { get; }
+public bool|IResolvable AlterObjectOwnership { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -916,10 +916,10 @@ public string Id { get; }
 ##### `IsTemplate`<sup>Required</sup> <a name="IsTemplate" id="@cdktf/provider-postgresql.database.Database.property.isTemplate"></a>
 
 ```csharp
-public object IsTemplate { get; }
+public bool|IResolvable IsTemplate { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1011,20 +1011,20 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Postgresql;
 
 new DatabaseConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Name,
-    object AllowConnections = null,
-    object AlterObjectOwnership = null,
+    bool|IResolvable AllowConnections = null,
+    bool|IResolvable AlterObjectOwnership = null,
     double ConnectionLimit = null,
     string Encoding = null,
     string Id = null,
-    object IsTemplate = null,
+    bool|IResolvable IsTemplate = null,
     string LcCollate = null,
     string LcCtype = null,
     string Owner = null,
@@ -1037,20 +1037,20 @@ new DatabaseConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.name">Name</a></code> | <code>string</code> | The PostgreSQL database name to connect to. |
-| <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.allowConnections">AllowConnections</a></code> | <code>object</code> | If false then no one can connect to this database. |
-| <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.alterObjectOwnership">AlterObjectOwnership</a></code> | <code>object</code> | If true, the owner of already existing objects will change if the owner changes. |
+| <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.allowConnections">AllowConnections</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If false then no one can connect to this database. |
+| <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.alterObjectOwnership">AlterObjectOwnership</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If true, the owner of already existing objects will change if the owner changes. |
 | <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.connectionLimit">ConnectionLimit</a></code> | <code>double</code> | How many concurrent connections can be made to this database. |
 | <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.encoding">Encoding</a></code> | <code>string</code> | Character set encoding to use in the new database. |
 | <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/database#id Database#id}. |
-| <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.isTemplate">IsTemplate</a></code> | <code>object</code> | If true, then this database can be cloned by any user with CREATEDB privileges. |
+| <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.isTemplate">IsTemplate</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If true, then this database can be cloned by any user with CREATEDB privileges. |
 | <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.lcCollate">LcCollate</a></code> | <code>string</code> | Collation order (LC_COLLATE) to use in the new database. |
 | <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.lcCtype">LcCtype</a></code> | <code>string</code> | Character classification (LC_CTYPE) to use in the new database. |
 | <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.owner">Owner</a></code> | <code>string</code> | The ROLE which owns the database. |
@@ -1062,20 +1062,20 @@ new DatabaseConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-postgresql.database.DatabaseConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-postgresql.database.DatabaseConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1122,10 +1122,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-postgresql.database.DatabaseConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1146,10 +1146,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `AllowConnections`<sup>Optional</sup> <a name="AllowConnections" id="@cdktf/provider-postgresql.database.DatabaseConfig.property.allowConnections"></a>
 
 ```csharp
-public object AllowConnections { get; set; }
+public bool|IResolvable AllowConnections { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If false then no one can connect to this database.
 
@@ -1160,10 +1160,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `AlterObjectOwnership`<sup>Optional</sup> <a name="AlterObjectOwnership" id="@cdktf/provider-postgresql.database.DatabaseConfig.property.alterObjectOwnership"></a>
 
 ```csharp
-public object AlterObjectOwnership { get; set; }
+public bool|IResolvable AlterObjectOwnership { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If true, the owner of already existing objects will change if the owner changes.
 
@@ -1217,10 +1217,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `IsTemplate`<sup>Optional</sup> <a name="IsTemplate" id="@cdktf/provider-postgresql.database.DatabaseConfig.property.isTemplate"></a>
 
 ```csharp
-public object IsTemplate { get; set; }
+public bool|IResolvable IsTemplate { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If true, then this database can be cloned by any user with CREATEDB privileges.
 

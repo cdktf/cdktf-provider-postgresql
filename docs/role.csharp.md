@@ -295,7 +295,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-postgresql.role.Role.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-postgresql.role.Role.importFrom"></a>
@@ -349,7 +349,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-postgresql.role.Role.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -364,7 +364,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-postgresql.role.Role.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -644,58 +644,58 @@ Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.assumeRoleInput">AssumeRoleInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.bypassRowLevelSecurityInput">BypassRowLevelSecurityInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.bypassRowLevelSecurityInput">BypassRowLevelSecurityInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.connectionLimitInput">ConnectionLimitInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.createDatabaseInput">CreateDatabaseInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.createRoleInput">CreateRoleInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.createDatabaseInput">CreateDatabaseInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.createRoleInput">CreateRoleInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.encryptedInput">EncryptedInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.encryptedPasswordInput">EncryptedPasswordInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.encryptedPasswordInput">EncryptedPasswordInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.idleInTransactionSessionTimeoutInput">IdleInTransactionSessionTimeoutInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.inheritInput">InheritInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.loginInput">LoginInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.inheritInput">InheritInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.loginInput">LoginInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.passwordInput">PasswordInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.passwordWoInput">PasswordWoInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.passwordWoVersionInput">PasswordWoVersionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.replicationInput">ReplicationInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.replicationInput">ReplicationInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.rolesInput">RolesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.searchPathInput">SearchPathInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.skipDropRoleInput">SkipDropRoleInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.skipReassignOwnedInput">SkipReassignOwnedInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.skipDropRoleInput">SkipDropRoleInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.skipReassignOwnedInput">SkipReassignOwnedInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.statementTimeoutInput">StatementTimeoutInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.superuserInput">SuperuserInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.superuserInput">SuperuserInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.validUntilInput">ValidUntilInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.assumeRole">AssumeRole</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.bypassRowLevelSecurity">BypassRowLevelSecurity</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.bypassRowLevelSecurity">BypassRowLevelSecurity</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.connectionLimit">ConnectionLimit</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.createDatabase">CreateDatabase</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.createRole">CreateRole</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.createDatabase">CreateDatabase</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.createRole">CreateRole</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.encrypted">Encrypted</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.encryptedPassword">EncryptedPassword</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.encryptedPassword">EncryptedPassword</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.idleInTransactionSessionTimeout">IdleInTransactionSessionTimeout</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.inherit">Inherit</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.login">Login</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.inherit">Inherit</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.login">Login</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.password">Password</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.passwordWo">PasswordWo</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.passwordWoVersion">PasswordWoVersion</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.replication">Replication</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.replication">Replication</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.roles">Roles</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.searchPath">SearchPath</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.skipDropRole">SkipDropRole</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.skipReassignOwned">SkipReassignOwned</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.skipDropRole">SkipDropRole</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.skipReassignOwned">SkipReassignOwned</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.statementTimeout">StatementTimeout</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.superuser">Superuser</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.Role.property.superuser">Superuser</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.Role.property.validUntil">ValidUntil</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -775,20 +775,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-postgresql.role.Role.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-postgresql.role.Role.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -835,10 +835,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-postgresql.role.Role.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -855,10 +855,10 @@ public string AssumeRoleInput { get; }
 ##### `BypassRowLevelSecurityInput`<sup>Optional</sup> <a name="BypassRowLevelSecurityInput" id="@cdktf/provider-postgresql.role.Role.property.bypassRowLevelSecurityInput"></a>
 
 ```csharp
-public object BypassRowLevelSecurityInput { get; }
+public bool|IResolvable BypassRowLevelSecurityInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -875,20 +875,20 @@ public double ConnectionLimitInput { get; }
 ##### `CreateDatabaseInput`<sup>Optional</sup> <a name="CreateDatabaseInput" id="@cdktf/provider-postgresql.role.Role.property.createDatabaseInput"></a>
 
 ```csharp
-public object CreateDatabaseInput { get; }
+public bool|IResolvable CreateDatabaseInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `CreateRoleInput`<sup>Optional</sup> <a name="CreateRoleInput" id="@cdktf/provider-postgresql.role.Role.property.createRoleInput"></a>
 
 ```csharp
-public object CreateRoleInput { get; }
+public bool|IResolvable CreateRoleInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -905,10 +905,10 @@ public string EncryptedInput { get; }
 ##### `EncryptedPasswordInput`<sup>Optional</sup> <a name="EncryptedPasswordInput" id="@cdktf/provider-postgresql.role.Role.property.encryptedPasswordInput"></a>
 
 ```csharp
-public object EncryptedPasswordInput { get; }
+public bool|IResolvable EncryptedPasswordInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -935,20 +935,20 @@ public double IdleInTransactionSessionTimeoutInput { get; }
 ##### `InheritInput`<sup>Optional</sup> <a name="InheritInput" id="@cdktf/provider-postgresql.role.Role.property.inheritInput"></a>
 
 ```csharp
-public object InheritInput { get; }
+public bool|IResolvable InheritInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `LoginInput`<sup>Optional</sup> <a name="LoginInput" id="@cdktf/provider-postgresql.role.Role.property.loginInput"></a>
 
 ```csharp
-public object LoginInput { get; }
+public bool|IResolvable LoginInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -995,10 +995,10 @@ public string PasswordWoVersionInput { get; }
 ##### `ReplicationInput`<sup>Optional</sup> <a name="ReplicationInput" id="@cdktf/provider-postgresql.role.Role.property.replicationInput"></a>
 
 ```csharp
-public object ReplicationInput { get; }
+public bool|IResolvable ReplicationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1025,20 +1025,20 @@ public string[] SearchPathInput { get; }
 ##### `SkipDropRoleInput`<sup>Optional</sup> <a name="SkipDropRoleInput" id="@cdktf/provider-postgresql.role.Role.property.skipDropRoleInput"></a>
 
 ```csharp
-public object SkipDropRoleInput { get; }
+public bool|IResolvable SkipDropRoleInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `SkipReassignOwnedInput`<sup>Optional</sup> <a name="SkipReassignOwnedInput" id="@cdktf/provider-postgresql.role.Role.property.skipReassignOwnedInput"></a>
 
 ```csharp
-public object SkipReassignOwnedInput { get; }
+public bool|IResolvable SkipReassignOwnedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1055,10 +1055,10 @@ public double StatementTimeoutInput { get; }
 ##### `SuperuserInput`<sup>Optional</sup> <a name="SuperuserInput" id="@cdktf/provider-postgresql.role.Role.property.superuserInput"></a>
 
 ```csharp
-public object SuperuserInput { get; }
+public bool|IResolvable SuperuserInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1085,10 +1085,10 @@ public string AssumeRole { get; }
 ##### `BypassRowLevelSecurity`<sup>Required</sup> <a name="BypassRowLevelSecurity" id="@cdktf/provider-postgresql.role.Role.property.bypassRowLevelSecurity"></a>
 
 ```csharp
-public object BypassRowLevelSecurity { get; }
+public bool|IResolvable BypassRowLevelSecurity { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1105,20 +1105,20 @@ public double ConnectionLimit { get; }
 ##### `CreateDatabase`<sup>Required</sup> <a name="CreateDatabase" id="@cdktf/provider-postgresql.role.Role.property.createDatabase"></a>
 
 ```csharp
-public object CreateDatabase { get; }
+public bool|IResolvable CreateDatabase { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `CreateRole`<sup>Required</sup> <a name="CreateRole" id="@cdktf/provider-postgresql.role.Role.property.createRole"></a>
 
 ```csharp
-public object CreateRole { get; }
+public bool|IResolvable CreateRole { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1135,10 +1135,10 @@ public string Encrypted { get; }
 ##### `EncryptedPassword`<sup>Required</sup> <a name="EncryptedPassword" id="@cdktf/provider-postgresql.role.Role.property.encryptedPassword"></a>
 
 ```csharp
-public object EncryptedPassword { get; }
+public bool|IResolvable EncryptedPassword { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1165,20 +1165,20 @@ public double IdleInTransactionSessionTimeout { get; }
 ##### `Inherit`<sup>Required</sup> <a name="Inherit" id="@cdktf/provider-postgresql.role.Role.property.inherit"></a>
 
 ```csharp
-public object Inherit { get; }
+public bool|IResolvable Inherit { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `Login`<sup>Required</sup> <a name="Login" id="@cdktf/provider-postgresql.role.Role.property.login"></a>
 
 ```csharp
-public object Login { get; }
+public bool|IResolvable Login { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1225,10 +1225,10 @@ public string PasswordWoVersion { get; }
 ##### `Replication`<sup>Required</sup> <a name="Replication" id="@cdktf/provider-postgresql.role.Role.property.replication"></a>
 
 ```csharp
-public object Replication { get; }
+public bool|IResolvable Replication { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1255,20 +1255,20 @@ public string[] SearchPath { get; }
 ##### `SkipDropRole`<sup>Required</sup> <a name="SkipDropRole" id="@cdktf/provider-postgresql.role.Role.property.skipDropRole"></a>
 
 ```csharp
-public object SkipDropRole { get; }
+public bool|IResolvable SkipDropRole { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `SkipReassignOwned`<sup>Required</sup> <a name="SkipReassignOwned" id="@cdktf/provider-postgresql.role.Role.property.skipReassignOwned"></a>
 
 ```csharp
-public object SkipReassignOwned { get; }
+public bool|IResolvable SkipReassignOwned { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1285,10 +1285,10 @@ public double StatementTimeout { get; }
 ##### `Superuser`<sup>Required</sup> <a name="Superuser" id="@cdktf/provider-postgresql.role.Role.property.superuser"></a>
 
 ```csharp
-public object Superuser { get; }
+public bool|IResolvable Superuser { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1330,35 +1330,35 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Postgresql;
 
 new RoleConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Name,
     string AssumeRole = null,
-    object BypassRowLevelSecurity = null,
+    bool|IResolvable BypassRowLevelSecurity = null,
     double ConnectionLimit = null,
-    object CreateDatabase = null,
-    object CreateRole = null,
+    bool|IResolvable CreateDatabase = null,
+    bool|IResolvable CreateRole = null,
     string Encrypted = null,
-    object EncryptedPassword = null,
+    bool|IResolvable EncryptedPassword = null,
     string Id = null,
     double IdleInTransactionSessionTimeout = null,
-    object Inherit = null,
-    object Login = null,
+    bool|IResolvable Inherit = null,
+    bool|IResolvable Login = null,
     string Password = null,
     string PasswordWo = null,
     string PasswordWoVersion = null,
-    object Replication = null,
+    bool|IResolvable Replication = null,
     string[] Roles = null,
     string[] SearchPath = null,
-    object SkipDropRole = null,
-    object SkipReassignOwned = null,
+    bool|IResolvable SkipDropRole = null,
+    bool|IResolvable SkipReassignOwned = null,
     double StatementTimeout = null,
-    object Superuser = null,
+    bool|IResolvable Superuser = null,
     string ValidUntil = null
 };
 ```
@@ -1367,35 +1367,35 @@ new RoleConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.name">Name</a></code> | <code>string</code> | The name of the role. |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.assumeRole">AssumeRole</a></code> | <code>string</code> | Role to switch to at login. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.bypassRowLevelSecurity">BypassRowLevelSecurity</a></code> | <code>object</code> | Determine whether a role bypasses every row-level security (RLS) policy. |
+| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.bypassRowLevelSecurity">BypassRowLevelSecurity</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Determine whether a role bypasses every row-level security (RLS) policy. |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.connectionLimit">ConnectionLimit</a></code> | <code>double</code> | How many concurrent connections can be made with this role. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.createDatabase">CreateDatabase</a></code> | <code>object</code> | Define a role's ability to create databases. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.createRole">CreateRole</a></code> | <code>object</code> | Determine whether this role will be permitted to create new roles. |
+| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.createDatabase">CreateDatabase</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Define a role's ability to create databases. |
+| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.createRole">CreateRole</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Determine whether this role will be permitted to create new roles. |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.encrypted">Encrypted</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#encrypted Role#encrypted}. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.encryptedPassword">EncryptedPassword</a></code> | <code>object</code> | Control whether the password is stored encrypted in the system catalogs. |
+| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.encryptedPassword">EncryptedPassword</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Control whether the password is stored encrypted in the system catalogs. |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#id Role#id}. |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.idleInTransactionSessionTimeout">IdleInTransactionSessionTimeout</a></code> | <code>double</code> | Terminate any session with an open transaction that has been idle for longer than the specified duration in milliseconds. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.inherit">Inherit</a></code> | <code>object</code> | Determine whether a role "inherits" the privileges of roles it is a member of. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.login">Login</a></code> | <code>object</code> | Determine whether a role is allowed to log in. |
+| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.inherit">Inherit</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Determine whether a role "inherits" the privileges of roles it is a member of. |
+| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.login">Login</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Determine whether a role is allowed to log in. |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.password">Password</a></code> | <code>string</code> | Sets the role's password. |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.passwordWo">PasswordWo</a></code> | <code>string</code> | Sets the role's password without storing it in the state file. |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.passwordWoVersion">PasswordWoVersion</a></code> | <code>string</code> | Prevents applies from updating the role password on every apply unless the value changes. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.replication">Replication</a></code> | <code>object</code> | Determine whether a role is allowed to initiate streaming replication or put the system in and out of backup mode. |
+| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.replication">Replication</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Determine whether a role is allowed to initiate streaming replication or put the system in and out of backup mode. |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.roles">Roles</a></code> | <code>string[]</code> | Role(s) to grant to this new role. |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.searchPath">SearchPath</a></code> | <code>string[]</code> | Sets the role's search path. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.skipDropRole">SkipDropRole</a></code> | <code>object</code> | Skip actually running the DROP ROLE command when removing a ROLE from PostgreSQL. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.skipReassignOwned">SkipReassignOwned</a></code> | <code>object</code> | Skip actually running the REASSIGN OWNED command when removing a role from PostgreSQL. |
+| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.skipDropRole">SkipDropRole</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Skip actually running the DROP ROLE command when removing a ROLE from PostgreSQL. |
+| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.skipReassignOwned">SkipReassignOwned</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Skip actually running the REASSIGN OWNED command when removing a role from PostgreSQL. |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.statementTimeout">StatementTimeout</a></code> | <code>double</code> | Abort any statement that takes more than the specified number of milliseconds. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.superuser">Superuser</a></code> | <code>object</code> | Determine whether the new role is a "superuser". |
+| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.superuser">Superuser</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Determine whether the new role is a "superuser". |
 | <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.validUntil">ValidUntil</a></code> | <code>string</code> | Sets a date and time after which the role's password is no longer valid. |
 
 ---
@@ -1403,20 +1403,20 @@ new RoleConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-postgresql.role.RoleConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-postgresql.role.RoleConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1463,10 +1463,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-postgresql.role.RoleConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1501,10 +1501,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `BypassRowLevelSecurity`<sup>Optional</sup> <a name="BypassRowLevelSecurity" id="@cdktf/provider-postgresql.role.RoleConfig.property.bypassRowLevelSecurity"></a>
 
 ```csharp
-public object BypassRowLevelSecurity { get; set; }
+public bool|IResolvable BypassRowLevelSecurity { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Determine whether a role bypasses every row-level security (RLS) policy.
 
@@ -1529,10 +1529,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `CreateDatabase`<sup>Optional</sup> <a name="CreateDatabase" id="@cdktf/provider-postgresql.role.RoleConfig.property.createDatabase"></a>
 
 ```csharp
-public object CreateDatabase { get; set; }
+public bool|IResolvable CreateDatabase { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Define a role's ability to create databases.
 
@@ -1543,10 +1543,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `CreateRole`<sup>Optional</sup> <a name="CreateRole" id="@cdktf/provider-postgresql.role.RoleConfig.property.createRole"></a>
 
 ```csharp
-public object CreateRole { get; set; }
+public bool|IResolvable CreateRole { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Determine whether this role will be permitted to create new roles.
 
@@ -1569,10 +1569,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `EncryptedPassword`<sup>Optional</sup> <a name="EncryptedPassword" id="@cdktf/provider-postgresql.role.RoleConfig.property.encryptedPassword"></a>
 
 ```csharp
-public object EncryptedPassword { get; set; }
+public bool|IResolvable EncryptedPassword { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Control whether the password is stored encrypted in the system catalogs.
 
@@ -1612,10 +1612,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `Inherit`<sup>Optional</sup> <a name="Inherit" id="@cdktf/provider-postgresql.role.RoleConfig.property.inherit"></a>
 
 ```csharp
-public object Inherit { get; set; }
+public bool|IResolvable Inherit { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Determine whether a role "inherits" the privileges of roles it is a member of.
 
@@ -1626,10 +1626,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `Login`<sup>Optional</sup> <a name="Login" id="@cdktf/provider-postgresql.role.RoleConfig.property.login"></a>
 
 ```csharp
-public object Login { get; set; }
+public bool|IResolvable Login { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Determine whether a role is allowed to log in.
 
@@ -1682,10 +1682,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `Replication`<sup>Optional</sup> <a name="Replication" id="@cdktf/provider-postgresql.role.RoleConfig.property.replication"></a>
 
 ```csharp
-public object Replication { get; set; }
+public bool|IResolvable Replication { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Determine whether a role is allowed to initiate streaming replication or put the system in and out of backup mode.
 
@@ -1724,10 +1724,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `SkipDropRole`<sup>Optional</sup> <a name="SkipDropRole" id="@cdktf/provider-postgresql.role.RoleConfig.property.skipDropRole"></a>
 
 ```csharp
-public object SkipDropRole { get; set; }
+public bool|IResolvable SkipDropRole { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Skip actually running the DROP ROLE command when removing a ROLE from PostgreSQL.
 
@@ -1738,10 +1738,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `SkipReassignOwned`<sup>Optional</sup> <a name="SkipReassignOwned" id="@cdktf/provider-postgresql.role.RoleConfig.property.skipReassignOwned"></a>
 
 ```csharp
-public object SkipReassignOwned { get; set; }
+public bool|IResolvable SkipReassignOwned { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Skip actually running the REASSIGN OWNED command when removing a role from PostgreSQL.
 
@@ -1766,10 +1766,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 ##### `Superuser`<sup>Optional</sup> <a name="Superuser" id="@cdktf/provider-postgresql.role.RoleConfig.property.superuser"></a>
 
 ```csharp
-public object Superuser { get; set; }
+public bool|IResolvable Superuser { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Determine whether the new role is a "superuser".
 
